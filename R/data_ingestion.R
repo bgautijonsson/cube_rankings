@@ -7,29 +7,12 @@ library(metill)
 library(ggtext)
 theme_set(theme_metill())
 
+# Set up Google Sheets authentication using email from .Renviron
+gs4_auth(email = Sys.getenv("GOOGLE_MAIL"))
+# Read data from Google Sheets
 d_raw <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit?usp=sharing"
 )
-
-d_raw |> 
-  mutate_at(
-    vars(player1, player2),
-    str_to_title
-  ) |> 
-  mutate(
-    match = row_number(),
-    date = as_date(date),
-    missing = pmap_lgl(
-      list(game1, game2, game3),
-      \(x, y, z) all(is.na(c(x, y, z)))
-    )
-  ) |> 
-  filter(!missing) |> 
-  pivot_longer(c(player1, player2), values_to = "player") |> 
-  distinct(
-    player, date, cube, match
-  ) |> 
-  count(player, date, cube, sort = TRUE)
 
 d <- d_raw |>
   mutate(
@@ -40,7 +23,7 @@ d <- d_raw |>
   mutate(
     game = parse_number(game),
     result = 1 * (winner == player1)
-  ) |> 
+  ) |>
   mutate_at(
     vars(winner, player1, player2),
     str_to_title
@@ -52,8 +35,6 @@ players <- d |>
   mutate(
     player_nr = row_number()
   )
-
-
 
 
 d <- d |>
@@ -87,18 +68,17 @@ fit <- model$sample(
 )
 
 
-
-fit$draws("alpha") |> 
-  as_draws_df() |> 
-  as_tibble() |> 
-  pivot_longer(c(-starts_with("."))) |> 
+fit$draws("alpha") |>
+  as_draws_df() |>
+  as_tibble() |>
+  pivot_longer(c(-starts_with("."))) |>
   mutate(
     name = parse_number(name)
-  ) |> 
+  ) |>
   inner_join(
     players,
     by = join_by(name == player_nr)
-  ) |> 
+  ) |>
   reframe(
     median = median(value),
     coverage = c(
@@ -119,10 +99,10 @@ fit$draws("alpha") |>
     lower = quantile(value, 0.5 - coverage / 2),
     upper = quantile(value, 0.5 + coverage / 2),
     .by = c(player)
-  ) |> 
+  ) |>
   mutate(
     player = str_to_title(player) |> fct_reorder(median)
-  ) |> 
+  ) |>
   ggplot(aes(median, player)) +
   geom_vline(
     xintercept = 0,
@@ -195,4 +175,61 @@ fit$draws("alpha") |>
     subtitle = "Lóðrétt strik eru miðgildi matsins og kassar óvissubil",
     x = NULL,
     y = NULL
+  )
+
+
+fit$draws("alpha") |>
+  as_draws_df() |>
+  as_tibble() |>
+  pivot_longer(c(-starts_with("."))) |>
+  mutate(
+    name = parse_number(name)
+  ) |>
+  inner_join(
+    players,
+    by = join_by(name == player_nr)
+  ) |>
+  arrange(desc(value)) |>
+  mutate(
+    position = row_number(),
+    .by = .draw
+  ) |>
+  count(position, player) |>
+  mutate(
+    p = n / sum(n),
+    .by = player
+  ) |>
+  mutate(
+    player = fct_reorder(player, p * (position == 1), .fun = max)
+  ) |>
+  ggplot(aes(position, player)) +
+  geom_tile(aes(fill = p)) +
+  geom_text(
+    aes(label = percent(p, accuracy = 1), col = p)
+  ) +
+  scale_colour_gradient2(
+    low = "black",
+    mid = "grey10",
+    high = "#fdfcfc",
+    midpoint = 0.2
+  ) +
+  scale_fill_gradient(
+    low = "#fdfcfc",
+    high = "black"
+  ) +
+  scale_x_continuous(
+    breaks = 1:12,
+    guide = guide_axis(cap = "both"),
+    expand = c(0, 0)
+  ) +
+  scale_y_discrete(
+    guide = guide_axis(cap = "both"),
+    expand = c(0, 0)
+  ) +
+  theme(legend.position = "none") +
+  labs(
+    x = "Sæti í röð",
+    y = NULL,
+    title = "Hversu líklegt er að leikmaður eigi heima í ákveðnu sæti raðað eftir styrk?",
+    subtitle = "Því fylgir óvissa að raða fólki eftir styrk og því gæti einstaklingur átt heima í mörgum mismunandi sætum"
   )
