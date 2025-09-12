@@ -5,7 +5,7 @@ library(posterior)
 stan_data <- readRDS("data/stan_data.rds")
 
 # Compile the Stan model
-model <- cmdstan_model("stan/bradley_terry.stan")
+model <- cmdstan_model("stan/bradley_terry_cubeeffects.stan")
 
 # Fit the model
 fit <- model$sample(
@@ -20,5 +20,3 @@ fit <- model$sample(
 fit$save_object(file = "data/fitted_model.rds")
 
 cat("Model fitting complete. Saved fitted_model.rds\n")
-cat("Model summary:\n")
-print(fit$summary())

@@ -45,12 +45,17 @@ d <- d |>
     players |>
       rename(player_nr2 = player_nr),
     by = join_by(player2 == player)
+  ) |> 
+  mutate(
+    cube_nr = as.numeric(as.factor(d$cube))
   )
 
 # Create Stan data list
 stan_data <- list(
   N = nrow(d),
   K = nrow(players),
+  C = length(unique(d$cube)),
+  cube = d$cube_nr,
   player1 = d$player_nr1,
   player2 = d$player_nr2,
   y = d$result

@@ -7,7 +7,7 @@ theme_set(theme_metill())
 d_raw <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit?usp=sharing"
 )
-
+gs4_auth(email = Sys.getenv("GOOGLE_MAIL"))
 # Check data structure (optional - can be removed in production)
 d_raw |>
   mutate_at(
@@ -30,4 +30,7 @@ d_raw |>
     cube,
     match
   ) |>
-  count(player, date, cube, sort = TRUE)
+  count(player, date, cube, sort = TRUE) |> 
+  filter(
+    date == max(date)
+  )
