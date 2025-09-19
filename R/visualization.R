@@ -242,14 +242,14 @@ plot3 <- plot_dat |>
     .by = c(player, cube)
   ) |> 
   filter(
-    player %in% c(
-      "Aron Freyr",
-      "Arnar",
-      "Tommi",
-      "Hjalti",
-      "Binni",
-      "Diddi"
-    )
+    # player %in% c(
+    #   "Aron Freyr",
+    #   "Arnar",
+    #   "Tommi",
+    #   "Hjalti",
+    #   "Binni",
+    #   "Diddi"
+    # )
   ) |> 
   mutate(
     cube = str_to_title(cube)
@@ -268,7 +268,6 @@ plot3 <- plot_dat |>
     ),
     linewidth = 3
   ) +
-  facet_wrap("player", ncol = 1) +
   scale_alpha_continuous(
     range = c(0, 0.3),
     guide = guide_none()
@@ -281,6 +280,7 @@ plot3 <- plot_dat |>
   scale_y_discrete(
     guide = guide_axis(cap = "both")
   ) +
+  facet_wrap("player", ncol = 3) +
   coord_cartesian(clip = "off") +
   theme(
     legend.position = "none",
@@ -298,7 +298,7 @@ ggsave(
   "plots/cube_effects.png",
   plot3,
   width = 10,
-  height = 8,
+  height = 1.4 * 10,
   dpi = 300
 )
 
