@@ -4,3 +4,17 @@
 .httr-oauth
 .DS_Store
 .quarto
+
+# Large binary model outputs
+data/fitted_model.rds
+data/fitted_model_temporal.rds
+data/stan_data.rds
+data/stan_data_temporal.rds
+results/*/fitted_model.rds
+results/*/stan_data.rds
+results/*/stan_data_temporal.rds
+
+# Compiled Stan binaries
+stan/bradley_terry
+stan/bradley_terry_cubeeffects
+stan/bradley_terry_temporal
