@@ -13,7 +13,7 @@ parameters {
 
 model {
   // Priors
-  alpha ~ normal(0, 1);
+  alpha ~ normal(-1, 1);
   
   // Likelihood
   for (n in 1:N) {

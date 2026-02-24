@@ -16,11 +16,11 @@ parameters {
 
 model {
   // Priors
-  alpha ~ normal(0, 1);
+  alpha ~ normal(-1, 1);
   for (k in 1:K) {
     gamma[k] ~ normal(0, 0.2);
   }
-  
+
   // Likelihood
   for (n in 1:N) {
     y[n] ~ bernoulli_logit(alpha[player1[n]] + gamma[player1[n], cube[n]] - alpha[player2[n]] - gamma[player2[n], cube[n]]);
@@ -30,6 +30,7 @@ model {
 generated quantities {
   vector[N] log_lik;           // log-likelihood for each observation
   vector[N] y_rep;             // posterior predictive samples
+
   
   for (n in 1:N) {
     log_lik[n] = bernoulli_logit_lpmf(y[n] | alpha[player1[n]] + gamma[player1[n], cube[n]] - alpha[player2[n]] - gamma[player2[n], cube[n]]);
