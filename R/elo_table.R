@@ -984,30 +984,16 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
       }
     },
     theme = reactableTheme(
-      color = "#c8c4bc",
       backgroundColor = "transparent",
-      stripedColor = "rgba(255, 255, 255, 0.015)",
       highlightColor = "rgba(59, 158, 221, 0.08)",
       cellPadding = "10px 8px",
-      borderColor = "rgba(255, 255, 255, 0.06)",
       headerStyle = list(
         fontWeight = "bold",
         fontSize = "12px",
-        color = "#7a7670",
         textTransform = "uppercase",
         letterSpacing = "0.03em",
-        borderBottom = "2px solid rgba(212, 168, 67, 0.3)",
         textAlign = "center",
         padding = "8px 8px 10px"
-      ),
-      searchInputStyle = list(
-        border = "1px solid rgba(255, 255, 255, 0.08)",
-        borderRadius = "8px",
-        padding = "8px 12px 8px 32px",
-        fontSize = "14px",
-        width = "220px",
-        background = "rgba(255, 255, 255, 0.04)",
-        color = "#c8c4bc"
       )
     ),
     columns = list(
@@ -1066,17 +1052,18 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
       score = colDef(
         name = "ELO",
         width = 80,
+        class = "score-elo-cell",
         style = list(
           fontWeight = 700,
           fontSize = "18px",
-          color = "#e8e4dc",
           fontVariantNumeric = "tabular-nums"
         )
       ),
       score_prev = colDef(
         name = "Fyrra",
         width = 70,
-        style = list(color = "#7a7670", fontSize = "13px"),
+        class = "score-prev-cell",
+        style = list(fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       score_delta = colDef(
@@ -1087,7 +1074,8 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
       nr_prev = colDef(
         name = "Fyrra",
         width = 65,
-        style = list(color = "#7a7670", fontSize = "13px"),
+        class = "score-prev-cell",
+        style = list(fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       rank_delta = colDef(
