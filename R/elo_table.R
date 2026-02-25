@@ -478,7 +478,7 @@ render_score_table <- function(
       score_prev = "Fyrra",
       score_delta_label = "±",
       nr = "#",
-      nr_prev = "Fyrri",
+      nr_prev = "Fyrra",
       rank_delta_label = "±"
     ) |>
     cols_align(columns = player, align = "left") |>
