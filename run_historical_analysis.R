@@ -145,12 +145,13 @@ for (i in seq_along(dates_to_fit)) {
   fit$save_object(file = fit_path)
   save_prepared_datasets(prepared, output_dir = result_dir)
 
-  # Save player summary CSV with ELO and cube effects
+  # Save player summary CSV with ELO, cube effects, and per-cube stats
   save_player_summary_csv(
     fit = fit,
     players = prepared$players,
     cube_types = prepared$cube_types,
-    output_dir = result_dir
+    output_dir = result_dir,
+    processed_data = prepared$processed_data
   )
 
   # Print summary for this date

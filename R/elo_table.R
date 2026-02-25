@@ -200,6 +200,77 @@ compute_player_estimates_at_time <- function(fit, players, time_idx) {
   compute_player_estimates(fit, players, time_idx = time_idx)
 }
 
+#' Compute cube-specific player estimates on ELO scale
+#'
+#' For a given cube type, combines alpha_current (base strength) with gamma[k,c]
+#' (cube-specific effect) to produce per-player ELO estimates.
+#' Returns the same shape as compute_player_estimates() so downstream code works
+#' identically.
+#'
+#' @param fit A cmdstanr fit object from the temporal model
+#' @param players Data frame with player info (player_nr, player, wins, losses, total)
+#' @param cube_nr Integer cube index (alphabetical: High=1, Low=2, Medium=3, Other=4)
+#' @param processed_data Processed game data (used to compute per-cube win/loss)
+#' @param cube_name Character name of the cube type (e.g., "High")
+#' @return Data frame with player, wins, losses, total, text, median, lower, upper
+compute_cube_estimates <- function(fit, players, cube_nr, processed_data, cube_name) {
+  # Extract alpha_current draws (base strength)
+  alpha_draws <- fit$draws("alpha_current", format = "draws_df") |>
+    as_tibble() |>
+    select(starts_with("alpha_current"), .draw) |>
+    pivot_longer(
+      cols = starts_with("alpha_current"),
+      names_to = "param",
+      values_to = "alpha"
+    ) |>
+    mutate(player_nr = parse_number(param))
+
+  # Extract gamma draws for this specific cube type
+  # gamma[k, c] — we want column c = cube_nr for all players k
+  gamma_draws <- fit$draws("gamma", format = "draws_df") |>
+    as_tibble() |>
+    select(matches(paste0("gamma\\[\\d+,", cube_nr, "\\]")), .draw) |>
+    pivot_longer(
+      cols = starts_with("gamma"),
+      names_to = "param",
+      values_to = "gamma"
+    ) |>
+    mutate(player_nr = as.integer(str_extract(param, "(?<=\\[)\\d+")))
+
+  # Combine alpha + gamma per draw, convert to ELO
+  combined <- alpha_draws |>
+    inner_join(gamma_draws, by = c(".draw", "player_nr")) |>
+    mutate(elo = bt_to_elo(alpha + gamma))
+
+  # Compute per-cube win/loss/total from processed_data
+  cube_stats <- processed_data |>
+    filter(cube == cube_name) |>
+    select(player1, player2, winner) |>
+    pivot_longer(c(player1, player2), names_to = NULL, values_to = "player") |>
+    mutate(win = as.integer(winner == player)) |>
+    summarise(
+      wins = sum(win),
+      losses = sum(1 - win),
+      total = wins + losses,
+      .by = player
+    ) |>
+    mutate(text = glue::glue(
+      "{scales::percent(wins / total, accuracy = 1)} ({wins}/{total})"
+    ))
+
+  # Summarise ELO draws and join with cube-specific stats
+  combined |>
+    inner_join(players |> select(player_nr, player), by = "player_nr") |>
+    summarise(
+      median = round(median(elo)),
+      lower = round(quantile(elo, 0.05)),
+      upper = round(quantile(elo, 0.95)),
+      .by = c(player, player_nr)
+    ) |>
+    inner_join(cube_stats, by = "player") |>
+    select(player, wins, losses, total, text, median, lower, upper)
+}
+
 bt_to_elo <- function(x) {
   (400 / log(10)) * x + 1500
 }
@@ -256,9 +327,10 @@ save_player_summary_csv <- function(
     players,
     cube_types,
     output_dir,
+    processed_data = NULL,
     filename = "player_summary.csv") {
-  # Extract alpha_current and convert to ELO scale
-  alpha_draws <- fit$draws("alpha_current", format = "draws_df") |>
+  # Extract alpha_current draws (keep .draw for per-cube ELO computation)
+  alpha_draws_raw <- fit$draws("alpha_current", format = "draws_df") |>
     as_tibble() |>
     select(starts_with("alpha_current"), .draw) |>
     pivot_longer(
@@ -266,10 +338,11 @@ save_player_summary_csv <- function(
       names_to = "param",
       values_to = "alpha"
     ) |>
-    mutate(
-      player_nr = parse_number(param),
-      elo = bt_to_elo(alpha)
-    ) |>
+    mutate(player_nr = parse_number(param))
+
+  # Summarise overall ELO
+  alpha_summary <- alpha_draws_raw |>
+    mutate(elo = bt_to_elo(alpha)) |>
     summarise(
       score_median = round(median(elo)),
       score_q25 = round(quantile(elo, 0.25)),
@@ -279,41 +352,104 @@ save_player_summary_csv <- function(
       .by = player_nr
     )
 
-  # Extract gamma (cube effects) for each player and cube type
-  # gamma[k, c] is player k's effect for cube type c
-  gamma_draws <- fit$draws("gamma", format = "draws_df") |>
-    as_tibble() |>
-    pivot_longer(
-      cols = starts_with("gamma"),
-      names_to = "param",
-      values_to = "gamma"
-    ) |>
-    mutate(
-      # Parse gamma[k,c] pattern
-      indices = str_extract(param, "\\[\\d+,\\d+\\]"),
-      player_nr = as.integer(str_extract(indices, "(?<=\\[)\\d+")),
-      cube_nr = as.integer(str_extract(indices, "\\d+(?=\\])"))
-    ) |>
-    summarise(
-      gamma_median = median(gamma),
-      .by = c(player_nr, cube_nr)
-    ) |>
-    # Join cube type names
+  # Check if this fit has cube effects (gamma parameter)
+  has_gamma <- "gamma" %in% fit$metadata()$stan_variables
 
-    left_join(cube_types, by = "cube_nr") |>
-    select(player_nr, cube, gamma_median) |>
-    # Pivot wider so each cube type is a column
-    pivot_wider(
-      names_from = cube,
-      values_from = gamma_median,
-      names_prefix = "gamma_"
-    )
+  gamma_summary <- NULL
+  per_cube_elo <- NULL
+  per_cube_stats <- NULL
+
+  if (has_gamma) {
+    # Extract gamma draws for all players and cube types
+    gamma_draws_raw <- fit$draws("gamma", format = "draws_df") |>
+      as_tibble() |>
+      pivot_longer(
+        cols = starts_with("gamma"),
+        names_to = "param",
+        values_to = "gamma"
+      ) |>
+      mutate(
+        indices = str_extract(param, "\\[\\d+,\\d+\\]"),
+        player_nr = as.integer(str_extract(indices, "(?<=\\[)\\d+")),
+        cube_nr = as.integer(str_extract(indices, "\\d+(?=\\])"))
+      )
+
+    # Gamma medians (backward-compatible columns)
+    gamma_summary <- gamma_draws_raw |>
+      summarise(
+        gamma_median = median(gamma),
+        .by = c(player_nr, cube_nr)
+      ) |>
+      left_join(cube_types, by = "cube_nr") |>
+      select(player_nr, cube, gamma_median) |>
+      pivot_wider(
+        names_from = cube,
+        values_from = gamma_median,
+        names_prefix = "gamma_"
+      )
+
+    # Per-cube ELO: alpha + gamma per draw, then summarise
+    per_cube_elo <- alpha_draws_raw |>
+      inner_join(gamma_draws_raw |> select(.draw, player_nr, cube_nr, gamma),
+        by = c(".draw", "player_nr")
+      ) |>
+      mutate(elo = bt_to_elo(alpha + gamma)) |>
+      left_join(cube_types, by = "cube_nr") |>
+      summarise(
+        elo_median = round(median(elo)),
+        elo_q25 = round(quantile(elo, 0.25)),
+        elo_q75 = round(quantile(elo, 0.75)),
+        elo_lower = round(quantile(elo, 0.05)),
+        elo_upper = round(quantile(elo, 0.95)),
+        .by = c(player_nr, cube)
+      ) |>
+      pivot_wider(
+        names_from = cube,
+        values_from = c(elo_median, elo_q25, elo_q75, elo_lower, elo_upper),
+        names_glue = "{cube}_{.value}"
+      )
+
+    # Per-cube win/loss/total from processed_data
+    if (!is.null(processed_data)) {
+      per_cube_stats <- processed_data |>
+        select(cube, player1, player2, winner) |>
+        pivot_longer(c(player1, player2), names_to = NULL, values_to = "player") |>
+        mutate(win = as.integer(winner == player)) |>
+        summarise(
+          wins = sum(win),
+          losses = sum(1 - win),
+          total = wins + losses,
+          .by = c(player, cube)
+        ) |>
+        # Map player names back to player_nr
+        inner_join(players |> select(player_nr, player), by = "player") |>
+        select(-player) |>
+        pivot_wider(
+          names_from = cube,
+          values_from = c(wins, losses, total),
+          names_glue = "{cube}_{.value}"
+        )
+    }
+  }
 
   # Combine everything
   summary_df <- players |>
     select(player_nr, player, wins, losses, total) |>
-    left_join(alpha_draws, by = "player_nr") |>
-    left_join(gamma_draws, by = "player_nr") |>
+    left_join(alpha_summary, by = "player_nr")
+
+  if (!is.null(gamma_summary)) {
+    summary_df <- summary_df |> left_join(gamma_summary, by = "player_nr")
+  }
+  if (!is.null(per_cube_elo)) {
+    summary_df <- summary_df |> left_join(per_cube_elo, by = "player_nr")
+  }
+
+  if (!is.null(per_cube_stats)) {
+    summary_df <- summary_df |>
+      left_join(per_cube_stats, by = "player_nr")
+  }
+
+  summary_df <- summary_df |>
     arrange(desc(score_median))
 
   # Save CSV
@@ -549,20 +685,29 @@ render_score_table <- function(
 # Backward-compatible alias
 render_elo_table <- render_score_table
 
-#' Render an interactive score table using reactable
+#' Prepare ranking data for rendering
 #'
-#' Reuses the same data preparation as render_score_table() but outputs a
-#' searchable, sortable reactable widget instead of a static gt table.
-render_score_table_interactive <- function(
-    top_n = 10,
+#' Shared data preparation logic for both overall and per-cube rankings.
+#' Loads models, computes estimates, applies filters, and computes deltas.
+#'
+#' @param results_root Root directory for results
+#' @param fallback_dir Fallback directory
+#' @param min_total_games Minimum games to appear in table
+#' @param min_winrate Minimum win rate to appear in table
+#' @param max_absence_weeks Maximum weeks since last game
+#' @param table_players Optional character vector of eligible players
+#' @param cube_type Optional cube type name (e.g., "High", "Medium", "Low", "Other")
+#' @param top_n Maximum number of rows to return
+#' @return Data frame with estimates, deltas, and rankings
+prepare_ranking_data <- function(
     results_root = .default_results_root,
     fallback_dir = .default_fallback_dir,
     min_total_games = 0,
     min_winrate = 0.15,
     max_absence_weeks = 8,
     table_players = NULL,
-    newest_date = NULL) {
-  # --- Reuse same data preparation as render_score_table() ---
+    cube_type = NULL,
+    top_n = Inf) {
   latest <- load_results_set(
     rank = 1, results_root = results_root, fallback_dir = fallback_dir
   )
@@ -570,6 +715,9 @@ render_score_table_interactive <- function(
     rank = 2, results_root = results_root, fallback_dir = fallback_dir
   )
 
+  # Compute last game dates — always use overall data (not cube-specific)
+  # because cube categories rotate infrequently and the absence filter
+  # answers "is this player still active?" not "did they play this cube recently?"
   last_game_dates <- bind_rows(
     latest$processed_data |> select(player = player1, date),
     latest$processed_data |> select(player = player2, date)
@@ -580,9 +728,32 @@ render_score_table_interactive <- function(
   reference_date <- max(latest$processed_data$date)
   absence_cutoff <- reference_date - weeks(max_absence_weeks)
 
-  estimates <- compute_player_estimates(
-    fit = latest$fit, players = latest$players
-  ) |>
+  # Choose estimate function based on cube_type
+  if (!is.null(cube_type)) {
+    # Resolve cube_nr from processed_data
+    cube_nr <- latest$processed_data |>
+      filter(cube == cube_type) |>
+      pull(cube_nr) |>
+      unique()
+    if (length(cube_nr) == 0) {
+      stop("Cube type '", cube_type, "' not found in processed_data")
+    }
+    cube_nr <- cube_nr[1]
+
+    estimates <- compute_cube_estimates(
+      fit = latest$fit,
+      players = latest$players,
+      cube_nr = cube_nr,
+      processed_data = latest$processed_data,
+      cube_name = cube_type
+    )
+  } else {
+    estimates <- compute_player_estimates(
+      fit = latest$fit, players = latest$players
+    )
+  }
+
+  estimates <- estimates |>
     rename(score = median) |>
     left_join(last_game_dates, by = "player") |>
     mutate(player = fct_reorder(player, score)) |>
@@ -598,6 +769,7 @@ render_score_table_interactive <- function(
     mutate(nr = row_number()) |>
     select(-lower, -upper)
 
+  # Compute previous estimates for deltas
   if (!is.null(previous)) {
     prev_last_game_dates <- bind_rows(
       previous$processed_data |> select(player = player1, date),
@@ -609,24 +781,49 @@ render_score_table_interactive <- function(
     prev_reference_date <- max(previous$processed_data$date)
     prev_absence_cutoff <- prev_reference_date - weeks(max_absence_weeks)
 
-    previous_estimates <- compute_player_estimates(
-      fit = previous$fit, players = previous$players
-    ) |>
-      rename(score = median) |>
-      left_join(prev_last_game_dates, by = "player") |>
-      mutate(hlutf = wins / total) |>
-      arrange(desc(score)) |>
-      filter(
-        total >= min_total_games,
-        hlutf >= min_winrate,
-        is.null(table_players) | str_to_lower(player) %in% table_players,
-        is.null(max_absence_weeks) | last_game >= prev_absence_cutoff
-      ) |>
-      mutate(nr_prev = row_number()) |>
-      select(player, score_prev = score, nr_prev)
+    if (!is.null(cube_type)) {
+      prev_cube_nr <- previous$processed_data |>
+        filter(cube == cube_type) |>
+        pull(cube_nr) |>
+        unique()
+      if (length(prev_cube_nr) > 0) {
+        previous_estimates <- compute_cube_estimates(
+          fit = previous$fit,
+          players = previous$players,
+          cube_nr = prev_cube_nr[1],
+          processed_data = previous$processed_data,
+          cube_name = cube_type
+        )
+      } else {
+        previous_estimates <- NULL
+      }
+    } else {
+      previous_estimates <- compute_player_estimates(
+        fit = previous$fit, players = previous$players
+      )
+    }
 
-    estimates <- estimates |>
-      left_join(previous_estimates, by = "player")
+    if (!is.null(previous_estimates)) {
+      previous_estimates <- previous_estimates |>
+        rename(score = median) |>
+        left_join(prev_last_game_dates, by = "player") |>
+        mutate(hlutf = wins / total) |>
+        arrange(desc(score)) |>
+        filter(
+          total >= min_total_games,
+          hlutf >= min_winrate,
+          is.null(table_players) | str_to_lower(player) %in% table_players,
+          is.null(max_absence_weeks) | last_game >= prev_absence_cutoff
+        ) |>
+        mutate(nr_prev = row_number()) |>
+        select(player, score_prev = score, nr_prev)
+
+      estimates <- estimates |>
+        left_join(previous_estimates, by = "player")
+    } else {
+      estimates <- estimates |>
+        mutate(score_prev = NA_real_, nr_prev = NA_integer_)
+    }
   } else {
     estimates <- estimates |>
       mutate(score_prev = NA_real_, nr_prev = NA_integer_)
@@ -644,6 +841,78 @@ render_score_table_interactive <- function(
     estimates <- estimates |> filter(nr <= top_n)
   }
 
+  estimates
+}
+
+#' Render an interactive score table using reactable
+#'
+#' Reuses the same data preparation as render_score_table() but outputs a
+#' searchable, sortable reactable widget instead of a static gt table.
+render_score_table_interactive <- function(
+    top_n = 10,
+    results_root = .default_results_root,
+    fallback_dir = .default_fallback_dir,
+    min_total_games = 0,
+    min_winrate = 0.15,
+    max_absence_weeks = 8,
+    table_players = NULL,
+    newest_date = NULL) {
+  estimates <- prepare_ranking_data(
+    results_root = results_root,
+    fallback_dir = fallback_dir,
+    min_total_games = min_total_games,
+    min_winrate = min_winrate,
+    max_absence_weeks = max_absence_weeks,
+    table_players = table_players,
+    top_n = top_n
+  )
+
+  build_ranking_reactable(estimates, newest_date)
+}
+
+#' Render a cube-specific interactive score table
+#'
+#' Thin wrapper around prepare_ranking_data() + the reactable builder from
+#' render_score_table_interactive(). Uses per-cube ELO (alpha + gamma) and
+#' per-cube win/loss counts. Lower default min_total_games since games are
+#' split across cube categories.
+#'
+#' @param cube_type Cube category name: "High", "Medium", "Low", or "Other"
+#' @inheritParams render_score_table_interactive
+render_cube_score_table_interactive <- function(
+    cube_type,
+    top_n = Inf,
+    results_root = .default_results_root,
+    fallback_dir = .default_fallback_dir,
+    min_total_games = 3,
+    min_winrate = 0.0,
+    max_absence_weeks = 8,
+    table_players = NULL,
+    newest_date = NULL) {
+  estimates <- prepare_ranking_data(
+    results_root = results_root,
+    fallback_dir = fallback_dir,
+    min_total_games = min_total_games,
+    min_winrate = min_winrate,
+    max_absence_weeks = max_absence_weeks,
+    table_players = table_players,
+    cube_type = cube_type,
+    top_n = top_n
+  )
+
+  # Build reactable using shared builder
+  build_ranking_reactable(estimates, newest_date)
+}
+
+#' Build reactable widget from prepared ranking estimates
+#'
+#' Shared rendering logic used by both render_score_table_interactive() and
+#' render_cube_score_table_interactive().
+#'
+#' @param estimates Data frame from prepare_ranking_data()
+#' @param newest_date Optional date string for subtitle
+#' @return An htmltools tag or reactable widget
+build_ranking_reactable <- function(estimates, newest_date = NULL) {
   # --- Prepare display data ---
   display_df <- estimates |>
     mutate(
@@ -657,24 +926,23 @@ render_score_table_interactive <- function(
     )
 
   # Delta cell renderer: colored pill badge with arrow
-
   render_delta_cell <- function(value) {
     if (is.na(value)) {
-      return(span(style = "color: #b0a99f;", "\u2013"))
+      return(span(style = "color: #4a4640;", "\u2013"))
     }
     if (value == 0) {
-      return(span(style = "color: #b0a99f; font-size: 12px;", "\u2014"))
+      return(span(style = "color: #4a4640; font-size: 12px;", "\u2014"))
     }
 
     if (value > 0) {
       arrow <- "\u25B2"
-      color <- "#00733e"
-      bg <- "rgba(0, 115, 62, 0.08)"
+      color <- "#2ecc71"
+      bg <- "rgba(46, 204, 113, 0.10)"
       label <- paste0("+", value)
     } else {
       arrow <- "\u25BC"
-      color <- "#d3202a"
-      bg <- "rgba(211, 32, 42, 0.08)"
+      color <- "#e74c3c"
+      bg <- "rgba(231, 76, 60, 0.10)"
       label <- as.character(value)
     }
 
@@ -716,26 +984,30 @@ render_score_table_interactive <- function(
       }
     },
     theme = reactableTheme(
-      color = "#2a1f14",
-      stripedColor = "rgba(42, 31, 20, 0.025)",
-      highlightColor = "#e8f1f8",
+      color = "#c8c4bc",
+      backgroundColor = "transparent",
+      stripedColor = "rgba(255, 255, 255, 0.015)",
+      highlightColor = "rgba(59, 158, 221, 0.08)",
       cellPadding = "10px 8px",
+      borderColor = "rgba(255, 255, 255, 0.06)",
       headerStyle = list(
         fontWeight = "bold",
         fontSize = "12px",
-        color = "#5c4f42",
+        color = "#7a7670",
         textTransform = "uppercase",
         letterSpacing = "0.03em",
-        borderBottom = "2px solid #0e68ab",
+        borderBottom = "2px solid rgba(212, 168, 67, 0.3)",
         textAlign = "center",
         padding = "8px 8px 10px"
       ),
       searchInputStyle = list(
-        border = "1px solid #d4cfc9",
+        border = "1px solid rgba(255, 255, 255, 0.08)",
         borderRadius = "8px",
         padding = "8px 12px 8px 32px",
         fontSize = "14px",
-        width = "220px"
+        width = "220px",
+        background = "rgba(255, 255, 255, 0.04)",
+        color = "#c8c4bc"
       )
     ),
     columns = list(
@@ -750,7 +1022,7 @@ render_score_table_interactive <- function(
         name = "S",
         width = 55,
         style = list(
-          color = "#00733e",
+          color = "#2ecc71",
           fontWeight = 600,
           fontVariantNumeric = "tabular-nums"
         )
@@ -759,7 +1031,7 @@ render_score_table_interactive <- function(
         name = "T",
         width = 55,
         style = list(
-          color = "#d3202a",
+          color = "#e74c3c",
           fontWeight = 600,
           fontVariantNumeric = "tabular-nums"
         )
@@ -770,23 +1042,22 @@ render_score_table_interactive <- function(
         align = "center",
         cell = function(value) {
           width <- paste0(value, "%")
-          # Smooth gradient: red(<=35%) -> neutral(50%) -> green(>=65%)
-          t <- min(1, max(0, (value - 35) / 30)) # 0 at 35%, 1 at 65%
-          r_col <- round(211 - t * 211) # 211 -> 0
-          g_col <- round(32 + t * (115 - 32)) # 32 -> 115
-          b_col <- round(42 + t * (62 - 42)) # 42 -> 62
+          t <- min(1, max(0, (value - 35) / 30))
+          r_col <- round(231 - t * (231 - 46))
+          g_col <- round(76 + t * (204 - 76))
+          b_col <- round(60 + t * (113 - 60))
           bar_color <- sprintf("rgb(%d, %d, %d)", r_col, g_col, b_col)
           div(
             style = "display: flex; align-items: center; gap: 6px;",
             div(
-              style = "flex: 1; height: 6px; background: #eae6e1; border-radius: 3px; overflow: hidden;",
+              style = "flex: 1; height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden;",
               div(style = paste0(
                 "height: 100%; width: ", width, "; background: ", bar_color,
                 "; border-radius: 3px;"
               ))
             ),
             span(
-              style = "font-size: 12px; color: #5c4f42; min-width: 30px; text-align: right; font-variant-numeric: tabular-nums;",
+              style = "font-size: 12px; color: #7a7670; min-width: 30px; text-align: right; font-variant-numeric: tabular-nums;",
               paste0(value, "%")
             )
           )
@@ -798,14 +1069,14 @@ render_score_table_interactive <- function(
         style = list(
           fontWeight = 700,
           fontSize = "18px",
-          color = "#2a1f14",
+          color = "#e8e4dc",
           fontVariantNumeric = "tabular-nums"
         )
       ),
       score_prev = colDef(
         name = "Fyrra",
         width = 70,
-        style = list(color = "#5c4f42", fontSize = "13px"),
+        style = list(color = "#7a7670", fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       score_delta = colDef(
@@ -816,7 +1087,7 @@ render_score_table_interactive <- function(
       nr_prev = colDef(
         name = "Fyrra",
         width = 65,
-        style = list(color = "#5c4f42", fontSize = "13px"),
+        style = list(color = "#7a7670", fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       rank_delta = colDef(
@@ -837,12 +1108,11 @@ render_score_table_interactive <- function(
     )
   )
 
-  # Wrap with subtitle if newest_date provided
   if (!is.null(newest_date)) {
     htmltools::div(
       htmltools::p(
         paste("Uppf\u00e6rt", newest_date),
-        style = "color: #5c4f42; font-size: 13px; margin-bottom: 8px;"
+        style = "color: #7a7670; font-size: 13px; margin-bottom: 8px;"
       ),
       tbl
     )
@@ -893,11 +1163,16 @@ backfill_player_summaries <- function(
     players <- readRDS(file.path(result_dir, "players.rds"))
     cube_types <- readRDS(file.path(result_dir, "cube_types.rds"))
 
+    # Load processed_data for per-cube win/loss stats
+    pd_path <- file.path(result_dir, "processed_data.rds")
+    pd <- if (file.exists(pd_path)) readRDS(pd_path) else NULL
+
     save_player_summary_csv(
       fit = fit,
       players = players,
       cube_types = cube_types,
-      output_dir = result_dir
+      output_dir = result_dir,
+      processed_data = pd
     )
 
     processed <- c(processed, result_dir)
