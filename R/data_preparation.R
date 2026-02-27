@@ -75,7 +75,8 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
             "meta memories",
             "modern stories",
             "synergy cube",
-            "bar cube"
+            "bar cube",
+            "horror cube"
           ) ~ "Medium",
         cube %in%
           c(
@@ -84,7 +85,8 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
             "old border cube",
             "pauper cube",
             "ab wheel",
-            "horror cube"
+            "that's totally uncommon",
+            "thats totally uncommon"
           ) ~ "Low",
         TRUE ~ "Other"
       ),
