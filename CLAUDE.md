@@ -34,6 +34,8 @@ Google Sheets → `download_cube_results()` → `prepare_cube_data()` → `fit_c
 - `results/` — per-date RDS model fits + `player_summary.csv`
 - `plots/` — PNG visualizations
 
+**Gitignored (large binaries):** `data/fitted_model*.rds`, `data/stan_data*.rds`, `results/*/fitted_model.rds`, compiled Stan binaries in `stan/`
+
 ## Conventions
 
 - ELO scale: `bt_to_elo()` converts Bradley-Terry logit to ELO centered at 1500
