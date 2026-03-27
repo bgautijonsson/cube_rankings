@@ -856,7 +856,8 @@ render_score_table_interactive <- function(
     min_winrate = 0.15,
     max_absence_weeks = 8,
     table_players = NULL,
-    newest_date = NULL) {
+    newest_date = NULL,
+    labels = ranking_table_labels("is")) {
   estimates <- prepare_ranking_data(
     results_root = results_root,
     fallback_dir = fallback_dir,
@@ -867,7 +868,7 @@ render_score_table_interactive <- function(
     top_n = top_n
   )
 
-  build_ranking_reactable(estimates, newest_date)
+  build_ranking_reactable(estimates, newest_date, labels)
 }
 
 #' Render a cube-specific interactive score table
@@ -888,7 +889,8 @@ render_cube_score_table_interactive <- function(
     min_winrate = 0.0,
     max_absence_weeks = 8,
     table_players = NULL,
-    newest_date = NULL) {
+    newest_date = NULL,
+    labels = ranking_table_labels("is")) {
   estimates <- prepare_ranking_data(
     results_root = results_root,
     fallback_dir = fallback_dir,
@@ -901,7 +903,7 @@ render_cube_score_table_interactive <- function(
   )
 
   # Build reactable using shared builder
-  build_ranking_reactable(estimates, newest_date)
+  build_ranking_reactable(estimates, newest_date, labels)
 }
 
 #' Build reactable widget from prepared ranking estimates
@@ -911,8 +913,12 @@ render_cube_score_table_interactive <- function(
 #'
 #' @param estimates Data frame from prepare_ranking_data()
 #' @param newest_date Optional date string for subtitle
+#' @param labels Named character vector from ranking_table_labels()
 #' @return An htmltools tag or reactable widget
-build_ranking_reactable <- function(estimates, newest_date = NULL) {
+build_ranking_reactable <- function(
+    estimates,
+    newest_date = NULL,
+    labels = ranking_table_labels("is")) {
   # --- Prepare display data ---
   display_df <- estimates |>
     mutate(
@@ -964,7 +970,7 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
   tbl <- reactable(
     display_df,
     searchable = FALSE,
-    language = reactableLang(searchPlaceholder = "Leita..."),
+    language = reactableLang(searchPlaceholder = labels[["search_placeholder"]]),
     defaultSorted = list(),
     defaultPageSize = nrow(display_df),
     showPagination = FALSE,
@@ -998,14 +1004,14 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
     ),
     columns = list(
       player_display = colDef(
-        name = "Leikma\u00f0ur",
+        name = labels[["player"]],
         align = "left",
         headerStyle = list(textAlign = "left"),
         minWidth = 175,
         style = list(fontWeight = 500, textAlign = "left")
       ),
       wins = colDef(
-        name = "S",
+        name = labels[["wins"]],
         width = 55,
         style = list(
           color = "#2ecc71",
@@ -1014,7 +1020,7 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
         )
       ),
       losses = colDef(
-        name = "T",
+        name = labels[["losses"]],
         width = 55,
         style = list(
           color = "#e74c3c",
@@ -1023,7 +1029,7 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
         )
       ),
       hlutf_pct = colDef(
-        name = "%",
+        name = labels[["win_rate_short"]],
         minWidth = 110,
         align = "center",
         cell = function(value) {
@@ -1050,7 +1056,7 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
         }
       ),
       score = colDef(
-        name = "ELO",
+        name = labels[["elo"]],
         width = 80,
         class = "score-elo-cell",
         style = list(
@@ -1060,37 +1066,37 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
         )
       ),
       score_prev = colDef(
-        name = "Fyrra",
+        name = labels[["previous"]],
         width = 70,
         class = "score-prev-cell",
         style = list(fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       score_delta = colDef(
-        name = "\u00b1",
+        name = labels[["delta"]],
         width = 70,
         cell = function(value) render_delta_cell(value)
       ),
       nr_prev = colDef(
-        name = "Fyrra",
+        name = labels[["previous"]],
         width = 65,
         class = "score-prev-cell",
         style = list(fontSize = "13px"),
         cell = function(value) if (is.na(value)) "\u2013" else value
       ),
       rank_delta = colDef(
-        name = "\u00b1",
+        name = labels[["delta"]],
         width = 70,
         cell = function(value) render_delta_cell(value)
       )
     ),
     columnGroups = list(
       colGroup(
-        name = "ELO",
+        name = labels[["elo_group"]],
         columns = c("score", "score_prev", "score_delta")
       ),
       colGroup(
-        name = "S\u00e6ti",
+        name = labels[["rank_group"]],
         columns = c("nr_prev", "rank_delta")
       )
     )
@@ -1099,7 +1105,7 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
   if (!is.null(newest_date)) {
     htmltools::div(
       htmltools::p(
-        paste("Uppf\u00e6rt", newest_date),
+        paste(labels[["updated_prefix"]], newest_date),
         style = "color: #7a7670; font-size: 13px; margin-bottom: 8px;"
       ),
       tbl
@@ -1107,6 +1113,40 @@ build_ranking_reactable <- function(estimates, newest_date = NULL) {
   } else {
     tbl
   }
+}
+
+ranking_table_labels <- function(language = c("is", "en")) {
+  language <- match.arg(language)
+
+  switch(
+    language,
+    is = c(
+      search_placeholder = "Leita...",
+      player = "Leikmaður",
+      wins = "S",
+      losses = "T",
+      win_rate_short = "%",
+      elo = "ELO",
+      previous = "Fyrra",
+      delta = "\u00b1",
+      elo_group = "ELO",
+      rank_group = "S\u00e6ti",
+      updated_prefix = "Uppf\u00e6rt"
+    ),
+    en = c(
+      search_placeholder = "Search...",
+      player = "Player",
+      wins = "W",
+      losses = "L",
+      win_rate_short = "%",
+      elo = "ELO",
+      previous = "Prev",
+      delta = "\u00b1",
+      elo_group = "ELO",
+      rank_group = "Rank",
+      updated_prefix = "Updated"
+    )
+  )
 }
 
 #' Backfill player summary CSVs for existing results directories
