@@ -10,9 +10,12 @@ Rscript run_analysis.R
 
 # Historical analysis: fits model per game date (incremental, skips existing)
 Rscript run_historical_analysis.R
+
+# Backfill player summaries for existing result folders
+Rscript backfill_summaries.R
 ```
 
-Requires `GOOGLE_MAIL` environment variable for Google Sheets authentication.
+Set `GOOGLE_MAIL` before any command that needs Google Sheets access.
 
 ## Data Pipeline
 
@@ -22,6 +25,7 @@ Google Sheets → `download_cube_results()` → `prepare_cube_data()` → `fit_c
 - `R/model_fitting.R` — cmdstanr wrapper for Stan models
 - `R/visualization.R` — ggplot2-based ranking plots
 - `R/elo_table.R` — ELO conversion and player opt-in filtering
+- `R/data_check.R` — sanity checks for processed data
 
 ## Stan Models
 
@@ -31,18 +35,20 @@ Google Sheets → `download_cube_results()` → `prepare_cube_data()` → `fit_c
 
 ## Output
 
-- `results/` — per-date RDS model fits + `player_summary.csv`
+- `results/<date>/` — per-date RDS model fits + `player_summary.csv`
 - `plots/` — PNG visualizations
+- `data/` — cached processed inputs (`processed_data.rds`, `players.rds`, `game_dates.rds`)
 
-**Gitignored (large binaries):** `data/fitted_model*.rds`, `data/stan_data*.rds`, `results/*/fitted_model.rds`, compiled Stan binaries in `stan/`
+Large fitted artifacts and compiled Stan binaries are gitignored. Do not commit regenerated binaries.
 
 ## Conventions
 
-- ELO scale: `bt_to_elo()` converts Bradley-Terry logit to ELO centered at 1500
+- ELO scale: `bt_to_elo()` converts Bradley-Terry logit to ELO centred at 1500
 - Cube power categories: "High" (vintage), "Medium" (modern), "Low" (limited/pauper)
+- Historical runs should be executed before rebuilding any downstream site that depends on `results/`
 
 ## Dependencies
 
 **R packages:** tidyverse, cmdstanr, posterior, googlesheets4, ggplot2, ggtext, bayesplot, gt
 
-**Stan:** Pre-compiled models in `stan/`
+**Stan:** Pre-compiled models in `stan/`; rebuild only if model code changes
