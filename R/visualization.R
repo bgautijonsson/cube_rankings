@@ -74,27 +74,23 @@ render_visualizations <- function(
       ),
       linewidth = 3
     ) +
-    geom_richtext(
+    geom_text(
       data = tibble(x = 1),
       inherit.aes = FALSE,
       x = -2,
       y = -Inf,
-      label.colour = NA,
-      fill = NA,
-      label = "&larr; Lægri mat á styrk",
+      label = "\u2190 L\u00e6gri mat \u00e1 styrk",
       hjust = 0,
       vjust = 0.8,
       size = 4.5,
       colour = "#5c4f42"
     ) +
-    geom_richtext(
+    geom_text(
       data = tibble(x = 1),
       inherit.aes = FALSE,
       x = 2,
       y = -Inf,
-      label.colour = NA,
-      fill = NA,
-      label = "Hærri mat á styrk &rarr;",
+      label = "H\u00e6rri mat \u00e1 styrk \u2192",
       hjust = 1,
       vjust = 0.8,
       size = 4.5,
@@ -107,7 +103,7 @@ render_visualizations <- function(
     scale_x_continuous(
       guide = guide_axis(cap = "both"),
       breaks = 0,
-      labels = "Meðaltal allra leikmanna"
+      labels = "Me<U+00F0>altal allra leikmanna"
     ) +
     scale_y_discrete(
       guide = guide_axis(cap = "both")
@@ -118,8 +114,8 @@ render_visualizations <- function(
       plot.margin = margin(5, 10, 5, 5)
     ) +
     labs(
-      title = "Mat á styrk leikmanna",
-      subtitle = "Lóðrétt strik eru miðgildi matsins og kassar óvissubil",
+      title = "Mat <U+00E1> styrk leikmanna",
+      subtitle = "L<U+00F3><U+00F0>r<U+00E9>tt strik eru mi<U+00F0>gildi matsins og kassar <U+00F3>vissubil",
       x = NULL,
       y = NULL
     )
@@ -175,10 +171,10 @@ render_visualizations <- function(
     ) +
     theme(legend.position = "none") +
     labs(
-      x = "Sæti í röð",
+      x = "S<U+00E6>ti <U+00ED> r<U+00F6><U+00F0>",
       y = NULL,
-      title = "Hversu líklegt er að leikmaður eigi heima í ákveðnu sæti raðað eftir styrk?",
-      subtitle = "Því fylgir óvissa að raða fólki eftir styrk og því gæti einstaklingur átt heima í mörgum mismunandi sætum"
+      title = "Hversu l<U+00ED>klegt er a<U+00F0> leikma<U+00F0>ur eigi heima <U+00ED> <U+00E1>kve<U+00F0>nu s<U+00E6>ti ra<U+00F0>a<U+00F0> eftir styrk?",
+      subtitle = "<U+00DE>v<U+00ED> fylgir <U+00F3>vissa a<U+00F0> ra<U+00F0>a f<U+00F3>lki eftir styrk og <U+00FE>v<U+00ED> g<U+00E6>ti einstaklingur <U+00E1>tt heima <U+00ED> m<U+00F6>rgum mismunandi s<U+00E6>tum"
     )
 
   plot_dat <- fit$draws("gamma") |>
@@ -228,15 +224,15 @@ render_visualizations <- function(
         "Hjalti",
         "Binni"
         # "Aron Freyr",
-        # "Örvar",
+        # "<U+00D6>rvar",
         # "Aron Gauti",
         # "Aron Elvar",
-        # "Aron Ívars",
+        # "Aron <U+00CD>vars",
         # "Einar",
-        # "Daníel",
+        # "Dan<U+00ED>el",
         # "Oddur"
       )
-    ) |> 
+    ) |>
     ggplot(aes(median, cube)) +
     geom_vline(
       xintercept = 0,
@@ -264,7 +260,7 @@ render_visualizations <- function(
     scale_x_continuous(
       guide = guide_axis(cap = "both"),
       breaks = 0,
-      labels = "Meðalgeta í öllum kubbum"
+      labels = "Me<U+00F0>algeta <U+00ED> <U+00F6>llum kubbum"
     ) +
     scale_y_discrete(
       guide = guide_axis(cap = "both")
@@ -276,11 +272,11 @@ render_visualizations <- function(
       plot.margin = margin(5, 10, 5, 5)
     ) +
     labs(
-      title = "Mat á styrk leikmanna eftir kubb",
-      subtitle = "Lóðrétt strik eru miðgildi matsins og kassar óvissubil",
+      title = "Mat <U+00E1> styrk leikmanna eftir kubb",
+      subtitle = "L<U+00F3><U+00F0>r<U+00E9>tt strik eru mi<U+00F0>gildi matsins og kassar <U+00F3>vissubil",
       x = NULL,
       y = NULL,
-      caption = "Other = Kubbar sem breyta reglum eða eru ófyrirsjáanlegir. T.d. Genesis Cube, Turbo Cube, Stone Soup Cube"
+      caption = "Other = Kubbar sem breyta reglum e<U+00F0>a eru <U+00F3>fyrirsj<U+00E1>anlegir. T.d. Genesis Cube, Turbo Cube, Stone Soup Cube"
     )
 
   ggsave(
@@ -425,8 +421,8 @@ render_temporal_evolution <- function(
     ) +
     scale_colour_mtg() +
     labs(
-      title = "Þróun í mati á styrk leikmanna",
-      subtitle = "Skor frá 0 (veikastur) til 100 (sterkastur) á hverjum tímapunkti.",
+      title = "<U+00DE>r<U+00F3>un <U+00ED> mati <U+00E1> styrk leikmanna",
+      subtitle = "Skor fr<U+00E1> 0 (veikastur) til 100 (sterkastur) <U+00E1> hverjum t<U+00ED>mapunkti.",
       x = NULL,
       y = "Skor",
       col = NULL
@@ -440,7 +436,7 @@ render_temporal_evolution <- function(
     geom_ribbon(aes(ymin = lower50, ymax = upper50), fill = "#0e68ab", alpha = 0.3) +
     geom_line(linewidth = 0.8) +
     geom_point(
-      data = ~filter(.x, date == max(date)),
+      data = ~ filter(.x, date == max(date)),
       size = 2
     ) +
     facet_wrap(~player, ncol = 3) +
@@ -454,8 +450,8 @@ render_temporal_evolution <- function(
       guide = guide_axis(cap = "both")
     ) +
     labs(
-      title = "Þróun í mati á styrk leikmanna",
-      subtitle = "Skyggð svæði sýna 50% og 90% óvissubil. Skor: 0 = veikastur, 100 = sterkastur.",
+      title = "<U+00DE>r<U+00F3>un <U+00ED> mati <U+00E1> styrk leikmanna",
+      subtitle = "Skygg<U+00F0> sv<U+00E6><U+00F0>i s<U+00FD>na 50% og 90% <U+00F3>vissubil. Skor: 0 = veikastur, 100 = sterkastur.",
       x = NULL,
       y = "Skor"
     )
@@ -476,10 +472,10 @@ render_temporal_evolution <- function(
     scale_x_continuous(guide = guide_axis(cap = "both")) +
     scale_y_continuous(guide = guide_axis(cap = "both")) +
     labs(
-      title = "Dreifing á σ (sveiflur í styrk)",
-      subtitle = glue::glue("Miðgildi: {round(median(sigma_draws), 3)}"),
-      x = "σ",
-      y = "Fjöldi"
+      title = "Dreifing <U+00E1> <U+03C3> (sveiflur <U+00ED> styrk)",
+      subtitle = glue::glue("Mi<U+00F0>gildi: {round(median(sigma_draws), 3)}"),
+      x = "<U+03C3>",
+      y = "Fj<U+00F6>ldi"
     )
 
   ggsave(
