@@ -6,8 +6,9 @@ theme_set(theme_mtgkubbur())
 .sheet_url <- "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit?usp=sharing"
 
 download_cube_results <- function(
-    sheet_url = .sheet_url,
-    email = Sys.getenv("GOOGLE_MAIL")) {
+  sheet_url = .sheet_url,
+  email = Sys.getenv("GOOGLE_MAIL")
+) {
   gs4_auth(email = email)
   read_sheet(sheet_url)
 }
@@ -66,28 +67,38 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
       cube = case_when(
         cube %in%
           c(
-            "vintage cube",
-            "bolti vintage cube",
-            "nerva's cube"
+            "bolti",
+            "nerva's cube",
+            "vintage aron",
+            "vintage ingvi",
+            "vintage victor"
           ) ~ "High",
         cube %in%
           c(
             "meta memories",
             "modern stories",
             "synergy cube",
-            "bar cube",
-            "horror cube"
+            "horror cube",
+            "final destination",
+            "flashdance!"
           ) ~ "Medium",
         cube %in%
           c(
             "khans cube",
             "kaldheim cube",
             "old border cube",
-            "pauper cube",
-            "ab wheel",
-            "that's totally uncommon",
-            "thats totally uncommon"
+            "pauper cube diddi",
+            "pauper cube victor",
+            "the ab wheel",
+            "that's totally uncommon"
           ) ~ "Low",
+        cube %in%
+          c(
+            "stone soup cube",
+            "boltalandið",
+            "genesis",
+            "super turbo time"
+          ) ~ "Other",
         TRUE ~ "Other"
       ),
       cube_nr = as.numeric(as.factor(cube))
@@ -210,10 +221,11 @@ save_prepared_datasets <- function(datasets, output_dir = "data") {
 }
 
 run_data_preparation <- function(
-    output_dir = "data",
-    sheet_url = .sheet_url,
-    email = Sys.getenv("GOOGLE_MAIL"),
-    save_outputs = TRUE) {
+  output_dir = "data",
+  sheet_url = .sheet_url,
+  email = Sys.getenv("GOOGLE_MAIL"),
+  save_outputs = TRUE
+) {
   d_raw <- download_cube_results(sheet_url = sheet_url, email = email)
   datasets <- prepare_cube_data(d_raw)
 
