@@ -57,9 +57,10 @@ list_results_dirs <- function(results_root = .default_results_root) {
 #' since the model contains the full time series internally.
 #' The 'previous' comparison uses alpha at T-1 from the same model.
 load_results_set <- function(
-    rank = 1,
-    results_root = .default_results_root,
-    fallback_dir = .default_fallback_dir) {
+  rank = 1,
+  results_root = .default_results_root,
+  fallback_dir = .default_fallback_dir
+) {
   dirs <- list_results_dirs(results_root)
 
   if (length(dirs) >= rank) {
@@ -226,7 +227,7 @@ compute_cube_estimates <- function(fit, players, cube_nr, processed_data, cube_n
     mutate(player_nr = parse_number(param))
 
   # Extract gamma draws for this specific cube type
-  # gamma[k, c] — we want column c = cube_nr for all players k
+  # gamma[k, c] <U+2014> we want column c = cube_nr for all players k
   gamma_draws <- fit$draws("gamma", format = "draws_df") |>
     as_tibble() |>
     select(matches(paste0("gamma\\[\\d+,", cube_nr, "\\]")), .draw) |>
@@ -323,12 +324,13 @@ normalize_to_score <- function(fit, param = "alpha_current") {
 #' @param filename Name of the CSV file (default: "player_summary.csv")
 #' @return Invisibly returns the summary data frame
 save_player_summary_csv <- function(
-    fit,
-    players,
-    cube_types,
-    output_dir,
-    processed_data = NULL,
-    filename = "player_summary.csv") {
+  fit,
+  players,
+  cube_types,
+  output_dir,
+  processed_data = NULL,
+  filename = "player_summary.csv"
+) {
   # Extract alpha_current draws (keep .draw for per-cube ELO computation)
   alpha_draws_raw <- fit$draws("alpha_current", format = "draws_df") |>
     as_tibble() |>
@@ -461,14 +463,15 @@ save_player_summary_csv <- function(
 }
 
 render_score_table <- function(
-    top_n = 10,
-    results_root = .default_results_root,
-    fallback_dir = .default_fallback_dir,
-    min_total_games = 0,
-    min_winrate = 0.15,
-    max_absence_weeks = 8,
-    table_players = NULL,
-    newest_date = NULL) {
+  top_n = 10,
+  results_root = .default_results_root,
+  fallback_dir = .default_fallback_dir,
+  min_total_games = 0,
+  min_winrate = 0.15,
+  max_absence_weeks = 8,
+  table_players = NULL,
+  newest_date = NULL
+) {
   # Load latest and previous date's models
   # Always compare to previous date's model (not T-1 from same model)
   # because temporal models can shift historical estimates with new data
@@ -606,16 +609,16 @@ render_score_table <- function(
     cols_move(nr_prev, after = nr) |>
     cols_move(rank_delta_label, after = nr_prev) |>
     cols_label(
-      player = "Leikmaður",
+      player = "Leikma<U+00F0>ur",
       wins = "S",
       losses = "T",
       hlutf = "%",
       score = "ELO",
       score_prev = "Fyrra",
-      score_delta_label = "±",
+      score_delta_label = "<U+00B1>",
       nr = "#",
       nr_prev = "Fyrra",
-      rank_delta_label = "±"
+      rank_delta_label = "<U+00B1>"
     ) |>
     cols_align(columns = player, align = "left") |>
     cols_align(columns = -player, align = "center") |>
@@ -626,13 +629,13 @@ render_score_table <- function(
     sub_missing(missing_text = "-") |>
     # Clean minimal styling
     tab_header(
-      title = if (!is.null(newest_date)) glue("Uppfært {newest_date}") else NULL
+      title = if (!is.null(newest_date)) glue("Uppf<U+00E6>rt {newest_date}") else NULL
     ) |>
     tab_spanner(
       label = "ELO",
       columns = c(score, score_prev, score_delta_label)
     ) |>
-    tab_spanner(label = "Sæti", columns = c(nr_prev, rank_delta_label)) |>
+    tab_spanner(label = "S<U+00E6>ti", columns = c(nr_prev, rank_delta_label)) |>
     # Style positive/negative changes - muted green/red
     tab_style(
       locations = cells_body(
@@ -700,14 +703,15 @@ render_elo_table <- render_score_table
 #' @param top_n Maximum number of rows to return
 #' @return Data frame with estimates, deltas, and rankings
 prepare_ranking_data <- function(
-    results_root = .default_results_root,
-    fallback_dir = .default_fallback_dir,
-    min_total_games = 0,
-    min_winrate = 0.15,
-    max_absence_weeks = 8,
-    table_players = NULL,
-    cube_type = NULL,
-    top_n = Inf) {
+  results_root = .default_results_root,
+  fallback_dir = .default_fallback_dir,
+  min_total_games = 0,
+  min_winrate = 0.15,
+  max_absence_weeks = 8,
+  table_players = NULL,
+  cube_type = NULL,
+  top_n = Inf
+) {
   latest <- load_results_set(
     rank = 1, results_root = results_root, fallback_dir = fallback_dir
   )
@@ -715,7 +719,7 @@ prepare_ranking_data <- function(
     rank = 2, results_root = results_root, fallback_dir = fallback_dir
   )
 
-  # Compute last game dates — always use overall data (not cube-specific)
+  # Compute last game dates <U+2014> always use overall data (not cube-specific)
   # because cube categories rotate infrequently and the absence filter
   # answers "is this player still active?" not "did they play this cube recently?"
   last_game_dates <- bind_rows(
@@ -849,15 +853,16 @@ prepare_ranking_data <- function(
 #' Reuses the same data preparation as render_score_table() but outputs a
 #' searchable, sortable reactable widget instead of a static gt table.
 render_score_table_interactive <- function(
-    top_n = 10,
-    results_root = .default_results_root,
-    fallback_dir = .default_fallback_dir,
-    min_total_games = 0,
-    min_winrate = 0.15,
-    max_absence_weeks = 8,
-    table_players = NULL,
-    newest_date = NULL,
-    labels = ranking_table_labels("is")) {
+  top_n = 10,
+  results_root = .default_results_root,
+  fallback_dir = .default_fallback_dir,
+  min_total_games = 0,
+  min_winrate = 0.15,
+  max_absence_weeks = 8,
+  table_players = NULL,
+  newest_date = NULL,
+  labels = ranking_table_labels("is")
+) {
   estimates <- prepare_ranking_data(
     results_root = results_root,
     fallback_dir = fallback_dir,
@@ -881,16 +886,17 @@ render_score_table_interactive <- function(
 #' @param cube_type Cube category name: "High", "Medium", "Low", or "Other"
 #' @inheritParams render_score_table_interactive
 render_cube_score_table_interactive <- function(
-    cube_type,
-    top_n = Inf,
-    results_root = .default_results_root,
-    fallback_dir = .default_fallback_dir,
-    min_total_games = 3,
-    min_winrate = 0.0,
-    max_absence_weeks = 8,
-    table_players = NULL,
-    newest_date = NULL,
-    labels = ranking_table_labels("is")) {
+  cube_type,
+  top_n = Inf,
+  results_root = .default_results_root,
+  fallback_dir = .default_fallback_dir,
+  min_total_games = 3,
+  min_winrate = 0.0,
+  max_absence_weeks = 8,
+  table_players = NULL,
+  newest_date = NULL,
+  labels = ranking_table_labels("is")
+) {
   estimates <- prepare_ranking_data(
     results_root = results_root,
     fallback_dir = fallback_dir,
@@ -916,9 +922,10 @@ render_cube_score_table_interactive <- function(
 #' @param labels Named character vector from ranking_table_labels()
 #' @return An htmltools tag or reactable widget
 build_ranking_reactable <- function(
-    estimates,
-    newest_date = NULL,
-    labels = ranking_table_labels("is")) {
+  estimates,
+  newest_date = NULL,
+  labels = ranking_table_labels("is")
+) {
   # --- Prepare display data ---
   display_df <- estimates |>
     mutate(
@@ -1013,20 +1020,12 @@ build_ranking_reactable <- function(
       wins = colDef(
         name = labels[["wins"]],
         width = 55,
-        style = list(
-          color = "#2ecc71",
-          fontWeight = 600,
-          fontVariantNumeric = "tabular-nums"
-        )
+        class = "wins-col"
       ),
       losses = colDef(
         name = labels[["losses"]],
         width = 55,
-        style = list(
-          color = "#e74c3c",
-          fontWeight = 600,
-          fontVariantNumeric = "tabular-nums"
-        )
+        class = "losses-col"
       ),
       hlutf_pct = colDef(
         name = labels[["win_rate_short"]],
@@ -1049,7 +1048,7 @@ build_ranking_reactable <- function(
               ))
             ),
             span(
-              style = "font-size: 12px; color: #7a7670; min-width: 30px; text-align: right; font-variant-numeric: tabular-nums;",
+              class = "winrate-label",
               paste0(value, "%")
             )
           )
@@ -1118,11 +1117,10 @@ build_ranking_reactable <- function(
 ranking_table_labels <- function(language = c("is", "en")) {
   language <- match.arg(language)
 
-  switch(
-    language,
+  switch(language,
     is = c(
       search_placeholder = "Leita...",
-      player = "Leikmaður",
+      player = "Leikma\u00f0ur",
       wins = "S",
       losses = "T",
       win_rate_short = "%",
@@ -1158,8 +1156,9 @@ ranking_table_labels <- function(language = c("is", "en")) {
 #' @param force If TRUE, regenerate CSVs even if they already exist
 #' @return Invisibly returns vector of directories that were processed
 backfill_player_summaries <- function(
-    results_root = .default_results_root,
-    force = FALSE) {
+  results_root = .default_results_root,
+  force = FALSE
+) {
   dirs <- list_results_dirs(results_root)
 
   if (length(dirs) == 0) {
