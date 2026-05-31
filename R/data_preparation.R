@@ -71,7 +71,9 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
             "nerva's cube",
             "vintage aron",
             "vintage ingvi",
-            "vintage victor"
+            "vintage victor",
+            "stingvi power max",
+            "diddi's vintage vanilla"
           ) ~ "High",
         cube %in%
           c(
@@ -80,7 +82,8 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
             "synergy cube",
             "horror cube",
             "final destination",
-            "flashdance!"
+            "flashdance!",
+            "inventors' fair"
           ) ~ "Medium",
         cube %in%
           c(
