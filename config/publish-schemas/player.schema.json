@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "player",
+  "type": "object",
+  "required": [
+    "player",
+    "history"
+  ],
+  "properties": {
+    "player": {
+      "type": "string"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "score_median"
+        ],
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "score_median": {
+            "type": "number"
+          },
+          "score_lower": {
+            "type": "number"
+          },
+          "score_upper": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

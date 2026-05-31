@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "meta",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "fit_date",
+    "n_players",
+    "cmdstan_version",
+    "model"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "fit_date": {
+      "type": "string"
+    },
+    "n_players": {
+      "type": "number"
+    },
+    "cmdstan_version": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    }
+  }
+}

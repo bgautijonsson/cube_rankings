@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cubes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "cube",
+      "n_games",
+      "n_events"
+    ],
+    "properties": {
+      "cube": {
+        "type": "string"
+      },
+      "n_games": {
+        "type": "number"
+      },
+      "n_events": {
+        "type": "number"
+      }
+    }
+  }
+}
