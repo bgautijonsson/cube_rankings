@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-05-31T20:35:10Z",
+  "fit_date": "2026-05-14",
+  "n_players": 24,
+  "cmdstan_version": "2.38.0",
+  "model": "bradley_terry_temporal"
+}

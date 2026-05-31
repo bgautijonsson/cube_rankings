@@ -1,0 +1,113 @@
+{
+  "player": "Fjölnir",
+  "history": [
+    {
+      "date": "2026-01-08",
+      "score_median": 1506,
+      "score_lower": 1404,
+      "score_upper": 1614
+    },
+    {
+      "date": "2026-01-15",
+      "score_median": 1458,
+      "score_lower": 1343,
+      "score_upper": 1546
+    },
+    {
+      "date": "2026-01-22",
+      "score_median": 1465,
+      "score_lower": 1355,
+      "score_upper": 1545
+    },
+    {
+      "date": "2026-01-29",
+      "score_median": 1457,
+      "score_lower": 1357,
+      "score_upper": 1537
+    },
+    {
+      "date": "2026-02-05",
+      "score_median": 1470,
+      "score_lower": 1381,
+      "score_upper": 1549
+    },
+    {
+      "date": "2026-02-12",
+      "score_median": 1471,
+      "score_lower": 1386,
+      "score_upper": 1542
+    },
+    {
+      "date": "2026-02-19",
+      "score_median": 1472,
+      "score_lower": 1383,
+      "score_upper": 1544
+    },
+    {
+      "date": "2026-02-26",
+      "score_median": 1474,
+      "score_lower": 1386,
+      "score_upper": 1545
+    },
+    {
+      "date": "2026-03-05",
+      "score_median": 1476,
+      "score_lower": 1394,
+      "score_upper": 1540
+    },
+    {
+      "date": "2026-03-19",
+      "score_median": 1478,
+      "score_lower": 1398,
+      "score_upper": 1541
+    },
+    {
+      "date": "2026-03-26",
+      "score_median": 1480,
+      "score_lower": 1399,
+      "score_upper": 1540
+    },
+    {
+      "date": "2026-04-04",
+      "score_median": 1482,
+      "score_lower": 1406,
+      "score_upper": 1537
+    },
+    {
+      "date": "2026-04-09",
+      "score_median": 1481,
+      "score_lower": 1401,
+      "score_upper": 1538
+    },
+    {
+      "date": "2026-04-16",
+      "score_median": 1480,
+      "score_lower": 1403,
+      "score_upper": 1539
+    },
+    {
+      "date": "2026-04-23",
+      "score_median": 1482,
+      "score_lower": 1401,
+      "score_upper": 1542
+    },
+    {
+      "date": "2026-04-30",
+      "score_median": 1480,
+      "score_lower": 1392,
+      "score_upper": 1544
+    },
+    {
+      "date": "2026-05-07",
+      "score_median": 1479,
+      "score_lower": 1394,
+      "score_upper": 1541
+    },
+    {
+      "date": "2026-05-14",
+      "score_median": 1480,
+      "score_lower": 1394,
+      "score_upper": 1543
+    }
+  ]
+}

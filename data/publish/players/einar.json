@@ -1,0 +1,233 @@
+{
+  "player": "Einar",
+  "history": [
+    {
+      "date": "2025-08-14",
+      "score_median": 1487,
+      "score_lower": 1374,
+      "score_upper": 1598
+    },
+    {
+      "date": "2025-08-21",
+      "score_median": 1498,
+      "score_lower": 1385,
+      "score_upper": 1605
+    },
+    {
+      "date": "2025-08-28",
+      "score_median": 1494,
+      "score_lower": 1396,
+      "score_upper": 1589
+    },
+    {
+      "date": "2025-09-04",
+      "score_median": 1494,
+      "score_lower": 1387,
+      "score_upper": 1600
+    },
+    {
+      "date": "2025-09-11",
+      "score_median": 1522,
+      "score_lower": 1431,
+      "score_upper": 1621
+    },
+    {
+      "date": "2025-09-18",
+      "score_median": 1520,
+      "score_lower": 1426,
+      "score_upper": 1627
+    },
+    {
+      "date": "2025-09-25",
+      "score_median": 1502,
+      "score_lower": 1412,
+      "score_upper": 1595
+    },
+    {
+      "date": "2025-10-02",
+      "score_median": 1506,
+      "score_lower": 1400,
+      "score_upper": 1616
+    },
+    {
+      "date": "2025-10-10",
+      "score_median": 1494,
+      "score_lower": 1394,
+      "score_upper": 1589
+    },
+    {
+      "date": "2025-10-12",
+      "score_median": 1514,
+      "score_lower": 1432,
+      "score_upper": 1606
+    },
+    {
+      "date": "2025-10-23",
+      "score_median": 1532,
+      "score_lower": 1445,
+      "score_upper": 1641
+    },
+    {
+      "date": "2025-10-30",
+      "score_median": 1525,
+      "score_lower": 1441,
+      "score_upper": 1634
+    },
+    {
+      "date": "2025-11-06",
+      "score_median": 1523,
+      "score_lower": 1436,
+      "score_upper": 1630
+    },
+    {
+      "date": "2025-11-13",
+      "score_median": 1526,
+      "score_lower": 1445,
+      "score_upper": 1624
+    },
+    {
+      "date": "2025-11-20",
+      "score_median": 1546,
+      "score_lower": 1471,
+      "score_upper": 1656
+    },
+    {
+      "date": "2025-11-27",
+      "score_median": 1537,
+      "score_lower": 1470,
+      "score_upper": 1631
+    },
+    {
+      "date": "2025-12-04",
+      "score_median": 1533,
+      "score_lower": 1468,
+      "score_upper": 1619
+    },
+    {
+      "date": "2025-12-11",
+      "score_median": 1531,
+      "score_lower": 1465,
+      "score_upper": 1619
+    },
+    {
+      "date": "2025-12-18",
+      "score_median": 1531,
+      "score_lower": 1462,
+      "score_upper": 1620
+    },
+    {
+      "date": "2025-12-29",
+      "score_median": 1531,
+      "score_lower": 1462,
+      "score_upper": 1628
+    },
+    {
+      "date": "2026-01-08",
+      "score_median": 1530,
+      "score_lower": 1463,
+      "score_upper": 1618
+    },
+    {
+      "date": "2026-01-15",
+      "score_median": 1531,
+      "score_lower": 1463,
+      "score_upper": 1618
+    },
+    {
+      "date": "2026-01-22",
+      "score_median": 1528,
+      "score_lower": 1469,
+      "score_upper": 1609
+    },
+    {
+      "date": "2026-01-29",
+      "score_median": 1527,
+      "score_lower": 1466,
+      "score_upper": 1601
+    },
+    {
+      "date": "2026-02-05",
+      "score_median": 1527,
+      "score_lower": 1468,
+      "score_upper": 1594
+    },
+    {
+      "date": "2026-02-12",
+      "score_median": 1526,
+      "score_lower": 1473,
+      "score_upper": 1593
+    },
+    {
+      "date": "2026-02-19",
+      "score_median": 1527,
+      "score_lower": 1475,
+      "score_upper": 1595
+    },
+    {
+      "date": "2026-02-26",
+      "score_median": 1524,
+      "score_lower": 1473,
+      "score_upper": 1585
+    },
+    {
+      "date": "2026-03-05",
+      "score_median": 1521,
+      "score_lower": 1473,
+      "score_upper": 1579
+    },
+    {
+      "date": "2026-03-19",
+      "score_median": 1517,
+      "score_lower": 1469,
+      "score_upper": 1575
+    },
+    {
+      "date": "2026-03-26",
+      "score_median": 1514,
+      "score_lower": 1469,
+      "score_upper": 1570
+    },
+    {
+      "date": "2026-04-04",
+      "score_median": 1512,
+      "score_lower": 1469,
+      "score_upper": 1567
+    },
+    {
+      "date": "2026-04-09",
+      "score_median": 1513,
+      "score_lower": 1465,
+      "score_upper": 1573
+    },
+    {
+      "date": "2026-04-16",
+      "score_median": 1514,
+      "score_lower": 1467,
+      "score_upper": 1573
+    },
+    {
+      "date": "2026-04-23",
+      "score_median": 1512,
+      "score_lower": 1458,
+      "score_upper": 1576
+    },
+    {
+      "date": "2026-04-30",
+      "score_median": 1515,
+      "score_lower": 1465,
+      "score_upper": 1581
+    },
+    {
+      "date": "2026-05-07",
+      "score_median": 1516,
+      "score_lower": 1463,
+      "score_upper": 1583
+    },
+    {
+      "date": "2026-05-14",
+      "score_median": 1515,
+      "score_lower": 1461,
+      "score_upper": 1585
+    }
+  ]
+}

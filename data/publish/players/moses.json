@@ -1,0 +1,77 @@
+{
+  "player": "Móses",
+  "history": [
+    {
+      "date": "2026-02-19",
+      "score_median": 1519,
+      "score_lower": 1437,
+      "score_upper": 1630
+    },
+    {
+      "date": "2026-02-26",
+      "score_median": 1516,
+      "score_lower": 1438,
+      "score_upper": 1622
+    },
+    {
+      "date": "2026-03-05",
+      "score_median": 1502,
+      "score_lower": 1428,
+      "score_upper": 1582
+    },
+    {
+      "date": "2026-03-19",
+      "score_median": 1503,
+      "score_lower": 1439,
+      "score_upper": 1579
+    },
+    {
+      "date": "2026-03-26",
+      "score_median": 1503,
+      "score_lower": 1441,
+      "score_upper": 1580
+    },
+    {
+      "date": "2026-04-04",
+      "score_median": 1503,
+      "score_lower": 1445,
+      "score_upper": 1576
+    },
+    {
+      "date": "2026-04-09",
+      "score_median": 1504,
+      "score_lower": 1442,
+      "score_upper": 1582
+    },
+    {
+      "date": "2026-04-16",
+      "score_median": 1504,
+      "score_lower": 1444,
+      "score_upper": 1581
+    },
+    {
+      "date": "2026-04-23",
+      "score_median": 1503,
+      "score_lower": 1440,
+      "score_upper": 1583
+    },
+    {
+      "date": "2026-04-30",
+      "score_median": 1506,
+      "score_lower": 1438,
+      "score_upper": 1588
+    },
+    {
+      "date": "2026-05-07",
+      "score_median": 1506,
+      "score_lower": 1440,
+      "score_upper": 1590
+    },
+    {
+      "date": "2026-05-14",
+      "score_median": 1499,
+      "score_lower": 1434,
+      "score_upper": 1568
+    }
+  ]
+}

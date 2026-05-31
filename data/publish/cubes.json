@@ -1,0 +1,22 @@
+[
+  {
+    "cube": "Medium",
+    "n_games": 437,
+    "n_events": 13
+  },
+  {
+    "cube": "Low",
+    "n_games": 236,
+    "n_events": 8
+  },
+  {
+    "cube": "Other",
+    "n_games": 353,
+    "n_events": 11
+  },
+  {
+    "cube": "High",
+    "n_games": 358,
+    "n_events": 10
+  }
+]
