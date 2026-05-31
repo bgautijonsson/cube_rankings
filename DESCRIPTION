@@ -1,0 +1,15 @@
+Package: cuberankings
+Title: MtG Kubbur Cube Rankings Pipeline (scripts, not a package)
+Version: 0.0.0.9000
+Description: Dependency manifest for CI. The code is run as flat scripts via Rscript, not loaded as a package.
+Encoding: UTF-8
+Imports:
+    tidyverse,
+    cmdstanr,
+    posterior,
+    googlesheets4,
+    glue,
+    ggtext,
+    gt,
+    jsonlite,
+    withr
