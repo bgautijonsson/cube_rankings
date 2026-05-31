@@ -1,6 +1,7 @@
 library(tidyverse)
 library(googlesheets4)
 source("R/theme_colors.R")
+source("R/sheet_auth.R")
 theme_set(theme_mtgkubbur())
 
 .sheet_url <- "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit?usp=sharing"
@@ -9,7 +10,7 @@ download_cube_results <- function(
   sheet_url = .sheet_url,
   email = Sys.getenv("GOOGLE_MAIL")
 ) {
-  gs4_auth(email = email)
+  cube_gs4_auth(email = email)
   read_sheet(sheet_url)
 }
 
