@@ -2,6 +2,7 @@ library(tidyverse)
 library(googlesheets4)
 source("R/theme_colors.R")
 source("R/sheet_auth.R")
+source("R/cube_tier.R")
 theme_set(theme_mtgkubbur())
 
 .sheet_url <- "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit?usp=sharing"
@@ -65,46 +66,7 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
     ) |>
     mutate(
       cube = str_to_lower(cube),
-      cube = case_when(
-        cube %in%
-          c(
-            "bolti",
-            "nerva's cube",
-            "vintage aron",
-            "vintage ingvi",
-            "vintage victor",
-            "stingvi power max",
-            "diddi's vintage vanilla"
-          ) ~ "High",
-        cube %in%
-          c(
-            "meta memories",
-            "modern stories",
-            "synergy cube",
-            "horror cube",
-            "final destination",
-            "flashdance!",
-            "inventors' fair"
-          ) ~ "Medium",
-        cube %in%
-          c(
-            "khans cube",
-            "kaldheim cube",
-            "old border cube",
-            "pauper cube diddi",
-            "pauper cube victor",
-            "the ab wheel",
-            "that's totally uncommon"
-          ) ~ "Low",
-        cube %in%
-          c(
-            "stone soup cube",
-            "boltalandið",
-            "genesis",
-            "super turbo time"
-          ) ~ "Other",
-        TRUE ~ "Other"
-      ),
+      cube = cube_tier(cube),
       cube_nr = as.numeric(as.factor(cube))
     )
 
