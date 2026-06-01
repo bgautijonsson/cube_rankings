@@ -219,23 +219,91 @@ rank_estimates <- function(df, min_total_games, min_winrate, max_absence_weeks,
     dplyr::mutate(nr = dplyr::row_number())
 }
 
-build_players <- function(optin) {
-  hist <- combine_player_summaries()
-  hist <- dplyr::filter(hist, .data$player %in% optin)
+# Build {player -> {player, slug, summary, history}} from the stacked CSV history.
+player_history_records <- function(hist) {
+  hist <- hist |>
+    dplyr::arrange(date, dplyr::desc(score_median)) |>
+    dplyr::mutate(rank = dplyr::row_number(), .by = date) |>
+    dplyr::mutate(win_rate = dplyr::if_else(total > 0, wins / total * 100, 0))
   split(hist, hist$player) |>
     purrr::imap(function(rows, player) {
-      list(
-        player = player,
-        history = rows |>
-          dplyr::arrange(.data$date) |>
-          dplyr::transmute(
-            date = as.character(.data$date),
-            score_median = .data$score_median,
-            score_lower = .data$score_lower,
-            score_upper = .data$score_upper
+      rows <- dplyr::arrange(rows, date)
+      history <- rows |>
+        dplyr::transmute(
+          date = as.character(date),
+          score_median, score_q25, score_q75, score_lower, score_upper,
+          rank, win_rate, games = total, wins, losses,
+          strength = purrr::pmap(
+            list(gamma_High, gamma_Medium, gamma_Low, gamma_Other),
+            ~ list(High = ..1, Medium = ..2, Low = ..3, Other = ..4)
           )
+        )
+      latest <- rows[nrow(rows), ]
+      gammas <- c(
+        High = latest$gamma_High, Medium = latest$gamma_Medium,
+        Low = latest$gamma_Low, Other = latest$gamma_Other
+      )
+      gammas <- gammas[!is.na(gammas)]
+      strongest <- if (length(gammas)) names(gammas)[which.max(gammas)] else NA_character_
+      list(
+        player = player, slug = slugify(player),
+        summary = list(
+          score_median = latest$score_median, rank = latest$rank,
+          win_rate = latest$wins / latest$total * 100,
+          games = latest$total, strongest_tier = strongest
+        ),
+        history = purrr::transpose(history)
       )
     })
+}
+
+# Per (opted-in player, named cube): game W/L/total/win% + tier + trophy count.
+per_cube_player_records <- function(games, optin) {
+  optin_lc <- stringr::str_to_lower(optin)
+  long <- dplyr::bind_rows(
+    games |> dplyr::transmute(match_id, date, cube, player = player1, win = as.integer(winner == player1)),
+    games |> dplyr::transmute(match_id, date, cube, player = player2, win = as.integer(winner == player2))
+  ) |>
+    dplyr::filter(stringr::str_to_lower(player) %in% optin_lc)
+
+  records <- long |>
+    dplyr::summarise(wins = sum(win), total = dplyr::n(), .by = c(player, cube)) |>
+    dplyr::mutate(
+      losses = total - wins,
+      win_rate = round(wins / total * 100),
+      tier = cube_tier(cube)
+    )
+
+  match_winners <- games |>
+    dplyr::summarise(
+      p1 = sum(winner == player1), p2 = sum(winner == player2),
+      player1 = dplyr::first(player1), player2 = dplyr::first(player2),
+      .by = c(match_id, date, cube)
+    ) |>
+    dplyr::mutate(match_winner = dplyr::if_else(p1 > p2, player1, player2))
+  trophies <- match_winners |>
+    dplyr::count(date, cube, player = match_winner, name = "match_wins") |> # MATCH wins per event
+    dplyr::filter(match_wins >= 3) |>
+    dplyr::summarise(trophies = dplyr::n(), .by = c(player, cube))
+
+  records |>
+    dplyr::left_join(trophies, by = c("player", "cube")) |>
+    dplyr::mutate(trophies = tidyr::replace_na(trophies, 0L)) |>
+    dplyr::select(player, cube, tier, wins, losses, games = total, win_rate, trophies)
+}
+
+build_players <- function(optin, games) {
+  hist <- combine_player_summaries()
+  hist <- dplyr::filter(hist, .data$player %in% optin)
+  profiles <- player_history_records(hist)
+  pc <- per_cube_player_records(games, optin)
+  purrr::imap(profiles, function(prof, player) {
+    prof$cubes <- pc |>
+      dplyr::filter(.data$player == !!player) |>
+      dplyr::select(cube, tier, wins, losses, games, win_rate, trophies) |>
+      purrr::transpose()
+    prof
+  })
 }
 
 build_head_to_head <- function(results_dir, optin) {

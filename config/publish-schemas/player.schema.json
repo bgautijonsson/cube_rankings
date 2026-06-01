@@ -2,35 +2,55 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "player",
   "type": "object",
-  "required": [
-    "player",
-    "history"
-  ],
+  "required": ["player", "slug", "summary", "history", "cubes"],
   "properties": {
-    "player": {
-      "type": "string"
+    "player": { "type": "string" },
+    "slug":   { "type": "string" },
+    "summary": {
+      "type": "object",
+      "required": ["score_median", "rank", "win_rate", "games"],
+      "properties": {
+        "score_median":   { "type": ["number","null"] },
+        "rank":           { "type": ["number","null"] },
+        "win_rate":       { "type": "number" },
+        "games":          { "type": "number" },
+        "strongest_tier": { "type": ["string","null"] }
+      }
     },
     "history": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "date",
-          "score_median"
-        ],
+        "required": ["date", "score_median", "rank", "win_rate", "games"],
         "properties": {
-          "date": {
-            "type": "string"
-          },
-          "score_median": {
-            "type": "number"
-          },
-          "score_lower": {
-            "type": "number"
-          },
-          "score_upper": {
-            "type": "number"
-          }
+          "date":         { "type": "string" },
+          "score_median": { "type": "number" },
+          "score_q25":    { "type": "number" },
+          "score_q75":    { "type": "number" },
+          "score_lower":  { "type": "number" },
+          "score_upper":  { "type": "number" },
+          "rank":         { "type": "number" },
+          "win_rate":     { "type": "number" },
+          "games":        { "type": "number" },
+          "wins":         { "type": "number" },
+          "losses":       { "type": "number" },
+          "strength":     { "type": "object" }
+        }
+      }
+    },
+    "cubes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cube", "tier", "wins", "losses", "games", "win_rate", "trophies"],
+        "properties": {
+          "cube":     { "type": "string" },
+          "tier":     { "type": "string" },
+          "wins":     { "type": "number" },
+          "losses":   { "type": "number" },
+          "games":    { "type": "number" },
+          "win_rate": { "type": "number" },
+          "trophies": { "type": "number" }
         }
       }
     }

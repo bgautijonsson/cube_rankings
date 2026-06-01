@@ -115,3 +115,30 @@ cat("PASS: rankings_attach_ranks bakes current+previous rank/ELO overall and per
 stopifnot(identical(.a0$prev_rank, NA_integer_))
 stopifnot(!("High_prev_rank" %in% names(.r0)), !("High_prev_elo" %in% names(.r0)))
 cat("PASS: rankings_attach_ranks no-prev path yields NA prev_rank and omits per-tier prev columns\n")
+
+.hist <- tibble::tibble(
+  player = c("A", "B", "A", "B"),
+  date = as.Date(c("2026-05-07", "2026-05-07", "2026-05-14", "2026-05-14")),
+  score_median = c(1500, 1490, 1600, 1480), score_q25 = 1480, score_q75 = 1520,
+  score_lower = 1450, score_upper = 1550, wins = c(5, 4, 12, 6), losses = c(3, 4, 6, 10),
+  total = c(8, 8, 18, 16), gamma_High = c(0.2, 0, 0.3, 0), gamma_Medium = 0,
+  gamma_Low = -0.1, gamma_Other = 0
+)
+.ph <- player_history_records(.hist)
+.a <- .ph[["A"]]
+stopifnot(length(.a$history) == 2)
+stopifnot(.a$history[[2]]$rank == 1) # A leads on 2026-05-14
+stopifnot(abs(.a$history[[2]]$win_rate - (12 / 18 * 100)) < 1e-9)
+stopifnot(all(c("score_q25", "score_q75", "games", "strength") %in% names(.a$history[[2]])))
+stopifnot(.a$summary$strongest_tier == "High", .a$summary$games == 18)
+
+.games_pc <- tibble::tibble(
+  player1 = c("A", "A", "C"), player2 = c("B", "C", "A"), winner = c("A", "C", "C"),
+  cube = c("Bolti", "Khans Cube", "Bolti"), date = as.Date("2026-05-14"),
+  match_id = 1:3
+)
+.pc <- per_cube_player_records(.games_pc, optin = c("A", "B")) # C is NOT opted in
+stopifnot(all(.pc$player %in% c("A", "B"))) # C omitted
+.a_vc <- .pc[.pc$player == "A" & .pc$cube == "Bolti", ]
+stopifnot(.a_vc$wins == 1, .a_vc$tier == "High")
+cat("PASS: player_history_records (series+rank+summary) and per_cube_player_records (opt-in, tier)\n")
