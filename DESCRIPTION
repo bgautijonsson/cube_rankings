@@ -17,4 +17,5 @@ Imports:
     htmltools,
     jsonlite,
     stringi,
+    janitor,
     withr
