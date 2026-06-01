@@ -54,5 +54,9 @@ cat("PASS: rank_estimates filters (games/winrate/absence/opt-in) then dense-rank
 )
 stopifnot(.meta$n_players == 2, .meta$n_games == 3, .meta$n_dates == 2)
 stopifnot(.meta$reference_date == "2026-05-14")
-stopifnot(.meta$tiers$High == "Bolti", .meta$tiers$Low == "Khans Cube", .meta$tiers$Other == "Genesis")
+stopifnot(
+  identical(.meta$tiers$High, list("Bolti")),
+  identical(.meta$tiers$Low, list("Khans Cube")),
+  identical(.meta$tiers$Other, list("Genesis"))
+)
 cat("PASS: build_meta_enriched adds counts, reference_date, and tier->cube map\n")
