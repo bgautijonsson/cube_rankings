@@ -2,12 +2,61 @@ options(width = 120)
 suppressPackageStartupMessages({
   library(tidyverse)
   library(jsonlite)
+  library(lubridate)
 })
 source("R/sheet_auth.R")
 source("R/elo_table.R")
 
 PUBLISH_DIR <- "data/publish"
 CMDSTAN_VERSION <- Sys.getenv("CMDSTAN_VERSION", "2.38.0")
+SHEET_URL <- "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit"
+
+# One row per GAME (game1:game3 unpivoted), named cube preserved, title-cased.
+load_results_games <- function(sheet_url = SHEET_URL) {
+  read_sheet(sheet_url) |>
+    mutate(match_id = dplyr::row_number(), date = lubridate::as_date(date)) |>
+    tidyr::pivot_longer(game1:game3, names_to = "game", values_to = "winner") |>
+    tidyr::drop_na(winner) |>
+    mutate(
+      player1 = stringr::str_to_title(player1),
+      player2 = stringr::str_to_title(player2),
+      winner  = stringr::str_to_title(winner),
+      cube    = stringr::str_to_title(cube)
+    )
+}
+
+# One row per MATCH, with the match winner. Input = load_results_games() output.
+load_match_results <- function(games) {
+  games |>
+    dplyr::summarise(
+      p1_game_wins = sum(.data$winner == .data$player1),
+      p2_game_wins = sum(.data$winner == .data$player2),
+      .by = c(match_id, date, player1, player2, cube)
+    ) |>
+    dplyr::mutate(match_winner = dplyr::if_else(p1_game_wins > p2_game_wins, player1, player2))
+}
+
+# Calendar tab joined to the Cube list (for out-links). One row per scheduled event.
+load_calendar_data <- function(sheet_url = SHEET_URL) {
+  cube_list <- read_sheet(sheet_url, sheet = "Cube list") |>
+    janitor::clean_names() |>
+    transmute(
+      cube_key  = stringr::str_to_lower(name),
+      cube_link = dplyr::if_else(stringr::str_detect(link, "^https?://"), link, NA_character_)
+    )
+  read_sheet(sheet_url, sheet = "Cube calendar") |>
+    janitor::clean_names() |>
+    mutate(
+      date = lubridate::as_date(date),
+      cube = stringr::str_to_title(cube),
+      host = stringr::str_to_title(host),
+      cube_key = stringr::str_to_lower(cube)
+    ) |>
+    dplyr::filter(!is.na(cube), cube != "", cube != "Na") |>
+    dplyr::left_join(cube_list, by = "cube_key") |>
+    dplyr::select(-cube_key) |>
+    dplyr::arrange(date)
+}
 
 # list_results_dirs() returns newest-first (decreasing = TRUE in elo_table.R)
 newest_results_dir <- function() {
