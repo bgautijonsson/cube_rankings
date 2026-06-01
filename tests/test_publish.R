@@ -37,3 +37,23 @@ processed_data <- readRDS(file.path(results_dir, "processed_data.rds"))
 m_obj <- build_meta_enriched(results_dir, r_obj, processed_data, fake_games)
 stopifnot(all(c("generated_at", "fit_date", "n_players", "cmdstan_version", "model") %in% names(m_obj)))
 cat("PASS: built artifacts have the contract keys\n")
+
+# CRITICAL (enriched): no non-opted-in player may appear in cubes detail or head-to-head.
+source("R/cube_tier.R")
+.fake_games <- tibble::tibble(
+  match_id = rep(1:2, each = 3), date = as.Date("2026-05-14"),
+  player1 = "A", player2 = rep(c("B", "Zzz"), each = 3), cube = "Bolti",
+  winner = c("A", "A", "B", "A", "Zzz", "A")
+)
+.fake_optin <- c("A", "B") # "Zzz" is NOT opted in
+.mr <- load_match_results(.fake_games)
+.det <- cube_detail(.fake_games, .mr, slug = "bolti", optin = .fake_optin)
+.names <- c(
+  purrr::map_chr(.det$player_rankings, "player"),
+  unlist(purrr::map(.det$events, ~ purrr::map_chr(.x$results, "player")))
+)
+stopifnot(!("Zzz" %in% .names))
+.hh <- head_to_head_records(.fake_games, .fake_optin)
+.hh_names <- unlist(purrr::map(.hh, ~ c(.x$player_a, .x$player_b)))
+stopifnot(!("Zzz" %in% .hh_names))
+cat("PASS: opt-in filter holds across enriched artifacts (cubes detail, head-to-head)\n")

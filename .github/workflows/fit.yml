@@ -62,6 +62,9 @@ jobs:
           FORCE_FLAG: ${{ inputs.force == true && '--force' || '' }}
         run: Rscript run_historical_analysis.R $FORCE_FLAG
 
+      - name: Run tests
+        run: Rscript tests/test_enrichment.R && Rscript tests/test_publish.R
+
       - name: Publish JSON
         run: Rscript scripts/publish.R
 
