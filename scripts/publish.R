@@ -59,12 +59,6 @@ load_calendar_data <- function(sheet_url = SHEET_URL) {
     dplyr::arrange(date)
 }
 
-# list_results_dirs() returns newest-first (decreasing = TRUE in elo_table.R)
-newest_results_dir <- function() {
-  dirs <- list_results_dirs()
-  dirs[1]
-}
-
 opted_in_players <- function() {
   cube_gs4_auth()
   # fetch_table_players() returns lowercase nicknames; player_summary.csv uses
@@ -462,10 +456,10 @@ main <- function() {
 
   cube_index <- build_cubes(games, match_results)
   write_json_file(cube_index, file.path(PUBLISH_DIR, "cubes.json"))
-  for (c in cube_index) {
+  for (cube in cube_index) {
     write_json_file(
-      cube_detail(games, match_results, c$slug, optin),
-      file.path(PUBLISH_DIR, "cubes", paste0(c$slug, ".json"))
+      cube_detail(games, match_results, cube$slug, optin),
+      file.path(PUBLISH_DIR, "cubes", paste0(cube$slug, ".json"))
     )
   }
 
