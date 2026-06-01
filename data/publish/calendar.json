@@ -1,116 +1,698 @@
 [
   {
-    "date": "2025-08-14"
+    "date": "2024-04-23",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 13,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
   },
   {
-    "date": "2025-08-21"
+    "date": "2024-05-07",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2025-08-28"
+    "date": "2024-05-21",
+    "cube": "Synergy Cube",
+    "cube_slug": "synergy-cube",
+    "host": "Tommi",
+    "players": 12,
+    "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
   },
   {
-    "date": "2025-09-04"
+    "date": "2024-06-04",
+    "cube": "Vintage Hrappur",
+    "cube_slug": "vintage-hrappur",
+    "host": "Hrappur",
+    "players": 8,
+    "link": {}
   },
   {
-    "date": "2025-09-11"
+    "date": "2024-06-18",
+    "cube": "Pauper Cube Diddi",
+    "cube_slug": "pauper-cube-diddi",
+    "host": "Diddi",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/thepaupercube"
   },
   {
-    "date": "2025-09-18"
+    "date": "2024-07-16",
+    "cube": "Synergy Cube",
+    "cube_slug": "synergy-cube",
+    "host": "Tommi",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
   },
   {
-    "date": "2025-09-25"
+    "date": "2024-07-30",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
   },
   {
-    "date": "2025-10-02"
+    "date": "2024-08-13",
+    "cube": "Kaldheim Cube",
+    "cube_slug": "kaldheim-cube",
+    "host": "Oddur",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/344c9708-7bb7-486a-ad50-497634e467b0"
   },
   {
-    "date": "2025-10-10"
+    "date": "2024-08-27",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2025-10-12"
+    "date": "2024-09-10",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
   },
   {
-    "date": "2025-10-23"
+    "date": "2024-09-17",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2025-10-30"
+    "date": "2024-10-01",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/nerva"
   },
   {
-    "date": "2025-11-06"
+    "date": "2024-10-17",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 12,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2025-11-13"
+    "date": "2024-11-07",
+    "cube": "Horror Cube",
+    "cube_slug": "horror-cube",
+    "host": "Arnar",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/5eaf4123-9c4d-433d-8e66-474085276f24"
   },
   {
-    "date": "2025-11-20"
+    "date": "2024-11-14",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2025-11-27"
+    "date": "2024-11-21",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
   },
   {
-    "date": "2025-12-04"
+    "date": "2024-12-05",
+    "cube": "Old Border Cube",
+    "cube_slug": "old-border-cube",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/3f75c0e8-fb85-408f-bc17-bb2fed74284a"
   },
   {
-    "date": "2025-12-11"
+    "date": "2025-01-09",
+    "cube": "Pauper Cube Diddi",
+    "cube_slug": "pauper-cube-diddi",
+    "host": "Diddi",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/thepaupercube"
   },
   {
-    "date": "2025-12-18"
+    "date": "2025-01-16",
+    "cube": "Commander Cube",
+    "cube_slug": "commander-cube",
+    "host": "Oddur",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/b501ede6-d81f-4beb-84c2-11b5911ace12"
   },
   {
-    "date": "2025-12-29"
+    "date": "2025-01-23",
+    "cube": "Binni's Cube",
+    "cube_slug": "binni-s-cube",
+    "host": "Binni",
+    "players": 10,
+    "link": {}
   },
   {
-    "date": "2026-01-08"
+    "date": "2025-02-06",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   },
   {
-    "date": "2026-01-15"
+    "date": "2025-02-20",
+    "cube": "Turbo Cube",
+    "cube_slug": "turbo-cube",
+    "host": "Bóas",
+    "players": 10,
+    "link": {}
   },
   {
-    "date": "2026-01-22"
+    "date": "2025-03-20",
+    "cube": "Vintage Ingvi",
+    "cube_slug": "vintage-ingvi",
+    "host": "Ingvi",
+    "players": 10,
+    "link": {}
   },
   {
-    "date": "2026-01-29"
+    "date": "2025-04-03",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
   },
   {
-    "date": "2026-02-05"
+    "date": "2025-05-08",
+    "cube": "Vintage Aron",
+    "cube_slug": "vintage-aron",
+    "host": "Aron Ívars",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
   },
   {
-    "date": "2026-02-12"
+    "date": "2025-06-11",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
   },
   {
-    "date": "2026-02-19"
+    "date": "2025-06-26",
+    "cube": "Commander Cube",
+    "cube_slug": "commander-cube",
+    "host": "Oddur",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/b501ede6-d81f-4beb-84c2-11b5911ace12"
   },
   {
-    "date": "2026-02-26"
+    "date": "2025-07-03",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
   },
   {
-    "date": "2026-03-05"
+    "date": "2025-07-24",
+    "cube": "Pauper Cube Diddi",
+    "cube_slug": "pauper-cube-diddi",
+    "host": "Diddi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/thepaupercube"
   },
   {
-    "date": "2026-03-19"
+    "date": "2025-07-31",
+    "cube": "Vintage Tommi",
+    "cube_slug": "vintage-tommi",
+    "host": "Tommi",
+    "players": 13,
+    "link": {}
   },
   {
-    "date": "2026-03-26"
+    "date": "2025-08-14",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 12,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
   },
   {
-    "date": "2026-04-04"
+    "date": "2025-08-21",
+    "cube": "Khans Cube",
+    "cube_slug": "khans-cube",
+    "host": "Arnar",
+    "players": 11,
+    "link": "https://cubecobra.com/cube/list/1bd5db34-ec2c-4790-b557-16b3793387eb"
   },
   {
-    "date": "2026-04-09"
+    "date": "2025-08-28",
+    "cube": "Stone Soup Cube",
+    "cube_slug": "stone-soup-cube",
+    "host": null,
+    "players": 12,
+    "link": {}
   },
   {
-    "date": "2026-04-16"
+    "date": "2025-09-04",
+    "cube": "Vintage Aron",
+    "cube_slug": "vintage-aron",
+    "host": "Aron Ívars",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
   },
   {
-    "date": "2026-04-23"
+    "date": "2025-09-11",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
   },
   {
-    "date": "2026-04-30"
+    "date": "2025-09-11",
+    "cube": "Synergy Cube",
+    "cube_slug": "synergy-cube",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
   },
   {
-    "date": "2026-05-07"
+    "date": "2025-09-18",
+    "cube": "Kaldheim Cube",
+    "cube_slug": "kaldheim-cube",
+    "host": "Oddur",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/344c9708-7bb7-486a-ad50-497634e467b0"
   },
   {
-    "date": "2026-05-14"
+    "date": "2025-09-25",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
+  },
+  {
+    "date": "2025-10-02",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2025-10-09",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Turbo Cube",
+    "cube_slug": "turbo-cube",
+    "host": "Bóas",
+    "players": 6,
+    "link": {}
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Synergy Cube",
+    "cube_slug": "synergy-cube",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Old Border Cube",
+    "cube_slug": "old-border-cube",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/3f75c0e8-fb85-408f-bc17-bb2fed74284a"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/nerva"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Pauper Cube Diddi",
+    "cube_slug": "pauper-cube-diddi",
+    "host": "Diddi",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/thepaupercube"
+  },
+  {
+    "date": "2025-10-11",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
+  },
+  {
+    "date": "2025-10-23",
+    "cube": "Stone Soup Cube",
+    "cube_slug": "stone-soup-cube",
+    "host": null,
+    "players": 13,
+    "link": {}
+  },
+  {
+    "date": "2025-10-30",
+    "cube": "Stingvi Power Max",
+    "cube_slug": "stingvi-power-max",
+    "host": "Ingvi",
+    "players": 6,
+    "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
+  },
+  {
+    "date": "2025-11-06",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
+  },
+  {
+    "date": "2025-11-13",
+    "cube": "Old Border Cube",
+    "cube_slug": "old-border-cube",
+    "host": "Diddi",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/3f75c0e8-fb85-408f-bc17-bb2fed74284a"
+  },
+  {
+    "date": "2025-11-20",
+    "cube": "Genesis",
+    "cube_slug": "genesis",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/Genesis"
+  },
+  {
+    "date": "2025-11-27",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2025-12-04",
+    "cube": "Stone Soup Cube",
+    "cube_slug": "stone-soup-cube",
+    "host": null,
+    "players": 9,
+    "link": {}
+  },
+  {
+    "date": "2025-12-11",
+    "cube": "Final Destination",
+    "cube_slug": "final-destination",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/FinalDestination"
+  },
+  {
+    "date": "2025-12-18",
+    "cube": "Boltalandið",
+    "cube_slug": "boltalandid",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/boltalandid"
+  },
+  {
+    "date": "2025-12-29",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/nerva"
+  },
+  {
+    "date": "2026-01-08",
+    "cube": "Vintage Victor",
+    "cube_slug": "vintage-victor",
+    "host": "Victor",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/138016e9-a592-4474-9292-8d6fe5ed6f6b"
+  },
+  {
+    "date": "2026-01-08",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
+  },
+  {
+    "date": "2026-01-15",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2026-01-22",
+    "cube": "Pauper Cube Victor",
+    "cube_slug": "pauper-cube-victor",
+    "host": "Victor",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/9d932f3a-0b52-4ba1-afbf-a391d6227727"
+  },
+  {
+    "date": "2026-01-29",
+    "cube": "Modern Stories",
+    "cube_slug": "modern-stories",
+    "host": "Aron Elvar",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
+  },
+  {
+    "date": "2026-01-29",
+    "cube": "The Ab Wheel",
+    "cube_slug": "the-ab-wheel",
+    "host": "Tommi",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/FeelTheBurn"
+  },
+  {
+    "date": "2026-02-05",
+    "cube": "Vintage Victor",
+    "cube_slug": "vintage-victor",
+    "host": "Victor",
+    "players": 12,
+    "link": "https://cubecobra.com/cube/list/138016e9-a592-4474-9292-8d6fe5ed6f6b"
+  },
+  {
+    "date": "2026-02-12",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2026-02-19",
+    "cube": "Horror Cube",
+    "cube_slug": "horror-cube",
+    "host": "Arnar",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/5eaf4123-9c4d-433d-8e66-474085276f24"
+  },
+  {
+    "date": "2026-02-26",
+    "cube": "That's Totally Uncommon",
+    "cube_slug": "that-s-totally-uncommon",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/0a448b20-c496-4b55-8611-ba42e0b905a1"
+  },
+  {
+    "date": "2026-03-05",
+    "cube": "Vintage Aron",
+    "cube_slug": "vintage-aron",
+    "host": "Aron Ívars",
+    "players": 12,
+    "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
+  },
+  {
+    "date": "2026-03-12",
+    "cube": "Commander Cube",
+    "cube_slug": "commander-cube",
+    "host": "Oddur",
+    "players": 13,
+    "link": "https://cubecobra.com/cube/list/b501ede6-d81f-4beb-84c2-11b5911ace12"
+  },
+  {
+    "date": "2026-03-19",
+    "cube": "Flashdance!",
+    "cube_slug": "flashdance",
+    "host": "Örvar",
+    "players": 10,
+    "link": "https://cubecobra.com/cube/list/88234f4d-8fff-41ae-a8f8-bb82832969df"
+  },
+  {
+    "date": "2026-03-26",
+    "cube": "Boltalandið",
+    "cube_slug": "boltalandid",
+    "host": "Hjalti",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/boltalandid"
+  },
+  {
+    "date": "2026-04-01",
+    "cube": "Unset Cube",
+    "cube_slug": "unset-cube",
+    "host": "Oddur",
+    "players": 4,
+    "link": {}
+  },
+  {
+    "date": "2026-04-04",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/nerva"
+  },
+  {
+    "date": "2026-04-09",
+    "cube": "Genesis",
+    "cube_slug": "genesis",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/Genesis"
+  },
+  {
+    "date": "2026-04-16",
+    "cube": "Modern Stories",
+    "cube_slug": "modern-stories",
+    "host": "Aron Elvar",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
+  },
+  {
+    "date": "2026-04-23",
+    "cube": "Meta Memories",
+    "cube_slug": "meta-memories",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2026-04-30",
+    "cube": "Stingvi Power Max",
+    "cube_slug": "stingvi-power-max",
+    "host": "Ingvi",
+    "players": 6,
+    "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
+  },
+  {
+    "date": "2026-04-30",
+    "cube": "Diddi's Vintage Vanilla",
+    "cube_slug": "diddi-s-vintage-vanilla",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
+  },
+  {
+    "date": "2026-05-07",
+    "cube": "Stingvi Power Max",
+    "cube_slug": "stingvi-power-max",
+    "host": "Ingvi",
+    "players": 6,
+    "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
+  },
+  {
+    "date": "2026-05-14",
+    "cube": "Pauper Cube Victor",
+    "cube_slug": "pauper-cube-victor",
+    "host": "Victor",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/9d932f3a-0b52-4ba1-afbf-a391d6227727"
+  },
+  {
+    "date": "2026-05-21",
+    "cube": "Inventors' Fair",
+    "cube_slug": "inventors-fair",
+    "host": "Binni",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/01a2a63d-638d-4a23-b062-fd9a344809f8"
+  },
+  {
+    "date": "2026-05-28",
+    "cube": "Flashdance!",
+    "cube_slug": "flashdance",
+    "host": "Örvar",
+    "players": 6,
+    "link": "https://cubecobra.com/cube/list/88234f4d-8fff-41ae-a8f8-bb82832969df"
+  },
+  {
+    "date": "2026-06-04",
+    "cube": "Vintage Aron",
+    "cube_slug": "vintage-aron",
+    "host": "Aron Ívars",
+    "players": {},
+    "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
+  },
+  {
+    "date": "2026-06-11",
+    "cube": "Modern Stories",
+    "cube_slug": "modern-stories",
+    "host": "Aron Elvar",
+    "players": {},
+    "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
+  },
+  {
+    "date": "2026-06-18",
+    "cube": "Inventors' Fair",
+    "cube_slug": "inventors-fair",
+    "host": "Binni",
+    "players": {},
+    "link": "https://cubecobra.com/cube/list/01a2a63d-638d-4a23-b062-fd9a344809f8"
+  },
+  {
+    "date": "2026-06-25",
+    "cube": "Genesis",
+    "cube_slug": "genesis",
+    "host": "Tommi",
+    "players": {},
+    "link": "https://cubecobra.com/cube/list/Genesis"
+  },
+  {
+    "date": "2026-07-02",
+    "cube": "Stingvi Power Max",
+    "cube_slug": "stingvi-power-max",
+    "host": "Ingvi",
+    "players": {},
+    "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
   }
 ]

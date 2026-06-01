@@ -1,0 +1,163 @@
+{
+  "cube": "Khans Cube",
+  "slug": "khans-cube",
+  "tier": "Low",
+  "summary": {
+    "n_events": 1,
+    "n_matches": 14,
+    "n_players": 10,
+    "first_played": "2025-08-21",
+    "last_played": "2025-08-21"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Tommi",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Tommi",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 1,
+      "game_pct": 86
+    },
+    {
+      "player": "Diddi",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 2,
+      "game_pct": 71
+    },
+    {
+      "player": "Arnar",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 2,
+      "game_pct": 67
+    },
+    {
+      "player": "Einar",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
+      "player": "Binni",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 2,
+      "game_l": 3,
+      "game_pct": 40
+    },
+    {
+      "player": "Aron Gauti",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 5,
+      "game_pct": 38
+    },
+    {
+      "player": "Oddur",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 2,
+      "game_l": 4,
+      "game_pct": 33
+    },
+    {
+      "player": "Anna",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 2,
+      "game_l": 5,
+      "game_pct": 29
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-08-21",
+      "results": [
+        {
+          "player": "Tommi",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 1,
+          "trophy": true
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Arnar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Einar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Binni",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 2,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Aron Gauti",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Anna",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

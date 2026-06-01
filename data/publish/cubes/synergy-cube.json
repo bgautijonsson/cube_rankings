@@ -1,0 +1,209 @@
+{
+  "cube": "Synergy Cube",
+  "slug": "synergy-cube",
+  "tier": "Medium",
+  "summary": {
+    "n_events": 2,
+    "n_matches": 18,
+    "n_players": 10,
+    "first_played": "2025-09-11",
+    "last_played": "2025-10-12"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Einar",
+      "trophies": 1
+    },
+    {
+      "player": "Anna",
+      "trophies": 1
+    },
+    {
+      "player": "Victor",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Anna",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 2,
+      "game_pct": 75
+    },
+    {
+      "player": "Victor",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 2,
+      "game_pct": 75
+    },
+    {
+      "player": "Einar",
+      "match_w": 5,
+      "match_l": 1,
+      "match_pct": 83,
+      "game_w": 11,
+      "game_l": 4,
+      "game_pct": 73
+    },
+    {
+      "player": "Aron Freyr",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
+      "player": "Binni",
+      "match_w": 3,
+      "match_l": 3,
+      "match_pct": 50,
+      "game_w": 6,
+      "game_l": 9,
+      "game_pct": 40
+    },
+    {
+      "player": "Oddur",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 5,
+      "game_pct": 38
+    },
+    {
+      "player": "Tommi",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 3,
+      "game_l": 6,
+      "game_pct": 33
+    },
+    {
+      "player": "Aron Gauti",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 3,
+      "game_l": 6,
+      "game_pct": 33
+    },
+    {
+      "player": "Aron Ívars",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 1,
+      "game_l": 6,
+      "game_pct": 14
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09-11",
+      "results": [
+        {
+          "player": "Einar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Anna",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Binni",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Freyr",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Gauti",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 3,
+          "game_l": 6,
+          "trophy": false
+        },
+        {
+          "player": "Aron Ívars",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 1,
+          "game_l": 6,
+          "trophy": false
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "results": [
+        {
+          "player": "Victor",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Einar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Binni",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 3,
+          "game_l": 6,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

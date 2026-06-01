@@ -1,197 +1,677 @@
 {
   "player": "Ólafur",
+  "slug": "olafur",
+  "summary": {
+    "score_median": 1486,
+    "rank": 20,
+    "win_rate": 41.666667,
+    "games": 48,
+    "strongest_tier": "High"
+  },
   "history": [
     {
       "date": "2025-09-25",
       "score_median": 1464,
+      "score_q25": 1412,
+      "score_q75": 1513,
       "score_lower": 1328,
-      "score_upper": 1585
+      "score_upper": 1585,
+      "rank": 18,
+      "win_rate": 33.333333,
+      "games": 6,
+      "wins": 2,
+      "losses": 4,
+      "strength": {
+        "High": -0.0569,
+        "Medium": 0.016965,
+        "Low": 0.01457,
+        "Other": 0.020583
+      }
     },
     {
       "date": "2025-10-02",
       "score_median": 1463,
+      "score_q25": 1408,
+      "score_q75": 1514,
       "score_lower": 1310,
-      "score_upper": 1591
+      "score_upper": 1591,
+      "rank": 18,
+      "win_rate": 33.333333,
+      "games": 6,
+      "wins": 2,
+      "losses": 4,
+      "strength": {
+        "High": -0.050341,
+        "Medium": 0.021218,
+        "Low": 0.014542,
+        "Other": 0.014369
+      }
     },
     {
       "date": "2025-10-10",
       "score_median": 1482,
+      "score_q25": 1436,
+      "score_q75": 1527,
       "score_lower": 1362,
-      "score_upper": 1596
+      "score_upper": 1596,
+      "rank": 17,
+      "win_rate": 46.153846,
+      "games": 13,
+      "wins": 6,
+      "losses": 7,
+      "strength": {
+        "High": -0.03146,
+        "Medium": 0.008576,
+        "Low": 0.010461,
+        "Other": 0.010209
+      }
     },
     {
       "date": "2025-10-12",
       "score_median": 1464,
+      "score_q25": 1423,
+      "score_q75": 1504,
       "score_lower": 1360,
-      "score_upper": 1564
+      "score_upper": 1564,
+      "rank": 18,
+      "win_rate": 39.285714,
+      "games": 28,
+      "wins": 11,
+      "losses": 17,
+      "strength": {
+        "High": -0.01596,
+        "Medium": 0.016821,
+        "Low": -0.019106,
+        "Other": 0.022487
+      }
     },
     {
       "date": "2025-10-23",
       "score_median": 1450,
+      "score_q25": 1410,
+      "score_q75": 1488,
       "score_lower": 1346,
-      "score_upper": 1548
+      "score_upper": 1548,
+      "rank": 18,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": 0.007062,
+        "Medium": 0.022725,
+        "Low": -0.00883,
+        "Other": -0.023938
+      }
     },
     {
       "date": "2025-10-30",
       "score_median": 1454,
+      "score_q25": 1415,
+      "score_q75": 1493,
       "score_lower": 1351,
-      "score_upper": 1550
+      "score_upper": 1550,
+      "rank": 18,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": 0.001049,
+        "Medium": 0.027818,
+        "Low": -0.009991,
+        "Other": -0.021944
+      }
     },
     {
       "date": "2025-11-06",
       "score_median": 1456,
+      "score_q25": 1417,
+      "score_q75": 1495,
       "score_lower": 1350,
-      "score_upper": 1554
+      "score_upper": 1554,
+      "rank": 18,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": 0.002582,
+        "Medium": 0.022234,
+        "Low": -0.003064,
+        "Other": -0.020818
+      }
     },
     {
       "date": "2025-11-13",
       "score_median": 1460,
+      "score_q25": 1421,
+      "score_q75": 1498,
       "score_lower": 1355,
-      "score_upper": 1560
+      "score_upper": 1560,
+      "rank": 18,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.004401,
+        "Medium": 0.025508,
+        "Low": 0.004822,
+        "Other": -0.020128
+      }
     },
     {
       "date": "2025-11-20",
       "score_median": 1462,
+      "score_q25": 1421,
+      "score_q75": 1500,
       "score_lower": 1354,
-      "score_upper": 1562
+      "score_upper": 1562,
+      "rank": 18,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.0085,
+        "Medium": 0.021976,
+        "Low": 0.011967,
+        "Other": -0.02551
+      }
     },
     {
       "date": "2025-11-27",
       "score_median": 1463,
+      "score_q25": 1426,
+      "score_q75": 1497,
       "score_lower": 1365,
-      "score_upper": 1552
+      "score_upper": 1552,
+      "rank": 19,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.00864,
+        "Medium": 0.02876,
+        "Low": 0.010131,
+        "Other": -0.030696
+      }
     },
     {
       "date": "2025-12-04",
       "score_median": 1466,
+      "score_q25": 1430,
+      "score_q75": 1498,
       "score_lower": 1374,
-      "score_upper": 1548
+      "score_upper": 1548,
+      "rank": 19,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.007635,
+        "Medium": 0.028324,
+        "Low": 0.005912,
+        "Other": -0.026375
+      }
     },
     {
       "date": "2025-12-11",
       "score_median": 1465,
+      "score_q25": 1429,
+      "score_q75": 1498,
       "score_lower": 1372,
-      "score_upper": 1551
+      "score_upper": 1551,
+      "rank": 19,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.00442,
+        "Medium": 0.025032,
+        "Low": 0.009505,
+        "Other": -0.028117
+      }
     },
     {
       "date": "2025-12-18",
       "score_median": 1466,
+      "score_q25": 1431,
+      "score_q75": 1499,
       "score_lower": 1370,
-      "score_upper": 1553
+      "score_upper": 1553,
+      "rank": 19,
+      "win_rate": 38.888889,
+      "games": 36,
+      "wins": 14,
+      "losses": 22,
+      "strength": {
+        "High": -0.008879,
+        "Medium": 0.027065,
+        "Low": 0.010424,
+        "Other": -0.02577
+      }
     },
     {
       "date": "2025-12-29",
       "score_median": 1486,
+      "score_q25": 1452,
+      "score_q75": 1519,
       "score_lower": 1401,
-      "score_upper": 1580
+      "score_upper": 1580,
+      "rank": 18,
+      "win_rate": 42.857143,
+      "games": 42,
+      "wins": 18,
+      "losses": 24,
+      "strength": {
+        "High": 0.050898,
+        "Medium": 0.010744,
+        "Low": -0.011934,
+        "Other": -0.051441
+      }
     },
     {
       "date": "2026-01-08",
       "score_median": 1483,
+      "score_q25": 1452,
+      "score_q75": 1516,
       "score_lower": 1400,
-      "score_upper": 1575
+      "score_upper": 1575,
+      "rank": 19,
+      "win_rate": 42.857143,
+      "games": 42,
+      "wins": 18,
+      "losses": 24,
+      "strength": {
+        "High": 0.049677,
+        "Medium": 0.01417,
+        "Low": -0.012074,
+        "Other": -0.053927
+      }
     },
     {
       "date": "2026-01-15",
       "score_median": 1485,
+      "score_q25": 1455,
+      "score_q75": 1517,
       "score_lower": 1406,
-      "score_upper": 1571
+      "score_upper": 1571,
+      "rank": 18,
+      "win_rate": 42.857143,
+      "games": 42,
+      "wins": 18,
+      "losses": 24,
+      "strength": {
+        "High": 0.051341,
+        "Medium": 0.013402,
+        "Low": -0.010318,
+        "Other": -0.05139
+      }
     },
     {
       "date": "2026-01-22",
       "score_median": 1485,
+      "score_q25": 1456,
+      "score_q75": 1513,
       "score_lower": 1410,
-      "score_upper": 1566
+      "score_upper": 1566,
+      "rank": 19,
+      "win_rate": 42.857143,
+      "games": 42,
+      "wins": 18,
+      "losses": 24,
+      "strength": {
+        "High": 0.04824,
+        "Medium": 0.013957,
+        "Low": -0.009025,
+        "Other": -0.050163
+      }
     },
     {
       "date": "2026-01-29",
       "score_median": 1475,
+      "score_q25": 1446,
+      "score_q75": 1503,
       "score_lower": 1399,
-      "score_upper": 1547
+      "score_upper": 1547,
+      "rank": 19,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.076946,
+        "Medium": -0.052081,
+        "Low": 0.013265,
+        "Other": -0.034312
+      }
     },
     {
       "date": "2026-02-05",
       "score_median": 1476,
+      "score_q25": 1449,
+      "score_q75": 1504,
       "score_lower": 1403,
-      "score_upper": 1549
+      "score_upper": 1549,
+      "rank": 18,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.076273,
+        "Medium": -0.048903,
+        "Low": 0.006614,
+        "Other": -0.033426
+      }
     },
     {
       "date": "2026-02-12",
       "score_median": 1476,
+      "score_q25": 1450,
+      "score_q75": 1501,
       "score_lower": 1405,
-      "score_upper": 1543
+      "score_upper": 1543,
+      "rank": 18,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.07552,
+        "Medium": -0.051953,
+        "Low": 0.008471,
+        "Other": -0.036287
+      }
     },
     {
       "date": "2026-02-19",
       "score_median": 1477,
+      "score_q25": 1451,
+      "score_q75": 1501,
       "score_lower": 1407,
-      "score_upper": 1543
+      "score_upper": 1543,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.076442,
+        "Medium": -0.054692,
+        "Low": 0.010263,
+        "Other": -0.034667
+      }
     },
     {
       "date": "2026-02-26",
       "score_median": 1479,
+      "score_q25": 1453,
+      "score_q75": 1502,
       "score_lower": 1409,
-      "score_upper": 1542
+      "score_upper": 1542,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.077219,
+        "Medium": -0.055153,
+        "Low": 0.012466,
+        "Other": -0.034274
+      }
     },
     {
       "date": "2026-03-05",
       "score_median": 1480,
+      "score_q25": 1456,
+      "score_q75": 1502,
       "score_lower": 1416,
-      "score_upper": 1540
+      "score_upper": 1540,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.074871,
+        "Medium": -0.050315,
+        "Low": 0.014875,
+        "Other": -0.034831
+      }
     },
     {
       "date": "2026-03-19",
       "score_median": 1482,
+      "score_q25": 1459,
+      "score_q75": 1502,
       "score_lower": 1416,
-      "score_upper": 1537
+      "score_upper": 1537,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.069817,
+        "Medium": -0.051642,
+        "Low": 0.013031,
+        "Other": -0.034346
+      }
     },
     {
       "date": "2026-03-26",
       "score_median": 1483,
+      "score_q25": 1461,
+      "score_q75": 1502,
       "score_lower": 1420,
-      "score_upper": 1538
+      "score_upper": 1538,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.066389,
+        "Medium": -0.047614,
+        "Low": 0.013559,
+        "Other": -0.03071
+      }
     },
     {
       "date": "2026-04-04",
       "score_median": 1484,
+      "score_q25": 1464,
+      "score_q75": 1501,
       "score_lower": 1424,
-      "score_upper": 1535
+      "score_upper": 1535,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.066715,
+        "Medium": -0.04925,
+        "Low": 0.016039,
+        "Other": -0.033293
+      }
     },
     {
       "date": "2026-04-09",
       "score_median": 1484,
+      "score_q25": 1462,
+      "score_q75": 1503,
       "score_lower": 1420,
-      "score_upper": 1539
+      "score_upper": 1539,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.066015,
+        "Medium": -0.049825,
+        "Low": 0.016577,
+        "Other": -0.029235
+      }
     },
     {
       "date": "2026-04-16",
       "score_median": 1484,
+      "score_q25": 1462,
+      "score_q75": 1503,
       "score_lower": 1420,
-      "score_upper": 1540
+      "score_upper": 1540,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.06453,
+        "Medium": -0.045254,
+        "Low": 0.010322,
+        "Other": -0.030327
+      }
     },
     {
       "date": "2026-04-23",
       "score_median": 1486,
+      "score_q25": 1463,
+      "score_q75": 1505,
       "score_lower": 1419,
-      "score_upper": 1546
+      "score_upper": 1546,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.063863,
+        "Medium": -0.041909,
+        "Low": 0.014341,
+        "Other": -0.035071
+      }
     },
     {
       "date": "2026-04-30",
       "score_median": 1485,
+      "score_q25": 1461,
+      "score_q75": 1506,
       "score_lower": 1414,
-      "score_upper": 1547
+      "score_upper": 1547,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.068115,
+        "Medium": -0.045184,
+        "Low": 0.010904,
+        "Other": -0.032072
+      }
     },
     {
       "date": "2026-05-07",
       "score_median": 1485,
+      "score_q25": 1461,
+      "score_q75": 1506,
       "score_lower": 1414,
-      "score_upper": 1548
+      "score_upper": 1548,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.067061,
+        "Medium": -0.046517,
+        "Low": 0.013334,
+        "Other": -0.028628
+      }
     },
     {
       "date": "2026-05-14",
       "score_median": 1486,
+      "score_q25": 1462,
+      "score_q75": 1506,
       "score_lower": 1415,
-      "score_upper": 1549
+      "score_upper": 1549,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.064669,
+        "Medium": -0.04239,
+        "Low": 0.004429,
+        "Other": -0.026819
+      }
+    }
+  ],
+  "cubes": [
+    {
+      "cube": "Nerva's Cube",
+      "tier": "High",
+      "wins": 10,
+      "losses": 10,
+      "games": 20,
+      "win_rate": 50,
+      "trophies": 0
+    },
+    {
+      "cube": "Pauper Cube Diddi",
+      "tier": "Low",
+      "wins": 3,
+      "losses": 5,
+      "games": 8,
+      "win_rate": 38,
+      "trophies": 0
+    },
+    {
+      "cube": "Stone Soup Cube",
+      "tier": "Other",
+      "wins": 3,
+      "losses": 5,
+      "games": 8,
+      "win_rate": 38,
+      "trophies": 0
+    },
+    {
+      "cube": "Modern Stories",
+      "tier": "Medium",
+      "wins": 2,
+      "losses": 4,
+      "games": 6,
+      "win_rate": 33,
+      "trophies": 0
+    },
+    {
+      "cube": "Flashdance!",
+      "tier": "Medium",
+      "wins": 3,
+      "losses": 4,
+      "games": 7,
+      "win_rate": 43,
+      "trophies": 0
+    },
+    {
+      "cube": "Bolti",
+      "tier": "High",
+      "wins": 2,
+      "losses": 4,
+      "games": 6,
+      "win_rate": 33,
+      "trophies": 0
     }
   ]
 }

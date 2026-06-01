@@ -1,0 +1,124 @@
+{
+  "cube": "The Ab Wheel",
+  "slug": "the-ab-wheel",
+  "tier": "Low",
+  "summary": {
+    "n_events": 1,
+    "n_matches": 9,
+    "n_players": 7,
+    "first_played": "2026-01-29",
+    "last_played": "2026-01-29"
+  },
+  "trophy_leaders": [],
+  "player_rankings": [
+    {
+      "player": "Örvar",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 1,
+      "game_pct": 83
+    },
+    {
+      "player": "Atli",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 2,
+      "game_pct": 71
+    },
+    {
+      "player": "Anna",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 3,
+      "game_pct": 57
+    },
+    {
+      "player": "Aron Gauti",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 2,
+      "game_l": 3,
+      "game_pct": 40
+    },
+    {
+      "player": "Tommi",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 2,
+      "game_l": 3,
+      "game_pct": 40
+    },
+    {
+      "player": "Hjalti",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 0,
+      "game_l": 4,
+      "game_pct": 0
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-01-29",
+      "results": [
+        {
+          "player": "Anna",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Örvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 1,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Hjalti",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 0,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Gauti",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 2,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 2,
+          "game_l": 3,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

@@ -441,22 +441,43 @@ calendar_records <- function(calendar_df) {
 build_calendar <- function(calendar_df) calendar_records(calendar_df)
 
 main <- function() {
-  results_dir <- newest_results_dir()
-  optin <- opted_in_players()
-  rankings <- build_rankings(results_dir, optin)
-  processed_data <- readRDS(file.path(results_dir, "processed_data.rds"))
+  dirs <- list_results_dirs()
+  results_dir <- dirs[1]
+  prev_dir <- if (length(dirs) >= 2) dirs[2] else NA_character_
+  optin <- opted_in_players() # also performs cube_gs4_auth()
+
   games <- load_results_games()
+  match_results <- load_match_results(games)
+  calendar_df <- load_calendar_data()
+  processed_data <- readRDS(file.path(results_dir, "processed_data.rds"))
 
+  rankings <- build_rankings(results_dir, prev_dir, optin)
   write_json_file(rankings, file.path(PUBLISH_DIR, "rankings.json"))
-  write_json_file(build_meta_enriched(results_dir, rankings, processed_data, games), file.path(PUBLISH_DIR, "meta.json"))
-  write_json_file(build_head_to_head(results_dir, optin), file.path(PUBLISH_DIR, "head_to_head.json"))
-  write_json_file(build_cubes(results_dir), file.path(PUBLISH_DIR, "cubes.json"))
-  write_json_file(build_calendar(results_dir), file.path(PUBLISH_DIR, "calendar.json"))
+  write_json_file(
+    build_meta_enriched(results_dir, rankings, processed_data, games),
+    file.path(PUBLISH_DIR, "meta.json")
+  )
+  write_json_file(build_head_to_head(games, optin), file.path(PUBLISH_DIR, "head_to_head.json"))
+  write_json_file(build_calendar(calendar_df), file.path(PUBLISH_DIR, "calendar.json"))
 
-  players <- build_players(optin)
-  for (p in players) write_json_file(p, file.path(PUBLISH_DIR, "players", paste0(slugify(p$player), ".json")))
+  cube_index <- build_cubes(games, match_results)
+  write_json_file(cube_index, file.path(PUBLISH_DIR, "cubes.json"))
+  for (c in cube_index) {
+    write_json_file(
+      cube_detail(games, match_results, c$slug, optin),
+      file.path(PUBLISH_DIR, "cubes", paste0(c$slug, ".json"))
+    )
+  }
 
-  cat("published", nrow(rankings), "players,", length(players), "profiles from", basename(results_dir), "\n")
+  players <- build_players(optin, games)
+  for (p in players) {
+    write_json_file(p, file.path(PUBLISH_DIR, "players", paste0(p$slug, ".json")))
+  }
+
+  cat(
+    "published", nrow(rankings), "players,", length(players), "profiles,",
+    length(cube_index), "cubes from", basename(results_dir), "\n"
+  )
 }
 
 if (sys.nframe() == 0) main()

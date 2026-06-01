@@ -1,0 +1,129 @@
+{
+  "cube": "Diddi's Vintage Vanilla",
+  "slug": "diddi-s-vintage-vanilla",
+  "tier": "High",
+  "summary": {
+    "n_events": 1,
+    "n_matches": 10,
+    "n_players": 8,
+    "first_played": "2026-04-30",
+    "last_played": "2026-04-30"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Aron Freyr",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Aron Freyr",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 1,
+      "game_pct": 86
+    },
+    {
+      "player": "Arnar",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 3,
+      "game_l": 2,
+      "game_pct": 60
+    },
+    {
+      "player": "Diddi",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 3,
+      "game_pct": 57
+    },
+    {
+      "player": "Örvar",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
+      "player": "Victor",
+      "match_w": 1,
+      "match_l": 1,
+      "match_pct": 50,
+      "game_w": 3,
+      "game_l": 3,
+      "game_pct": 50
+    },
+    {
+      "player": "Aron Elvar",
+      "match_w": 0,
+      "match_l": 2,
+      "match_pct": 0,
+      "game_w": 1,
+      "game_l": 4,
+      "game_pct": 20
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-04-30",
+      "results": [
+        {
+          "player": "Aron Freyr",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 1,
+          "trophy": true
+        },
+        {
+          "player": "Örvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Victor",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 3,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Arnar",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 3,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Aron Elvar",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 1,
+          "game_l": 4,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

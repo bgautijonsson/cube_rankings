@@ -1,22 +1,242 @@
 [
   {
-    "cube": "Medium",
-    "n_games": 437,
-    "n_events": 13
+    "cube": "Boltalandið",
+    "slug": "boltalandid",
+    "tier": "Other",
+    "n_events": 2,
+    "n_games": 56,
+    "n_players": 11,
+    "first_played": "2025-12-18",
+    "last_played": "2026-03-26"
   },
   {
-    "cube": "Low",
-    "n_games": 236,
-    "n_events": 8
+    "cube": "Bolti",
+    "slug": "bolti",
+    "tier": "High",
+    "n_events": 4,
+    "n_games": 100,
+    "n_players": 16,
+    "first_played": "2025-09-25",
+    "last_played": "2026-01-08"
   },
   {
-    "cube": "Other",
-    "n_games": 353,
-    "n_events": 11
+    "cube": "Diddi's Vintage Vanilla",
+    "slug": "diddi-s-vintage-vanilla",
+    "tier": "High",
+    "n_events": 1,
+    "n_games": 26,
+    "n_players": 8,
+    "first_played": "2026-04-30",
+    "last_played": "2026-04-30"
   },
   {
-    "cube": "High",
-    "n_games": 358,
-    "n_events": 10
+    "cube": "Final Destination",
+    "slug": "final-destination",
+    "tier": "Medium",
+    "n_events": 2,
+    "n_games": 53,
+    "n_players": 11,
+    "first_played": "2025-09-11",
+    "last_played": "2025-12-11"
+  },
+  {
+    "cube": "Flashdance!",
+    "slug": "flashdance",
+    "tier": "Medium",
+    "n_events": 2,
+    "n_games": 62,
+    "n_players": 12,
+    "first_played": "2026-03-19",
+    "last_played": "2026-05-28"
+  },
+  {
+    "cube": "Genesis",
+    "slug": "genesis",
+    "tier": "Other",
+    "n_events": 2,
+    "n_games": 55,
+    "n_players": 14,
+    "first_played": "2025-11-20",
+    "last_played": "2026-04-09"
+  },
+  {
+    "cube": "Horror Cube",
+    "slug": "horror-cube",
+    "tier": "Medium",
+    "n_events": 1,
+    "n_games": 26,
+    "n_players": 8,
+    "first_played": "2026-02-19",
+    "last_played": "2026-02-19"
+  },
+  {
+    "cube": "Inventors' Fair",
+    "slug": "inventors-fair",
+    "tier": "Medium",
+    "n_events": 1,
+    "n_games": 18,
+    "n_players": 7,
+    "first_played": "2026-05-21",
+    "last_played": "2026-05-21"
+  },
+  {
+    "cube": "Kaldheim Cube",
+    "slug": "kaldheim-cube",
+    "tier": "Low",
+    "n_events": 1,
+    "n_games": 26,
+    "n_players": 7,
+    "first_played": "2025-09-18",
+    "last_played": "2025-09-18"
+  },
+  {
+    "cube": "Khans Cube",
+    "slug": "khans-cube",
+    "tier": "Low",
+    "n_events": 1,
+    "n_games": 33,
+    "n_players": 10,
+    "first_played": "2025-08-21",
+    "last_played": "2025-08-21"
+  },
+  {
+    "cube": "Meta Memories",
+    "slug": "meta-memories",
+    "tier": "Medium",
+    "n_events": 7,
+    "n_games": 215,
+    "n_players": 21,
+    "first_played": "2025-08-14",
+    "last_played": "2026-04-23"
+  },
+  {
+    "cube": "Modern Stories",
+    "slug": "modern-stories",
+    "tier": "Medium",
+    "n_events": 2,
+    "n_games": 57,
+    "n_players": 13,
+    "first_played": "2026-01-29",
+    "last_played": "2026-04-16"
+  },
+  {
+    "cube": "Nerva's Cube",
+    "slug": "nerva-s-cube",
+    "tier": "High",
+    "n_events": 4,
+    "n_games": 116,
+    "n_players": 20,
+    "first_played": "2025-10-10",
+    "last_played": "2026-04-04"
+  },
+  {
+    "cube": "Old Border Cube",
+    "slug": "old-border-cube",
+    "tier": "Low",
+    "n_events": 2,
+    "n_games": 52,
+    "n_players": 15,
+    "first_played": "2025-10-12",
+    "last_played": "2025-11-13"
+  },
+  {
+    "cube": "Pauper Cube Diddi",
+    "slug": "pauper-cube-diddi",
+    "tier": "Low",
+    "n_events": 1,
+    "n_games": 23,
+    "n_players": 6,
+    "first_played": "2025-10-12",
+    "last_played": "2025-10-12"
+  },
+  {
+    "cube": "Pauper Cube Victor",
+    "slug": "pauper-cube-victor",
+    "tier": "Low",
+    "n_events": 2,
+    "n_games": 54,
+    "n_players": 11,
+    "first_played": "2026-01-22",
+    "last_played": "2026-05-14"
+  },
+  {
+    "cube": "Stingvi Power Max",
+    "slug": "stingvi-power-max",
+    "tier": "High",
+    "n_events": 3,
+    "n_games": 69,
+    "n_players": 13,
+    "first_played": "2025-10-30",
+    "last_played": "2026-05-07"
+  },
+  {
+    "cube": "Stone Soup Cube",
+    "slug": "stone-soup-cube",
+    "tier": "Other",
+    "n_events": 3,
+    "n_games": 123,
+    "n_players": 22,
+    "first_played": "2025-08-28",
+    "last_played": "2025-12-04"
+  },
+  {
+    "cube": "Super Turbo Time",
+    "slug": "super-turbo-time",
+    "tier": "Other",
+    "n_events": 1,
+    "n_games": 24,
+    "n_players": 6,
+    "first_played": "2025-10-12",
+    "last_played": "2025-10-12"
+  },
+  {
+    "cube": "Synergy Cube",
+    "slug": "synergy-cube",
+    "tier": "Medium",
+    "n_events": 2,
+    "n_games": 47,
+    "n_players": 10,
+    "first_played": "2025-09-11",
+    "last_played": "2025-10-12"
+  },
+  {
+    "cube": "That's Totally Uncommon",
+    "slug": "that-s-totally-uncommon",
+    "tier": "Low",
+    "n_events": 1,
+    "n_games": 28,
+    "n_players": 8,
+    "first_played": "2026-02-26",
+    "last_played": "2026-02-26"
+  },
+  {
+    "cube": "The Ab Wheel",
+    "slug": "the-ab-wheel",
+    "tier": "Low",
+    "n_events": 1,
+    "n_games": 20,
+    "n_players": 7,
+    "first_played": "2026-01-29",
+    "last_played": "2026-01-29"
+  },
+  {
+    "cube": "Vintage Aron",
+    "slug": "vintage-aron",
+    "tier": "High",
+    "n_events": 2,
+    "n_games": 79,
+    "n_players": 15,
+    "first_played": "2025-09-04",
+    "last_played": "2026-03-05"
+  },
+  {
+    "cube": "Vintage Victor",
+    "slug": "vintage-victor",
+    "tier": "High",
+    "n_events": 2,
+    "n_games": 63,
+    "n_players": 14,
+    "first_played": "2026-01-08",
+    "last_played": "2026-02-05"
   }
 ]

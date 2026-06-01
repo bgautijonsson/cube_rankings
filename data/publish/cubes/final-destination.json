@@ -1,0 +1,247 @@
+{
+  "cube": "Final Destination",
+  "slug": "final-destination",
+  "tier": "Medium",
+  "summary": {
+    "n_events": 2,
+    "n_matches": 20,
+    "n_players": 11,
+    "first_played": "2025-09-11",
+    "last_played": "2025-12-11"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Oddur",
+      "trophies": 1
+    },
+    {
+      "player": "Arnar",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Arnar",
+      "match_w": 5,
+      "match_l": 1,
+      "match_pct": 83,
+      "game_w": 11,
+      "game_l": 6,
+      "game_pct": 65
+    },
+    {
+      "player": "Örvar",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 3,
+      "game_pct": 62
+    },
+    {
+      "player": "Siggi",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 4,
+      "game_pct": 56
+    },
+    {
+      "player": "Oddur",
+      "match_w": 3,
+      "match_l": 3,
+      "match_pct": 50,
+      "game_w": 8,
+      "game_l": 8,
+      "game_pct": 50
+    },
+    {
+      "player": "Atli",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
+      "player": "Aron Freyr",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
+      "player": "Tommi",
+      "match_w": 2,
+      "match_l": 4,
+      "match_pct": 33,
+      "game_w": 7,
+      "game_l": 8,
+      "game_pct": 47
+    },
+    {
+      "player": "Diddi",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 4,
+      "game_l": 5,
+      "game_pct": 44
+    },
+    {
+      "player": "Aron Elvar",
+      "match_w": 2,
+      "match_l": 2,
+      "match_pct": 50,
+      "game_w": 4,
+      "game_l": 5,
+      "game_pct": 44
+    },
+    {
+      "player": "Einar Logi",
+      "match_w": 0,
+      "match_l": 1,
+      "match_pct": 0,
+      "game_w": 1,
+      "game_l": 2,
+      "game_pct": 33
+    },
+    {
+      "player": "Aron Ívars",
+      "match_w": 0,
+      "match_l": 2,
+      "match_pct": 0,
+      "game_w": 0,
+      "game_l": 4,
+      "game_pct": 0
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09-11",
+      "results": [
+        {
+          "player": "Oddur",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Siggi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Arnar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Diddi",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 6,
+          "trophy": false
+        },
+        {
+          "player": "Einar Logi",
+          "match_w": 0,
+          "match_l": 1,
+          "game_w": 1,
+          "game_l": 2,
+          "trophy": false
+        }
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "results": [
+        {
+          "player": "Arnar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Tommi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Örvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Aron Freyr",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Elvar",
+          "match_w": 2,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Ívars",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 0,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 6,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

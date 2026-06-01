@@ -1,0 +1,146 @@
+{
+  "cube": "Horror Cube",
+  "slug": "horror-cube",
+  "tier": "Medium",
+  "summary": {
+    "n_events": 1,
+    "n_matches": 11,
+    "n_players": 8,
+    "first_played": "2026-02-19",
+    "last_played": "2026-02-19"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Arnar",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Arnar",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 2,
+      "game_pct": 75
+    },
+    {
+      "player": "Aron Freyr",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 2,
+      "game_pct": 71
+    },
+    {
+      "player": "Móses",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 3,
+      "game_pct": 62
+    },
+    {
+      "player": "Anna",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 3,
+      "game_pct": 57
+    },
+    {
+      "player": "Friðrik",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 4,
+      "game_pct": 43
+    },
+    {
+      "player": "Atli",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 4,
+      "game_pct": 43
+    },
+    {
+      "player": "Örvar",
+      "match_w": 0,
+      "match_l": 2,
+      "match_pct": 0,
+      "game_w": 0,
+      "game_l": 4,
+      "game_pct": 0
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-02-19",
+      "results": [
+        {
+          "player": "Arnar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Aron Freyr",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Móses",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Anna",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Friðrik",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Örvar",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 0,
+          "game_l": 4,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}

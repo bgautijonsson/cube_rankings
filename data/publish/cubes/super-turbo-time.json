@@ -1,0 +1,78 @@
+{
+  "cube": "Super Turbo Time",
+  "slug": "super-turbo-time",
+  "tier": "Other",
+  "summary": {
+    "n_events": 1,
+    "n_matches": 9,
+    "n_players": 6,
+    "first_played": "2025-10-12",
+    "last_played": "2025-10-12"
+  },
+  "trophy_leaders": [
+    {
+      "player": "Binni",
+      "trophies": 1
+    }
+  ],
+  "player_rankings": [
+    {
+      "player": "Binni",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 3,
+      "game_pct": 67
+    },
+    {
+      "player": "Ingvi",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 3,
+      "game_pct": 62
+    },
+    {
+      "player": "Oddur",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 2,
+      "game_l": 5,
+      "game_pct": 29
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-12",
+      "results": [
+        {
+          "player": "Binni",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 3,
+          "trophy": true
+        },
+        {
+          "player": "Ingvi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        }
+      ]
+    }
+  ]
+}
