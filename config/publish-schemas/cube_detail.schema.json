@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cube_detail",
+  "type": "object",
+  "required": ["cube", "slug", "tier", "summary", "trophy_leaders", "player_rankings", "events"],
+  "properties": {
+    "cube": { "type": "string" }, "slug": { "type": "string" }, "tier": { "type": "string" },
+    "summary": { "type": "object" },
+    "trophy_leaders": { "type": "array", "items": {
+      "type": "object", "required": ["player","trophies"],
+      "properties": { "player": {"type":"string"}, "trophies": {"type":"number"} } } },
+    "player_rankings": { "type": "array", "items": {
+      "type": "object", "required": ["player","match_w","match_l","match_pct","game_w","game_l","game_pct"],
+      "properties": {
+        "player": {"type":"string"}, "match_w": {"type":"number"}, "match_l": {"type":"number"},
+        "match_pct": {"type":"number"}, "game_w": {"type":"number"}, "game_l": {"type":"number"},
+        "game_pct": {"type":"number"} } } },
+    "events": { "type": "array", "items": {
+      "type": "object", "required": ["date","results"],
+      "properties": { "date": {"type":"string"}, "results": {"type":"array"} } } }
+  }
+}

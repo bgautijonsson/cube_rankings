@@ -154,3 +154,21 @@ stopifnot(.pair$a_wins == 2, .pair$b_wins == 1) # game-level
 .bc <- .pair$by_cube
 stopifnot(length(.bc) == 2) # Bolti + Khans Cube
 cat("PASS: head_to_head_records is game-level with per-named-cube by_cube, both opted-in\n")
+
+.g_cube <- tibble::tibble(
+  match_id = c(1, 1, 1, 2, 2, 2, 3, 3, 3),
+  date = as.Date("2026-05-14"),
+  player1 = "A", player2 = rep(c("B", "C", "D"), each = 3), # C, D not opted in
+  cube = "Bolti",
+  winner = c("A", "A", "A", "A", "A", "B", "A", "D", "A")
+)
+.mr <- load_match_results(.g_cube)
+.idx <- cubes_index(.g_cube, .mr)
+stopifnot(.idx[[1]]$cube == "Bolti", .idx[[1]]$slug == "bolti", .idx[[1]]$tier == "High")
+stopifnot(.idx[[1]]$n_events == 1)
+.det <- cube_detail(.g_cube, .mr, slug = "bolti", optin = c("A", "B")) # C,D omitted
+.players_listed <- unique(purrr::map_chr(.det$player_rankings, "player"))
+stopifnot(all(.players_listed %in% c("A", "B"))) # PRIVACY: no C/D
+.a_trophy <- purrr::keep(.det$trophy_leaders, ~ .x$player == "A")
+stopifnot(length(.a_trophy) == 1, .a_trophy[[1]]$trophies == 1) # A won 3 matches at the event
+cat("PASS: cubes index + detail (named, tiered, opt-in omitted, trophies = 3+ match wins)\n")

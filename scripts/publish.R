@@ -328,18 +328,102 @@ head_to_head_records <- function(games, optin) {
 
 build_head_to_head <- function(games, optin) head_to_head_records(games, optin)
 
-build_cubes <- function(results_dir) {
-  pd <- readRDS(file.path(results_dir, "processed_data.rds"))
-  pd |>
+cubes_index <- function(games, match_results) {
+  game_counts <- games |> dplyr::summarise(n_games = dplyr::n(), .by = cube)
+  match_results |>
     dplyr::summarise(
-      n_games = dplyr::n(),
-      n_events = dplyr::n_distinct(.data$date),
+      n_events = dplyr::n_distinct(date),
+      n_players = dplyr::n_distinct(c(player1, player2)),
+      first_played = min(date), last_played = max(date),
       .by = cube
     ) |>
-    purrr::pmap(function(cube, n_games, n_events) {
-      list(cube = cube, n_games = n_games, n_events = n_events)
+    dplyr::left_join(game_counts, by = "cube") |>
+    dplyr::mutate(slug = slugify(cube), tier = cube_tier(cube)) |>
+    dplyr::arrange(cube) |>
+    purrr::pmap(function(cube, n_events, n_players, first_played, last_played, n_games, slug, tier) {
+      list(
+        cube = cube, slug = slug, tier = tier,
+        n_events = n_events, n_games = n_games, n_players = n_players,
+        first_played = as.character(first_played), last_played = as.character(last_played)
+      )
     })
 }
+
+cube_detail <- function(games, match_results, slug, optin) {
+  optin_lc <- stringr::str_to_lower(optin)
+  this_games <- dplyr::filter(games, slugify(cube) == slug)
+  this_mr <- dplyr::filter(match_results, slugify(cube) == slug)
+  cube_name <- this_games$cube[1]
+
+  event_match <- dplyr::bind_rows(
+    this_mr |> dplyr::transmute(date, player = player1, mw = as.integer(match_winner == player1)),
+    this_mr |> dplyr::transmute(date, player = player2, mw = as.integer(match_winner == player2))
+  ) |> dplyr::summarise(match_wins = sum(mw), matches = dplyr::n(), .by = c(date, player))
+
+  event_game <- dplyr::bind_rows(
+    this_games |> dplyr::transmute(date, player = player1, gw = as.integer(winner == player1)),
+    this_games |> dplyr::transmute(date, player = player2, gw = as.integer(winner == player2))
+  ) |> dplyr::summarise(game_wins = sum(gw), game_losses = dplyr::n() - sum(gw), .by = c(date, player))
+
+  event_player <- event_match |>
+    dplyr::left_join(event_game, by = c("date", "player")) |>
+    dplyr::filter(stringr::str_to_lower(player) %in% optin_lc)
+
+  trophy_leaders <- event_player |>
+    dplyr::filter(match_wins >= 3) |>
+    dplyr::summarise(trophies = dplyr::n(), .by = player) |>
+    dplyr::arrange(dplyr::desc(trophies)) |>
+    purrr::pmap(function(player, trophies) list(player = player, trophies = trophies))
+
+  player_rankings <- event_player |>
+    dplyr::summarise(
+      match_w = sum(match_wins), match_l = sum(matches) - sum(match_wins),
+      game_w = sum(game_wins), game_l = sum(game_losses), .by = player
+    ) |>
+    dplyr::mutate(
+      match_pct = round(match_w / (match_w + match_l) * 100),
+      game_pct = round(game_w / (game_w + game_l) * 100)
+    ) |>
+    dplyr::arrange(dplyr::desc(game_pct), dplyr::desc(game_w + game_l)) |>
+    purrr::pmap(function(player, match_w, match_l, game_w, game_l, match_pct, game_pct) {
+      list(
+        player = player, match_w = match_w, match_l = match_l, match_pct = match_pct,
+        game_w = game_w, game_l = game_l, game_pct = game_pct
+      )
+    })
+
+  events <- event_player |>
+    dplyr::mutate(match_l = matches - match_wins, trophy = match_wins >= 3) |>
+    dplyr::arrange(dplyr::desc(date), dplyr::desc(match_wins)) |>
+    dplyr::group_by(date) |>
+    dplyr::group_map(~ list(
+      date = as.character(.y$date[1]),
+      results = purrr::pmap(.x, function(player, match_wins, matches, game_wins, game_losses, match_l, trophy, ...) {
+        list(
+          player = player, match_w = match_wins, match_l = match_l,
+          game_w = game_wins, game_l = game_losses, trophy = trophy
+        )
+      })
+    ))
+
+  summary <- this_mr |>
+    dplyr::summarise(
+      n_events = dplyr::n_distinct(date), n_matches = dplyr::n(),
+      n_players = dplyr::n_distinct(c(player1, player2)),
+      first_played = min(date), last_played = max(date)
+    ) |>
+    as.list()
+  summary$first_played <- as.character(summary$first_played)
+  summary$last_played <- as.character(summary$last_played)
+
+  list(
+    cube = cube_name, slug = slug, tier = cube_tier(cube_name),
+    summary = summary, trophy_leaders = trophy_leaders,
+    player_rankings = player_rankings, events = events
+  )
+}
+
+build_cubes <- function(games, match_results) cubes_index(games, match_results)
 
 build_calendar <- function(results_dir) {
   game_dates <- readRDS(file.path(results_dir, "game_dates.rds"))

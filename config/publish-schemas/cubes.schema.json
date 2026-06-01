@@ -4,21 +4,16 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [
-      "cube",
-      "n_games",
-      "n_events"
-    ],
+    "required": ["cube", "slug", "tier", "n_events", "n_games", "n_players", "first_played", "last_played"],
     "properties": {
-      "cube": {
-        "type": "string"
-      },
-      "n_games": {
-        "type": "number"
-      },
-      "n_events": {
-        "type": "number"
-      }
+      "cube":         { "type": "string" },
+      "slug":         { "type": "string" },
+      "tier":         { "type": "string" },
+      "n_events":     { "type": "number" },
+      "n_games":      { "type": "number" },
+      "n_players":    { "type": "number" },
+      "first_played": { "type": "string" },
+      "last_played":  { "type": "string" }
     }
   }
 }
