@@ -87,7 +87,7 @@ build_meta_enriched <- function(results_dir, rankings, processed_data, games) {
     dplyr::mutate(tier = cube_tier(cube)) |>
     dplyr::arrange(cube) |>
     split(~tier) |>
-    purrr::map(~ .x$cube)
+    purrr::map(~ as.list(.x$cube))
   list(
     generated_at    = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
     fit_date        = basename(results_dir),
