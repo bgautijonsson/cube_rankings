@@ -23,9 +23,12 @@ jobs:
         with:
           r-version: 'release'
           use-public-rspm: true
+          extra-repositories: 'https://stan-dev.r-universe.dev'
       - uses: r-lib/actions/setup-r-dependencies@v2
         env:
           PKG_SYSREQS: "false"
+        with:
+          extra-packages: any::cmdstanr
       - name: Run tests
         run: Rscript tests/test_enrichment.R && Rscript tests/test_publish.R
       - name: Publish JSON
