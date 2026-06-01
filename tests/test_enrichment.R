@@ -60,3 +60,32 @@ stopifnot(
   identical(.meta$tiers$Other, list("Genesis"))
 )
 cat("PASS: build_meta_enriched adds counts, reference_date, and tier->cube map\n")
+
+.mk_summary <- function(scores) {
+  tibble::tibble(
+    player = c("A", "B", "C"), player_nr = 1:3,
+    wins = c(40, 30, 20), losses = c(20, 20, 20), total = c(60, 50, 40),
+    score_median = scores, score_q25 = scores - 10, score_q75 = scores + 10,
+    score_lower = scores - 50, score_upper = scores + 50,
+    gamma_High = 0.1, gamma_Medium = 0, gamma_Low = -0.1, gamma_Other = 0,
+    High_elo_median = scores + 5, Medium_elo_median = scores,
+    Low_elo_median = scores - 5, Other_elo_median = scores,
+    High_wins = 20, Medium_wins = 10, Low_wins = 6, Other_wins = 4,
+    High_total = 30, Medium_total = 12, Low_total = 10, Other_total = 8
+  )
+}
+.lastgame <- tibble::tibble(player = c("A", "B", "C"), last_game = as.Date("2026-05-14"))
+.now <- .mk_summary(c(1600, 1550, 1500))
+.prev <- .mk_summary(c(1500, 1560, 1490)) # B was ahead of A previously
+.r <- rankings_attach_ranks(
+  base = dplyr::arrange(.now, dplyr::desc(score_median)),
+  now = .now, prev = .prev,
+  last_now = .lastgame, last_prev = .lastgame,
+  ref_now = as.Date("2026-05-14"), ref_prev = as.Date("2026-05-14"),
+  optin_lc = c("a", "b", "c")
+)
+.a <- .r[.r$player == "A", ]
+stopifnot(.a$rank == 1, .a$prev_rank == 2, .a$prev_score_median == 1500)
+stopifnot(.a$last_date == "2026-05-14")
+stopifnot("High_rank" %in% names(.r), "High_prev_elo" %in% names(.r))
+cat("PASS: rankings_attach_ranks bakes current+previous rank/ELO overall and per tier\n")

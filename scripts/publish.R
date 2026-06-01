@@ -72,13 +72,96 @@ opted_in_players <- function() {
   stringr::str_to_title(fetch_table_players())
 }
 
-build_rankings <- function(results_dir, optin) {
-  summary <- readr::read_csv(file.path(results_dir, "player_summary.csv"),
-    show_col_types = FALSE
-  )
-  summary |>
-    filter(.data$player %in% optin) |>
-    arrange(desc(.data$score_median))
+TIERS <- c("High", "Medium", "Low", "Other")
+
+# Per-player last game date from a results dir's processed_data.rds.
+last_game_dates <- function(results_dir) {
+  pd <- readRDS(file.path(results_dir, "processed_data.rds"))
+  dplyr::bind_rows(
+    dplyr::transmute(pd, player = player1, date),
+    dplyr::transmute(pd, player = player2, date)
+  ) |>
+    dplyr::mutate(player = stringr::str_to_title(player)) |>
+    dplyr::summarise(last_game = max(date), .by = player)
+}
+
+# Run rank_estimates for the overall table and each tier, return player -> nr columns.
+.ranks_for <- function(summary, last_game, ref_date, optin_lc) {
+  cutoff <- ref_date - lubridate::weeks(8)
+  overall <- summary |>
+    dplyr::transmute(player, score = score_median, wins, total) |>
+    dplyr::left_join(last_game, by = "player") |>
+    rank_estimates(18, 0.15, 8, optin_lc, cutoff) |>
+    dplyr::transmute(player, rank = nr, score)
+  out <- list(overall)
+  for (tier in TIERS) {
+    tr <- summary |>
+      dplyr::transmute(player,
+        score = .data[[paste0(tier, "_elo_median")]],
+        wins  = .data[[paste0(tier, "_wins")]],
+        total = .data[[paste0(tier, "_total")]]
+      ) |>
+      dplyr::left_join(last_game, by = "player") |>
+      rank_estimates(3, 0.0, 8, optin_lc, cutoff) |>
+      dplyr::transmute(
+        player, !!paste0(tier, "_rank") := nr,
+        !!paste0(tier, "_elo") := score
+      )
+    out <- c(out, list(tr))
+  }
+  purrr::reduce(out, dplyr::full_join, by = "player")
+}
+
+rankings_attach_ranks <- function(base, now, prev, last_now, last_prev,
+                                  ref_now, ref_prev, optin_lc) {
+  cur <- .ranks_for(now, last_now, ref_now, optin_lc)
+  cur_join <- cur |>
+    dplyr::select(player, rank, dplyr::ends_with("_rank"))
+  base <- base |>
+    dplyr::left_join(cur_join, by = "player") |>
+    dplyr::left_join(last_now, by = "player") |>
+    dplyr::mutate(last_date = as.character(last_game)) |>
+    dplyr::select(-last_game)
+  if (!is.null(prev)) {
+    pv <- .ranks_for(prev, last_prev, ref_prev, optin_lc)
+    pv_join <- pv |>
+      dplyr::transmute(player,
+        prev_rank = rank, prev_score_median = score,
+        !!!rlang::set_names(
+          purrr::map(TIERS, ~ rlang::sym(paste0(.x, "_rank"))),
+          paste0(TIERS, "_prev_rank")
+        ),
+        !!!rlang::set_names(
+          purrr::map(TIERS, ~ rlang::sym(paste0(.x, "_elo"))),
+          paste0(TIERS, "_prev_elo")
+        )
+      )
+    base <- dplyr::left_join(base, pv_join, by = "player")
+  } else {
+    base <- base |>
+      dplyr::mutate(prev_rank = NA_integer_, prev_score_median = NA_real_)
+  }
+  base
+}
+
+build_rankings <- function(results_dir, prev_dir, optin) {
+  optin_lc <- stringr::str_to_lower(optin)
+  now <- readr::read_csv(file.path(results_dir, "player_summary.csv"), show_col_types = FALSE)
+  base <- now |>
+    dplyr::filter(.data$player %in% optin) |>
+    dplyr::arrange(dplyr::desc(.data$score_median))
+  last_now <- last_game_dates(results_dir)
+  ref_now <- max(last_now$last_game)
+  if (!is.na(prev_dir) && dir.exists(prev_dir)) {
+    prev <- readr::read_csv(file.path(prev_dir, "player_summary.csv"), show_col_types = FALSE)
+    last_prev <- last_game_dates(prev_dir)
+    ref_prev <- max(last_prev$last_game)
+  } else {
+    prev <- NULL
+    last_prev <- NULL
+    ref_prev <- NULL
+  }
+  rankings_attach_ranks(base, now, prev, last_now, last_prev, ref_now, ref_prev, optin_lc)
 }
 
 build_meta_enriched <- function(results_dir, rankings, processed_data, games) {

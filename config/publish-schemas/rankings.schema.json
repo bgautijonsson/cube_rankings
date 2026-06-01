@@ -4,25 +4,28 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [
-      "player",
-      "score_median",
-      "score_lower",
-      "score_upper"
-    ],
+    "required": ["player", "score_median", "score_lower", "score_upper"],
     "properties": {
-      "player": {
-        "type": "string"
-      },
-      "score_median": {
-        "type": "number"
-      },
-      "score_lower": {
-        "type": "number"
-      },
-      "score_upper": {
-        "type": "number"
-      }
+      "player":            { "type": "string" },
+      "score_median":      { "type": "number" },
+      "score_lower":       { "type": "number" },
+      "score_upper":       { "type": "number" },
+      "rank":              { "type": ["number", "null"] },
+      "prev_rank":         { "type": ["number", "null"] },
+      "prev_score_median": { "type": ["number", "null"] },
+      "last_date":         { "type": ["string", "null"] },
+      "High_rank":         { "type": ["number", "null"] },
+      "High_prev_rank":    { "type": ["number", "null"] },
+      "High_prev_elo":     { "type": ["number", "null"] },
+      "Medium_rank":       { "type": ["number", "null"] },
+      "Medium_prev_rank":  { "type": ["number", "null"] },
+      "Medium_prev_elo":   { "type": ["number", "null"] },
+      "Low_rank":          { "type": ["number", "null"] },
+      "Low_prev_rank":     { "type": ["number", "null"] },
+      "Low_prev_elo":      { "type": ["number", "null"] },
+      "Other_rank":        { "type": ["number", "null"] },
+      "Other_prev_rank":   { "type": ["number", "null"] },
+      "Other_prev_elo":    { "type": ["number", "null"] }
     }
   }
 }
