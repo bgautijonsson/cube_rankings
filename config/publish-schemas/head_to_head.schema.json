@@ -4,24 +4,23 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [
-      "player_a",
-      "player_b",
-      "a_wins",
-      "b_wins"
-    ],
+    "required": ["player_a", "player_b", "a_wins", "b_wins"],
     "properties": {
-      "player_a": {
-        "type": "string"
-      },
-      "player_b": {
-        "type": "string"
-      },
-      "a_wins": {
-        "type": "number"
-      },
-      "b_wins": {
-        "type": "number"
+      "player_a": { "type": "string" },
+      "player_b": { "type": "string" },
+      "a_wins":   { "type": "number" },
+      "b_wins":   { "type": "number" },
+      "by_cube": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["cube", "a_wins", "b_wins"],
+          "properties": {
+            "cube":   { "type": "string" },
+            "a_wins": { "type": "number" },
+            "b_wins": { "type": "number" }
+          }
+        }
       }
     }
   }

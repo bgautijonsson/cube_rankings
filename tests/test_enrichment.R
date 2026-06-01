@@ -142,3 +142,15 @@ stopifnot(all(.pc$player %in% c("A", "B"))) # C omitted
 .a_vc <- .pc[.pc$player == "A" & .pc$cube == "Bolti", ]
 stopifnot(.a_vc$wins == 1, .a_vc$tier == "High")
 cat("PASS: player_history_records (series+rank+summary) and per_cube_player_records (opt-in, tier)\n")
+
+.g_h2h <- tibble::tibble(
+  player1 = c("A", "A", "A"), player2 = c("B", "B", "B"), winner = c("A", "B", "A"),
+  cube = c("Bolti", "Bolti", "Khans Cube"), date = as.Date("2026-05-14"), match_id = 1:3
+)
+.hh <- head_to_head_records(.g_h2h, optin = c("A", "B"))
+.pair <- .hh[[1]]
+stopifnot(.pair$player_a == "A", .pair$player_b == "B")
+stopifnot(.pair$a_wins == 2, .pair$b_wins == 1) # game-level
+.bc <- .pair$by_cube
+stopifnot(length(.bc) == 2) # Bolti + Khans Cube
+cat("PASS: head_to_head_records is game-level with per-named-cube by_cube, both opted-in\n")

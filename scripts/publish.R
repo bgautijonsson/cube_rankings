@@ -306,24 +306,27 @@ build_players <- function(optin, games) {
   })
 }
 
-build_head_to_head <- function(results_dir, optin) {
-  pd <- readRDS(file.path(results_dir, "processed_data.rds"))
-  pd |>
+head_to_head_records <- function(games, optin) {
+  g <- games |>
     dplyr::filter(.data$player1 %in% optin, .data$player2 %in% optin) |>
     dplyr::mutate(
-      a = pmin(.data$player1, .data$player2),
-      b = pmax(.data$player1, .data$player2),
-      a_won = as.integer(.data$winner == .data$a)
-    ) |>
-    dplyr::summarise(
-      a_wins = sum(.data$a_won),
-      b_wins = sum(1L - .data$a_won),
-      .by = c(a, b)
-    ) |>
-    purrr::pmap(function(a, b, a_wins, b_wins) {
-      list(player_a = a, player_b = b, a_wins = a_wins, b_wins = b_wins)
-    })
+      a = pmin(player1, player2), b = pmax(player1, player2),
+      a_won = as.integer(winner == a)
+    )
+  overall <- g |>
+    dplyr::summarise(a_wins = sum(a_won), b_wins = sum(1L - a_won), .by = c(a, b))
+  by_cube <- g |>
+    dplyr::summarise(a_wins = sum(a_won), b_wins = sum(1L - a_won), .by = c(a, b, cube))
+  purrr::pmap(overall, function(a, b, a_wins, b_wins) {
+    bc <- by_cube |>
+      dplyr::filter(.data$a == !!a, .data$b == !!b) |>
+      dplyr::transmute(cube, a_wins, b_wins) |>
+      purrr::transpose()
+    list(player_a = a, player_b = b, a_wins = a_wins, b_wins = b_wins, by_cube = bc)
+  })
 }
+
+build_head_to_head <- function(games, optin) head_to_head_records(games, optin)
 
 build_cubes <- function(results_dir) {
   pd <- readRDS(file.path(results_dir, "processed_data.rds"))
