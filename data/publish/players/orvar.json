@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1581,
+    "score_median": 1590,
     "rank": 1,
-    "win_rate": 63.043478,
-    "games": 184,
+    "win_rate": 63.316583,
+    "games": 199,
     "strongest_tier": "Low"
   },
   "history": [
@@ -672,6 +672,44 @@
         "Medium": -0.271329,
         "Low": 0.234394,
         "Other": 0.00171
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1584,
+      "score_q25": 1560,
+      "score_q75": 1610,
+      "score_lower": 1530,
+      "score_upper": 1653,
+      "rank": 1,
+      "win_rate": 62.827225,
+      "games": 191,
+      "wins": 120,
+      "losses": 71,
+      "strength": {
+        "High": 0.030137,
+        "Medium": -0.258446,
+        "Low": 0.222477,
+        "Other": 0.002413
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1590,
+      "score_q25": 1566,
+      "score_q75": 1616,
+      "score_lower": 1536,
+      "score_upper": 1658,
+      "rank": 1,
+      "win_rate": 63.316583,
+      "games": 199,
+      "wins": 126,
+      "losses": 73,
+      "strength": {
+        "High": 0.014807,
+        "Medium": -0.217624,
+        "Low": 0.211887,
+        "Other": -0.009978
       }
     }
   ],

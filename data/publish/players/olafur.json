@@ -2,10 +2,10 @@
   "player": "Ólafur",
   "slug": "olafur",
   "summary": {
-    "score_median": 1486,
+    "score_median": 1485,
     "rank": 20,
-    "win_rate": 41.666667,
-    "games": 48,
+    "win_rate": 41.818182,
+    "games": 55,
     "strongest_tier": "High"
   },
   "history": [
@@ -615,6 +615,44 @@
         "Medium": -0.04239,
         "Low": 0.004429,
         "Other": -0.026819
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1485,
+      "score_q25": 1462,
+      "score_q75": 1505,
+      "score_lower": 1414,
+      "score_upper": 1544,
+      "rank": 20,
+      "win_rate": 41.666667,
+      "games": 48,
+      "wins": 20,
+      "losses": 28,
+      "strength": {
+        "High": 0.076999,
+        "Medium": -0.046229,
+        "Low": 0.009771,
+        "Other": -0.037288
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1485,
+      "score_q25": 1462,
+      "score_q75": 1504,
+      "score_lower": 1421,
+      "score_upper": 1542,
+      "rank": 20,
+      "win_rate": 41.818182,
+      "games": 55,
+      "wins": 23,
+      "losses": 32,
+      "strength": {
+        "High": 0.077149,
+        "Medium": -0.046718,
+        "Low": 0.01195,
+        "Other": -0.037796
       }
     }
   ],

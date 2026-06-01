@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1524,
-    "rank": 10,
-    "win_rate": 53.526971,
-    "games": 241,
+    "score_median": 1532,
+    "rank": 5,
+    "win_rate": 53.543307,
+    "games": 254,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -729,6 +729,44 @@
         "Medium": 0.104552,
         "Low": -0.008574,
         "Other": -0.063661
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1534,
+      "score_q25": 1517,
+      "score_q75": 1553,
+      "score_lower": 1488,
+      "score_upper": 1584,
+      "rank": 5,
+      "win_rate": 53.846154,
+      "games": 247,
+      "wins": 133,
+      "losses": 114,
+      "strength": {
+        "High": -0.004759,
+        "Medium": 0.11957,
+        "Low": -0.035051,
+        "Other": -0.083356
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1532,
+      "score_q25": 1514,
+      "score_q75": 1551,
+      "score_lower": 1484,
+      "score_upper": 1581,
+      "rank": 5,
+      "win_rate": 53.543307,
+      "games": 254,
+      "wins": 136,
+      "losses": 118,
+      "strength": {
+        "High": 0.002963,
+        "Medium": 0.100176,
+        "Low": -0.028531,
+        "Other": -0.076248
       }
     }
   ],

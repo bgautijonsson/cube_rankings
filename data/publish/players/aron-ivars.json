@@ -730,6 +730,44 @@
         "Low": 0.080684,
         "Other": 0.00024
       }
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1500,
+      "score_q25": 1481,
+      "score_q75": 1522,
+      "score_lower": 1445,
+      "score_upper": 1564,
+      "rank": 17,
+      "win_rate": 45.054945,
+      "games": 91,
+      "wins": 41,
+      "losses": 50,
+      "strength": {
+        "High": 0.156411,
+        "Medium": -0.228107,
+        "Low": 0.074941,
+        "Other": -0.007566
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1500,
+      "score_q25": 1481,
+      "score_q75": 1522,
+      "score_lower": 1444,
+      "score_upper": 1563,
+      "rank": 16,
+      "win_rate": 45.054945,
+      "games": 91,
+      "wins": 41,
+      "losses": 50,
+      "strength": {
+        "High": 0.153891,
+        "Medium": -0.228056,
+        "Low": 0.078404,
+        "Other": -0.007318
+      }
     }
   ],
   "cubes": [

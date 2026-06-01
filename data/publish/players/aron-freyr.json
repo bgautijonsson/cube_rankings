@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1551,
+    "score_median": 1555,
     "rank": 2,
-    "win_rate": 58.222222,
-    "games": 225,
+    "win_rate": 58.547009,
+    "games": 234,
     "strongest_tier": "Other"
   },
   "history": [
@@ -729,6 +729,44 @@
         "Medium": -0.017285,
         "Low": -0.190169,
         "Other": 0.176548
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1555,
+      "score_q25": 1536,
+      "score_q75": 1577,
+      "score_lower": 1509,
+      "score_upper": 1615,
+      "rank": 2,
+      "win_rate": 58.547009,
+      "games": 234,
+      "wins": 137,
+      "losses": 97,
+      "strength": {
+        "High": 0.0423,
+        "Medium": 0.004645,
+        "Low": -0.199384,
+        "Other": 0.152411
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1555,
+      "score_q25": 1536,
+      "score_q75": 1577,
+      "score_lower": 1509,
+      "score_upper": 1614,
+      "rank": 2,
+      "win_rate": 58.547009,
+      "games": 234,
+      "wins": 137,
+      "losses": 97,
+      "strength": {
+        "High": 0.039277,
+        "Medium": 0.000953,
+        "Low": -0.198501,
+        "Other": 0.155483
       }
     }
   ],
