@@ -425,13 +425,20 @@ cube_detail <- function(games, match_results, slug, optin) {
 
 build_cubes <- function(games, match_results) cubes_index(games, match_results)
 
-build_calendar <- function(results_dir) {
-  game_dates <- readRDS(file.path(results_dir, "game_dates.rds"))
-  game_dates |>
-    dplyr::arrange(.data$date) |>
-    dplyr::transmute(date = as.character(.data$date)) |>
-    purrr::pmap(function(date) list(date = date))
+calendar_records <- function(calendar_df) {
+  calendar_df |>
+    dplyr::arrange(date) |>
+    dplyr::mutate(cube_slug = slugify(cube)) |>
+    purrr::pmap(function(date, cube, host, players, cube_link, cube_slug, ...) {
+      list(
+        date = as.character(date), cube = cube, cube_slug = cube_slug,
+        host = host, players = as.integer(players),
+        link = if (is.na(cube_link)) NULL else cube_link
+      )
+    })
 }
+
+build_calendar <- function(calendar_df) calendar_records(calendar_df)
 
 main <- function() {
   results_dir <- newest_results_dir()

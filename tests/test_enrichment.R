@@ -172,3 +172,16 @@ stopifnot(all(.players_listed %in% c("A", "B"))) # PRIVACY: no C/D
 .a_trophy <- purrr::keep(.det$trophy_leaders, ~ .x$player == "A")
 stopifnot(length(.a_trophy) == 1, .a_trophy[[1]]$trophies == 1) # A won 3 matches at the event
 cat("PASS: cubes index + detail (named, tiered, opt-in omitted, trophies = 3+ match wins)\n")
+
+# Task 9: calendar_records()
+.cal_raw <- tibble::tibble(
+  date = as.Date(c("2026-05-21", "2026-05-14")), cube = c("Bolti", "Khans Cube"),
+  host = c("Diddi", "Hjalti"), players = c(8L, 12L),
+  cube_link = c("https://cubecobra.com/x", NA_character_)
+)
+.cal <- calendar_records(.cal_raw)
+stopifnot(.cal[[1]]$date == "2026-05-14", .cal[[1]]$cube == "Khans Cube", .cal[[1]]$cube_slug == "khans-cube")
+stopifnot(.cal[[2]]$date == "2026-05-21", .cal[[2]]$cube == "Bolti", .cal[[2]]$cube_slug == "bolti")
+stopifnot(.cal[[2]]$host == "Diddi", .cal[[2]]$players == 8L, .cal[[2]]$link == "https://cubecobra.com/x")
+stopifnot(is.null(.cal[[1]]$link))
+cat("PASS: calendar_records emits {date,cube,cube_slug,host,players(int),link}\n")
