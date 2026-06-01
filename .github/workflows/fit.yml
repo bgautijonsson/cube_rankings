@@ -1,0 +1,79 @@
+name: Fit Cube Rankings
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # 07:00 UTC (Iceland is UTC year-round)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Refit all dates (pass --force to run_historical_analysis.R)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fit
+  cancel-in-progress: false
+
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GCP_SA_JSON: ${{ secrets.GCP_SA_JSON }}
+      CMDSTAN_VERSION: '2.38.0'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        env:
+          PKG_SYSREQS: "false"
+        with:
+          extra-repositories: 'https://stan-dev.r-universe.dev'
+          extra-packages: any::cmdstanr
+
+      - name: Cache CmdStan installation
+        id: cache-cmdstan
+        uses: actions/cache@v4
+        with:
+          path: ~/.cmdstan
+          key: cmdstan-${{ env.CMDSTAN_VERSION }}-ubuntu-latest
+
+      - name: Install CmdStan if not cached
+        if: steps.cache-cmdstan.outputs.cache-hit != 'true'
+        run: Rscript -e 'cmdstanr::install_cmdstan(version = Sys.getenv("CMDSTAN_VERSION"), cores = 2)'
+
+      - name: Cache compiled Stan model
+        uses: actions/cache@v4
+        with:
+          path: stan/
+          key: stan-exe-${{ env.CMDSTAN_VERSION }}-${{ hashFiles('stan/*.stan') }}-ubuntu-latest
+
+      - name: Fit (skips dates already present unless --force)
+        env:
+          FORCE_FLAG: ${{ inputs.force == true && '--force' || '' }}
+        run: Rscript run_historical_analysis.R $FORCE_FLAG
+
+      - name: Publish JSON
+        run: Rscript scripts/publish.R
+
+      - name: Commit outputs if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/ data/publish/
+          if git diff --cached --quiet; then
+            echo "No new fits or publish changes"
+            exit 0
+          fi
+          git commit -m "data: cube fit $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin master
+          git push

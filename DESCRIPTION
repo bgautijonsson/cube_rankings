@@ -11,5 +11,10 @@ Imports:
     glue,
     ggtext,
     gt,
+    gtExtras,
+    scales,
+    reactable,
+    htmltools,
     jsonlite,
+    stringi,
     withr
