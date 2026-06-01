@@ -87,5 +87,31 @@ cat("PASS: build_meta_enriched adds counts, reference_date, and tier->cube map\n
 .a <- .r[.r$player == "A", ]
 stopifnot(.a$rank == 1, .a$prev_rank == 2, .a$prev_score_median == 1500)
 stopifnot(.a$last_date == "2026-05-14")
-stopifnot("High_rank" %in% names(.r), "High_prev_elo" %in% names(.r))
+# Assert the FULL per-tier + prev enrichment column set, not just 2 of them — if the
+# TIERS loop silently dropped Medium/Low/Other this would catch it. (Pattern matches the
+# 4 *_rank, 4 *_prev_rank, 4 *_prev_elo, plus the overall prev_rank — 13 names; the bare
+# overall `rank` has no underscore so is excluded, matching the with-prev contract.)
+.expected_enrich <- sort(c(
+  "prev_rank",
+  paste0(c("High", "Medium", "Low", "Other"), "_rank"),
+  paste0(c("High", "Medium", "Low", "Other"), "_prev_rank"),
+  paste0(c("High", "Medium", "Low", "Other"), "_prev_elo")
+))
+.actual_enrich <- sort(grep("_rank$|_prev_elo$|_prev_rank$|_elo$", names(.r), value = TRUE))
+stopifnot(identical(.actual_enrich, .expected_enrich))
 cat("PASS: rankings_attach_ranks bakes current+previous rank/ELO overall and per tier\n")
+
+# No-prev branch (prev = NULL): spec-prescribed asymmetry — prev_rank is NA_integer_
+# and the 8 per-tier *_prev_rank/*_prev_elo columns are ABSENT (not NA). Confirms the
+# structural difference from the with-prev path is intentional and known to Task 10.
+.r0 <- rankings_attach_ranks(
+  base = dplyr::arrange(.now, dplyr::desc(score_median)),
+  now = .now, prev = NULL,
+  last_now = .lastgame, last_prev = NULL,
+  ref_now = as.Date("2026-05-14"), ref_prev = NULL,
+  optin_lc = c("a", "b", "c")
+)
+.a0 <- .r0[.r0$player == "A", ]
+stopifnot(identical(.a0$prev_rank, NA_integer_))
+stopifnot(!("High_prev_rank" %in% names(.r0)), !("High_prev_elo" %in% names(.r0)))
+cat("PASS: rankings_attach_ranks no-prev path yields NA prev_rank and omits per-tier prev columns\n")
