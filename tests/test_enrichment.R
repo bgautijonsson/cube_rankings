@@ -183,7 +183,7 @@ cat("PASS: cubes index + detail (named, tiered, opt-in omitted, trophies = 3+ ma
 stopifnot(.cal[[1]]$date == "2026-05-14", .cal[[1]]$cube == "Khans Cube", .cal[[1]]$cube_slug == "khans-cube")
 stopifnot(.cal[[2]]$date == "2026-05-21", .cal[[2]]$cube == "Bolti", .cal[[2]]$cube_slug == "bolti")
 stopifnot(.cal[[2]]$host == "Diddi", .cal[[2]]$players == 8L, .cal[[2]]$link == "https://cubecobra.com/x")
-stopifnot(is.null(.cal[[1]]$link))
+stopifnot(is.na(.cal[[1]]$link)) # NA (serialises to JSON null), not R NULL (which would emit {})
 cat("PASS: calendar_records emits {date,cube,cube_slug,host,players(int),link}\n")
 
 .cal_na <- tibble::tibble(
@@ -191,6 +191,16 @@ cat("PASS: calendar_records emits {date,cube,cube_slug,host,players(int),link}\n
   host = "Diddi", players = NA_integer_,
   cube_link = NA_character_
 )
-.cal_na_out <- calendar_records(.cal_na)
-stopifnot(is.null(.cal_na_out[[1]]$players))
-cat("PASS: calendar_records: NA players serialises as null (not \"NA\")\n")
+.cal_na_json <- as.character(jsonlite::toJSON(calendar_records(.cal_na)[[1]], auto_unbox = TRUE, na = "null"))
+stopifnot(grepl('"players":null', .cal_na_json), grepl('"link":null', .cal_na_json))
+stopifnot(!grepl("[{][}]", .cal_na_json)) # no empty-object {} from a stray NULL
+cat("PASS: calendar_records: NA players/link serialise as JSON null (not {})\n")
+
+# Task 8 follow-up: cube_detail emits events newest-first (the Kubbar page shows descending date)
+.g_order <- tibble::tibble(
+  match_id = c(1L, 2L), date = as.Date(c("2026-01-01", "2026-02-01")),
+  player1 = "A", player2 = "B", cube = "Bolti", winner = "A"
+)
+.det_o <- cube_detail(.g_order, load_match_results(.g_order), slug = "bolti", optin = c("A", "B"))
+stopifnot(identical(purrr::map_chr(.det_o$events, "date"), c("2026-02-01", "2026-01-01")))
+cat("PASS: cube_detail emits events newest-first\n")

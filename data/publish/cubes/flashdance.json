@@ -122,6 +122,51 @@
   ],
   "events": [
     {
+      "date": "2026-05-28",
+      "results": [
+        {
+          "player": "Örvar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Ólafur",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Friðrik",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 1,
+          "game_l": 6,
+          "trophy": false
+        }
+      ]
+    },
+    {
       "date": "2026-03-19",
       "results": [
         {
@@ -198,51 +243,6 @@
         },
         {
           "player": "Diddi",
-          "match_w": 0,
-          "match_l": 3,
-          "game_w": 1,
-          "game_l": 6,
-          "trophy": false
-        }
-      ]
-    },
-    {
-      "date": "2026-05-28",
-      "results": [
-        {
-          "player": "Örvar",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 2,
-          "trophy": true
-        },
-        {
-          "player": "Diddi",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 5,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Ólafur",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Tommi",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Friðrik",
           "match_w": 0,
           "match_l": 3,
           "game_w": 1,

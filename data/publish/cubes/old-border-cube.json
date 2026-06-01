@@ -113,35 +113,6 @@
   ],
   "events": [
     {
-      "date": "2025-10-12",
-      "results": [
-        {
-          "player": "Daníel",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 1,
-          "trophy": true
-        },
-        {
-          "player": "Aron Ívars",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Aron Gauti",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 3,
-          "trophy": false
-        }
-      ]
-    },
-    {
       "date": "2025-11-13",
       "results": [
         {
@@ -206,6 +177,35 @@
           "match_l": 3,
           "game_w": 0,
           "game_l": 6,
+          "trophy": false
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "results": [
+        {
+          "player": "Daníel",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 1,
+          "trophy": true
+        },
+        {
+          "player": "Aron Ívars",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Aron Gauti",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
           "trophy": false
         }
       ]

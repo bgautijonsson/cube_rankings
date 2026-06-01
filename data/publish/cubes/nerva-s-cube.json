@@ -175,22 +175,14 @@
   ],
   "events": [
     {
-      "date": "2025-10-10",
+      "date": "2026-04-04",
       "results": [
         {
-          "player": "Diddi",
+          "player": "Friðrik",
           "match_w": 3,
           "match_l": 0,
           "game_w": 6,
-          "game_l": 0,
-          "trophy": true
-        },
-        {
-          "player": "Aron Freyr",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 2,
+          "game_l": 1,
           "trophy": true
         },
         {
@@ -202,23 +194,15 @@
           "trophy": false
         },
         {
-          "player": "Ólafur",
+          "player": "Aron Freyr",
           "match_w": 2,
           "match_l": 1,
-          "game_w": 4,
+          "game_w": 5,
           "game_l": 3,
           "trophy": false
         },
         {
-          "player": "Anna",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Oddur",
+          "player": "Atli",
           "match_w": 1,
           "match_l": 2,
           "game_w": 3,
@@ -226,64 +210,27 @@
           "trophy": false
         },
         {
-          "player": "Aron Gauti",
-          "match_w": 0,
+          "player": "Aron Ívars",
+          "match_w": 1,
           "match_l": 2,
-          "game_w": 0,
-          "game_l": 4,
+          "game_w": 4,
+          "game_l": 5,
           "trophy": false
         },
-        {
-          "player": "Einar",
-          "match_w": 0,
-          "match_l": 2,
-          "game_w": 2,
-          "game_l": 4,
-          "trophy": false
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "results": [
         {
           "player": "Örvar",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 4,
-          "game_l": 2,
-          "trophy": true
-        },
-        {
-          "player": "Aron Freyr",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 2,
-          "trophy": true
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 5,
+          "trophy": false
         },
         {
           "player": "Diddi",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 5,
-          "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Ingvi",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 4,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Ólafur",
           "match_w": 0,
           "match_l": 3,
-          "game_w": 2,
-          "game_l": 5,
+          "game_w": 3,
+          "game_l": 6,
           "trophy": false
         }
       ]
@@ -366,14 +313,67 @@
       ]
     },
     {
-      "date": "2026-04-04",
+      "date": "2025-10-12",
       "results": [
         {
-          "player": "Friðrik",
+          "player": "Örvar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 4,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Aron Freyr",
           "match_w": 3,
           "match_l": 0,
           "game_w": 6,
-          "game_l": 1,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Ingvi",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Ólafur",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        }
+      ]
+    },
+    {
+      "date": "2025-10-10",
+      "results": [
+        {
+          "player": "Diddi",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 0,
+          "trophy": true
+        },
+        {
+          "player": "Aron Freyr",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
           "trophy": true
         },
         {
@@ -385,15 +385,23 @@
           "trophy": false
         },
         {
-          "player": "Aron Freyr",
+          "player": "Ólafur",
           "match_w": 2,
           "match_l": 1,
-          "game_w": 5,
+          "game_w": 4,
           "game_l": 3,
           "trophy": false
         },
         {
-          "player": "Atli",
+          "player": "Anna",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
           "match_w": 1,
           "match_l": 2,
           "game_w": 3,
@@ -401,27 +409,19 @@
           "trophy": false
         },
         {
-          "player": "Aron Ívars",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 4,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Örvar",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Diddi",
+          "player": "Aron Gauti",
           "match_w": 0,
-          "match_l": 3,
-          "game_w": 3,
-          "game_l": 6,
+          "match_l": 2,
+          "game_w": 0,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Einar",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 4,
           "trophy": false
         }
       ]

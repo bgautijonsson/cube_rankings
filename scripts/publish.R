@@ -399,6 +399,8 @@ cube_detail <- function(games, match_results, slug, optin) {
         )
       })
     ))
+  # group_by(date) emits groups ascending; the Kubbar page shows events newest-first.
+  events <- events[order(purrr::map_chr(events, "date"), decreasing = TRUE)]
 
   summary <- this_mr |>
     dplyr::summarise(
@@ -426,8 +428,9 @@ calendar_records <- function(calendar_df) {
     purrr::pmap(function(date, cube, host, players, cube_link, cube_slug, ...) {
       list(
         date = as.character(date), cube = cube, cube_slug = cube_slug,
-        host = host, players = if (is.na(players)) NULL else as.integer(players),
-        link = if (is.na(cube_link)) NULL else cube_link
+        host = host,
+        players = as.integer(players), # NA_integer_ -> JSON null via write_json(na="null"); NULL would emit {}
+        link = cube_link # NA_character_ -> null
       )
     })
 }

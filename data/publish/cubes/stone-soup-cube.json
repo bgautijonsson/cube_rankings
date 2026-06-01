@@ -193,94 +193,78 @@
   ],
   "events": [
     {
-      "date": "2025-08-28",
+      "date": "2025-12-04",
       "results": [
         {
-          "player": "Binni",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 2,
-          "trophy": true
-        },
-        {
-          "player": "Tommi",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 2,
-          "trophy": true
-        },
-        {
           "player": "Diddi",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 5,
-          "game_l": 4,
-          "trophy": false
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 1,
+          "trophy": true
         },
         {
-          "player": "Siggi",
+          "player": "Örvar",
           "match_w": 2,
           "match_l": 1,
           "game_w": 4,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Anna",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 5,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Arnar",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 5,
           "game_l": 3,
           "trophy": false
         },
         {
-          "player": "Styrmir",
-          "match_w": 1,
-          "match_l": 2,
+          "player": "Atli",
+          "match_w": 2,
+          "match_l": 1,
           "game_w": 3,
-          "game_l": 5,
+          "game_l": 3,
           "trophy": false
         },
         {
-          "player": "Einar",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 4,
-          "game_l": 5,
+          "player": "Aron Elvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
           "trophy": false
         },
         {
           "player": "Daníel",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Binni",
           "match_w": 1,
           "match_l": 2,
           "game_w": 4,
-          "game_l": 5,
+          "game_l": 4,
           "trophy": false
         },
         {
-          "player": "Oddur",
-          "match_w": 0,
-          "match_l": 3,
-          "game_w": 2,
-          "game_l": 6,
-          "trophy": false
-        },
-        {
-          "player": "Ingvi",
+          "player": "Hjalti",
           "match_w": 0,
           "match_l": 2,
-          "game_w": 2,
+          "game_w": 1,
           "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Gauti",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 1,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 0,
+          "game_l": 3,
           "trophy": false
         }
       ]
@@ -379,34 +363,26 @@
       ]
     },
     {
-      "date": "2025-12-04",
+      "date": "2025-08-28",
       "results": [
         {
-          "player": "Diddi",
+          "player": "Binni",
           "match_w": 3,
           "match_l": 0,
           "game_w": 6,
-          "game_l": 1,
+          "game_l": 2,
           "trophy": true
         },
         {
-          "player": "Örvar",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 3,
-          "trophy": false
+          "player": "Tommi",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
         },
         {
-          "player": "Atli",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 3,
-          "game_l": 3,
-          "trophy": false
-        },
-        {
-          "player": "Aron Elvar",
+          "player": "Diddi",
           "match_w": 2,
           "match_l": 1,
           "game_w": 5,
@@ -414,43 +390,67 @@
           "trophy": false
         },
         {
-          "player": "Daníel",
+          "player": "Siggi",
           "match_w": 2,
           "match_l": 1,
           "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Anna",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Arnar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
           "game_l": 3,
           "trophy": false
         },
         {
-          "player": "Binni",
+          "player": "Styrmir",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Einar",
           "match_w": 1,
           "match_l": 2,
           "game_w": 4,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Daníel",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 6,
+          "trophy": false
+        },
+        {
+          "player": "Ingvi",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 2,
           "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Hjalti",
-          "match_w": 0,
-          "match_l": 2,
-          "game_w": 1,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Aron Gauti",
-          "match_w": 0,
-          "match_l": 2,
-          "game_w": 1,
-          "game_l": 3,
-          "trophy": false
-        },
-        {
-          "player": "Tommi",
-          "match_w": 0,
-          "match_l": 2,
-          "game_w": 0,
-          "game_l": 3,
           "trophy": false
         }
       ]

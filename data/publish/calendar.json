@@ -29,7 +29,7 @@
     "cube_slug": "vintage-hrappur",
     "host": "Hrappur",
     "players": 8,
-    "link": {}
+    "link": null
   },
   {
     "date": "2024-06-18",
@@ -157,7 +157,7 @@
     "cube_slug": "binni-s-cube",
     "host": "Binni",
     "players": 10,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-02-06",
@@ -173,7 +173,7 @@
     "cube_slug": "turbo-cube",
     "host": "Bóas",
     "players": 10,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-03-20",
@@ -181,7 +181,7 @@
     "cube_slug": "vintage-ingvi",
     "host": "Ingvi",
     "players": 10,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-04-03",
@@ -237,7 +237,7 @@
     "cube_slug": "vintage-tommi",
     "host": "Tommi",
     "players": 13,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-08-14",
@@ -261,7 +261,7 @@
     "cube_slug": "stone-soup-cube",
     "host": null,
     "players": 12,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-09-04",
@@ -333,7 +333,7 @@
     "cube_slug": "turbo-cube",
     "host": "Bóas",
     "players": 6,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-10-11",
@@ -381,7 +381,7 @@
     "cube_slug": "stone-soup-cube",
     "host": null,
     "players": 13,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-10-30",
@@ -429,7 +429,7 @@
     "cube_slug": "stone-soup-cube",
     "host": null,
     "players": 9,
-    "link": {}
+    "link": null
   },
   {
     "date": "2025-12-11",
@@ -573,7 +573,7 @@
     "cube_slug": "unset-cube",
     "host": "Oddur",
     "players": 4,
-    "link": {}
+    "link": null
   },
   {
     "date": "2026-04-04",
@@ -660,7 +660,7 @@
     "cube": "Vintage Aron",
     "cube_slug": "vintage-aron",
     "host": "Aron Ívars",
-    "players": {},
+    "players": null,
     "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
   },
   {
@@ -668,7 +668,7 @@
     "cube": "Modern Stories",
     "cube_slug": "modern-stories",
     "host": "Aron Elvar",
-    "players": {},
+    "players": null,
     "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
   },
   {
@@ -676,7 +676,7 @@
     "cube": "Inventors' Fair",
     "cube_slug": "inventors-fair",
     "host": "Binni",
-    "players": {},
+    "players": null,
     "link": "https://cubecobra.com/cube/list/01a2a63d-638d-4a23-b062-fd9a344809f8"
   },
   {
@@ -684,7 +684,7 @@
     "cube": "Genesis",
     "cube_slug": "genesis",
     "host": "Tommi",
-    "players": {},
+    "players": null,
     "link": "https://cubecobra.com/cube/list/Genesis"
   },
   {
@@ -692,7 +692,7 @@
     "cube": "Stingvi Power Max",
     "cube_slug": "stingvi-power-max",
     "host": "Ingvi",
-    "players": {},
+    "players": null,
     "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
   }
 ]
