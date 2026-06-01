@@ -20,7 +20,7 @@ cube_tier <- function(cube) {
       "pauper cube victor", "the ab wheel", "that's totally uncommon"
     ) ~ "Low",
     cube %in% c(
-      "stone soup cube", "boltalandíð", "genesis", "super turbo time"
+      "stone soup cube", "boltalandið", "genesis", "super turbo time"
     ) ~ "Other",
     TRUE ~ "Other"
   )

@@ -58,12 +58,11 @@ slugify <- function(x) {
 # Mirrors prepare_ranking_data() (R/elo_table.R) but is fit-free: estimates come from CSV.
 # `df` needs columns: player (title-case), score, wins, total, last_game (Date).
 # `table_players` is a lowercase opt-in vector (or NULL).
-# `max_absence_weeks` is a number (or NULL to skip absence filtering).
+# `max_absence_weeks` toggles the absence filter; `absence_cutoff` is the precomputed
+# Date floor the caller derives from the dataset's reference date (= max event date),
+# NOT wall-clock Sys.Date() — a run weeks after the last event must not drop active players.
 rank_estimates <- function(df, min_total_games, min_winrate, max_absence_weeks,
-                           table_players) {
-  absence_cutoff <- if (!is.null(max_absence_weeks)) {
-    Sys.Date() - lubridate::weeks(max_absence_weeks)
-  }
+                           table_players, absence_cutoff) {
   df |>
     dplyr::filter(!is.na(.data$score)) |>
     dplyr::mutate(hlutf = .data$wins / .data$total) |>
@@ -72,7 +71,7 @@ rank_estimates <- function(df, min_total_games, min_winrate, max_absence_weeks,
       .data$total >= min_total_games,
       .data$hlutf >= min_winrate,
       is.null(table_players) | stringr::str_to_lower(.data$player) %in% table_players,
-      is.null(absence_cutoff) | .data$last_game >= absence_cutoff
+      is.null(max_absence_weeks) | .data$last_game >= absence_cutoff
     ) |>
     dplyr::mutate(nr = dplyr::row_number())
 }
