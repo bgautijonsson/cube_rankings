@@ -185,3 +185,12 @@ stopifnot(.cal[[2]]$date == "2026-05-21", .cal[[2]]$cube == "Bolti", .cal[[2]]$c
 stopifnot(.cal[[2]]$host == "Diddi", .cal[[2]]$players == 8L, .cal[[2]]$link == "https://cubecobra.com/x")
 stopifnot(is.null(.cal[[1]]$link))
 cat("PASS: calendar_records emits {date,cube,cube_slug,host,players(int),link}\n")
+
+.cal_na <- tibble::tibble(
+  date = as.Date("2026-06-01"), cube = "Bolti",
+  host = "Diddi", players = NA_integer_,
+  cube_link = NA_character_
+)
+.cal_na_out <- calendar_records(.cal_na)
+stopifnot(is.null(.cal_na_out[[1]]$players))
+cat("PASS: calendar_records: NA players serialises as null (not \"NA\")\n")

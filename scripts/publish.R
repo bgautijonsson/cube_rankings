@@ -432,7 +432,7 @@ calendar_records <- function(calendar_df) {
     purrr::pmap(function(date, cube, host, players, cube_link, cube_slug, ...) {
       list(
         date = as.character(date), cube = cube, cube_slug = cube_slug,
-        host = host, players = as.integer(players),
+        host = host, players = if (is.na(players)) NULL else as.integer(players),
         link = if (is.na(cube_link)) NULL else cube_link
       )
     })
