@@ -80,3 +80,21 @@ jobs:
           git commit -m "data: cube fit $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase origin master
           git push
+
+      - name: Push published JSON to mtgkubbur.is (triggers Fly deploy)
+        env:
+          PUSH_TOKEN: ${{ secrets.MTGKUBBUR_PUSH_TOKEN }}
+        run: |
+          git clone --depth 1 "https://x-access-token:${PUSH_TOKEN}@github.com/mtgkubbur/mtgkubbur.is.git" /tmp/app
+          rsync -a --delete data/publish/ /tmp/app/data/kubbur/
+          rsync -a --delete config/publish-schemas/ /tmp/app/data/kubbur-schemas/
+          cd /tmp/app
+          git config user.name  "cube-rankings-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/kubbur data/kubbur-schemas
+          if git diff --cached --quiet; then
+            echo "No JSON changes to push to mtgkubbur.is"
+          else
+            git commit -m "data: sync published JSON from cube_rankings $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
