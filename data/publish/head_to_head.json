@@ -18,10 +18,10 @@
     "b_wins": 7
   },
   {
-    "player_a": "Aron Ívars",
-    "player_b": "Aron Elvar",
-    "a_wins": 2,
-    "b_wins": 5
+    "player_a": "Aron Elvar",
+    "player_b": "Aron Ívars",
+    "a_wins": 5,
+    "b_wins": 2
   },
   {
     "player_a": "Diddi",
@@ -134,8 +134,8 @@
   {
     "player_a": "Diddi",
     "player_b": "Tommi",
-    "a_wins": 10,
-    "b_wins": 9
+    "a_wins": 12,
+    "b_wins": 10
   },
   {
     "player_a": "Arnar",
@@ -210,21 +210,21 @@
     "b_wins": 6
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Ingvi",
-    "a_wins": 7,
-    "b_wins": 2
+    "player_a": "Ingvi",
+    "player_b": "Örvar",
+    "a_wins": 2,
+    "b_wins": 7
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Diddi",
-    "a_wins": 9,
-    "b_wins": 3
+    "player_a": "Diddi",
+    "player_b": "Örvar",
+    "a_wins": 3,
+    "b_wins": 9
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Aron Freyr",
-    "a_wins": 8,
+    "player_a": "Aron Freyr",
+    "player_b": "Örvar",
+    "a_wins": 11,
     "b_wins": 9
   },
   {
@@ -260,7 +260,7 @@
   {
     "player_a": "Örvar",
     "player_b": "Tommi",
-    "a_wins": 15,
+    "a_wins": 16,
     "b_wins": 10
   },
   {
@@ -348,16 +348,16 @@
     "b_wins": 1
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Oddur",
-    "a_wins": 8,
-    "b_wins": 1
+    "player_a": "Oddur",
+    "player_b": "Örvar",
+    "a_wins": 1,
+    "b_wins": 8
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Anna",
-    "a_wins": 2,
-    "b_wins": 0
+    "player_a": "Anna",
+    "player_b": "Örvar",
+    "a_wins": 0,
+    "b_wins": 2
   },
   {
     "player_a": "Hjalti",
@@ -381,7 +381,7 @@
     "player_a": "Ólafur",
     "player_b": "Tommi",
     "a_wins": 2,
-    "b_wins": 2
+    "b_wins": 4
   },
   {
     "player_a": "Aron Freyr",
@@ -396,16 +396,16 @@
     "b_wins": 2
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Einar",
-    "a_wins": 2,
-    "b_wins": 3
+    "player_a": "Einar",
+    "player_b": "Ólafur",
+    "a_wins": 3,
+    "b_wins": 2
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Aron Gauti",
-    "a_wins": 4,
-    "b_wins": 1
+    "player_a": "Aron Gauti",
+    "player_b": "Ólafur",
+    "a_wins": 1,
+    "b_wins": 4
   },
   {
     "player_a": "Aron Elvar",
@@ -432,10 +432,10 @@
     "b_wins": 3
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Anna",
-    "a_wins": 0,
-    "b_wins": 2
+    "player_a": "Anna",
+    "player_b": "Ólafur",
+    "a_wins": 2,
+    "b_wins": 0
   },
   {
     "player_a": "Aron Gauti",
@@ -450,10 +450,10 @@
     "b_wins": 2
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Oddur",
-    "a_wins": 2,
-    "b_wins": 0
+    "player_a": "Oddur",
+    "player_b": "Ólafur",
+    "a_wins": 0,
+    "b_wins": 2
   },
   {
     "player_a": "Anna",
@@ -476,8 +476,8 @@
   {
     "player_a": "Ólafur",
     "player_b": "Örvar",
-    "a_wins": 2,
-    "b_wins": 3
+    "a_wins": 3,
+    "b_wins": 5
   },
   {
     "player_a": "Aron Ívars",
@@ -516,10 +516,10 @@
     "b_wins": 2
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Diddi",
-    "a_wins": 0,
-    "b_wins": 6
+    "player_a": "Diddi",
+    "player_b": "Ólafur",
+    "a_wins": 6,
+    "b_wins": 0
   },
   {
     "player_a": "Aron Freyr",
@@ -528,10 +528,10 @@
     "b_wins": 5
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Aron Freyr",
-    "a_wins": 1,
-    "b_wins": 2
+    "player_a": "Aron Freyr",
+    "player_b": "Ólafur",
+    "a_wins": 2,
+    "b_wins": 1
   },
   {
     "player_a": "Aron Gauti",
@@ -546,10 +546,10 @@
     "b_wins": 0
   },
   {
-    "player_a": "Aron Ívars",
-    "player_b": "Aron Freyr",
-    "a_wins": 4,
-    "b_wins": 2
+    "player_a": "Aron Freyr",
+    "player_b": "Aron Ívars",
+    "a_wins": 2,
+    "b_wins": 4
   },
   {
     "player_a": "Binni",
@@ -558,10 +558,10 @@
     "b_wins": 3
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Aron Elvar",
-    "a_wins": 0,
-    "b_wins": 4
+    "player_a": "Aron Elvar",
+    "player_b": "Ólafur",
+    "a_wins": 4,
+    "b_wins": 0
   },
   {
     "player_a": "Anna",
@@ -576,14 +576,14 @@
     "b_wins": 4
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Ingvi",
-    "a_wins": 1,
-    "b_wins": 2
+    "player_a": "Ingvi",
+    "player_b": "Ólafur",
+    "a_wins": 2,
+    "b_wins": 1
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Hjalti",
+    "player_a": "Hjalti",
+    "player_b": "Örvar",
     "a_wins": 3,
     "b_wins": 3
   },
@@ -606,8 +606,8 @@
     "b_wins": 2
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Daníel",
+    "player_a": "Daníel",
+    "player_b": "Örvar",
     "a_wins": 3,
     "b_wins": 3
   },
@@ -624,10 +624,10 @@
     "b_wins": 0
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Binni",
-    "a_wins": 6,
-    "b_wins": 4
+    "player_a": "Binni",
+    "player_b": "Örvar",
+    "a_wins": 4,
+    "b_wins": 6
   },
   {
     "player_a": "Aron Elvar",
@@ -636,8 +636,8 @@
     "b_wins": 8
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Einar",
+    "player_a": "Einar",
+    "player_b": "Örvar",
     "a_wins": 2,
     "b_wins": 2
   },
@@ -696,10 +696,10 @@
     "b_wins": 0
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Aron Elvar",
-    "a_wins": 10,
-    "b_wins": 5
+    "player_a": "Aron Elvar",
+    "player_b": "Örvar",
+    "a_wins": 5,
+    "b_wins": 10
   },
   {
     "player_a": "Aron Gauti",
@@ -726,8 +726,8 @@
     "b_wins": 2
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Arnar",
+    "player_a": "Arnar",
+    "player_b": "Örvar",
     "a_wins": 3,
     "b_wins": 3
   },
@@ -740,8 +740,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Atli",
-    "a_wins": 9,
-    "b_wins": 3
+    "a_wins": 11,
+    "b_wins": 4
   },
   {
     "player_a": "Aron Elvar",
@@ -762,10 +762,10 @@
     "b_wins": 1
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Atli",
-    "a_wins": 8,
-    "b_wins": 6
+    "player_a": "Atli",
+    "player_b": "Örvar",
+    "a_wins": 6,
+    "b_wins": 8
   },
   {
     "player_a": "Fjölnir",
@@ -804,10 +804,10 @@
     "b_wins": 1
   },
   {
-    "player_a": "Ólafur",
-    "player_b": "Fjölnir",
-    "a_wins": 2,
-    "b_wins": 0
+    "player_a": "Fjölnir",
+    "player_b": "Ólafur",
+    "a_wins": 0,
+    "b_wins": 2
   },
   {
     "player_a": "Einar",
@@ -828,8 +828,8 @@
     "b_wins": 2
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Aron Gauti",
+    "player_a": "Aron Gauti",
+    "player_b": "Örvar",
     "a_wins": 1,
     "b_wins": 1
   },
@@ -846,10 +846,10 @@
     "b_wins": 4
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Einar Logi",
-    "a_wins": 2,
-    "b_wins": 0
+    "player_a": "Einar Logi",
+    "player_b": "Örvar",
+    "a_wins": 0,
+    "b_wins": 2
   },
   {
     "player_a": "Ingvi",
@@ -894,10 +894,10 @@
     "b_wins": 2
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Móses",
-    "a_wins": 0,
-    "b_wins": 4
+    "player_a": "Móses",
+    "player_b": "Örvar",
+    "a_wins": 4,
+    "b_wins": 0
   },
   {
     "player_a": "Arnar",
@@ -932,8 +932,8 @@
   {
     "player_a": "Diddi",
     "player_b": "Friðrik",
-    "a_wins": 5,
-    "b_wins": 7
+    "a_wins": 7,
+    "b_wins": 8
   },
   {
     "player_a": "Atli",
@@ -984,22 +984,22 @@
     "b_wins": 1
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Friðrik",
-    "a_wins": 5,
-    "b_wins": 2
+    "player_a": "Friðrik",
+    "player_b": "Örvar",
+    "a_wins": 3,
+    "b_wins": 9
   },
   {
-    "player_a": "Örvar",
-    "player_b": "Aron Ívars",
-    "a_wins": 2,
-    "b_wins": 1
+    "player_a": "Aron Ívars",
+    "player_b": "Örvar",
+    "a_wins": 1,
+    "b_wins": 2
   },
   {
     "player_a": "Friðrik",
     "player_b": "Tommi",
     "a_wins": 2,
-    "b_wins": 0
+    "b_wins": 2
   },
   {
     "player_a": "Aron Elvar",
@@ -1054,5 +1054,17 @@
     "player_b": "Victor",
     "a_wins": 2,
     "b_wins": 1
+  },
+  {
+    "player_a": "Aron Freyr",
+    "player_b": "Daníel",
+    "a_wins": 2,
+    "b_wins": 1
+  },
+  {
+    "player_a": "Friðrik",
+    "player_b": "Ólafur",
+    "a_wins": 0,
+    "b_wins": 2
   }
 ]

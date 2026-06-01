@@ -228,6 +228,18 @@
       "score_median": 1484,
       "score_lower": 1434,
       "score_upper": 1550
+    },
+    {
+      "date": "2026-05-21",
+      "score_median": 1484,
+      "score_lower": 1436,
+      "score_upper": 1546
+    },
+    {
+      "date": "2026-05-28",
+      "score_median": 1483,
+      "score_lower": 1434,
+      "score_upper": 1546
     }
   ]
 }
