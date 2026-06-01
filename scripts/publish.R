@@ -54,6 +54,25 @@ slugify <- function(x) {
     stringr::str_replace_all("(^-|-$)", "")
 }
 
+# Filter (min games, min win-rate, opt-in, recent activity) then dense-rank by score.
+# Mirrors prepare_ranking_data() (R/elo_table.R) but is fit-free: estimates come from CSV.
+# `df` needs columns: player (title-case), score, wins, total, last_game (Date).
+# `table_players` is a lowercase opt-in vector (or NULL). `absence_cutoff` is a Date.
+rank_estimates <- function(df, min_total_games, min_winrate, max_absence_weeks,
+                           table_players, absence_cutoff) {
+  df |>
+    dplyr::filter(!is.na(.data$score)) |>
+    dplyr::mutate(hlutf = .data$wins / .data$total) |>
+    dplyr::arrange(dplyr::desc(.data$score)) |>
+    dplyr::filter(
+      .data$total >= min_total_games,
+      .data$hlutf >= min_winrate,
+      is.null(table_players) | stringr::str_to_lower(.data$player) %in% table_players,
+      is.null(max_absence_weeks) | .data$last_game >= absence_cutoff
+    ) |>
+    dplyr::mutate(nr = dplyr::row_number())
+}
+
 build_players <- function(optin) {
   hist <- combine_player_summaries()
   hist <- dplyr::filter(hist, .data$player %in% optin)
