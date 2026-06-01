@@ -41,3 +41,18 @@ source("scripts/publish.R", local = TRUE)
 stopifnot(identical(.ranked$player, c("A", "B")))
 stopifnot(identical(.ranked$nr, c(1L, 2L)))
 cat("PASS: rank_estimates filters (games/winrate/absence/opt-in) then dense-ranks by score\n")
+
+.pd <- tibble::tibble(
+  date = as.Date(c("2026-05-07", "2026-05-14", "2026-05-14")),
+  cube = c("High", "Low", "High")
+)
+.games_meta <- tibble::tibble(cube = c("Bolti", "Khans Cube", "Genesis"))
+.meta <- build_meta_enriched(
+  results_dir = "results/2026-05-14",
+  rankings = tibble::tibble(player = c("A", "B")),
+  processed_data = .pd, games = .games_meta
+)
+stopifnot(.meta$n_players == 2, .meta$n_games == 3, .meta$n_dates == 2)
+stopifnot(.meta$reference_date == "2026-05-14")
+stopifnot(.meta$tiers$High == "Bolti", .meta$tiers$Low == "Khans Cube", .meta$tiers$Other == "Genesis")
+cat("PASS: build_meta_enriched adds counts, reference_date, and tier->cube map\n")

@@ -6,6 +6,7 @@ suppressPackageStartupMessages({
 })
 source("R/sheet_auth.R")
 source("R/elo_table.R")
+source("R/cube_tier.R")
 
 PUBLISH_DIR <- "data/publish"
 CMDSTAN_VERSION <- Sys.getenv("CMDSTAN_VERSION", "2.38.0")
@@ -80,13 +81,23 @@ build_rankings <- function(results_dir, optin) {
     arrange(desc(.data$score_median))
 }
 
-build_meta <- function(results_dir, rankings) {
+build_meta_enriched <- function(results_dir, rankings, processed_data, games) {
+  tiers <- games |>
+    dplyr::distinct(cube) |>
+    dplyr::mutate(tier = cube_tier(cube)) |>
+    dplyr::arrange(cube) |>
+    split(~tier) |>
+    purrr::map(~ .x$cube)
   list(
-    generated_at = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
-    fit_date = basename(results_dir),
-    n_players = nrow(rankings),
+    generated_at    = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
+    fit_date        = basename(results_dir),
+    n_players       = nrow(rankings),
+    n_games         = nrow(processed_data),
+    n_dates         = dplyr::n_distinct(processed_data$date),
+    reference_date  = as.character(max(processed_data$date)),
     cmdstan_version = CMDSTAN_VERSION,
-    model = "bradley_terry_temporal"
+    model           = "bradley_terry_temporal",
+    tiers           = tiers
   )
 }
 
@@ -188,9 +199,11 @@ main <- function() {
   results_dir <- newest_results_dir()
   optin <- opted_in_players()
   rankings <- build_rankings(results_dir, optin)
+  processed_data <- readRDS(file.path(results_dir, "processed_data.rds"))
+  games <- load_results_games()
 
   write_json_file(rankings, file.path(PUBLISH_DIR, "rankings.json"))
-  write_json_file(build_meta(results_dir, rankings), file.path(PUBLISH_DIR, "meta.json"))
+  write_json_file(build_meta_enriched(results_dir, rankings, processed_data, games), file.path(PUBLISH_DIR, "meta.json"))
   write_json_file(build_head_to_head(results_dir, optin), file.path(PUBLISH_DIR, "head_to_head.json"))
   write_json_file(build_cubes(results_dir), file.path(PUBLISH_DIR, "cubes.json"))
   write_json_file(build_calendar(results_dir), file.path(PUBLISH_DIR, "calendar.json"))

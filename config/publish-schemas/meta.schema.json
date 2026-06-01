@@ -2,28 +2,16 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "meta",
   "type": "object",
-  "required": [
-    "generated_at",
-    "fit_date",
-    "n_players",
-    "cmdstan_version",
-    "model"
-  ],
+  "required": ["generated_at", "fit_date", "n_players", "n_games", "n_dates", "reference_date", "cmdstan_version", "model", "tiers"],
   "properties": {
-    "generated_at": {
-      "type": "string"
-    },
-    "fit_date": {
-      "type": "string"
-    },
-    "n_players": {
-      "type": "number"
-    },
-    "cmdstan_version": {
-      "type": "string"
-    },
-    "model": {
-      "type": "string"
-    }
+    "generated_at":   { "type": "string" },
+    "fit_date":       { "type": "string" },
+    "n_players":      { "type": "number" },
+    "n_games":        { "type": "number" },
+    "n_dates":        { "type": "number" },
+    "reference_date": { "type": "string" },
+    "cmdstan_version":{ "type": "string" },
+    "model":          { "type": "string" },
+    "tiers":          { "type": "object" }
   }
 }
