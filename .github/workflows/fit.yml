@@ -40,30 +40,37 @@ jobs:
         with:
           extra-packages: any::cmdstanr
 
+      - name: Detect new result dates
+        id: check
+        run: Rscript scripts/check_new_dates.R
+
       - name: Cache CmdStan installation
         id: cache-cmdstan
+        if: steps.check.outputs.new_dates == 'true' || inputs.force == true
         uses: actions/cache@v4
         with:
           path: ~/.cmdstan
           key: cmdstan-${{ env.CMDSTAN_VERSION }}-ubuntu-latest
 
       - name: Install CmdStan if not cached
-        if: steps.cache-cmdstan.outputs.cache-hit != 'true'
+        if: (steps.check.outputs.new_dates == 'true' || inputs.force == true) && steps.cache-cmdstan.outputs.cache-hit != 'true'
         run: Rscript -e 'cmdstanr::install_cmdstan(version = Sys.getenv("CMDSTAN_VERSION"), cores = 2)'
 
       - name: Cache compiled Stan model
+        if: steps.check.outputs.new_dates == 'true' || inputs.force == true
         uses: actions/cache@v4
         with:
           path: stan/
           key: stan-exe-${{ env.CMDSTAN_VERSION }}-${{ hashFiles('stan/*.stan') }}-ubuntu-latest
 
       - name: Fit (skips dates already present unless --force)
+        if: steps.check.outputs.new_dates == 'true' || inputs.force == true
         env:
           FORCE_FLAG: ${{ inputs.force == true && '--force' || '' }}
         run: Rscript run_historical_analysis.R $FORCE_FLAG
 
       - name: Run tests
-        run: Rscript tests/test_enrichment.R && Rscript tests/test_publish.R
+        run: Rscript tests/test_enrichment.R && Rscript tests/test_publish.R && Rscript tests/test_incremental.R
 
       - name: Publish JSON
         run: Rscript scripts/publish.R
