@@ -25,38 +25,29 @@ if (force_refit) {
 source("R/data_preparation.R")
 source("R/model_fitting.R")
 source("R/elo_table.R")
+source("R/incremental.R")
 
 # Download and prepare complete dataset
 cat("Downloading and preparing complete dataset...\n")
 d_raw <- download_cube_results()
 
-# Get all unique dates in the data
-all_dates <- d_raw |>
-  mutate(date = as_date(date)) |>
-  distinct(date) |>
-  arrange(date) |>
-  pull(date)
+# Get all unique play dates in the data
+all_dates <- sheet_play_dates(d_raw)
 
 cat("Found", length(all_dates), "unique play dates in data.\n")
 
 # Check which dates already have results
 results_root <- "results"
 dir.create(results_root, showWarnings = FALSE)
-
-existing_dirs <- if (dir.exists(results_root)) {
-  list.dirs(results_root, recursive = FALSE, full.names = FALSE)
-} else {
-  character(0)
-}
-existing_dates <- existing_dirs[grepl("^\\d{4}-\\d{2}-\\d{2}$", existing_dirs)]
+existing_dates <- existing_result_dates(results_root)
 
 cat("Found", length(existing_dates), "dates with existing results.\n")
 
-# Find dates to process
+# Find dates to process (incremental unless --force)
 if (force_refit) {
   dates_to_fit <- sort(as.character(all_dates))
 } else {
-  dates_to_fit <- sort(setdiff(as.character(all_dates), existing_dates))
+  dates_to_fit <- new_result_dates(all_dates, existing_dates)
 }
 
 if (length(dates_to_fit) == 0) {
