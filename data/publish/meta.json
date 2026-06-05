@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-04T08:30:42Z",
-  "fit_date": "2026-05-28",
+  "generated_at": "2026-06-05T08:46:01Z",
+  "fit_date": "2026-06-04",
   "n_players": 24,
-  "n_games": 1425,
-  "n_dates": 40,
-  "reference_date": "2026-05-28",
+  "n_games": 1462,
+  "n_dates": 41,
+  "reference_date": "2026-06-04",
   "cmdstan_version": "2.38.0",
   "model": "bradley_terry_temporal",
   "tiers": {

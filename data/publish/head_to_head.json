@@ -2,8 +2,8 @@
   {
     "player_a": "Binni",
     "player_b": "Einar",
-    "a_wins": 2,
-    "b_wins": 3,
+    "a_wins": 4,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -14,6 +14,11 @@
         "cube": "Synergy Cube",
         "a_wins": 0,
         "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -71,8 +76,8 @@
   {
     "player_a": "Aron Elvar",
     "player_b": "Aron Ívars",
-    "a_wins": 5,
-    "b_wins": 2,
+    "a_wins": 6,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -86,8 +91,8 @@
       },
       {
         "cube": "Vintage Aron",
-        "a_wins": 2,
-        "b_wins": 0
+        "a_wins": 3,
+        "b_wins": 2
       }
     ]
   },
@@ -237,8 +242,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Tommi",
-    "a_wins": 15,
-    "b_wins": 11,
+    "a_wins": 16,
+    "b_wins": 13,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -269,6 +274,11 @@
         "cube": "Pauper Cube Victor",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 1,
+        "b_wins": 2
       }
     ]
   },
@@ -764,12 +774,12 @@
   {
     "player_a": "Aron Elvar",
     "player_b": "Aron Freyr",
-    "a_wins": 7,
+    "a_wins": 9,
     "b_wins": 6,
     "by_cube": [
       {
         "cube": "Vintage Aron",
-        "a_wins": 3,
+        "a_wins": 5,
         "b_wins": 3
       },
       {
@@ -1001,12 +1011,12 @@
   {
     "player_a": "Örvar",
     "player_b": "Tommi",
-    "a_wins": 16,
+    "a_wins": 18,
     "b_wins": 10,
     "by_cube": [
       {
         "cube": "Vintage Aron",
-        "a_wins": 1,
+        "a_wins": 3,
         "b_wins": 2
       },
       {
@@ -1060,11 +1070,16 @@
     "player_a": "Aron Gauti",
     "player_b": "Binni",
     "a_wins": 1,
-    "b_wins": 2,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Synergy Cube",
         "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 0,
         "b_wins": 2
       }
     ]
@@ -1444,7 +1459,7 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Aron Gauti",
-    "a_wins": 7,
+    "a_wins": 9,
     "b_wins": 3,
     "by_cube": [
       {
@@ -1461,6 +1476,11 @@
         "cube": "Old Border Cube",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -2007,8 +2027,8 @@
   {
     "player_a": "Aron Elvar",
     "player_b": "Einar",
-    "a_wins": 2,
-    "b_wins": 4,
+    "a_wins": 4,
+    "b_wins": 5,
     "by_cube": [
       {
         "cube": "Stone Soup Cube",
@@ -2019,6 +2039,11 @@
         "cube": "Old Border Cube",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -2296,7 +2321,7 @@
     "player_a": "Atli",
     "player_b": "Tommi",
     "a_wins": 3,
-    "b_wins": 8,
+    "b_wins": 10,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -2311,6 +2336,11 @@
       {
         "cube": "Pauper Cube Victor",
         "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 0,
         "b_wins": 2
       }
     ]
@@ -2346,13 +2376,18 @@
   {
     "player_a": "Aron Ívars",
     "player_b": "Oddur",
-    "a_wins": 1,
+    "a_wins": 3,
     "b_wins": 2,
     "by_cube": [
       {
         "cube": "Meta Memories",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -2433,8 +2468,8 @@
   {
     "player_a": "Aron Gauti",
     "player_b": "Atli",
-    "a_wins": 4,
-    "b_wins": 4,
+    "a_wins": 5,
+    "b_wins": 6,
     "by_cube": [
       {
         "cube": "Stone Soup Cube",
@@ -2448,8 +2483,8 @@
       },
       {
         "cube": "Vintage Aron",
-        "a_wins": 2,
-        "b_wins": 1
+        "a_wins": 3,
+        "b_wins": 3
       }
     ]
   },
@@ -2922,12 +2957,17 @@
     "player_a": "Binni",
     "player_b": "Styrmir",
     "a_wins": 2,
-    "b_wins": 0,
+    "b_wins": 2,
     "by_cube": [
       {
         "cube": "Vintage Victor",
         "a_wins": 2,
         "b_wins": 0
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 0,
+        "b_wins": 2
       }
     ]
   },
@@ -3297,11 +3337,16 @@
   {
     "player_a": "Aron Ívars",
     "player_b": "Örvar",
-    "a_wins": 1,
-    "b_wins": 2,
+    "a_wins": 2,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Nerva's Cube",
+        "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Vintage Aron",
         "a_wins": 1,
         "b_wins": 2
       }
@@ -3369,7 +3414,7 @@
   {
     "player_a": "Atli",
     "player_b": "Oddur",
-    "a_wins": 2,
+    "a_wins": 4,
     "b_wins": 3,
     "by_cube": [
       {
@@ -3381,6 +3426,11 @@
         "cube": "Pauper Cube Victor",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -3485,6 +3535,19 @@
         "cube": "Flashdance!",
         "a_wins": 0,
         "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Örvar",
+    "player_b": "Styrmir",
+    "a_wins": 2,
+    "b_wins": 1,
+    "by_cube": [
+      {
+        "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   }

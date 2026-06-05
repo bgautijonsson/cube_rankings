@@ -2,10 +2,10 @@
   "player": "Aron Gauti",
   "slug": "aron-gauti",
   "summary": {
-    "score_median": 1469,
+    "score_median": 1461,
     "rank": 24,
-    "win_rate": 34.782609,
-    "games": 92,
+    "win_rate": 33.333333,
+    "games": 99,
     "strongest_tier": "Low"
   },
   "history": [
@@ -749,6 +749,25 @@
         "Low": 0.153607,
         "Other": -0.007405
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1461,
+      "score_q25": 1437,
+      "score_q75": 1482,
+      "score_lower": 1394,
+      "score_upper": 1512,
+      "rank": 24,
+      "win_rate": 33.333333,
+      "games": 99,
+      "wins": 33,
+      "losses": 66,
+      "strength": {
+        "High": -0.227734,
+        "Medium": 0.045673,
+        "Low": 0.171026,
+        "Other": 0.00418
+      }
     }
   ],
   "cubes": [
@@ -845,10 +864,10 @@
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 3,
-      "losses": 5,
-      "games": 8,
-      "win_rate": 38,
+      "wins": 4,
+      "losses": 11,
+      "games": 15,
+      "win_rate": 27,
       "trophies": 0
     }
   ]

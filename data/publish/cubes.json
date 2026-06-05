@@ -223,11 +223,11 @@
     "cube": "Vintage Aron",
     "slug": "vintage-aron",
     "tier": "High",
-    "n_events": 2,
-    "n_games": 79,
-    "n_players": 15,
+    "n_events": 3,
+    "n_games": 116,
+    "n_players": 17,
     "first_played": "2025-09-04",
-    "last_played": "2026-03-05"
+    "last_played": "2026-06-04"
   },
   {
     "cube": "Vintage Victor",

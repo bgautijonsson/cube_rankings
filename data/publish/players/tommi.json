@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1532,
+    "score_median": 1537,
     "rank": 5,
-    "win_rate": 53.543307,
-    "games": 254,
+    "win_rate": 53.639847,
+    "games": 261,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": -0.028531,
         "Other": -0.076248
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1537,
+      "score_q25": 1519,
+      "score_q75": 1555,
+      "score_lower": 1490,
+      "score_upper": 1585,
+      "rank": 5,
+      "win_rate": 53.639847,
+      "games": 261,
+      "wins": 140,
+      "losses": 121,
+      "strength": {
+        "High": 0.032121,
+        "Medium": 0.086776,
+        "Low": -0.039328,
+        "Other": -0.077771
+      }
     }
   ],
   "cubes": [
@@ -801,10 +820,10 @@
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 7,
-      "losses": 7,
-      "games": 14,
-      "win_rate": 50,
+      "wins": 11,
+      "losses": 10,
+      "games": 21,
+      "win_rate": 52,
       "trophies": 0
     },
     {

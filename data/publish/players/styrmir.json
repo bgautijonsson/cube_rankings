@@ -2,10 +2,10 @@
   "player": "Styrmir",
   "slug": "styrmir",
   "summary": {
-    "score_median": 1483,
-    "rank": 21,
-    "win_rate": 36.666667,
-    "games": 30,
+    "score_median": 1490,
+    "rank": 20,
+    "win_rate": 40,
+    "games": 35,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": 0.033231,
         "Other": -0.039722
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1490,
+      "score_q25": 1467,
+      "score_q75": 1511,
+      "score_lower": 1421,
+      "score_upper": 1554,
+      "rank": 20,
+      "win_rate": 40,
+      "games": 35,
+      "wins": 14,
+      "losses": 21,
+      "strength": {
+        "High": -0.022996,
+        "Medium": 0.070208,
+        "Low": 0.016809,
+        "Other": -0.064259
+      }
     }
   ],
   "cubes": [
@@ -792,10 +811,10 @@
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 2,
-      "losses": 4,
-      "games": 6,
-      "win_rate": 33,
+      "wins": 5,
+      "losses": 6,
+      "games": 11,
+      "win_rate": 45,
       "trophies": 0
     },
     {

@@ -2,10 +2,10 @@
   "player": "Oddur",
   "slug": "oddur",
   "summary": {
-    "score_median": 1483,
-    "rank": 22,
-    "win_rate": 42.176871,
-    "games": 147,
+    "score_median": 1473,
+    "rank": 23,
+    "win_rate": 41.059603,
+    "games": 151,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": 0.072795,
         "Other": -0.306126
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1473,
+      "score_q25": 1454,
+      "score_q75": 1491,
+      "score_lower": 1421,
+      "score_upper": 1526,
+      "rank": 23,
+      "win_rate": 41.059603,
+      "games": 151,
+      "wins": 62,
+      "losses": 89,
+      "strength": {
+        "High": -0.091803,
+        "Medium": 0.268867,
+        "Low": 0.106597,
+        "Other": -0.282342
+      }
     }
   ],
   "cubes": [
@@ -895,6 +914,15 @@
       "losses": 4,
       "games": 9,
       "win_rate": 56,
+      "trophies": 0
+    },
+    {
+      "cube": "Vintage Aron",
+      "tier": "High",
+      "wins": 0,
+      "losses": 4,
+      "games": 4,
+      "win_rate": 0,
       "trophies": 0
     }
   ]

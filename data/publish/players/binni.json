@@ -4,8 +4,8 @@
   "summary": {
     "score_median": 1531,
     "rank": 6,
-    "win_rate": 53.614458,
-    "games": 166,
+    "win_rate": 53.757225,
+    "games": 173,
     "strongest_tier": "High"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": 0.008311,
         "Other": 0.073338
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1531,
+      "score_q25": 1513,
+      "score_q75": 1552,
+      "score_lower": 1484,
+      "score_upper": 1586,
+      "rank": 6,
+      "win_rate": 53.757225,
+      "games": 173,
+      "wins": 93,
+      "losses": 80,
+      "strength": {
+        "High": 0.124395,
+        "Medium": -0.206514,
+        "Low": 0.008573,
+        "Other": 0.074391
+      }
     }
   ],
   "cubes": [
@@ -882,10 +901,10 @@
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 5,
-      "losses": 3,
-      "games": 8,
-      "win_rate": 62,
+      "wins": 9,
+      "losses": 6,
+      "games": 15,
+      "win_rate": 60,
       "trophies": 0
     },
     {

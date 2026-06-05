@@ -2,10 +2,10 @@
   "player": "Einar",
   "slug": "einar",
   "summary": {
-    "score_median": 1516,
+    "score_median": 1515,
     "rank": 11,
-    "win_rate": 51.851852,
-    "games": 108,
+    "win_rate": 50.877193,
+    "games": 114,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": -0.047556,
         "Other": 0.071016
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1515,
+      "score_q25": 1498,
+      "score_q75": 1537,
+      "score_lower": 1465,
+      "score_upper": 1576,
+      "rank": 11,
+      "win_rate": 50.877193,
+      "games": 114,
+      "wins": 58,
+      "losses": 56,
+      "strength": {
+        "High": -0.205449,
+        "Medium": 0.175191,
+        "Low": -0.047613,
+        "Other": 0.080719
+      }
     }
   ],
   "cubes": [
@@ -850,6 +869,15 @@
       "losses": 4,
       "games": 7,
       "win_rate": 43,
+      "trophies": 0
+    },
+    {
+      "cube": "Vintage Aron",
+      "tier": "High",
+      "wins": 2,
+      "losses": 4,
+      "games": 6,
+      "win_rate": 33,
       "trophies": 0
     },
     {

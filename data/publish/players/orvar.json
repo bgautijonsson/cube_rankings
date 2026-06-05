@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1590,
+    "score_median": 1595,
     "rank": 1,
-    "win_rate": 63.316583,
-    "games": 199,
+    "win_rate": 63.768116,
+    "games": 207,
     "strongest_tier": "Low"
   },
   "history": [
@@ -711,17 +711,36 @@
         "Low": 0.211887,
         "Other": -0.009978
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1595,
+      "score_q25": 1572,
+      "score_q75": 1620,
+      "score_lower": 1543,
+      "score_upper": 1662,
+      "rank": 1,
+      "win_rate": 63.768116,
+      "games": 207,
+      "wins": 132,
+      "losses": 75,
+      "strength": {
+        "High": 0.045426,
+        "Medium": -0.234453,
+        "Low": 0.202035,
+        "Other": -0.01773
+      }
     }
   ],
   "cubes": [
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 6,
-      "losses": 4,
-      "games": 10,
-      "win_rate": 60,
-      "trophies": 0
+      "wins": 12,
+      "losses": 6,
+      "games": 18,
+      "win_rate": 67,
+      "trophies": 1
     },
     {
       "cube": "Kaldheim Cube",

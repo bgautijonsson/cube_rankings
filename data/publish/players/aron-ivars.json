@@ -2,10 +2,10 @@
   "player": "Aron Ívars",
   "slug": "aron-ivars",
   "summary": {
-    "score_median": 1500,
-    "rank": 16,
-    "win_rate": 45.054945,
-    "games": 91,
+    "score_median": 1505,
+    "rank": 15,
+    "win_rate": 46.464646,
+    "games": 99,
     "strongest_tier": "High"
   },
   "history": [
@@ -768,16 +768,35 @@
         "Low": 0.078404,
         "Other": -0.007318
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1505,
+      "score_q25": 1486,
+      "score_q75": 1528,
+      "score_lower": 1455,
+      "score_upper": 1572,
+      "rank": 15,
+      "win_rate": 46.464646,
+      "games": 99,
+      "wins": 46,
+      "losses": 53,
+      "strength": {
+        "High": 0.1923,
+        "Medium": -0.240226,
+        "Low": 0.065108,
+        "Other": -0.018244
+      }
     }
   ],
   "cubes": [
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 6,
-      "losses": 8,
-      "games": 14,
-      "win_rate": 43,
+      "wins": 11,
+      "losses": 11,
+      "games": 22,
+      "win_rate": 50,
       "trophies": 0
     },
     {

@@ -2,10 +2,10 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1526,
+    "score_median": 1525,
     "rank": 8,
-    "win_rate": 51.77305,
-    "games": 141,
+    "win_rate": 52.027027,
+    "games": 148,
     "strongest_tier": "High"
   },
   "history": [
@@ -483,6 +483,25 @@
         "Low": 0.044692,
         "Other": 0.023028
       }
+    },
+    {
+      "date": "2026-06-04",
+      "score_median": 1525,
+      "score_q25": 1506,
+      "score_q75": 1545,
+      "score_lower": 1478,
+      "score_upper": 1577,
+      "rank": 8,
+      "win_rate": 52.027027,
+      "games": 148,
+      "wins": 77,
+      "losses": 71,
+      "strength": {
+        "High": 0.113758,
+        "Medium": -0.194518,
+        "Low": 0.052071,
+        "Other": 0.030661
+      }
     }
   ],
   "cubes": [
@@ -561,10 +580,10 @@
     {
       "cube": "Vintage Aron",
       "tier": "High",
-      "wins": 3,
-      "losses": 4,
-      "games": 7,
-      "win_rate": 43,
+      "wins": 7,
+      "losses": 7,
+      "games": 14,
+      "win_rate": 50,
       "trophies": 0
     },
     {
