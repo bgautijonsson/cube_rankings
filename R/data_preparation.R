@@ -19,7 +19,7 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
   processed_data <- d_raw |>
     mutate(date = as_date(date)) |>
     pivot_longer(c(game1:game3), names_to = "game", values_to = "winner") |>
-    drop_na() |>
+    drop_na(winner) |>
     mutate(
       game = parse_number(game),
       result = as.integer(winner == player1)

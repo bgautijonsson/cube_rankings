@@ -70,7 +70,7 @@ jobs:
         run: Rscript run_historical_analysis.R $FORCE_FLAG
 
       - name: Run tests
-        run: Rscript tests/test_enrichment.R && Rscript tests/test_publish.R && Rscript tests/test_incremental.R
+        run: Rscript tests/test_data_preparation.R && Rscript tests/test_enrichment.R && Rscript tests/test_publish.R && Rscript tests/test_incremental.R
 
       - name: Publish JSON
         run: Rscript scripts/publish.R
