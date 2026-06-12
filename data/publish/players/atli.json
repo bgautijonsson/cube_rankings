@@ -2,10 +2,10 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1525,
-    "rank": 8,
-    "win_rate": 52.027027,
-    "games": 148,
+    "score_median": 1524,
+    "rank": 9,
+    "win_rate": 51.612903,
+    "games": 155,
     "strongest_tier": "High"
   },
   "history": [
@@ -502,6 +502,25 @@
         "Low": 0.052071,
         "Other": 0.030661
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1524,
+      "score_q25": 1506,
+      "score_q75": 1544,
+      "score_lower": 1478,
+      "score_upper": 1576,
+      "rank": 9,
+      "win_rate": 51.612903,
+      "games": 155,
+      "wins": 80,
+      "losses": 75,
+      "strength": {
+        "High": 0.116465,
+        "Medium": -0.195956,
+        "Low": 0.046995,
+        "Other": 0.030521
+      }
     }
   ],
   "cubes": [
@@ -629,6 +648,15 @@
       "losses": 2,
       "games": 3,
       "win_rate": 33,
+      "trophies": 0
+    },
+    {
+      "cube": "Modern Stories",
+      "tier": "Medium",
+      "wins": 3,
+      "losses": 4,
+      "games": 7,
+      "win_rate": 43,
       "trophies": 0
     }
   ]

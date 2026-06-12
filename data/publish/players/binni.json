@@ -2,10 +2,10 @@
   "player": "Binni",
   "slug": "binni",
   "summary": {
-    "score_median": 1531,
+    "score_median": 1534,
     "rank": 6,
-    "win_rate": 53.757225,
-    "games": 173,
+    "win_rate": 53.888889,
+    "games": 180,
     "strongest_tier": "High"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": 0.008573,
         "Other": 0.074391
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1534,
+      "score_q25": 1515,
+      "score_q75": 1554,
+      "score_lower": 1488,
+      "score_upper": 1591,
+      "rank": 6,
+      "win_rate": 53.888889,
+      "games": 180,
+      "wins": 97,
+      "losses": 83,
+      "strength": {
+        "High": 0.114108,
+        "Medium": -0.182522,
+        "Low": 0.001307,
+        "Other": 0.064161
+      }
     }
   ],
   "cubes": [
@@ -883,10 +902,10 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 7,
-      "losses": 9,
-      "games": 16,
-      "win_rate": 44,
+      "wins": 11,
+      "losses": 12,
+      "games": 23,
+      "win_rate": 48,
       "trophies": 0
     },
     {

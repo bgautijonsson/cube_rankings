@@ -2,7 +2,7 @@
   "player": "Ingvi",
   "slug": "ingvi",
   "summary": {
-    "score_median": 1527,
+    "score_median": 1526,
     "rank": 7,
     "win_rate": 55.952381,
     "games": 84,
@@ -786,6 +786,25 @@
         "Medium": -0.079139,
         "Low": -0.057075,
         "Other": -0.064761
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1526,
+      "score_q25": 1504,
+      "score_q75": 1553,
+      "score_lower": 1479,
+      "score_upper": 1607,
+      "rank": 7,
+      "win_rate": 55.952381,
+      "games": 84,
+      "wins": 47,
+      "losses": 37,
+      "strength": {
+        "High": 0.204949,
+        "Medium": -0.078175,
+        "Low": -0.062353,
+        "Other": -0.067734
       }
     }
   ],

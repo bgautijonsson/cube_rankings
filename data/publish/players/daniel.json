@@ -2,10 +2,10 @@
   "player": "Daníel",
   "slug": "daniel",
   "summary": {
-    "score_median": 1523,
-    "rank": 10,
-    "win_rate": 55.072464,
-    "games": 69,
+    "score_median": 1512,
+    "rank": 11,
+    "win_rate": 52.054795,
+    "games": 73,
     "strongest_tier": "Low"
   },
   "history": [
@@ -749,6 +749,25 @@
         "Low": 0.105952,
         "Other": -0.065593
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1512,
+      "score_q25": 1493,
+      "score_q75": 1534,
+      "score_lower": 1462,
+      "score_upper": 1576,
+      "rank": 11,
+      "win_rate": 52.054795,
+      "games": 73,
+      "wins": 38,
+      "losses": 35,
+      "strength": {
+        "High": 0.116503,
+        "Medium": -0.207271,
+        "Low": 0.126634,
+        "Other": -0.041361
+      }
     }
   ],
   "cubes": [
@@ -792,9 +811,9 @@
       "cube": "Modern Stories",
       "tier": "Medium",
       "wins": 4,
-      "losses": 3,
-      "games": 7,
-      "win_rate": 57,
+      "losses": 7,
+      "games": 11,
+      "win_rate": 36,
       "trophies": 0
     },
     {

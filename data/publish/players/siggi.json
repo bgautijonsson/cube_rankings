@@ -2,8 +2,8 @@
   "player": "Siggi",
   "slug": "siggi",
   "summary": {
-    "score_median": 1511,
-    "rank": 14,
+    "score_median": 1510,
+    "rank": 13,
     "win_rate": 54.166667,
     "games": 24,
     "strongest_tier": "Medium"
@@ -748,6 +748,25 @@
         "Medium": 0.043483,
         "Low": -0.013105,
         "Other": -0.007784
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1510,
+      "score_q25": 1491,
+      "score_q75": 1537,
+      "score_lower": 1453,
+      "score_upper": 1593,
+      "rank": 13,
+      "win_rate": 54.166667,
+      "games": 24,
+      "wins": 13,
+      "losses": 11,
+      "strength": {
+        "High": -0.014656,
+        "Medium": 0.041607,
+        "Low": -0.018178,
+        "Other": -0.011072
       }
     }
   ],

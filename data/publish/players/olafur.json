@@ -4,8 +4,8 @@
   "summary": {
     "score_median": 1484,
     "rank": 21,
-    "win_rate": 41.818182,
-    "games": 55,
+    "win_rate": 41.666667,
+    "games": 60,
     "strongest_tier": "High"
   },
   "history": [
@@ -673,6 +673,25 @@
         "Low": 0.009721,
         "Other": -0.03261
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1484,
+      "score_q25": 1462,
+      "score_q75": 1503,
+      "score_lower": 1421,
+      "score_upper": 1538,
+      "rank": 21,
+      "win_rate": 41.666667,
+      "games": 60,
+      "wins": 25,
+      "losses": 35,
+      "strength": {
+        "High": 0.072564,
+        "Medium": -0.04522,
+        "Low": 0.011358,
+        "Other": -0.036736
+      }
     }
   ],
   "cubes": [
@@ -706,10 +725,10 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 2,
-      "losses": 4,
-      "games": 6,
-      "win_rate": 33,
+      "wins": 4,
+      "losses": 7,
+      "games": 11,
+      "win_rate": 36,
       "trophies": 0
     },
     {

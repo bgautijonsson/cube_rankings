@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1537,
+    "score_median": 1535,
     "rank": 5,
-    "win_rate": 53.639847,
-    "games": 261,
+    "win_rate": 53.531599,
+    "games": 269,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": -0.039328,
         "Other": -0.077771
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1535,
+      "score_q25": 1518,
+      "score_q75": 1552,
+      "score_lower": 1489,
+      "score_upper": 1581,
+      "rank": 5,
+      "win_rate": 53.531599,
+      "games": 269,
+      "wins": 144,
+      "losses": 125,
+      "strength": {
+        "High": 0.028908,
+        "Medium": 0.078112,
+        "Low": -0.033209,
+        "Other": -0.076004
+      }
     }
   ],
   "cubes": [
@@ -910,10 +929,10 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 5,
-      "losses": 2,
-      "games": 7,
-      "win_rate": 71,
+      "wins": 9,
+      "losses": 6,
+      "games": 15,
+      "win_rate": 60,
       "trophies": 0
     },
     {

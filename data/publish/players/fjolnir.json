@@ -2,7 +2,7 @@
   "player": "Fjölnir",
   "slug": "fjolnir",
   "summary": {
-    "score_median": 1481,
+    "score_median": 1480,
     "rank": 22,
     "win_rate": 36,
     "games": 25,
@@ -406,6 +406,25 @@
         "Medium": -0.20304,
         "Low": 0.036663,
         "Other": 0.031358
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1480,
+      "score_q25": 1453,
+      "score_q75": 1502,
+      "score_lower": 1401,
+      "score_upper": 1539,
+      "rank": 22,
+      "win_rate": 36,
+      "games": 25,
+      "wins": 9,
+      "losses": 16,
+      "strength": {
+        "High": 0.129923,
+        "Medium": -0.201586,
+        "Low": 0.035752,
+        "Other": 0.034293
       }
     }
   ],

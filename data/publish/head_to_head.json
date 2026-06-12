@@ -38,7 +38,7 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Binni",
-    "a_wins": 6,
+    "a_wins": 8,
     "b_wins": 7,
     "by_cube": [
       {
@@ -58,7 +58,7 @@
       },
       {
         "cube": "Modern Stories",
-        "a_wins": 2,
+        "a_wins": 4,
         "b_wins": 1
       },
       {
@@ -337,7 +337,7 @@
     "player_a": "Anna",
     "player_b": "Binni",
     "a_wins": 2,
-    "b_wins": 4,
+    "b_wins": 6,
     "by_cube": [
       {
         "cube": "Khans Cube",
@@ -348,14 +348,19 @@
         "cube": "Stone Soup Cube",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 0,
+        "b_wins": 2
       }
     ]
   },
   {
     "player_a": "Binni",
     "player_b": "Tommi",
-    "a_wins": 8,
-    "b_wins": 7,
+    "a_wins": 10,
+    "b_wins": 8,
     "by_cube": [
       {
         "cube": "Khans Cube",
@@ -384,6 +389,11 @@
       },
       {
         "cube": "Vintage Aron",
+        "a_wins": 2,
+        "b_wins": 1
+      },
+      {
+        "cube": "Modern Stories",
         "a_wins": 2,
         "b_wins": 1
       }
@@ -775,7 +785,7 @@
     "player_a": "Aron Elvar",
     "player_b": "Aron Freyr",
     "a_wins": 9,
-    "b_wins": 6,
+    "b_wins": 8,
     "by_cube": [
       {
         "cube": "Vintage Aron",
@@ -795,7 +805,7 @@
       {
         "cube": "Modern Stories",
         "a_wins": 2,
-        "b_wins": 0
+        "b_wins": 2
       }
     ]
   },
@@ -1436,8 +1446,8 @@
   {
     "player_a": "Ólafur",
     "player_b": "Tommi",
-    "a_wins": 2,
-    "b_wins": 4,
+    "a_wins": 3,
+    "b_wins": 5,
     "by_cube": [
       {
         "cube": "Bolti",
@@ -1453,6 +1463,11 @@
         "cube": "Flashdance!",
         "a_wins": 0,
         "b_wins": 2
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 1,
+        "b_wins": 1
       }
     ]
   },
@@ -1536,13 +1551,18 @@
   {
     "player_a": "Aron Elvar",
     "player_b": "Diddi",
-    "a_wins": 4,
-    "b_wins": 3,
+    "a_wins": 6,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Meta Memories",
         "a_wins": 4,
         "b_wins": 3
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -1638,13 +1658,18 @@
   {
     "player_a": "Anna",
     "player_b": "Ólafur",
-    "a_wins": 2,
-    "b_wins": 0,
+    "a_wins": 4,
+    "b_wins": 1,
     "by_cube": [
       {
         "cube": "Nerva's Cube",
         "a_wins": 2,
         "b_wins": 0
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -1669,12 +1694,17 @@
   {
     "player_a": "Anna",
     "player_b": "Diddi",
-    "a_wins": 0,
-    "b_wins": 2,
+    "a_wins": 1,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Nerva's Cube",
         "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 1,
         "b_wins": 2
       }
     ]
@@ -2307,13 +2337,18 @@
   {
     "player_a": "Atli",
     "player_b": "Daníel",
-    "a_wins": 2,
+    "a_wins": 4,
     "b_wins": 1,
     "by_cube": [
       {
         "cube": "Meta Memories",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -2606,8 +2641,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Atli",
-    "a_wins": 11,
-    "b_wins": 4,
+    "a_wins": 13,
+    "b_wins": 5,
     "by_cube": [
       {
         "cube": "Final Destination",
@@ -2636,6 +2671,11 @@
       },
       {
         "cube": "Inventors' Fair",
+        "a_wins": 2,
+        "b_wins": 1
+      },
+      {
+        "cube": "Modern Stories",
         "a_wins": 2,
         "b_wins": 1
       }
@@ -3013,13 +3053,18 @@
   {
     "player_a": "Aron Elvar",
     "player_b": "Atli",
-    "a_wins": 2,
+    "a_wins": 4,
     "b_wins": 3,
     "by_cube": [
       {
         "cube": "Meta Memories",
         "a_wins": 2,
         "b_wins": 3
+      },
+      {
+        "cube": "Modern Stories",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },

@@ -3,16 +3,16 @@
   "slug": "modern-stories",
   "tier": "Medium",
   "summary": {
-    "n_events": 2,
-    "n_matches": 24,
-    "n_players": 13,
+    "n_events": 3,
+    "n_matches": 38,
+    "n_players": 16,
     "first_played": "2026-01-29",
-    "last_played": "2026-04-16"
+    "last_played": "2026-06-11"
   },
   "trophy_leaders": [
     {
       "player": "Aron Freyr",
-      "trophies": 1
+      "trophies": 2
     },
     {
       "player": "Aron Elvar",
@@ -22,30 +22,21 @@
   "player_rankings": [
     {
       "player": "Aron Elvar",
-      "match_w": 5,
-      "match_l": 1,
-      "match_pct": 83,
-      "game_w": 10,
-      "game_l": 4,
-      "game_pct": 71
-    },
-    {
-      "player": "Tommi",
-      "match_w": 2,
-      "match_l": 1,
-      "match_pct": 67,
-      "game_w": 5,
-      "game_l": 2,
-      "game_pct": 71
-    },
-    {
-      "player": "Diddi",
-      "match_w": 3,
+      "match_w": 7,
       "match_l": 2,
-      "match_pct": 60,
-      "game_w": 8,
-      "game_l": 5,
-      "game_pct": 62
+      "match_pct": 78,
+      "game_w": 14,
+      "game_l": 7,
+      "game_pct": 67
+    },
+    {
+      "player": "Aron Freyr",
+      "match_w": 7,
+      "match_l": 2,
+      "match_pct": 78,
+      "game_w": 14,
+      "game_l": 8,
+      "game_pct": 64
     },
     {
       "player": "Einar Logi",
@@ -57,22 +48,22 @@
       "game_pct": 62
     },
     {
-      "player": "Daníel",
-      "match_w": 2,
-      "match_l": 1,
-      "match_pct": 67,
-      "game_w": 4,
-      "game_l": 3,
-      "game_pct": 57
-    },
-    {
-      "player": "Aron Freyr",
+      "player": "Tommi",
       "match_w": 4,
       "match_l": 2,
       "match_pct": 67,
-      "game_w": 8,
-      "game_l": 7,
-      "game_pct": 53
+      "game_w": 9,
+      "game_l": 6,
+      "game_pct": 60
+    },
+    {
+      "player": "Diddi",
+      "match_w": 5,
+      "match_l": 3,
+      "match_pct": 62,
+      "game_w": 13,
+      "game_l": 9,
+      "game_pct": 59
     },
     {
       "player": "Einar",
@@ -85,21 +76,48 @@
     },
     {
       "player": "Binni",
-      "match_w": 2,
-      "match_l": 4,
+      "match_w": 4,
+      "match_l": 5,
+      "match_pct": 44,
+      "game_w": 11,
+      "game_l": 12,
+      "game_pct": 48
+    },
+    {
+      "player": "Atli",
+      "match_w": 1,
+      "match_l": 2,
       "match_pct": 33,
-      "game_w": 7,
-      "game_l": 9,
-      "game_pct": 44
+      "game_w": 3,
+      "game_l": 4,
+      "game_pct": 43
+    },
+    {
+      "player": "Anna",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 5,
+      "game_pct": 38
     },
     {
       "player": "Ólafur",
       "match_w": 1,
-      "match_l": 2,
-      "match_pct": 33,
-      "game_w": 2,
-      "game_l": 4,
-      "game_pct": 33
+      "match_l": 4,
+      "match_pct": 20,
+      "game_w": 4,
+      "game_l": 7,
+      "game_pct": 36
+    },
+    {
+      "player": "Daníel",
+      "match_w": 2,
+      "match_l": 3,
+      "match_pct": 40,
+      "game_w": 4,
+      "game_l": 7,
+      "game_pct": 36
     },
     {
       "player": "Fjölnir",
@@ -130,6 +148,83 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-06-11",
+      "results": [
+        {
+          "player": "Aron Freyr",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 1,
+          "trophy": true
+        },
+        {
+          "player": "Binni",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Elvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Anna",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Daníel",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 0,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Ólafur",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 3,
+          "trophy": false
+        }
+      ]
+    },
     {
       "date": "2026-04-16",
       "results": [

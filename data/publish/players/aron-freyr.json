@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1553,
+    "score_median": 1558,
     "rank": 2,
-    "win_rate": 58.091286,
-    "games": 241,
+    "win_rate": 58.870968,
+    "games": 248,
     "strongest_tier": "Other"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": -0.191605,
         "Other": 0.164199
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1558,
+      "score_q25": 1540,
+      "score_q75": 1579,
+      "score_lower": 1514,
+      "score_upper": 1616,
+      "rank": 2,
+      "win_rate": 58.870968,
+      "games": 248,
+      "wins": 146,
+      "losses": 102,
+      "strength": {
+        "High": 0.004864,
+        "Medium": 0.048058,
+        "Low": -0.206119,
+        "Other": 0.154089
+      }
     }
   ],
   "cubes": [
@@ -865,11 +884,11 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 8,
-      "losses": 7,
-      "games": 15,
-      "win_rate": 53,
-      "trophies": 1
+      "wins": 14,
+      "losses": 8,
+      "games": 22,
+      "win_rate": 64,
+      "trophies": 2
     },
     {
       "cube": "Horror Cube",

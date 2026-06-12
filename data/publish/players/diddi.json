@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1524,
-    "rank": 9,
-    "win_rate": 54.43038,
-    "games": 237,
+    "score_median": 1525,
+    "rank": 8,
+    "win_rate": 54.471545,
+    "games": 246,
     "strongest_tier": "High"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": -0.231379,
         "Other": 0.032134
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1525,
+      "score_q25": 1508,
+      "score_q75": 1543,
+      "score_lower": 1476,
+      "score_upper": 1571,
+      "rank": 8,
+      "win_rate": 54.471545,
+      "games": 246,
+      "wins": 134,
+      "losses": 112,
+      "strength": {
+        "High": 0.179836,
+        "Medium": 0.025089,
+        "Low": -0.228232,
+        "Other": 0.024148
+      }
     }
   ],
   "cubes": [
@@ -865,10 +884,10 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 8,
-      "losses": 5,
-      "games": 13,
-      "win_rate": 62,
+      "wins": 13,
+      "losses": 9,
+      "games": 22,
+      "win_rate": 59,
       "trophies": 0
     },
     {

@@ -113,11 +113,11 @@
     "cube": "Modern Stories",
     "slug": "modern-stories",
     "tier": "Medium",
-    "n_events": 2,
-    "n_games": 57,
-    "n_players": 13,
+    "n_events": 3,
+    "n_games": 92,
+    "n_players": 16,
     "first_played": "2026-01-29",
-    "last_played": "2026-04-16"
+    "last_played": "2026-06-11"
   },
   {
     "cube": "Nerva's Cube",

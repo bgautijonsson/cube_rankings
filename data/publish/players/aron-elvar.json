@@ -2,10 +2,10 @@
   "player": "Aron Elvar",
   "slug": "aron-elvar",
   "summary": {
-    "score_median": 1541,
+    "score_median": 1542,
     "rank": 3,
-    "win_rate": 52.631579,
-    "games": 152,
+    "win_rate": 52.830189,
+    "games": 159,
     "strongest_tier": "Low"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": 0.066383,
         "Other": 0.005864
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1542,
+      "score_q25": 1519,
+      "score_q75": 1569,
+      "score_lower": 1493,
+      "score_upper": 1616,
+      "rank": 3,
+      "win_rate": 52.830189,
+      "games": 159,
+      "wins": 84,
+      "losses": 75,
+      "strength": {
+        "High": 0.046269,
+        "Medium": -0.106448,
+        "Low": 0.060928,
+        "Other": -0.002618
+      }
     }
   ],
   "cubes": [
@@ -829,10 +848,10 @@
     {
       "cube": "Modern Stories",
       "tier": "Medium",
-      "wins": 10,
-      "losses": 4,
-      "games": 14,
-      "win_rate": 71,
+      "wins": 14,
+      "losses": 7,
+      "games": 21,
+      "win_rate": 67,
       "trophies": 1
     },
     {

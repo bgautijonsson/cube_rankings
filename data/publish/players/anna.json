@@ -2,10 +2,10 @@
   "player": "Anna",
   "slug": "anna",
   "summary": {
-    "score_median": 1511,
-    "rank": 13,
-    "win_rate": 50.746269,
-    "games": 67,
+    "score_median": 1504,
+    "rank": 15,
+    "win_rate": 49.333333,
+    "games": 75,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": -0.075225,
         "Other": -0.027402
       }
+    },
+    {
+      "date": "2026-06-11",
+      "score_median": 1504,
+      "score_q25": 1487,
+      "score_q75": 1524,
+      "score_lower": 1453,
+      "score_upper": 1559,
+      "rank": 15,
+      "win_rate": 49.333333,
+      "games": 75,
+      "wins": 37,
+      "losses": 38,
+      "strength": {
+        "High": -0.024398,
+        "Medium": 0.095394,
+        "Low": -0.055884,
+        "Other": -0.012575
+      }
     }
   ],
   "cubes": [
@@ -823,6 +842,15 @@
       "losses": 4,
       "games": 8,
       "win_rate": 50,
+      "trophies": 0
+    },
+    {
+      "cube": "Modern Stories",
+      "tier": "Medium",
+      "wins": 3,
+      "losses": 5,
+      "games": 8,
+      "win_rate": 38,
       "trophies": 0
     },
     {
