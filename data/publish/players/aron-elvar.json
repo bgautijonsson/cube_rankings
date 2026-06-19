@@ -2,10 +2,10 @@
   "player": "Aron Elvar",
   "slug": "aron-elvar",
   "summary": {
-    "score_median": 1542,
+    "score_median": 1537,
     "rank": 3,
-    "win_rate": 52.830189,
-    "games": 159,
+    "win_rate": 52.409639,
+    "games": 166,
     "strongest_tier": "Low"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": 0.060928,
         "Other": -0.002618
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1537,
+      "score_q25": 1516,
+      "score_q75": 1561,
+      "score_lower": 1492,
+      "score_upper": 1604,
+      "rank": 3,
+      "win_rate": 52.409639,
+      "games": 166,
+      "wins": 87,
+      "losses": 79,
+      "strength": {
+        "High": 0.0563,
+        "Medium": -0.117608,
+        "Low": 0.061312,
+        "Other": 0.003432
+      }
     }
   ],
   "cubes": [
@@ -879,6 +898,15 @@
       "losses": 3,
       "games": 8,
       "win_rate": 62,
+      "trophies": 0
+    },
+    {
+      "cube": "Inventors' Fair",
+      "tier": "Medium",
+      "wins": 3,
+      "losses": 4,
+      "games": 7,
+      "win_rate": 43,
       "trophies": 0
     },
     {

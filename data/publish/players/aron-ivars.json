@@ -2,10 +2,10 @@
   "player": "Aron Ívars",
   "slug": "aron-ivars",
   "summary": {
-    "score_median": 1504,
-    "rank": 14,
-    "win_rate": 46.464646,
-    "games": 99,
+    "score_median": 1503,
+    "rank": 15,
+    "win_rate": 45.714286,
+    "games": 105,
     "strongest_tier": "High"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": 0.066672,
         "Other": -0.011987
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1503,
+      "score_q25": 1487,
+      "score_q75": 1523,
+      "score_lower": 1456,
+      "score_upper": 1562,
+      "rank": 15,
+      "win_rate": 45.714286,
+      "games": 105,
+      "wins": 48,
+      "losses": 57,
+      "strength": {
+        "High": 0.194091,
+        "Medium": -0.250084,
+        "Low": 0.066706,
+        "Other": -0.011482
+      }
     }
   ],
   "cubes": [
@@ -861,6 +880,15 @@
       "losses": 9,
       "games": 16,
       "win_rate": 44,
+      "trophies": 0
+    },
+    {
+      "cube": "Inventors' Fair",
+      "tier": "Medium",
+      "wins": 2,
+      "losses": 4,
+      "games": 6,
+      "win_rate": 33,
       "trophies": 0
     },
     {

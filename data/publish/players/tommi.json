@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1535,
+    "score_median": 1534,
     "rank": 5,
-    "win_rate": 53.531599,
-    "games": 269,
+    "win_rate": 53.454545,
+    "games": 275,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": -0.033209,
         "Other": -0.076004
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1534,
+      "score_q25": 1517,
+      "score_q75": 1551,
+      "score_lower": 1488,
+      "score_upper": 1578,
+      "rank": 5,
+      "win_rate": 53.454545,
+      "games": 275,
+      "wins": 147,
+      "losses": 128,
+      "strength": {
+        "High": 0.035083,
+        "Medium": 0.073233,
+        "Low": -0.032942,
+        "Other": -0.073826
+      }
     }
   ],
   "cubes": [
@@ -947,10 +966,10 @@
     {
       "cube": "Inventors' Fair",
       "tier": "Medium",
-      "wins": 4,
-      "losses": 2,
-      "games": 6,
-      "win_rate": 67,
+      "wins": 7,
+      "losses": 5,
+      "games": 12,
+      "win_rate": 58,
       "trophies": 0
     },
     {

@@ -3,7 +3,7 @@
   "slug": "anna",
   "summary": {
     "score_median": 1504,
-    "rank": 15,
+    "rank": 14,
     "win_rate": 49.333333,
     "games": 75,
     "strongest_tier": "Medium"
@@ -786,6 +786,25 @@
         "Medium": 0.095394,
         "Low": -0.055884,
         "Other": -0.012575
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1504,
+      "score_q25": 1487,
+      "score_q75": 1523,
+      "score_lower": 1454,
+      "score_upper": 1560,
+      "rank": 14,
+      "win_rate": 49.333333,
+      "games": 75,
+      "wins": 37,
+      "losses": 38,
+      "strength": {
+        "High": -0.021398,
+        "Medium": 0.093145,
+        "Low": -0.054069,
+        "Other": -0.015136
       }
     }
   ],

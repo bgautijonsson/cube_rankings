@@ -2,7 +2,7 @@
   "player": "Einar",
   "slug": "einar",
   "summary": {
-    "score_median": 1515,
+    "score_median": 1514,
     "rank": 10,
     "win_rate": 50.877193,
     "games": 114,
@@ -805,6 +805,25 @@
         "Medium": 0.173747,
         "Low": -0.042545,
         "Other": 0.076976
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1514,
+      "score_q25": 1498,
+      "score_q75": 1534,
+      "score_lower": 1469,
+      "score_upper": 1572,
+      "rank": 10,
+      "win_rate": 50.877193,
+      "games": 114,
+      "wins": 58,
+      "losses": 56,
+      "strength": {
+        "High": -0.210236,
+        "Medium": 0.181346,
+        "Low": -0.046916,
+        "Other": 0.075125
       }
     }
   ],

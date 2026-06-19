@@ -2,9 +2,9 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1594,
+    "score_median": 1589,
     "rank": 1,
-    "win_rate": 63.768116,
+    "win_rate": 64.251208,
     "games": 207,
     "strongest_tier": "Low"
   },
@@ -749,6 +749,25 @@
         "Low": 0.203374,
         "Other": -0.019842
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1589,
+      "score_q25": 1566,
+      "score_q75": 1614,
+      "score_lower": 1538,
+      "score_upper": 1653,
+      "rank": 1,
+      "win_rate": 64.251208,
+      "games": 207,
+      "wins": 133,
+      "losses": 74,
+      "strength": {
+        "High": 0.039923,
+        "Medium": -0.222536,
+        "Low": 0.203213,
+        "Other": -0.021096
+      }
     }
   ],
   "cubes": [
@@ -773,10 +792,10 @@
     {
       "cube": "Pauper Cube Diddi",
       "tier": "Low",
-      "wins": 4,
-      "losses": 4,
+      "wins": 5,
+      "losses": 3,
       "games": 8,
-      "win_rate": 50,
+      "win_rate": 62,
       "trophies": 1
     },
     {

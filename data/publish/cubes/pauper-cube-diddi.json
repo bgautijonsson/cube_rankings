@@ -30,9 +30,9 @@
       "match_w": 3,
       "match_l": 0,
       "match_pct": 100,
-      "game_w": 4,
-      "game_l": 4,
-      "game_pct": 50
+      "game_w": 5,
+      "game_l": 3,
+      "game_pct": 62
     },
     {
       "player": "Ólafur",
@@ -61,8 +61,8 @@
           "player": "Örvar",
           "match_w": 3,
           "match_l": 0,
-          "game_w": 4,
-          "game_l": 4,
+          "game_w": 5,
+          "game_l": 3,
           "trophy": true
         },
         {

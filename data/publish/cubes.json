@@ -73,11 +73,11 @@
     "cube": "Inventors' Fair",
     "slug": "inventors-fair",
     "tier": "Medium",
-    "n_events": 1,
-    "n_games": 18,
-    "n_players": 7,
+    "n_events": 2,
+    "n_games": 40,
+    "n_players": 11,
     "first_played": "2026-05-21",
-    "last_played": "2026-05-21"
+    "last_played": "2026-06-18"
   },
   {
     "cube": "Kaldheim Cube",

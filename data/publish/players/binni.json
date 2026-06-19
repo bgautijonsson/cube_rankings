@@ -2,10 +2,10 @@
   "player": "Binni",
   "slug": "binni",
   "summary": {
-    "score_median": 1534,
+    "score_median": 1532,
     "rank": 6,
-    "win_rate": 53.888889,
-    "games": 180,
+    "win_rate": 53.513514,
+    "games": 185,
     "strongest_tier": "High"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": 0.001307,
         "Other": 0.064161
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1532,
+      "score_q25": 1514,
+      "score_q75": 1552,
+      "score_lower": 1489,
+      "score_upper": 1587,
+      "rank": 6,
+      "win_rate": 53.513514,
+      "games": 185,
+      "wins": 99,
+      "losses": 86,
+      "strength": {
+        "High": 0.120626,
+        "Medium": -0.185888,
+        "Low": 0.004465,
+        "Other": 0.065128
+      }
     }
   ],
   "cubes": [
@@ -938,6 +957,15 @@
     {
       "cube": "Genesis",
       "tier": "Other",
+      "wins": 2,
+      "losses": 3,
+      "games": 5,
+      "win_rate": 40,
+      "trophies": 0
+    },
+    {
+      "cube": "Inventors' Fair",
+      "tier": "Medium",
       "wins": 2,
       "losses": 3,
       "games": 5,

@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1558,
+    "score_median": 1560,
     "rank": 2,
-    "win_rate": 58.870968,
-    "games": 248,
+    "win_rate": 59.375,
+    "games": 256,
     "strongest_tier": "Other"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": -0.206119,
         "Other": 0.154089
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1560,
+      "score_q25": 1541,
+      "score_q75": 1581,
+      "score_lower": 1517,
+      "score_upper": 1616,
+      "rank": 2,
+      "win_rate": 59.375,
+      "games": 256,
+      "wins": 152,
+      "losses": 104,
+      "strength": {
+        "High": -0.001187,
+        "Medium": 0.069444,
+        "Low": -0.213702,
+        "Other": 0.14221
+      }
     }
   ],
   "cubes": [
@@ -929,11 +948,11 @@
     {
       "cube": "Inventors' Fair",
       "tier": "Medium",
-      "wins": 6,
-      "losses": 3,
-      "games": 9,
-      "win_rate": 67,
-      "trophies": 1
+      "wins": 12,
+      "losses": 5,
+      "games": 17,
+      "win_rate": 71,
+      "trophies": 2
     },
     {
       "cube": "Vintage Aron",

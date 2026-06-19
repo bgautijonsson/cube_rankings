@@ -2,10 +2,10 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1524,
+    "score_median": 1519,
     "rank": 9,
-    "win_rate": 51.612903,
-    "games": 155,
+    "win_rate": 50.625,
+    "games": 160,
     "strongest_tier": "High"
   },
   "history": [
@@ -521,6 +521,25 @@
         "Low": 0.046995,
         "Other": 0.030521
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1519,
+      "score_q25": 1501,
+      "score_q75": 1538,
+      "score_lower": 1474,
+      "score_upper": 1569,
+      "rank": 9,
+      "win_rate": 50.625,
+      "games": 160,
+      "wins": 81,
+      "losses": 79,
+      "strength": {
+        "High": 0.130692,
+        "Medium": -0.231423,
+        "Low": 0.059038,
+        "Other": 0.039805
+      }
     }
   ],
   "cubes": [
@@ -644,10 +663,10 @@
     {
       "cube": "Inventors' Fair",
       "tier": "Medium",
-      "wins": 1,
-      "losses": 2,
-      "games": 3,
-      "win_rate": 33,
+      "wins": 2,
+      "losses": 6,
+      "games": 8,
+      "win_rate": 25,
       "trophies": 0
     },
     {

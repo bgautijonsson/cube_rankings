@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1525,
-    "rank": 8,
-    "win_rate": 54.471545,
-    "games": 246,
+    "score_median": 1529,
+    "rank": 7,
+    "win_rate": 54.940711,
+    "games": 253,
     "strongest_tier": "High"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": -0.228232,
         "Other": 0.024148
       }
+    },
+    {
+      "date": "2026-06-18",
+      "score_median": 1529,
+      "score_q25": 1513,
+      "score_q75": 1547,
+      "score_lower": 1485,
+      "score_upper": 1576,
+      "rank": 7,
+      "win_rate": 54.940711,
+      "games": 253,
+      "wins": 139,
+      "losses": 114,
+      "strength": {
+        "High": 0.165002,
+        "Medium": 0.053639,
+        "Low": -0.237774,
+        "Other": 0.018382
+      }
     }
   ],
   "cubes": [
@@ -906,6 +925,15 @@
       "losses": 10,
       "games": 16,
       "win_rate": 38,
+      "trophies": 0
+    },
+    {
+      "cube": "Inventors' Fair",
+      "tier": "Medium",
+      "wins": 5,
+      "losses": 2,
+      "games": 7,
+      "win_rate": 71,
       "trophies": 0
     },
     {

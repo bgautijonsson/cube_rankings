@@ -3,36 +3,45 @@
   "slug": "inventors-fair",
   "tier": "Medium",
   "summary": {
-    "n_events": 1,
-    "n_matches": 7,
-    "n_players": 7,
+    "n_events": 2,
+    "n_matches": 16,
+    "n_players": 11,
     "first_played": "2026-05-21",
-    "last_played": "2026-05-21"
+    "last_played": "2026-06-18"
   },
   "trophy_leaders": [
     {
       "player": "Aron Freyr",
-      "trophies": 1
+      "trophies": 2
     }
   ],
   "player_rankings": [
     {
       "player": "Aron Freyr",
-      "match_w": 3,
+      "match_w": 6,
       "match_l": 0,
       "match_pct": 100,
-      "game_w": 6,
-      "game_l": 3,
-      "game_pct": 67
+      "game_w": 12,
+      "game_l": 5,
+      "game_pct": 71
     },
     {
-      "player": "Tommi",
+      "player": "Diddi",
       "match_w": 2,
       "match_l": 1,
       "match_pct": 67,
-      "game_w": 4,
+      "game_w": 5,
       "game_l": 2,
-      "game_pct": 67
+      "game_pct": 71
+    },
+    {
+      "player": "Tommi",
+      "match_w": 4,
+      "match_l": 2,
+      "match_pct": 67,
+      "game_w": 7,
+      "game_l": 5,
+      "game_pct": 58
     },
     {
       "player": "Örvar",
@@ -44,12 +53,30 @@
       "game_pct": 57
     },
     {
-      "player": "Atli",
-      "match_w": 0,
+      "player": "Aron Elvar",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 4,
+      "game_pct": 43
+    },
+    {
+      "player": "Binni",
+      "match_w": 1,
       "match_l": 1,
+      "match_pct": 50,
+      "game_w": 2,
+      "game_l": 3,
+      "game_pct": 40
+    },
+    {
+      "player": "Aron Ívars",
+      "match_w": 0,
+      "match_l": 2,
       "match_pct": 0,
-      "game_w": 1,
-      "game_l": 2,
+      "game_w": 2,
+      "game_l": 4,
       "game_pct": 33
     },
     {
@@ -62,6 +89,15 @@
       "game_pct": 33
     },
     {
+      "player": "Atli",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 2,
+      "game_l": 6,
+      "game_pct": 25
+    },
+    {
       "player": "Friðrik",
       "match_w": 0,
       "match_l": 2,
@@ -72,6 +108,67 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-06-18",
+      "results": [
+        {
+          "player": "Aron Freyr",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 3,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Aron Elvar",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Binni",
+          "match_w": 1,
+          "match_l": 1,
+          "game_w": 2,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Aron Ívars",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 0,
+          "match_l": 2,
+          "game_w": 1,
+          "game_l": 4,
+          "trophy": false
+        }
+      ]
+    },
     {
       "date": "2026-05-21",
       "results": [
