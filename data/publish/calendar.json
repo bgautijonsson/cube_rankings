@@ -660,7 +660,7 @@
     "cube": "Vintage Aron",
     "cube_slug": "vintage-aron",
     "host": "Aron Ívars",
-    "players": null,
+    "players": 10,
     "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
   },
   {
@@ -668,7 +668,7 @@
     "cube": "Modern Stories",
     "cube_slug": "modern-stories",
     "host": "Aron Elvar",
-    "players": null,
+    "players": 10,
     "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
   },
   {
@@ -676,7 +676,7 @@
     "cube": "Inventors' Fair",
     "cube_slug": "inventors-fair",
     "host": "Binni",
-    "players": null,
+    "players": 7,
     "link": "https://cubecobra.com/cube/list/01a2a63d-638d-4a23-b062-fd9a344809f8"
   },
   {
