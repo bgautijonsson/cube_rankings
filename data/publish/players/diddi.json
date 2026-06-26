@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1536,
-    "rank": 5,
-    "win_rate": 55.642023,
-    "games": 257,
+    "score_median": 1533,
+    "rank": 6,
+    "win_rate": 55.212355,
+    "games": 259,
     "strongest_tier": "High"
   },
   "history": [
@@ -828,21 +828,21 @@
     },
     {
       "date": "2026-06-25",
-      "score_median": 1536,
-      "score_q25": 1520,
-      "score_q75": 1555,
-      "score_lower": 1496,
-      "score_upper": 1588,
-      "rank": 5,
-      "win_rate": 55.642023,
-      "games": 257,
+      "score_median": 1533,
+      "score_q25": 1516,
+      "score_q75": 1551,
+      "score_lower": 1490,
+      "score_upper": 1583,
+      "rank": 6,
+      "win_rate": 55.212355,
+      "games": 259,
       "wins": 143,
-      "losses": 114,
+      "losses": 116,
       "strength": {
-        "High": 0.145655,
-        "Medium": 0.030355,
-        "Low": -0.259076,
-        "Other": 0.083184
+        "High": 0.156539,
+        "Medium": 0.044909,
+        "Low": -0.254766,
+        "Other": 0.046949
       }
     }
   ],

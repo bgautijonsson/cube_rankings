@@ -452,17 +452,17 @@
       "score_q25": 1453,
       "score_q75": 1502,
       "score_lower": 1400,
-      "score_upper": 1540,
+      "score_upper": 1541,
       "rank": 22,
       "win_rate": 36,
       "games": 25,
       "wins": 9,
       "losses": 16,
       "strength": {
-        "High": 0.127886,
-        "Medium": -0.206912,
-        "Low": 0.04245,
-        "Other": 0.0359
+        "High": 0.130332,
+        "Medium": -0.202118,
+        "Low": 0.036047,
+        "Other": 0.037198
       }
     }
   ],

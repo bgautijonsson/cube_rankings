@@ -2,11 +2,11 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1527,
-    "rank": 8,
-    "win_rate": 51.204819,
-    "games": 166,
-    "strongest_tier": "High"
+    "score_median": 1531,
+    "rank": 7,
+    "win_rate": 51.785714,
+    "games": 168,
+    "strongest_tier": "Other"
   },
   "history": [
     {
@@ -543,21 +543,21 @@
     },
     {
       "date": "2026-06-25",
-      "score_median": 1527,
-      "score_q25": 1509,
-      "score_q75": 1546,
-      "score_lower": 1483,
-      "score_upper": 1577,
-      "rank": 8,
-      "win_rate": 51.204819,
-      "games": 166,
-      "wins": 85,
+      "score_median": 1531,
+      "score_q25": 1512,
+      "score_q75": 1550,
+      "score_lower": 1487,
+      "score_upper": 1583,
+      "rank": 7,
+      "win_rate": 51.785714,
+      "games": 168,
+      "wins": 87,
       "losses": 81,
       "strength": {
-        "High": 0.10854,
-        "Medium": -0.255386,
-        "Low": 0.045697,
-        "Other": 0.10111
+        "High": 0.096194,
+        "Medium": -0.262312,
+        "Low": 0.031126,
+        "Other": 0.135015
       }
     }
   ],

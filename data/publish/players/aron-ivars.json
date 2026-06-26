@@ -3,7 +3,7 @@
   "slug": "aron-ivars",
   "summary": {
     "score_median": 1503,
-    "rank": 16,
+    "rank": 14,
     "win_rate": 45.714286,
     "games": 105,
     "strongest_tier": "High"
@@ -830,19 +830,19 @@
       "date": "2026-06-25",
       "score_median": 1503,
       "score_q25": 1486,
-      "score_q75": 1523,
-      "score_lower": 1456,
-      "score_upper": 1562,
-      "rank": 16,
+      "score_q75": 1524,
+      "score_lower": 1455,
+      "score_upper": 1563,
+      "rank": 14,
       "win_rate": 45.714286,
       "games": 105,
       "wins": 48,
       "losses": 57,
       "strength": {
-        "High": 0.19173,
-        "Medium": -0.25047,
-        "Low": 0.070727,
-        "Other": -0.008539
+        "High": 0.193267,
+        "Medium": -0.25189,
+        "Low": 0.07125,
+        "Other": -0.016241
       }
     }
   ],

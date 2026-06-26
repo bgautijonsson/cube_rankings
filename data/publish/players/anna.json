@@ -2,10 +2,10 @@
   "player": "Anna",
   "slug": "anna",
   "summary": {
-    "score_median": 1504,
-    "rank": 14,
-    "win_rate": 48.75,
-    "games": 80,
+    "score_median": 1500,
+    "rank": 16,
+    "win_rate": 47.560976,
+    "games": 82,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -809,21 +809,21 @@
     },
     {
       "date": "2026-06-25",
-      "score_median": 1504,
-      "score_q25": 1487,
-      "score_q75": 1523,
-      "score_lower": 1453,
-      "score_upper": 1557,
-      "rank": 14,
-      "win_rate": 48.75,
-      "games": 80,
+      "score_median": 1500,
+      "score_q25": 1481,
+      "score_q75": 1518,
+      "score_lower": 1445,
+      "score_upper": 1550,
+      "rank": 16,
+      "win_rate": 47.560976,
+      "games": 82,
       "wins": 39,
-      "losses": 41,
+      "losses": 43,
       "strength": {
-        "High": -0.020966,
-        "Medium": 0.099871,
-        "Low": -0.051641,
-        "Other": -0.030674
+        "High": -0.007284,
+        "Medium": 0.11332,
+        "Low": -0.034786,
+        "Other": -0.064682
       }
     }
   ],

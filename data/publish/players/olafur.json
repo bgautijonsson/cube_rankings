@@ -715,20 +715,20 @@
     {
       "date": "2026-06-25",
       "score_median": 1483,
-      "score_q25": 1463,
-      "score_q75": 1501,
+      "score_q25": 1462,
+      "score_q75": 1502,
       "score_lower": 1424,
-      "score_upper": 1537,
+      "score_upper": 1536,
       "rank": 21,
       "win_rate": 41.666667,
       "games": 60,
       "wins": 25,
       "losses": 35,
       "strength": {
-        "High": 0.075772,
-        "Medium": -0.045274,
-        "Low": 0.009087,
-        "Other": -0.035082
+        "High": 0.07912,
+        "Medium": -0.047348,
+        "Low": 0.002643,
+        "Other": -0.03269
       }
     }
   ],

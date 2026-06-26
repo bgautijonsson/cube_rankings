@@ -2,8 +2,8 @@
   "player": "Aron Elvar",
   "slug": "aron-elvar",
   "summary": {
-    "score_median": 1537,
-    "rank": 4,
+    "score_median": 1539,
+    "rank": 3,
     "win_rate": 52.409639,
     "games": 166,
     "strongest_tier": "Low"
@@ -828,21 +828,21 @@
     },
     {
       "date": "2026-06-25",
-      "score_median": 1537,
+      "score_median": 1539,
       "score_q25": 1517,
-      "score_q75": 1561,
+      "score_q75": 1564,
       "score_lower": 1493,
-      "score_upper": 1605,
-      "rank": 4,
+      "score_upper": 1608,
+      "rank": 3,
       "win_rate": 52.409639,
       "games": 166,
       "wins": 87,
       "losses": 79,
       "strength": {
-        "High": 0.054172,
-        "Medium": -0.122424,
-        "Low": 0.070616,
-        "Other": -0.000724
+        "High": 0.052079,
+        "Medium": -0.12498,
+        "Low": 0.066918,
+        "Other": 0.006928
       }
     }
   ],
