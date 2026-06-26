@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1560,
+    "score_median": 1561,
     "rank": 2,
-    "win_rate": 59.375,
-    "games": 256,
+    "win_rate": 59.386973,
+    "games": 261,
     "strongest_tier": "Other"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": -0.213702,
         "Other": 0.14221
       }
+    },
+    {
+      "date": "2026-06-25",
+      "score_median": 1561,
+      "score_q25": 1543,
+      "score_q75": 1582,
+      "score_lower": 1518,
+      "score_upper": 1616,
+      "rank": 2,
+      "win_rate": 59.386973,
+      "games": 261,
+      "wins": 155,
+      "losses": 106,
+      "strength": {
+        "High": -0.004167,
+        "Medium": 0.071981,
+        "Low": -0.206918,
+        "Other": 0.142959
+      }
     }
   ],
   "cubes": [
@@ -930,10 +949,10 @@
     {
       "cube": "Genesis",
       "tier": "Other",
-      "wins": 6,
-      "losses": 1,
-      "games": 7,
-      "win_rate": 86,
+      "wins": 9,
+      "losses": 3,
+      "games": 12,
+      "win_rate": 75,
       "trophies": 1
     },
     {

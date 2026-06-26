@@ -53,11 +53,11 @@
     "cube": "Genesis",
     "slug": "genesis",
     "tier": "Other",
-    "n_events": 2,
-    "n_games": 55,
-    "n_players": 14,
+    "n_events": 3,
+    "n_games": 75,
+    "n_players": 15,
     "first_played": "2025-11-20",
-    "last_played": "2026-04-09"
+    "last_played": "2026-06-25"
   },
   {
     "cube": "Horror Cube",

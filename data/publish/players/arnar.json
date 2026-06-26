@@ -2,8 +2,8 @@
   "player": "Arnar",
   "slug": "arnar",
   "summary": {
-    "score_median": 1535,
-    "rank": 4,
+    "score_median": 1538,
+    "rank": 3,
     "win_rate": 59.016393,
     "games": 61,
     "strongest_tier": "Medium"
@@ -805,6 +805,25 @@
         "Medium": 0.145809,
         "Low": -0.020803,
         "Other": -0.015885
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "score_median": 1538,
+      "score_q25": 1514,
+      "score_q75": 1566,
+      "score_lower": 1487,
+      "score_upper": 1618,
+      "rank": 3,
+      "win_rate": 59.016393,
+      "games": 61,
+      "wins": 36,
+      "losses": 25,
+      "strength": {
+        "High": -0.111758,
+        "Medium": 0.138728,
+        "Low": -0.01193,
+        "Other": -0.015181
       }
     }
   ],

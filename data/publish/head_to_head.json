@@ -347,7 +347,7 @@
     "player_a": "Anna",
     "player_b": "Binni",
     "a_wins": 2,
-    "b_wins": 6,
+    "b_wins": 8,
     "by_cube": [
       {
         "cube": "Khans Cube",
@@ -361,6 +361,11 @@
       },
       {
         "cube": "Modern Stories",
+        "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
         "a_wins": 0,
         "b_wins": 2
       }
@@ -573,7 +578,7 @@
   {
     "player_a": "Diddi",
     "player_b": "Tommi",
-    "a_wins": 14,
+    "a_wins": 16,
     "b_wins": 10,
     "by_cube": [
       {
@@ -608,6 +613,11 @@
       },
       {
         "cube": "Inventors' Fair",
+        "a_wins": 2,
+        "b_wins": 0
+      },
+      {
+        "cube": "Genesis",
         "a_wins": 2,
         "b_wins": 0
       }
@@ -1345,8 +1355,8 @@
   {
     "player_a": "Anna",
     "player_b": "Tommi",
-    "a_wins": 3,
-    "b_wins": 2,
+    "a_wins": 5,
+    "b_wins": 3,
     "by_cube": [
       {
         "cube": "Kaldheim Cube",
@@ -1356,6 +1366,11 @@
       {
         "cube": "Vintage Aron",
         "a_wins": 1,
+        "b_wins": 1
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
         "b_wins": 1
       }
     ]
@@ -1376,8 +1391,8 @@
   {
     "player_a": "Oddur",
     "player_b": "Örvar",
-    "a_wins": 1,
-    "b_wins": 8,
+    "a_wins": 2,
+    "b_wins": 10,
     "by_cube": [
       {
         "cube": "Kaldheim Cube",
@@ -1397,6 +1412,11 @@
       {
         "cube": "That's Totally Uncommon",
         "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 1,
         "b_wins": 2
       }
     ]
@@ -1584,7 +1604,7 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Oddur",
-    "a_wins": 11,
+    "a_wins": 13,
     "b_wins": 8,
     "by_cube": [
       {
@@ -1621,6 +1641,11 @@
         "cube": "Pauper Cube Victor",
         "a_wins": 0,
         "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -1628,7 +1653,7 @@
     "player_a": "Binni",
     "player_b": "Diddi",
     "a_wins": 6,
-    "b_wins": 8,
+    "b_wins": 10,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -1649,6 +1674,11 @@
         "cube": "Modern Stories",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 0,
+        "b_wins": 2
       }
     ]
   },
@@ -2676,8 +2706,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Atli",
-    "a_wins": 13,
-    "b_wins": 5,
+    "a_wins": 14,
+    "b_wins": 7,
     "by_cube": [
       {
         "cube": "Final Destination",
@@ -2713,6 +2743,11 @@
         "cube": "Modern Stories",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 1,
+        "b_wins": 2
       }
     ]
   },
@@ -2773,8 +2808,8 @@
   {
     "player_a": "Atli",
     "player_b": "Örvar",
-    "a_wins": 6,
-    "b_wins": 8,
+    "a_wins": 8,
+    "b_wins": 9,
     "by_cube": [
       {
         "cube": "Vintage Victor",
@@ -2805,6 +2840,11 @@
         "cube": "Stingvi Power Max",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },

@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1529,
-    "rank": 7,
-    "win_rate": 54.940711,
-    "games": 253,
+    "score_median": 1536,
+    "rank": 5,
+    "win_rate": 55.642023,
+    "games": 257,
     "strongest_tier": "High"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": -0.237774,
         "Other": 0.018382
       }
+    },
+    {
+      "date": "2026-06-25",
+      "score_median": 1536,
+      "score_q25": 1520,
+      "score_q75": 1555,
+      "score_lower": 1496,
+      "score_upper": 1588,
+      "rank": 5,
+      "win_rate": 55.642023,
+      "games": 257,
+      "wins": 143,
+      "losses": 114,
+      "strength": {
+        "High": 0.145655,
+        "Medium": 0.030355,
+        "Low": -0.259076,
+        "Other": 0.083184
+      }
     }
   ],
   "cubes": [
@@ -957,10 +976,10 @@
     {
       "cube": "Genesis",
       "tier": "Other",
-      "wins": 2,
+      "wins": 6,
       "losses": 5,
-      "games": 7,
-      "win_rate": 29,
+      "games": 11,
+      "win_rate": 55,
       "trophies": 0
     },
     {

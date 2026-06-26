@@ -4,8 +4,8 @@
   "summary": {
     "score_median": 1504,
     "rank": 14,
-    "win_rate": 49.333333,
-    "games": 75,
+    "win_rate": 48.75,
+    "games": 80,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": -0.054069,
         "Other": -0.015136
       }
+    },
+    {
+      "date": "2026-06-25",
+      "score_median": 1504,
+      "score_q25": 1487,
+      "score_q75": 1523,
+      "score_lower": 1453,
+      "score_upper": 1557,
+      "rank": 14,
+      "win_rate": 48.75,
+      "games": 80,
+      "wins": 39,
+      "losses": 41,
+      "strength": {
+        "High": -0.020966,
+        "Medium": 0.099871,
+        "Low": -0.051641,
+        "Other": -0.030674
+      }
     }
   ],
   "cubes": [
@@ -870,6 +889,15 @@
       "losses": 5,
       "games": 8,
       "win_rate": 38,
+      "trophies": 0
+    },
+    {
+      "cube": "Genesis",
+      "tier": "Other",
+      "wins": 2,
+      "losses": 3,
+      "games": 5,
+      "win_rate": 40,
       "trophies": 0
     },
     {

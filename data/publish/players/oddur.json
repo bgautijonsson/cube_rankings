@@ -2,10 +2,10 @@
   "player": "Oddur",
   "slug": "oddur",
   "summary": {
-    "score_median": 1473,
+    "score_median": 1471,
     "rank": 23,
-    "win_rate": 41.059603,
-    "games": 151,
+    "win_rate": 40.384615,
+    "games": 156,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": 0.107831,
         "Other": -0.285186
       }
+    },
+    {
+      "date": "2026-06-25",
+      "score_median": 1471,
+      "score_q25": 1454,
+      "score_q75": 1488,
+      "score_lower": 1424,
+      "score_upper": 1516,
+      "rank": 23,
+      "win_rate": 40.384615,
+      "games": 156,
+      "wins": 63,
+      "losses": 93,
+      "strength": {
+        "High": -0.095929,
+        "Medium": 0.283499,
+        "Low": 0.114323,
+        "Other": -0.304228
+      }
     }
   ],
   "cubes": [
@@ -894,10 +913,10 @@
     {
       "cube": "Genesis",
       "tier": "Other",
-      "wins": 2,
-      "losses": 5,
-      "games": 7,
-      "win_rate": 29,
+      "wins": 3,
+      "losses": 9,
+      "games": 12,
+      "win_rate": 25,
       "trophies": 0
     },
     {
