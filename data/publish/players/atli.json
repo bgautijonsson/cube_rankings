@@ -655,11 +655,11 @@
     {
       "cube": "Genesis",
       "tier": "Other",
-      "wins": 8,
+      "wins": 10,
       "losses": 6,
-      "games": 14,
-      "win_rate": 57,
-      "trophies": 0
+      "games": 16,
+      "win_rate": 62,
+      "trophies": 1
     },
     {
       "cube": "Stingvi Power Max",

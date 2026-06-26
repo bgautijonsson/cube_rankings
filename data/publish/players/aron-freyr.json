@@ -949,10 +949,10 @@
     {
       "cube": "Genesis",
       "tier": "Other",
-      "wins": 9,
-      "losses": 3,
-      "games": 12,
-      "win_rate": 75,
+      "wins": 10,
+      "losses": 5,
+      "games": 15,
+      "win_rate": 67,
       "trophies": 1
     },
     {

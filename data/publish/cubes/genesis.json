@@ -4,7 +4,7 @@
   "tier": "Other",
   "summary": {
     "n_events": 3,
-    "n_matches": 31,
+    "n_matches": 35,
     "n_players": 15,
     "first_played": "2025-11-20",
     "last_played": "2026-06-25"
@@ -17,6 +17,10 @@
     {
       "player": "Aron Freyr",
       "trophies": 1
+    },
+    {
+      "player": "Atli",
+      "trophies": 1
     }
   ],
   "player_rankings": [
@@ -28,15 +32,6 @@
       "game_w": 4,
       "game_l": 1,
       "game_pct": 80
-    },
-    {
-      "player": "Aron Freyr",
-      "match_w": 4,
-      "match_l": 1,
-      "match_pct": 80,
-      "game_w": 9,
-      "game_l": 3,
-      "game_pct": 75
     },
     {
       "player": "Hjalti",
@@ -57,49 +52,49 @@
       "game_pct": 71
     },
     {
+      "player": "Aron Freyr",
+      "match_w": 4,
+      "match_l": 2,
+      "match_pct": 67,
+      "game_w": 10,
+      "game_l": 5,
+      "game_pct": 67
+    },
+    {
       "player": "Örvar",
-      "match_w": 5,
+      "match_w": 6,
       "match_l": 3,
-      "match_pct": 62,
-      "game_w": 11,
+      "match_pct": 67,
+      "game_w": 13,
       "game_l": 7,
-      "game_pct": 61
+      "game_pct": 65
     },
     {
       "player": "Atli",
-      "match_w": 4,
+      "match_w": 5,
       "match_l": 1,
-      "match_pct": 80,
-      "game_w": 8,
+      "match_pct": 83,
+      "game_w": 10,
       "game_l": 6,
-      "game_pct": 57
+      "game_pct": 62
     },
     {
-      "player": "Diddi",
+      "player": "Binni",
       "match_w": 3,
       "match_l": 2,
       "match_pct": 60,
       "game_w": 6,
-      "game_l": 5,
-      "game_pct": 55
+      "game_l": 6,
+      "game_pct": 50
     },
     {
-      "player": "Binni",
-      "match_w": 2,
-      "match_l": 2,
+      "player": "Diddi",
+      "match_w": 3,
+      "match_l": 3,
       "match_pct": 50,
-      "game_w": 4,
-      "game_l": 5,
-      "game_pct": 44
-    },
-    {
-      "player": "Anna",
-      "match_w": 1,
-      "match_l": 1,
-      "match_pct": 50,
-      "game_w": 2,
-      "game_l": 3,
-      "game_pct": 40
+      "game_w": 6,
+      "game_l": 7,
+      "game_pct": 46
     },
     {
       "player": "Ingvi",
@@ -112,21 +107,30 @@
     },
     {
       "player": "Oddur",
-      "match_w": 0,
+      "match_w": 1,
       "match_l": 5,
-      "match_pct": 0,
-      "game_w": 3,
+      "match_pct": 17,
+      "game_w": 5,
       "game_l": 9,
-      "game_pct": 25
+      "game_pct": 36
+    },
+    {
+      "player": "Anna",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 2,
+      "game_l": 5,
+      "game_pct": 29
     },
     {
       "player": "Tommi",
       "match_w": 1,
-      "match_l": 6,
-      "match_pct": 14,
+      "match_l": 7,
+      "match_pct": 12,
       "game_w": 4,
-      "game_l": 13,
-      "game_pct": 24
+      "game_l": 15,
+      "game_pct": 21
     }
   ],
   "events": [
@@ -135,66 +139,66 @@
       "results": [
         {
           "player": "Atli",
-          "match_w": 2,
+          "match_w": 3,
           "match_l": 0,
-          "game_w": 4,
+          "game_w": 6,
           "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Diddi",
-          "match_w": 2,
-          "match_l": 0,
-          "game_w": 4,
-          "game_l": 0,
-          "trophy": false
+          "trophy": true
         },
         {
           "player": "Binni",
-          "match_w": 1,
+          "match_w": 2,
           "match_l": 1,
-          "game_w": 2,
-          "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Aron Freyr",
-          "match_w": 1,
-          "match_l": 1,
-          "game_w": 3,
-          "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Anna",
-          "match_w": 1,
-          "match_l": 1,
-          "game_w": 2,
+          "game_w": 4,
           "game_l": 3,
           "trophy": false
         },
         {
           "player": "Örvar",
-          "match_w": 1,
+          "match_w": 2,
           "match_l": 1,
-          "game_w": 3,
+          "game_w": 5,
           "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Diddi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Oddur",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Aron Freyr",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Anna",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 5,
           "trophy": false
         },
         {
           "player": "Tommi",
           "match_w": 0,
-          "match_l": 2,
+          "match_l": 3,
           "game_w": 1,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Oddur",
-          "match_w": 0,
-          "match_l": 2,
-          "game_w": 1,
-          "game_l": 4,
+          "game_l": 6,
           "trophy": false
         }
       ]

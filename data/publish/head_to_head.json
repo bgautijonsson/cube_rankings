@@ -38,8 +38,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Binni",
-    "a_wins": 10,
-    "b_wins": 7,
+    "a_wins": 11,
+    "b_wins": 9,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -68,8 +68,8 @@
       },
       {
         "cube": "Genesis",
-        "a_wins": 2,
-        "b_wins": 0
+        "a_wins": 3,
+        "b_wins": 2
       },
       {
         "cube": "Inventors' Fair",
@@ -1291,7 +1291,7 @@
   {
     "player_a": "Oddur",
     "player_b": "Tommi",
-    "a_wins": 8,
+    "a_wins": 10,
     "b_wins": 10,
     "by_cube": [
       {
@@ -1313,6 +1313,11 @@
         "cube": "Flashdance!",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -1425,10 +1430,15 @@
     "player_a": "Anna",
     "player_b": "Örvar",
     "a_wins": 0,
-    "b_wins": 2,
+    "b_wins": 4,
     "by_cube": [
       {
         "cube": "Kaldheim Cube",
+        "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
         "a_wins": 0,
         "b_wins": 2
       }
@@ -3328,7 +3338,7 @@
   {
     "player_a": "Atli",
     "player_b": "Diddi",
-    "a_wins": 2,
+    "a_wins": 4,
     "b_wins": 4,
     "by_cube": [
       {
@@ -3345,6 +3355,11 @@
         "cube": "Inventors' Fair",
         "a_wins": 0,
         "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
