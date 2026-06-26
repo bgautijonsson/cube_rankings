@@ -2,15 +2,20 @@ suppressPackageStartupMessages({
   library(tidyverse)
   library(lubridate)
 })
-source("R/data_preparation.R") # download_cube_results (auth + read)
+source("R/data_preparation.R") # download_cube_results + prepare_cube_data
 source("R/incremental.R")
 
-new_dates <- new_result_dates(
-  sheet_play_dates(download_cube_results()),
-  existing_result_dates()
+# Content-aware detection: a date needs (re)fitting when it has no results folder
+# yet OR its underlying game rows have changed since it was last fit. The latter
+# catches games appended to an already-fitted date, which presence-only detection
+# silently missed -- leaving the site's tallies and rankings split-brain.
+processed <- prepare_cube_data(download_cube_results())$processed_data
+new_dates <- dates_needing_fit(
+  sheet_date_fingerprints(processed),
+  stored_date_fingerprints(existing_result_dates())
 )
 cat(
-  "New result dates:",
+  "Dates needing a (re)fit:",
   if (length(new_dates)) paste(new_dates, collapse = ", ") else "(none)", "\n"
 )
 

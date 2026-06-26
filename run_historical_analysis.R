@@ -43,11 +43,17 @@ existing_dates <- existing_result_dates(results_root)
 
 cat("Found", length(existing_dates), "dates with existing results.\n")
 
-# Find dates to process (incremental unless --force)
+# Find dates to process (incremental unless --force). Incremental detection is
+# content-aware: a date is (re)fit when it has no folder yet OR its game rows
+# changed since the last fit (e.g. games appended to an already-fitted date).
 if (force_refit) {
   dates_to_fit <- sort(as.character(all_dates))
 } else {
-  dates_to_fit <- new_result_dates(all_dates, existing_dates)
+  processed_now <- prepare_cube_data(d_raw)$processed_data
+  dates_to_fit <- dates_needing_fit(
+    sheet_date_fingerprints(processed_now),
+    stored_date_fingerprints(existing_dates, results_root)
+  )
 }
 
 if (length(dates_to_fit) == 0) {

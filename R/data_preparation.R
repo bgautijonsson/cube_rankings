@@ -47,7 +47,7 @@ prepare_cube_data <- function(d_raw, upto_date = NULL) {
     mutate(
       player_nr = row_number(),
       text = glue::glue(
-        "{percent(wins / total, accuracy = 1)} ({wins}/{total})"
+        "{scales::percent(wins / total, accuracy = 1)} ({wins}/{total})"
       )
     )
 
