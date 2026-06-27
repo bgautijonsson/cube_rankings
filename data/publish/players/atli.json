@@ -144,21 +144,21 @@
     },
     {
       "date": "2026-01-22",
-      "score_median": 1530,
-      "score_q25": 1502,
-      "score_q75": 1559,
-      "score_lower": 1463,
-      "score_upper": 1607,
+      "score_median": 1532,
+      "score_q25": 1504,
+      "score_q75": 1562,
+      "score_lower": 1464,
+      "score_upper": 1609,
       "rank": 8,
       "win_rate": 52.941176,
       "games": 51,
       "wins": 27,
       "losses": 24,
       "strength": {
-        "High": 0.167797,
-        "Medium": -0.110675,
-        "Low": -0.037748,
-        "Other": -0.018258
+        "High": 0.163819,
+        "Medium": -0.108794,
+        "Low": -0.040269,
+        "Other": -0.010885
       }
     },
     {
@@ -391,40 +391,40 @@
     },
     {
       "date": "2026-04-30",
-      "score_median": 1517,
-      "score_q25": 1497,
-      "score_q75": 1538,
-      "score_lower": 1466,
+      "score_median": 1519,
+      "score_q25": 1499,
+      "score_q75": 1540,
+      "score_lower": 1468,
       "score_upper": 1572,
-      "rank": 10,
+      "rank": 11,
       "win_rate": 50.819672,
       "games": 122,
       "wins": 62,
       "losses": 60,
       "strength": {
-        "High": 0.093356,
-        "Medium": -0.171447,
-        "Low": 0.024746,
-        "Other": 0.051545
+        "High": 0.092654,
+        "Medium": -0.168724,
+        "Low": 0.029356,
+        "Other": 0.049953
       }
     },
     {
       "date": "2026-05-07",
-      "score_median": 1523,
-      "score_q25": 1503,
-      "score_q75": 1544,
-      "score_lower": 1473,
-      "score_upper": 1579,
-      "rank": 10,
+      "score_median": 1525,
+      "score_q25": 1505,
+      "score_q75": 1547,
+      "score_lower": 1476,
+      "score_upper": 1581,
+      "rank": 9,
       "win_rate": 51.538462,
       "games": 130,
       "wins": 67,
       "losses": 63,
       "strength": {
-        "High": 0.079694,
-        "Medium": -0.182642,
-        "Low": 0.014888,
-        "Other": 0.087354
+        "High": 0.130149,
+        "Medium": -0.183701,
+        "Low": 0.01376,
+        "Other": 0.038646
       }
     },
     {

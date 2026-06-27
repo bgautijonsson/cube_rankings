@@ -49,21 +49,21 @@
     },
     {
       "date": "2026-01-22",
-      "score_median": 1465,
-      "score_q25": 1425,
+      "score_median": 1462,
+      "score_q25": 1421,
       "score_q75": 1497,
-      "score_lower": 1355,
-      "score_upper": 1545,
+      "score_lower": 1350,
+      "score_upper": 1546,
       "rank": 20,
       "win_rate": 30.769231,
       "games": 13,
       "wins": 4,
       "losses": 9,
       "strength": {
-        "High": 0.092739,
-        "Medium": -0.165036,
-        "Low": 0.036021,
-        "Other": 0.040823
+        "High": 0.08996,
+        "Medium": -0.160927,
+        "Low": 0.030884,
+        "Other": 0.037523
       }
     },
     {
@@ -296,40 +296,40 @@
     },
     {
       "date": "2026-04-30",
-      "score_median": 1480,
-      "score_q25": 1449,
-      "score_q75": 1503,
-      "score_lower": 1392,
-      "score_upper": 1544,
+      "score_median": 1477,
+      "score_q25": 1447,
+      "score_q75": 1502,
+      "score_lower": 1391,
+      "score_upper": 1543,
       "rank": 22,
       "win_rate": 36,
       "games": 25,
       "wins": 9,
       "losses": 16,
       "strength": {
-        "High": 0.124998,
-        "Medium": -0.205642,
-        "Low": 0.039848,
-        "Other": 0.037416
+        "High": 0.130623,
+        "Medium": -0.204577,
+        "Low": 0.038444,
+        "Other": 0.033876
       }
     },
     {
       "date": "2026-05-07",
-      "score_median": 1479,
-      "score_q25": 1449,
-      "score_q75": 1502,
-      "score_lower": 1394,
-      "score_upper": 1541,
+      "score_median": 1478,
+      "score_q25": 1447,
+      "score_q75": 1503,
+      "score_lower": 1391,
+      "score_upper": 1545,
       "rank": 22,
       "win_rate": 36,
       "games": 25,
       "wins": 9,
       "losses": 16,
       "strength": {
-        "High": 0.127543,
-        "Medium": -0.200626,
-        "Low": 0.038923,
-        "Other": 0.037824
+        "High": 0.132593,
+        "Medium": -0.20466,
+        "Low": 0.037233,
+        "Other": 0.037755
       }
     },
     {
