@@ -22,6 +22,7 @@ Set `GOOGLE_MAIL` before any command that needs Google Sheets access.
 Google Sheets → `download_cube_results()` → `prepare_cube_data()` → `fit_cube_model()` → `render_visualizations()`
 
 - `R/data_preparation.R` — download, clean, prepare Stan input
+- `R/sheet_dedup.R` — drops duplicate Results rows sharing a column-H `match_id` (skrá write-race guard); blank ids are never deduped
 - `R/model_fitting.R` — cmdstanr wrapper for Stan models
 - `R/visualization.R` — ggplot2-based ranking plots
 - `R/elo_table.R` — ELO conversion and player opt-in filtering

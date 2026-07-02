@@ -2,6 +2,7 @@ library(tidyverse)
 library(googlesheets4)
 source("R/theme_colors.R")
 source("R/sheet_auth.R")
+source("R/sheet_dedup.R")
 source("R/cube_tier.R")
 theme_set(theme_mtgkubbur())
 
@@ -17,6 +18,7 @@ download_cube_results <- function(
 
 prepare_cube_data <- function(d_raw, upto_date = NULL) {
   processed_data <- d_raw |>
+    drop_duplicate_sheet_rows() |>
     mutate(date = as_date(date)) |>
     pivot_longer(c(game1:game3), names_to = "game", values_to = "winner") |>
     drop_na(winner) |>

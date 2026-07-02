@@ -57,3 +57,37 @@ stopifnot(!("Zzz" %in% .names))
 .hh_names <- unlist(purrr::map(.hh, ~ c(.x$player_a, .x$player_b)))
 stopifnot(!("Zzz" %in% .hh_names))
 cat("PASS: opt-in filter holds across enriched artifacts (cubes detail, head-to-head)\n")
+
+# Defence-in-depth (2026-07-02): skra's Sheet write race could append duplicate
+# rows for one match, keyed by the UUID in the sheet's own match_id column (H).
+# load_results_games must drop them (first row kept) BEFORE rebuilding match_id
+# as row_number(); blank ids (solo-era rows) are distinct matches, never dupes.
+.sheet_raw <- tibble::tibble(
+  date = as.Date("2026-07-02"),
+  player1 = c("A", "A", "C", "E", "G"),
+  player2 = c("B", "B", "D", "F", "H"),
+  game1 = c("A", "B", "C", "E", "G"),
+  game2 = c("B", "B", "D", "F", "H"),
+  game3 = c("A", "B", "C", "E", "G"),
+  cube = "Bolti",
+  match_id = c("uuid-1", "uuid-1", "uuid-2", NA, NA)
+)
+.warns <- character(0)
+.games <- withCallingHandlers(
+  load_results_games(reader = function(url) .sheet_raw),
+  warning = function(w) {
+    .warns <<- c(.warns, conditionMessage(w))
+    invokeRestart("muffleWarning")
+  }
+)
+stopifnot(dplyr::n_distinct(.games$match_id) == 4L) # 5 sheet rows -> 4 matches
+.ab <- dplyr::filter(.games, player1 == "A")
+stopifnot(nrow(.ab) == 3L, sum(.ab$winner == "A") == 2L) # first copy kept (A wins 2-1)
+stopifnot(all(c("E", "G") %in% .games$player1)) # both blank-id rows survive
+stopifnot(length(.warns) == 1L, grepl("1 duplicate", .warns), grepl("uuid-1", .warns))
+.clean <- withCallingHandlers(
+  load_results_games(reader = function(url) .sheet_raw[c(1, 3, 4, 5), ]),
+  warning = function(w) stop("unexpected warning on duplicate-free sheet: ", conditionMessage(w))
+)
+stopifnot(dplyr::n_distinct(.clean$match_id) == 4L)
+cat("PASS: duplicate column-H rows dropped (first kept, blanks untouched, count warned)\n")

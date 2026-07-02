@@ -5,6 +5,7 @@ suppressPackageStartupMessages({
   library(lubridate)
 })
 source("R/sheet_auth.R")
+source("R/sheet_dedup.R")
 source("R/elo_table.R")
 source("R/cube_tier.R")
 
@@ -13,8 +14,11 @@ CMDSTAN_VERSION <- Sys.getenv("CMDSTAN_VERSION", "2.38.0")
 SHEET_URL <- "https://docs.google.com/spreadsheets/d/1bq5DXQs1nobk0nu9cN-4UOHPkcPK3fvkTLa2t2lVNKk/edit"
 
 # One row per GAME (game1:game3 unpivoted), named cube preserved, title-cased.
-load_results_games <- function(sheet_url = SHEET_URL) {
-  read_sheet(sheet_url) |>
+# Dedup on the sheet's own match_id (column H) must run BEFORE row_number()
+# overwrites it.
+load_results_games <- function(sheet_url = SHEET_URL, reader = read_sheet) {
+  reader(sheet_url) |>
+    drop_duplicate_sheet_rows() |>
     mutate(match_id = dplyr::row_number(), date = lubridate::as_date(date)) |>
     tidyr::pivot_longer(game1:game3, names_to = "game", values_to = "winner") |>
     tidyr::drop_na(winner) |>

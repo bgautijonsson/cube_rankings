@@ -38,3 +38,20 @@ prepared_cut <- prepare_cube_data(d_raw, upto_date = "2026-01-01")
 stopifnot(nrow(prepared_cut$processed_data) == 3L)
 stopifnot(all(prepared_cut$processed_data$date == as.Date("2026-01-01")))
 cat("PASS: prepare_cube_data upto_date filter unaffected by the fix\n")
+
+# Defence-in-depth (2026-07-02): duplicate rows sharing a column-H match_id
+# (skra Sheet write race, or a manual-edit accident) must not reach the model
+# as extra games. Blank-id solo-era rows are distinct matches, never dupes --
+# nrow == 5 above already proves rows 2 and 3 (both NA match_id) coexist.
+d_dup <- dplyr::bind_rows(d_raw, d_raw[1, ]) # second copy of match m1
+.warns <- character(0)
+prepared_dedup <- withCallingHandlers(
+  prepare_cube_data(d_dup),
+  warning = function(w) {
+    .warns <<- c(.warns, conditionMessage(w))
+    invokeRestart("muffleWarning")
+  }
+)
+stopifnot(nrow(prepared_dedup$processed_data) == 5L) # same 5 games as the clean sheet
+stopifnot(length(.warns) == 1L, grepl("1 duplicate", .warns), grepl("m1", .warns))
+cat("PASS: prepare_cube_data drops duplicate sheet match_id rows before the fit\n")
