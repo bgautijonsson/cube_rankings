@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1559,
+    "score_median": 1570,
     "rank": 2,
-    "win_rate": 59.090909,
-    "games": 264,
+    "win_rate": 59.778598,
+    "games": 271,
     "strongest_tier": "Other"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": -0.202607,
         "Other": 0.121417
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1570,
+      "score_q25": 1548,
+      "score_q75": 1595,
+      "score_lower": 1521,
+      "score_upper": 1638,
+      "rank": 2,
+      "win_rate": 59.778598,
+      "games": 271,
+      "wins": 162,
+      "losses": 109,
+      "strength": {
+        "High": 0.048741,
+        "Medium": 0.067152,
+        "Low": -0.225542,
+        "Other": 0.104453
+      }
     }
   ],
   "cubes": [
@@ -958,11 +977,11 @@
     {
       "cube": "Diddi's Vintage Vanilla",
       "tier": "High",
-      "wins": 6,
-      "losses": 1,
-      "games": 7,
+      "wins": 12,
+      "losses": 2,
+      "games": 14,
       "win_rate": 86,
-      "trophies": 1
+      "trophies": 2
     },
     {
       "cube": "Inventors' Fair",

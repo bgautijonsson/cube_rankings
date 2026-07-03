@@ -2,8 +2,8 @@
   "player": "Hjalti",
   "slug": "hjalti",
   "summary": {
-    "score_median": 1499,
-    "rank": 17,
+    "score_median": 1498,
+    "rank": 16,
     "win_rate": 43.75,
     "games": 96,
     "strongest_tier": "High"
@@ -843,6 +843,25 @@
         "Medium": 0.063445,
         "Low": 0.003451,
         "Other": -0.187205
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1498,
+      "score_q25": 1475,
+      "score_q75": 1519,
+      "score_lower": 1427,
+      "score_upper": 1556,
+      "rank": 16,
+      "win_rate": 43.75,
+      "games": 96,
+      "wins": 42,
+      "losses": 54,
+      "strength": {
+        "High": 0.123189,
+        "Medium": 0.055235,
+        "Low": 0.006847,
+        "Other": -0.186644
       }
     }
   ],

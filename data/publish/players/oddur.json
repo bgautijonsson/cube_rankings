@@ -2,10 +2,10 @@
   "player": "Oddur",
   "slug": "oddur",
   "summary": {
-    "score_median": 1476,
-    "rank": 23,
-    "win_rate": 41.139241,
-    "games": 158,
+    "score_median": 1487,
+    "rank": 21,
+    "win_rate": 42.073171,
+    "games": 164,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": 0.096826,
         "Other": -0.250904
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1487,
+      "score_q25": 1469,
+      "score_q75": 1509,
+      "score_lower": 1440,
+      "score_upper": 1554,
+      "rank": 21,
+      "win_rate": 42.073171,
+      "games": 164,
+      "wins": 69,
+      "losses": 95,
+      "strength": {
+        "High": -0.027566,
+        "Medium": 0.236765,
+        "Low": 0.068939,
+        "Other": -0.274109
+      }
     }
   ],
   "cubes": [
@@ -953,6 +972,15 @@
       "losses": 2,
       "games": 7,
       "win_rate": 71,
+      "trophies": 0
+    },
+    {
+      "cube": "Diddi's Vintage Vanilla",
+      "tier": "High",
+      "wins": 4,
+      "losses": 2,
+      "games": 6,
+      "win_rate": 67,
       "trophies": 0
     },
     {

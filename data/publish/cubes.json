@@ -23,11 +23,11 @@
     "cube": "Diddi's Vintage Vanilla",
     "slug": "diddi-s-vintage-vanilla",
     "tier": "High",
-    "n_events": 1,
-    "n_games": 26,
-    "n_players": 8,
+    "n_events": 2,
+    "n_games": 53,
+    "n_players": 14,
     "first_played": "2026-04-30",
-    "last_played": "2026-04-30"
+    "last_played": "2026-07-02"
   },
   {
     "cube": "Final Destination",
@@ -163,11 +163,11 @@
     "cube": "Stingvi Power Max",
     "slug": "stingvi-power-max",
     "tier": "High",
-    "n_events": 3,
-    "n_games": 69,
-    "n_players": 13,
+    "n_events": 4,
+    "n_games": 98,
+    "n_players": 17,
     "first_played": "2025-10-30",
-    "last_played": "2026-05-07"
+    "last_played": "2026-07-02"
   },
   {
     "cube": "Stone Soup Cube",

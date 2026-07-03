@@ -2,10 +2,10 @@
   "player": "Anna",
   "slug": "anna",
   "summary": {
-    "score_median": 1500,
-    "rank": 16,
-    "win_rate": 47.560976,
-    "games": 82,
+    "score_median": 1497,
+    "rank": 19,
+    "win_rate": 47.727273,
+    "games": 88,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": -0.034786,
         "Other": -0.064682
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1497,
+      "score_q25": 1476,
+      "score_q75": 1517,
+      "score_lower": 1434,
+      "score_upper": 1551,
+      "rank": 19,
+      "win_rate": 47.727273,
+      "games": 88,
+      "wins": 42,
+      "losses": 46,
+      "strength": {
+        "High": -0.015113,
+        "Medium": 0.118768,
+        "Low": -0.035533,
+        "Other": -0.065812
+      }
     }
   ],
   "cubes": [
@@ -898,6 +917,15 @@
       "losses": 5,
       "games": 7,
       "win_rate": 29,
+      "trophies": 0
+    },
+    {
+      "cube": "Diddi's Vintage Vanilla",
+      "tier": "High",
+      "wins": 3,
+      "losses": 3,
+      "games": 6,
+      "win_rate": 50,
       "trophies": 0
     },
     {

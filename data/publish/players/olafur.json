@@ -3,9 +3,9 @@
   "slug": "olafur",
   "summary": {
     "score_median": 1483,
-    "rank": 21,
-    "win_rate": 41.666667,
-    "games": 60,
+    "rank": 22,
+    "win_rate": 42.647059,
+    "games": 68,
     "strongest_tier": "High"
   },
   "history": [
@@ -730,6 +730,25 @@
         "Low": 0.002643,
         "Other": -0.03269
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1483,
+      "score_q25": 1461,
+      "score_q75": 1504,
+      "score_lower": 1421,
+      "score_upper": 1540,
+      "rank": 22,
+      "win_rate": 42.647059,
+      "games": 68,
+      "wins": 29,
+      "losses": 39,
+      "strength": {
+        "High": 0.075838,
+        "Medium": -0.04762,
+        "Low": 0.008326,
+        "Other": -0.033429
+      }
     }
   ],
   "cubes": [
@@ -776,6 +795,15 @@
       "losses": 4,
       "games": 7,
       "win_rate": 43,
+      "trophies": 0
+    },
+    {
+      "cube": "Stingvi Power Max",
+      "tier": "High",
+      "wins": 4,
+      "losses": 4,
+      "games": 8,
+      "win_rate": 50,
       "trophies": 0
     },
     {

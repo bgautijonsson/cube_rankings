@@ -3,7 +3,7 @@
   "slug": "fridrik",
   "summary": {
     "score_median": 1496,
-    "rank": 19,
+    "rank": 20,
     "win_rate": 43.820225,
     "games": 89,
     "strongest_tier": "Other"
@@ -349,6 +349,25 @@
         "Medium": -0.263148,
         "Low": -0.102601,
         "Other": 0.267763
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1496,
+      "score_q25": 1474,
+      "score_q75": 1518,
+      "score_lower": 1436,
+      "score_upper": 1553,
+      "rank": 20,
+      "win_rate": 43.820225,
+      "games": 89,
+      "wins": 39,
+      "losses": 50,
+      "strength": {
+        "High": 0.100329,
+        "Medium": -0.260677,
+        "Low": -0.102515,
+        "Other": 0.261119
       }
     }
   ],

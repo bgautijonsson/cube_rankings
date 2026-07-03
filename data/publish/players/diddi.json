@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1533,
-    "rank": 6,
-    "win_rate": 55.212355,
-    "games": 259,
+    "score_median": 1537,
+    "rank": 7,
+    "win_rate": 55.430712,
+    "games": 267,
     "strongest_tier": "High"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": -0.254766,
         "Other": 0.046949
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1537,
+      "score_q25": 1518,
+      "score_q75": 1557,
+      "score_lower": 1489,
+      "score_upper": 1595,
+      "rank": 7,
+      "win_rate": 55.430712,
+      "games": 267,
+      "wins": 148,
+      "losses": 119,
+      "strength": {
+        "High": 0.168583,
+        "Medium": 0.040427,
+        "Low": -0.251223,
+        "Other": 0.039364
+      }
     }
   ],
   "cubes": [
@@ -956,6 +975,15 @@
       "trophies": 0
     },
     {
+      "cube": "Diddi's Vintage Vanilla",
+      "tier": "High",
+      "wins": 9,
+      "losses": 6,
+      "games": 15,
+      "win_rate": 60,
+      "trophies": 0
+    },
+    {
       "cube": "Final Destination",
       "tier": "Medium",
       "wins": 4,
@@ -989,15 +1017,6 @@
       "losses": 3,
       "games": 6,
       "win_rate": 50,
-      "trophies": 0
-    },
-    {
-      "cube": "Diddi's Vintage Vanilla",
-      "tier": "High",
-      "wins": 4,
-      "losses": 3,
-      "games": 7,
-      "win_rate": 57,
       "trophies": 0
     }
   ]

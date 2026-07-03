@@ -2,10 +2,10 @@
   "player": "Ingvi",
   "slug": "ingvi",
   "summary": {
-    "score_median": 1525,
-    "rank": 9,
-    "win_rate": 55.952381,
-    "games": 84,
+    "score_median": 1518,
+    "rank": 8,
+    "win_rate": 53.846154,
+    "games": 91,
     "strongest_tier": "High"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": -0.063225,
         "Other": -0.073479
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1518,
+      "score_q25": 1497,
+      "score_q75": 1544,
+      "score_lower": 1464,
+      "score_upper": 1591,
+      "rank": 8,
+      "win_rate": 53.846154,
+      "games": 91,
+      "wins": 49,
+      "losses": 42,
+      "strength": {
+        "High": 0.151782,
+        "Medium": -0.05059,
+        "Low": -0.044289,
+        "Other": -0.057239
+      }
     }
   ],
   "cubes": [
@@ -895,10 +914,10 @@
     {
       "cube": "Stingvi Power Max",
       "tier": "High",
-      "wins": 16,
-      "losses": 7,
-      "games": 23,
-      "win_rate": 70,
+      "wins": 18,
+      "losses": 12,
+      "games": 30,
+      "win_rate": 60,
       "trophies": 2
     },
     {

@@ -3,11 +3,11 @@
   "slug": "stingvi-power-max",
   "tier": "High",
   "summary": {
-    "n_events": 3,
-    "n_matches": 27,
-    "n_players": 13,
+    "n_events": 4,
+    "n_matches": 39,
+    "n_players": 17,
     "first_played": "2025-10-30",
-    "last_played": "2026-05-07"
+    "last_played": "2026-07-02"
   },
   "trophy_leaders": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "player": "Örvar",
-      "trophies": 1
+      "trophies": 2
     },
     {
       "player": "Daníel",
@@ -34,22 +34,40 @@
       "game_pct": 86
     },
     {
-      "player": "Ingvi",
+      "player": "Binni",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 2,
+      "game_pct": 71
+    },
+    {
+      "player": "Örvar",
       "match_w": 8,
       "match_l": 1,
       "match_pct": 89,
       "game_w": 16,
-      "game_l": 7,
-      "game_pct": 70
+      "game_l": 8,
+      "game_pct": 67
     },
     {
-      "player": "Örvar",
-      "match_w": 5,
+      "player": "Styrmir",
+      "match_w": 2,
       "match_l": 1,
-      "match_pct": 83,
-      "game_w": 11,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 2,
+      "game_pct": 67
+    },
+    {
+      "player": "Atli",
+      "match_w": 4,
+      "match_l": 2,
+      "match_pct": 67,
+      "game_w": 10,
       "game_l": 6,
-      "game_pct": 65
+      "game_pct": 62
     },
     {
       "player": "Aron Elvar",
@@ -61,13 +79,22 @@
       "game_pct": 62
     },
     {
-      "player": "Atli",
-      "match_w": 2,
-      "match_l": 1,
-      "match_pct": 67,
-      "game_w": 5,
-      "game_l": 3,
-      "game_pct": 62
+      "player": "Ingvi",
+      "match_w": 9,
+      "match_l": 3,
+      "match_pct": 75,
+      "game_w": 18,
+      "game_l": 12,
+      "game_pct": 60
+    },
+    {
+      "player": "Ólafur",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
     },
     {
       "player": "Aron Gauti",
@@ -116,6 +143,59 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-07-02",
+      "results": [
+        {
+          "player": "Örvar",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Binni",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Styrmir",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Ólafur",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 4,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Ingvi",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        }
+      ]
+    },
     {
       "date": "2026-05-07",
       "results": [

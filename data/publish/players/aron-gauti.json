@@ -2,10 +2,10 @@
   "player": "Aron Gauti",
   "slug": "aron-gauti",
   "summary": {
-    "score_median": 1457,
+    "score_median": 1463,
     "rank": 24,
-    "win_rate": 33.333333,
-    "games": 99,
+    "win_rate": 34.285714,
+    "games": 105,
     "strongest_tier": "Low"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": 0.112902,
         "Other": 0.020035
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1463,
+      "score_q25": 1438,
+      "score_q75": 1484,
+      "score_lower": 1396,
+      "score_upper": 1519,
+      "rank": 24,
+      "win_rate": 34.285714,
+      "games": 105,
+      "wins": 36,
+      "losses": 69,
+      "strength": {
+        "High": -0.163263,
+        "Medium": 0.051093,
+        "Low": 0.095343,
+        "Other": 0.016085
+      }
     }
   ],
   "cubes": [
@@ -889,6 +908,15 @@
       "losses": 3,
       "games": 4,
       "win_rate": 25,
+      "trophies": 0
+    },
+    {
+      "cube": "Diddi's Vintage Vanilla",
+      "tier": "High",
+      "wins": 3,
+      "losses": 3,
+      "games": 6,
+      "win_rate": 50,
       "trophies": 0
     },
     {

@@ -2,10 +2,10 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1531,
-    "rank": 7,
-    "win_rate": 51.785714,
-    "games": 168,
+    "score_median": 1539,
+    "rank": 5,
+    "win_rate": 52.272727,
+    "games": 176,
     "strongest_tier": "Other"
   },
   "history": [
@@ -559,6 +559,25 @@
         "Low": 0.031126,
         "Other": 0.135015
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1539,
+      "score_q25": 1518,
+      "score_q75": 1561,
+      "score_lower": 1491,
+      "score_upper": 1600,
+      "rank": 5,
+      "win_rate": 52.272727,
+      "games": 176,
+      "wins": 92,
+      "losses": 84,
+      "strength": {
+        "High": 0.124384,
+        "Medium": -0.272417,
+        "Low": 0.022997,
+        "Other": 0.127892
+      }
     }
   ],
   "cubes": [
@@ -664,9 +683,9 @@
     {
       "cube": "Stingvi Power Max",
       "tier": "High",
-      "wins": 5,
-      "losses": 3,
-      "games": 8,
+      "wins": 10,
+      "losses": 6,
+      "games": 16,
       "win_rate": 62,
       "trophies": 0
     },

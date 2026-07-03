@@ -2,10 +2,10 @@
   "player": "Styrmir",
   "slug": "styrmir",
   "summary": {
-    "score_median": 1490,
-    "rank": 20,
-    "win_rate": 40,
-    "games": 35,
+    "score_median": 1498,
+    "rank": 17,
+    "win_rate": 43.902439,
+    "games": 41,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": 0.012479,
         "Other": -0.064766
       }
+    },
+    {
+      "date": "2026-07-02",
+      "score_median": 1498,
+      "score_q25": 1478,
+      "score_q75": 1524,
+      "score_lower": 1441,
+      "score_upper": 1575,
+      "rank": 17,
+      "win_rate": 43.902439,
+      "games": 41,
+      "wins": 18,
+      "losses": 23,
+      "strength": {
+        "High": 0.037964,
+        "Medium": 0.050515,
+        "Low": -0.003297,
+        "Other": -0.083572
+      }
     }
   ],
   "cubes": [
@@ -872,6 +891,15 @@
       "losses": 6,
       "games": 11,
       "win_rate": 45,
+      "trophies": 0
+    },
+    {
+      "cube": "Stingvi Power Max",
+      "tier": "High",
+      "wins": 4,
+      "losses": 2,
+      "games": 6,
+      "win_rate": 67,
       "trophies": 0
     },
     {
