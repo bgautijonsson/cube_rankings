@@ -692,7 +692,15 @@
     "cube": "Stingvi Power Max",
     "cube_slug": "stingvi-power-max",
     "host": "Ingvi",
-    "players": null,
+    "players": 8,
     "link": "https://moxfield.com/decks/PtG-Cyy4MUyyG-rXmjjjQA"
+  },
+  {
+    "date": "2026-07-02",
+    "cube": "Diddi's Vintage Vanilla",
+    "cube_slug": "diddi-s-vintage-vanilla",
+    "host": "Diddi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
   }
 ]
