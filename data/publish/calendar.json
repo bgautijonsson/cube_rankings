@@ -702,5 +702,13 @@
     "host": "Diddi",
     "players": 8,
     "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
+  },
+  {
+    "date": "2026-07-09",
+    "cube": "Standard Meta Cube",
+    "cube_slug": "standard-meta-cube",
+    "host": "Einar Ágúst",
+    "players": null,
+    "link": null
   }
 ]
