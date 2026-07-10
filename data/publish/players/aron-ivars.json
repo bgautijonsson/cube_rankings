@@ -2,7 +2,7 @@
   "player": "Aron Ívars",
   "slug": "aron-ivars",
   "summary": {
-    "score_median": 1505,
+    "score_median": 1506,
     "rank": 14,
     "win_rate": 45.714286,
     "games": 105,
@@ -862,6 +862,25 @@
         "Medium": -0.252167,
         "Low": 0.060252,
         "Other": -0.01282
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1506,
+      "score_q25": 1485,
+      "score_q75": 1530,
+      "score_lower": 1449,
+      "score_upper": 1579,
+      "rank": 14,
+      "win_rate": 45.714286,
+      "games": 105,
+      "wins": 48,
+      "losses": 57,
+      "strength": {
+        "High": 0.204428,
+        "Medium": -0.252975,
+        "Low": 0.06381,
+        "Other": -0.01702
       }
     }
   ],

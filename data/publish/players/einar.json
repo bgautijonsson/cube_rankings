@@ -2,10 +2,10 @@
   "player": "Einar",
   "slug": "einar",
   "summary": {
-    "score_median": 1515,
-    "rank": 10,
-    "win_rate": 50.877193,
-    "games": 114,
+    "score_median": 1522,
+    "rank": 8,
+    "win_rate": 51.666667,
+    "games": 120,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -863,6 +863,25 @@
         "Low": -0.047445,
         "Other": 0.071432
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1522,
+      "score_q25": 1501,
+      "score_q75": 1548,
+      "score_lower": 1468,
+      "score_upper": 1597,
+      "rank": 8,
+      "win_rate": 51.666667,
+      "games": 120,
+      "wins": 62,
+      "losses": 58,
+      "strength": {
+        "High": -0.223909,
+        "Medium": 0.165973,
+        "Low": -0.058755,
+        "Other": 0.117262
+      }
     }
   ],
   "cubes": [
@@ -972,6 +991,15 @@
       "losses": 4,
       "games": 6,
       "win_rate": 33,
+      "trophies": 0
+    },
+    {
+      "cube": "Boltalandið",
+      "tier": "Other",
+      "wins": 4,
+      "losses": 2,
+      "games": 6,
+      "win_rate": 67,
       "trophies": 0
     }
   ]

@@ -2,8 +2,8 @@
   "player": "Styrmir",
   "slug": "styrmir",
   "summary": {
-    "score_median": 1498,
-    "rank": 17,
+    "score_median": 1499,
+    "rank": 16,
     "win_rate": 43.902439,
     "games": 41,
     "strongest_tier": "Medium"
@@ -862,6 +862,25 @@
         "Medium": 0.050515,
         "Low": -0.003297,
         "Other": -0.083572
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1499,
+      "score_q25": 1477,
+      "score_q75": 1527,
+      "score_lower": 1436,
+      "score_upper": 1580,
+      "rank": 16,
+      "win_rate": 43.902439,
+      "games": 41,
+      "wins": 18,
+      "losses": 23,
+      "strength": {
+        "High": 0.039614,
+        "Medium": 0.048758,
+        "Low": -0.003379,
+        "Other": -0.088783
       }
     }
   ],

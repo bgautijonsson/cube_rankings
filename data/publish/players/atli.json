@@ -2,11 +2,11 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1539,
-    "rank": 5,
-    "win_rate": 52.272727,
-    "games": 176,
-    "strongest_tier": "Other"
+    "score_median": 1538,
+    "rank": 6,
+    "win_rate": 52.173913,
+    "games": 184,
+    "strongest_tier": "High"
   },
   "history": [
     {
@@ -578,6 +578,25 @@
         "Low": 0.022997,
         "Other": 0.127892
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1538,
+      "score_q25": 1517,
+      "score_q75": 1561,
+      "score_lower": 1487,
+      "score_upper": 1600,
+      "rank": 6,
+      "win_rate": 52.173913,
+      "games": 184,
+      "wins": 96,
+      "losses": 88,
+      "strength": {
+        "High": 0.129415,
+        "Medium": -0.26643,
+        "Low": 0.020608,
+        "Other": 0.115885
+      }
     }
   ],
   "cubes": [
@@ -602,10 +621,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 9,
-      "losses": 6,
-      "games": 15,
-      "win_rate": 60,
+      "wins": 13,
+      "losses": 10,
+      "games": 23,
+      "win_rate": 57,
       "trophies": 0
     },
     {

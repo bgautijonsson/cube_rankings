@@ -2,10 +2,10 @@
   "player": "Einar Logi",
   "slug": "einar-logi",
   "summary": {
-    "score_median": 1512,
-    "rank": 11,
-    "win_rate": 51.851852,
-    "games": 27,
+    "score_median": 1510,
+    "rank": 12,
+    "win_rate": 50,
+    "games": 36,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -787,6 +787,25 @@
         "Low": -0.025695,
         "Other": -0.031627
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1510,
+      "score_q25": 1486,
+      "score_q75": 1538,
+      "score_lower": 1447,
+      "score_upper": 1587,
+      "rank": 12,
+      "win_rate": 50,
+      "games": 36,
+      "wins": 18,
+      "losses": 18,
+      "strength": {
+        "High": -0.07168,
+        "Medium": 0.142652,
+        "Low": -0.021,
+        "Other": -0.052162
+      }
     }
   ],
   "cubes": [
@@ -806,6 +825,15 @@
       "losses": 3,
       "games": 8,
       "win_rate": 62,
+      "trophies": 0
+    },
+    {
+      "cube": "Boltalandið",
+      "tier": "Other",
+      "wins": 4,
+      "losses": 5,
+      "games": 9,
+      "win_rate": 44,
       "trophies": 0
     },
     {

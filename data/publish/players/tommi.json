@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1517,
-    "rank": 9,
-    "win_rate": 52.249135,
-    "games": 289,
+    "score_median": 1511,
+    "rank": 10,
+    "win_rate": 51.851852,
+    "games": 297,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -863,6 +863,25 @@
         "Low": 0.085863,
         "Other": -0.169423
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1511,
+      "score_q25": 1485,
+      "score_q75": 1532,
+      "score_lower": 1438,
+      "score_upper": 1560,
+      "rank": 10,
+      "win_rate": 51.851852,
+      "games": 297,
+      "wins": 154,
+      "losses": 143,
+      "strength": {
+        "High": -0.018536,
+        "Medium": 0.120901,
+        "Low": 0.092864,
+        "Other": -0.196037
+      }
     }
   ],
   "cubes": [
@@ -950,10 +969,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 6,
-      "losses": 7,
-      "games": 13,
-      "win_rate": 46,
+      "wins": 9,
+      "losses": 12,
+      "games": 21,
+      "win_rate": 43,
       "trophies": 0
     },
     {

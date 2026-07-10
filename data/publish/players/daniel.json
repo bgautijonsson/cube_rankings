@@ -3,7 +3,7 @@
   "slug": "daniel",
   "summary": {
     "score_median": 1511,
-    "rank": 12,
+    "rank": 11,
     "win_rate": 52.054795,
     "games": 73,
     "strongest_tier": "Low"
@@ -824,6 +824,25 @@
         "Medium": -0.20386,
         "Low": 0.12633,
         "Other": -0.042156
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1511,
+      "score_q25": 1490,
+      "score_q75": 1537,
+      "score_lower": 1451,
+      "score_upper": 1582,
+      "rank": 11,
+      "win_rate": 52.054795,
+      "games": 73,
+      "wins": 38,
+      "losses": 35,
+      "strength": {
+        "High": 0.116756,
+        "Medium": -0.205172,
+        "Low": 0.12823,
+        "Other": -0.040438
       }
     }
   ],

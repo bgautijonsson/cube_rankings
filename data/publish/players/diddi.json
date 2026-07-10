@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1537,
+    "score_median": 1532,
     "rank": 7,
-    "win_rate": 55.430712,
-    "games": 267,
+    "win_rate": 54.909091,
+    "games": 275,
     "strongest_tier": "High"
   },
   "history": [
@@ -863,6 +863,25 @@
         "Low": -0.251223,
         "Other": 0.039364
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1532,
+      "score_q25": 1513,
+      "score_q75": 1554,
+      "score_lower": 1480,
+      "score_upper": 1589,
+      "rank": 7,
+      "win_rate": 54.909091,
+      "games": 275,
+      "wins": 151,
+      "losses": 124,
+      "strength": {
+        "High": 0.180478,
+        "Medium": 0.056218,
+        "Low": -0.245478,
+        "Other": 0.011354
+      }
     }
   ],
   "cubes": [
@@ -923,10 +942,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 7,
-      "losses": 7,
-      "games": 14,
-      "win_rate": 50,
+      "wins": 10,
+      "losses": 12,
+      "games": 22,
+      "win_rate": 45,
       "trophies": 0
     },
     {

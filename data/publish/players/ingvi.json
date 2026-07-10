@@ -3,7 +3,7 @@
   "slug": "ingvi",
   "summary": {
     "score_median": 1518,
-    "rank": 8,
+    "rank": 9,
     "win_rate": 53.846154,
     "games": 91,
     "strongest_tier": "High"
@@ -862,6 +862,25 @@
         "Medium": -0.05059,
         "Low": -0.044289,
         "Other": -0.057239
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1518,
+      "score_q25": 1497,
+      "score_q75": 1545,
+      "score_lower": 1460,
+      "score_upper": 1597,
+      "rank": 9,
+      "win_rate": 53.846154,
+      "games": 91,
+      "wins": 49,
+      "losses": 42,
+      "strength": {
+        "High": 0.149997,
+        "Medium": -0.048793,
+        "Low": -0.044483,
+        "Other": -0.058455
       }
     }
   ],

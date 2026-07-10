@@ -3,7 +3,7 @@
   "slug": "arnar",
   "summary": {
     "score_median": 1538,
-    "rank": 6,
+    "rank": 5,
     "win_rate": 59.016393,
     "games": 61,
     "strongest_tier": "Medium"
@@ -843,6 +843,25 @@
         "Medium": 0.140352,
         "Low": -0.017585,
         "Other": -0.014243
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1538,
+      "score_q25": 1511,
+      "score_q75": 1569,
+      "score_lower": 1476,
+      "score_upper": 1628,
+      "rank": 5,
+      "win_rate": 59.016393,
+      "games": 61,
+      "wins": 36,
+      "losses": 25,
+      "strength": {
+        "High": -0.107456,
+        "Medium": 0.141116,
+        "Low": -0.018687,
+        "Other": -0.01218
       }
     }
   ],

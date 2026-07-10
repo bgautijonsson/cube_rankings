@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1599,
+    "score_median": 1596,
     "rank": 1,
-    "win_rate": 64.414414,
-    "games": 222,
+    "win_rate": 63.913043,
+    "games": 230,
     "strongest_tier": "Low"
   },
   "history": [
@@ -806,6 +806,25 @@
         "Low": 0.202711,
         "Other": -0.033358
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1596,
+      "score_q25": 1573,
+      "score_q75": 1623,
+      "score_lower": 1541,
+      "score_upper": 1665,
+      "rank": 1,
+      "win_rate": 63.913043,
+      "games": 230,
+      "wins": 147,
+      "losses": 83,
+      "strength": {
+        "High": 0.07022,
+        "Medium": -0.230889,
+        "Low": 0.215375,
+        "Other": -0.057092
+      }
     }
   ],
   "cubes": [
@@ -947,10 +966,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 6,
-      "losses": 2,
-      "games": 8,
-      "win_rate": 75,
+      "wins": 10,
+      "losses": 6,
+      "games": 16,
+      "win_rate": 62,
       "trophies": 1
     },
     {

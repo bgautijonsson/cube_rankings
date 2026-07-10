@@ -708,7 +708,7 @@
     "cube": "Standard Meta Cube",
     "cube_slug": "standard-meta-cube",
     "host": "Einar Ágúst",
-    "players": null,
+    "players": 8,
     "link": null
   }
 ]

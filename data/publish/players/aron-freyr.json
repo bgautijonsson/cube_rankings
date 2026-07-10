@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1570,
+    "score_median": 1587,
     "rank": 2,
-    "win_rate": 59.778598,
-    "games": 271,
+    "win_rate": 60.649819,
+    "games": 277,
     "strongest_tier": "Other"
   },
   "history": [
@@ -863,6 +863,25 @@
         "Low": -0.225542,
         "Other": 0.104453
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1587,
+      "score_q25": 1563,
+      "score_q75": 1615,
+      "score_lower": 1534,
+      "score_upper": 1665,
+      "rank": 2,
+      "win_rate": 60.649819,
+      "games": 277,
+      "wins": 168,
+      "losses": 109,
+      "strength": {
+        "High": 0.009672,
+        "Medium": 0.027829,
+        "Low": -0.249844,
+        "Other": 0.207245
+      }
     }
   ],
   "cubes": [
@@ -932,11 +951,11 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 4,
+      "wins": 10,
       "losses": 4,
-      "games": 8,
-      "win_rate": 50,
-      "trophies": 0
+      "games": 14,
+      "win_rate": 71,
+      "trophies": 1
     },
     {
       "cube": "Modern Stories",

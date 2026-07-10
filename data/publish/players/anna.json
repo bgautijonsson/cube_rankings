@@ -2,10 +2,10 @@
   "player": "Anna",
   "slug": "anna",
   "summary": {
-    "score_median": 1497,
-    "rank": 19,
-    "win_rate": 47.727273,
-    "games": 88,
+    "score_median": 1491,
+    "rank": 20,
+    "win_rate": 46.391753,
+    "games": 97,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": -0.035533,
         "Other": -0.065812
       }
+    },
+    {
+      "date": "2026-07-09",
+      "score_median": 1491,
+      "score_q25": 1466,
+      "score_q75": 1511,
+      "score_lower": 1421,
+      "score_upper": 1543,
+      "rank": 20,
+      "win_rate": 46.391753,
+      "games": 97,
+      "wins": 45,
+      "losses": 52,
+      "strength": {
+        "High": -0.003181,
+        "Medium": 0.130881,
+        "Low": -0.026124,
+        "Other": -0.102986
+      }
     }
   ],
   "cubes": [
@@ -926,6 +945,15 @@
       "losses": 3,
       "games": 6,
       "win_rate": 50,
+      "trophies": 0
+    },
+    {
+      "cube": "Boltalandið",
+      "tier": "Other",
+      "wins": 3,
+      "losses": 6,
+      "games": 9,
+      "win_rate": 33,
       "trophies": 0
     },
     {
