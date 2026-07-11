@@ -3,11 +3,11 @@
     "cube": "Boltalandið",
     "slug": "boltalandid",
     "tier": "Other",
-    "n_events": 3,
-    "n_games": 87,
-    "n_players": 14,
+    "n_events": 2,
+    "n_games": 56,
+    "n_players": 11,
     "first_played": "2025-12-18",
-    "last_played": "2026-07-09"
+    "last_played": "2026-03-26"
   },
   {
     "cube": "Bolti",
@@ -158,6 +158,16 @@
     "n_players": 11,
     "first_played": "2026-01-22",
     "last_played": "2026-05-14"
+  },
+  {
+    "cube": "Standard Meta Cube",
+    "slug": "standard-meta-cube",
+    "tier": "Other",
+    "n_events": 1,
+    "n_games": 31,
+    "n_players": 8,
+    "first_played": "2026-07-09",
+    "last_played": "2026-07-09"
   },
   {
     "cube": "Stingvi Power Max",

@@ -128,7 +128,7 @@
         "b_wins": 0
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 0,
         "b_wins": 2
       }
@@ -324,7 +324,7 @@
         "b_wins": 2
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 0
       }
@@ -909,7 +909,7 @@
         "b_wins": 0
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 1,
         "b_wins": 2
       }
@@ -952,7 +952,7 @@
         "b_wins": 1
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 0
       }
@@ -1260,7 +1260,7 @@
         "b_wins": 1
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 0
       }
@@ -1414,7 +1414,7 @@
         "b_wins": 1
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 1,
         "b_wins": 2
       }
@@ -1483,7 +1483,7 @@
         "b_wins": 2
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 1,
         "b_wins": 2
       }
@@ -2524,7 +2524,7 @@
         "b_wins": 2
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 1
       }
@@ -2806,7 +2806,7 @@
       },
       {
         "cube": "Boltalandið",
-        "a_wins": 3,
+        "a_wins": 1,
         "b_wins": 2
       },
       {
@@ -2838,6 +2838,11 @@
         "cube": "Genesis",
         "a_wins": 1,
         "b_wins": 2
+      },
+      {
+        "cube": "Standard Meta Cube",
+        "a_wins": 2,
+        "b_wins": 0
       }
     ]
   },
@@ -3113,7 +3118,7 @@
         "b_wins": 2
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 1
       }
@@ -3211,7 +3216,7 @@
         "b_wins": 2
       },
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 2,
         "b_wins": 1
       }
@@ -3816,7 +3821,7 @@
     "b_wins": 2,
     "by_cube": [
       {
-        "cube": "Boltalandið",
+        "cube": "Standard Meta Cube",
         "a_wins": 1,
         "b_wins": 2
       }

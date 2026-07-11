@@ -951,11 +951,11 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 10,
+      "wins": 4,
       "losses": 4,
-      "games": 14,
-      "win_rate": 71,
-      "trophies": 1
+      "games": 8,
+      "win_rate": 50,
+      "trophies": 0
     },
     {
       "cube": "Modern Stories",
@@ -1018,6 +1018,15 @@
       "losses": 12,
       "games": 23,
       "win_rate": 48,
+      "trophies": 1
+    },
+    {
+      "cube": "Standard Meta Cube",
+      "tier": "Other",
+      "wins": 6,
+      "losses": 0,
+      "games": 6,
+      "win_rate": 100,
       "trophies": 1
     },
     {

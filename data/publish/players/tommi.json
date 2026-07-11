@@ -969,10 +969,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 9,
-      "losses": 12,
-      "games": 21,
-      "win_rate": 43,
+      "wins": 6,
+      "losses": 7,
+      "games": 13,
+      "win_rate": 46,
       "trophies": 0
     },
     {
@@ -1045,6 +1045,15 @@
       "losses": 6,
       "games": 7,
       "win_rate": 14,
+      "trophies": 0
+    },
+    {
+      "cube": "Standard Meta Cube",
+      "tier": "Other",
+      "wins": 3,
+      "losses": 5,
+      "games": 8,
+      "win_rate": 38,
       "trophies": 0
     },
     {

@@ -966,10 +966,10 @@
     {
       "cube": "Boltalandið",
       "tier": "Other",
-      "wins": 10,
-      "losses": 6,
-      "games": 16,
-      "win_rate": 62,
+      "wins": 6,
+      "losses": 2,
+      "games": 8,
+      "win_rate": 75,
       "trophies": 1
     },
     {
@@ -998,6 +998,15 @@
       "games": 15,
       "win_rate": 60,
       "trophies": 1
+    },
+    {
+      "cube": "Standard Meta Cube",
+      "tier": "Other",
+      "wins": 4,
+      "losses": 4,
+      "games": 8,
+      "win_rate": 50,
+      "trophies": 0
     },
     {
       "cube": "Pauper Cube Victor",

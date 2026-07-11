@@ -3,11 +3,11 @@
   "slug": "boltalandid",
   "tier": "Other",
   "summary": {
-    "n_events": 3,
-    "n_matches": 36,
-    "n_players": 14,
+    "n_events": 2,
+    "n_matches": 24,
+    "n_players": 11,
     "first_played": "2025-12-18",
-    "last_played": "2026-07-09"
+    "last_played": "2026-03-26"
   },
   "trophy_leaders": [
     {
@@ -17,21 +17,17 @@
     {
       "player": "Örvar",
       "trophies": 1
-    },
-    {
-      "player": "Aron Freyr",
-      "trophies": 1
     }
   ],
   "player_rankings": [
     {
-      "player": "Aron Freyr",
-      "match_w": 4,
-      "match_l": 2,
-      "match_pct": 67,
-      "game_w": 10,
-      "game_l": 4,
-      "game_pct": 71
+      "player": "Örvar",
+      "match_w": 3,
+      "match_l": 0,
+      "match_pct": 100,
+      "game_w": 6,
+      "game_l": 2,
+      "game_pct": 75
     },
     {
       "player": "Friðrik",
@@ -43,22 +39,13 @@
       "game_pct": 71
     },
     {
-      "player": "Einar",
-      "match_w": 2,
-      "match_l": 1,
+      "player": "Atli",
+      "match_w": 4,
+      "match_l": 2,
       "match_pct": 67,
-      "game_w": 4,
-      "game_l": 2,
-      "game_pct": 67
-    },
-    {
-      "player": "Örvar",
-      "match_w": 5,
-      "match_l": 1,
-      "match_pct": 83,
-      "game_w": 10,
+      "game_w": 9,
       "game_l": 6,
-      "game_pct": 62
+      "game_pct": 60
     },
     {
       "player": "Binni",
@@ -70,49 +57,31 @@
       "game_pct": 60
     },
     {
-      "player": "Atli",
-      "match_w": 6,
-      "match_l": 3,
-      "match_pct": 67,
-      "game_w": 13,
-      "game_l": 10,
-      "game_pct": 57
-    },
-    {
       "player": "Diddi",
-      "match_w": 4,
-      "match_l": 5,
-      "match_pct": 44,
-      "game_w": 10,
-      "game_l": 12,
-      "game_pct": 45
+      "match_w": 3,
+      "match_l": 3,
+      "match_pct": 50,
+      "game_w": 7,
+      "game_l": 7,
+      "game_pct": 50
     },
     {
-      "player": "Einar Logi",
+      "player": "Aron Freyr",
       "match_w": 1,
       "match_l": 2,
       "match_pct": 33,
       "game_w": 4,
-      "game_l": 5,
-      "game_pct": 44
+      "game_l": 4,
+      "game_pct": 50
     },
     {
       "player": "Tommi",
-      "match_w": 4,
-      "match_l": 5,
-      "match_pct": 44,
-      "game_w": 9,
-      "game_l": 12,
-      "game_pct": 43
-    },
-    {
-      "player": "Anna",
-      "match_w": 0,
+      "match_w": 3,
       "match_l": 3,
-      "match_pct": 0,
-      "game_w": 3,
-      "game_l": 6,
-      "game_pct": 33
+      "match_pct": 50,
+      "game_w": 6,
+      "game_l": 7,
+      "game_pct": 46
     },
     {
       "player": "Hjalti",
@@ -125,75 +94,6 @@
     }
   ],
   "events": [
-    {
-      "date": "2026-07-09",
-      "results": [
-        {
-          "player": "Aron Freyr",
-          "match_w": 3,
-          "match_l": 0,
-          "game_w": 6,
-          "game_l": 0,
-          "trophy": true
-        },
-        {
-          "player": "Örvar",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Atli",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 4,
-          "trophy": false
-        },
-        {
-          "player": "Einar",
-          "match_w": 2,
-          "match_l": 1,
-          "game_w": 4,
-          "game_l": 2,
-          "trophy": false
-        },
-        {
-          "player": "Einar Logi",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 4,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Tommi",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Diddi",
-          "match_w": 1,
-          "match_l": 2,
-          "game_w": 3,
-          "game_l": 5,
-          "trophy": false
-        },
-        {
-          "player": "Anna",
-          "match_w": 0,
-          "match_l": 3,
-          "game_w": 3,
-          "game_l": 6,
-          "trophy": false
-        }
-      ]
-    },
     {
       "date": "2026-03-26",
       "results": [
