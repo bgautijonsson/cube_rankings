@@ -2,8 +2,8 @@
   "player": "Móses",
   "slug": "moses",
   "summary": {
-    "score_median": 1497,
-    "rank": 18,
+    "score_median": 1499,
+    "rank": 17,
     "win_rate": 48.387097,
     "games": 31,
     "strongest_tier": "Medium"
@@ -387,6 +387,25 @@
         "Medium": 0.135731,
         "Low": -0.057103,
         "Other": -0.005077
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1499,
+      "score_q25": 1475,
+      "score_q75": 1523,
+      "score_lower": 1434,
+      "score_upper": 1568,
+      "rank": 17,
+      "win_rate": 48.387097,
+      "games": 31,
+      "wins": 15,
+      "losses": 16,
+      "strength": {
+        "High": -0.079004,
+        "Medium": 0.137312,
+        "Low": -0.059056,
+        "Other": -0.0037
       }
     }
   ],

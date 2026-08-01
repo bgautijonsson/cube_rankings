@@ -2,10 +2,10 @@
   "player": "Diddi",
   "slug": "diddi",
   "summary": {
-    "score_median": 1532,
-    "rank": 7,
-    "win_rate": 54.909091,
-    "games": 275,
+    "score_median": 1538,
+    "rank": 6,
+    "win_rate": 55.477032,
+    "games": 283,
     "strongest_tier": "High"
   },
   "history": [
@@ -882,17 +882,36 @@
         "Low": -0.245478,
         "Other": 0.011354
       }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1538,
+      "score_q25": 1520,
+      "score_q75": 1560,
+      "score_lower": 1492,
+      "score_upper": 1597,
+      "rank": 6,
+      "win_rate": 55.477032,
+      "games": 283,
+      "wins": 157,
+      "losses": 126,
+      "strength": {
+        "High": 0.168065,
+        "Medium": 0.078219,
+        "Low": -0.249618,
+        "Other": 0.006068
+      }
     }
   ],
   "cubes": [
     {
       "cube": "Meta Memories",
       "tier": "Medium",
-      "wins": 31,
-      "losses": 22,
-      "games": 53,
-      "win_rate": 58,
-      "trophies": 1
+      "wins": 37,
+      "losses": 24,
+      "games": 61,
+      "win_rate": 61,
+      "trophies": 2
     },
     {
       "cube": "Khans Cube",

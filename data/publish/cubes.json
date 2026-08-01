@@ -103,11 +103,11 @@
     "cube": "Meta Memories",
     "slug": "meta-memories",
     "tier": "Medium",
-    "n_events": 7,
-    "n_games": 215,
-    "n_players": 21,
+    "n_events": 8,
+    "n_games": 253,
+    "n_players": 24,
     "first_played": "2025-08-14",
-    "last_played": "2026-04-23"
+    "last_played": "2026-07-30"
   },
   {
     "cube": "Modern Stories",

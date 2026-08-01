@@ -2,7 +2,7 @@
   "player": "Victor",
   "slug": "victor",
   "summary": {
-    "score_median": 1500,
+    "score_median": 1502,
     "rank": 15,
     "win_rate": 46.153846,
     "games": 65,
@@ -786,6 +786,25 @@
         "Medium": 0.164002,
         "Low": 0.067105,
         "Other": 0.003477
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1502,
+      "score_q25": 1481,
+      "score_q75": 1524,
+      "score_lower": 1435,
+      "score_upper": 1561,
+      "rank": 15,
+      "win_rate": 46.153846,
+      "games": 65,
+      "wins": 30,
+      "losses": 35,
+      "strength": {
+        "High": -0.238843,
+        "Medium": 0.167131,
+        "Low": 0.070393,
+        "Other": 0.000634
       }
     }
   ],

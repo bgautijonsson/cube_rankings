@@ -3,9 +3,9 @@
   "slug": "atli",
   "summary": {
     "score_median": 1538,
-    "rank": 6,
-    "win_rate": 52.173913,
-    "games": 184,
+    "rank": 7,
+    "win_rate": 52.356021,
+    "games": 191,
     "strongest_tier": "High"
   },
   "history": [
@@ -597,16 +597,35 @@
         "Low": 0.020608,
         "Other": 0.115885
       }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1538,
+      "score_q25": 1519,
+      "score_q75": 1560,
+      "score_lower": 1490,
+      "score_upper": 1595,
+      "rank": 7,
+      "win_rate": 52.356021,
+      "games": 191,
+      "wins": 100,
+      "losses": 91,
+      "strength": {
+        "High": 0.124095,
+        "Medium": -0.258373,
+        "Low": 0.019938,
+        "Other": 0.116311
+      }
     }
   ],
   "cubes": [
     {
       "cube": "Meta Memories",
       "tier": "Medium",
-      "wins": 11,
-      "losses": 18,
-      "games": 29,
-      "win_rate": 38,
+      "wins": 15,
+      "losses": 21,
+      "games": 36,
+      "win_rate": 42,
       "trophies": 0
     },
     {

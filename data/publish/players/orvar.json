@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1596,
+    "score_median": 1604,
     "rank": 1,
-    "win_rate": 63.913043,
-    "games": 230,
+    "win_rate": 64.556962,
+    "games": 237,
     "strongest_tier": "Low"
   },
   "history": [
@@ -825,6 +825,25 @@
         "Low": 0.215375,
         "Other": -0.057092
       }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1604,
+      "score_q25": 1580,
+      "score_q75": 1630,
+      "score_lower": 1549,
+      "score_upper": 1675,
+      "rank": 1,
+      "win_rate": 64.556962,
+      "games": 237,
+      "wins": 153,
+      "losses": 84,
+      "strength": {
+        "High": 0.045563,
+        "Medium": -0.171722,
+        "Low": 0.196409,
+        "Other": -0.075196
+      }
     }
   ],
   "cubes": [
@@ -930,11 +949,11 @@
     {
       "cube": "Meta Memories",
       "tier": "Medium",
-      "wins": 9,
-      "losses": 7,
-      "games": 16,
-      "win_rate": 56,
-      "trophies": 0
+      "wins": 15,
+      "losses": 8,
+      "games": 23,
+      "win_rate": 65,
+      "trophies": 1
     },
     {
       "cube": "The Ab Wheel",

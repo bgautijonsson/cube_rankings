@@ -2,10 +2,10 @@
   "player": "Ólafur",
   "slug": "olafur",
   "summary": {
-    "score_median": 1484,
-    "rank": 22,
-    "win_rate": 42.647059,
-    "games": 68,
+    "score_median": 1480,
+    "rank": 23,
+    "win_rate": 41.558442,
+    "games": 77,
     "strongest_tier": "High"
   },
   "history": [
@@ -768,6 +768,25 @@
         "Low": 0.009842,
         "Other": -0.036685
       }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1480,
+      "score_q25": 1456,
+      "score_q75": 1500,
+      "score_lower": 1414,
+      "score_upper": 1535,
+      "rank": 23,
+      "win_rate": 41.558442,
+      "games": 77,
+      "wins": 32,
+      "losses": 45,
+      "strength": {
+        "High": 0.086294,
+        "Medium": -0.072867,
+        "Low": 0.012837,
+        "Other": -0.027748
+      }
     }
   ],
   "cubes": [
@@ -823,6 +842,15 @@
       "losses": 4,
       "games": 8,
       "win_rate": 50,
+      "trophies": 0
+    },
+    {
+      "cube": "Meta Memories",
+      "tier": "Medium",
+      "wins": 3,
+      "losses": 6,
+      "games": 9,
+      "win_rate": 33,
       "trophies": 0
     },
     {

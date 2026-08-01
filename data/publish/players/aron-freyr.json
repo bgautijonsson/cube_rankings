@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1587,
+    "score_median": 1575,
     "rank": 2,
-    "win_rate": 60.649819,
-    "games": 277,
+    "win_rate": 60,
+    "games": 285,
     "strongest_tier": "Other"
   },
   "history": [
@@ -882,6 +882,25 @@
         "Low": -0.249844,
         "Other": 0.207245
       }
+    },
+    {
+      "date": "2026-07-30",
+      "score_median": 1575,
+      "score_q25": 1554,
+      "score_q75": 1599,
+      "score_lower": 1525,
+      "score_upper": 1642,
+      "rank": 2,
+      "win_rate": 60,
+      "games": 285,
+      "wins": 171,
+      "losses": 114,
+      "strength": {
+        "High": 0.020628,
+        "Medium": -0.000768,
+        "Low": -0.239611,
+        "Other": 0.220224
+      }
     }
   ],
   "cubes": [
@@ -897,10 +916,10 @@
     {
       "cube": "Meta Memories",
       "tier": "Medium",
-      "wins": 21,
-      "losses": 16,
-      "games": 37,
-      "win_rate": 57,
+      "wins": 24,
+      "losses": 21,
+      "games": 45,
+      "win_rate": 53,
       "trophies": 1
     },
     {
