@@ -93,8 +93,11 @@ jobs:
           PUSH_TOKEN: ${{ secrets.MTGKUBBUR_PUSH_TOKEN }}
         run: |
           git clone --depth 1 "https://x-access-token:${PUSH_TOKEN}@github.com/mtgkubbur/mtgkubbur.is.git" /tmp/app
-          rsync -a --delete data/publish/ /tmp/app/data/kubbur/
-          rsync -a --delete config/publish-schemas/ /tmp/app/data/kubbur-schemas/
+          # --delete mirrors these directories, but mtgkubbur.is's own
+          # rotisserie sync also commits files into them — the excludes keep
+          # --delete from removing what this repo does not generate.
+          rsync -a --delete --exclude='rotisserie*' data/publish/ /tmp/app/data/kubbur/
+          rsync -a --delete --exclude='rotisserie*' config/publish-schemas/ /tmp/app/data/kubbur-schemas/
           cd /tmp/app
           git config user.name  "cube-rankings-bot"
           git config user.email "actions@users.noreply.github.com"
