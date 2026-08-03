@@ -430,6 +430,39 @@
     ]
   },
   {
+    "player_a": "Andreas",
+    "player_b": "Tommi",
+    "a_wins": 8,
+    "b_wins": 5,
+    "by_cube": [
+      {
+        "cube": "Khans Cube",
+        "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Genesis",
+        "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Boltalandið",
+        "a_wins": 2,
+        "b_wins": 0
+      },
+      {
+        "cube": "Flashdance!",
+        "a_wins": 2,
+        "b_wins": 0
+      },
+      {
+        "cube": "Meta Memories",
+        "a_wins": 2,
+        "b_wins": 1
+      }
+    ]
+  },
+  {
     "player_a": "Arnar",
     "player_b": "Tommi",
     "a_wins": 3,
@@ -449,6 +482,24 @@
         "cube": "Flashdance!",
         "a_wins": 1,
         "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Andreas",
+    "player_b": "Diddi",
+    "a_wins": 2,
+    "b_wins": 3,
+    "by_cube": [
+      {
+        "cube": "Khans Cube",
+        "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Flashdance!",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -2477,6 +2528,19 @@
     ]
   },
   {
+    "player_a": "Andreas",
+    "player_b": "Oddur",
+    "a_wins": 2,
+    "b_wins": 0,
+    "by_cube": [
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 0
+      }
+    ]
+  },
+  {
     "player_a": "Einar",
     "player_b": "Hjalti",
     "a_wins": 1,
@@ -2486,6 +2550,19 @@
         "cube": "Genesis",
         "a_wins": 1,
         "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Andreas",
+    "player_b": "Ingvi",
+    "a_wins": 2,
+    "b_wins": 1,
+    "by_cube": [
+      {
+        "cube": "Genesis",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -3557,6 +3634,42 @@
     ]
   },
   {
+    "player_a": "Andreas",
+    "player_b": "Örvar",
+    "a_wins": 1,
+    "b_wins": 6,
+    "by_cube": [
+      {
+        "cube": "Boltalandið",
+        "a_wins": 0,
+        "b_wins": 2
+      },
+      {
+        "cube": "Flashdance!",
+        "a_wins": 1,
+        "b_wins": 2
+      },
+      {
+        "cube": "Meta Memories",
+        "a_wins": 0,
+        "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Andreas",
+    "player_b": "Binni",
+    "a_wins": 2,
+    "b_wins": 0,
+    "by_cube": [
+      {
+        "cube": "Boltalandið",
+        "a_wins": 2,
+        "b_wins": 0
+      }
+    ]
+  },
+  {
     "player_a": "Friðrik",
     "player_b": "Örvar",
     "a_wins": 3,
@@ -3834,6 +3947,19 @@
         "cube": "Standard Meta Cube",
         "a_wins": 1,
         "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Andreas",
+    "player_b": "Aron Freyr",
+    "a_wins": 2,
+    "b_wins": 1,
+    "by_cube": [
+      {
+        "cube": "Meta Memories",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   }

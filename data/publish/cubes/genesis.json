@@ -79,6 +79,15 @@
       "game_pct": 62
     },
     {
+      "player": "Andreas",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 5,
+      "game_l": 3,
+      "game_pct": 62
+    },
+    {
       "player": "Binni",
       "match_w": 3,
       "match_l": 2,
@@ -273,6 +282,14 @@
           "match_l": 1,
           "game_w": 4,
           "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Andreas",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
           "trophy": false
         },
         {

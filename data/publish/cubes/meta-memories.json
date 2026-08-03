@@ -118,6 +118,15 @@
       "game_pct": 53
     },
     {
+      "player": "Andreas",
+      "match_w": 2,
+      "match_l": 1,
+      "match_pct": 67,
+      "game_w": 4,
+      "game_l": 4,
+      "game_pct": 50
+    },
+    {
       "player": "Aron Ívars",
       "match_w": 4,
       "match_l": 4,
@@ -233,6 +242,14 @@
           "match_l": 1,
           "game_w": 5,
           "game_l": 2,
+          "trophy": false
+        },
+        {
+          "player": "Andreas",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 4,
           "trophy": false
         },
         {
