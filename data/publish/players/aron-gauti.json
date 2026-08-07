@@ -2,7 +2,7 @@
   "player": "Aron Gauti",
   "slug": "aron-gauti",
   "summary": {
-    "score_median": 1462,
+    "score_median": 1463,
     "rank": 25,
     "win_rate": 34.285714,
     "games": 105,
@@ -881,6 +881,25 @@
         "Medium": 0.043629,
         "Low": 0.099175,
         "Other": 0.01469
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1463,
+      "score_q25": 1439,
+      "score_q75": 1484,
+      "score_lower": 1396,
+      "score_upper": 1519,
+      "rank": 25,
+      "win_rate": 34.285714,
+      "games": 105,
+      "wins": 36,
+      "losses": 69,
+      "strength": {
+        "High": -0.152322,
+        "Medium": 0.039858,
+        "Low": 0.097945,
+        "Other": 0.012854
       }
     }
   ],

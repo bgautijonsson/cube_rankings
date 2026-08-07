@@ -3,7 +3,7 @@
   "slug": "binni",
   "summary": {
     "score_median": 1540,
-    "rank": 4,
+    "rank": 5,
     "win_rate": 53.731343,
     "games": 201,
     "strongest_tier": "High"
@@ -900,6 +900,25 @@
         "Medium": -0.225415,
         "Low": 0.002674,
         "Other": 0.080324
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1540,
+      "score_q25": 1520,
+      "score_q75": 1563,
+      "score_lower": 1487,
+      "score_upper": 1601,
+      "rank": 5,
+      "win_rate": 53.731343,
+      "games": 201,
+      "wins": 108,
+      "losses": 93,
+      "strength": {
+        "High": 0.148052,
+        "Medium": -0.223946,
+        "Low": 0.00159,
+        "Other": 0.076392
       }
     }
   ],

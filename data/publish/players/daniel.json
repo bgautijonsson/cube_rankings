@@ -2,7 +2,7 @@
   "player": "Daníel",
   "slug": "daniel",
   "summary": {
-    "score_median": 1511,
+    "score_median": 1512,
     "rank": 12,
     "win_rate": 52.054795,
     "games": 73,
@@ -862,6 +862,25 @@
         "Medium": -0.202194,
         "Low": 0.124678,
         "Other": -0.044474
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1512,
+      "score_q25": 1492,
+      "score_q75": 1536,
+      "score_lower": 1458,
+      "score_upper": 1581,
+      "rank": 12,
+      "win_rate": 52.054795,
+      "games": 73,
+      "wins": 38,
+      "losses": 35,
+      "strength": {
+        "High": 0.12307,
+        "Medium": -0.202395,
+        "Low": 0.12876,
+        "Other": -0.046393
       }
     }
   ],

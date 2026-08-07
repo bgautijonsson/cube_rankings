@@ -882,6 +882,25 @@
         "Low": -0.025171,
         "Other": -0.097829
       }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1495,
+      "score_q25": 1474,
+      "score_q75": 1514,
+      "score_lower": 1433,
+      "score_upper": 1546,
+      "rank": 21,
+      "win_rate": 46.391753,
+      "games": 97,
+      "wins": 45,
+      "losses": 52,
+      "strength": {
+        "High": 0.000391,
+        "Medium": 0.125344,
+        "Low": -0.025431,
+        "Other": -0.096965
+      }
     }
   ],
   "cubes": [

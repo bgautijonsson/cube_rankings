@@ -3,16 +3,16 @@
   "slug": "nerva-s-cube",
   "tier": "High",
   "summary": {
-    "n_events": 4,
-    "n_matches": 48,
-    "n_players": 20,
+    "n_events": 5,
+    "n_matches": 60,
+    "n_players": 22,
     "first_played": "2025-10-10",
-    "last_played": "2026-04-04"
+    "last_played": "2026-08-06"
   },
   "trophy_leaders": [
     {
       "player": "Aron Freyr",
-      "trophies": 2
+      "trophies": 3
     },
     {
       "player": "Örvar",
@@ -39,30 +39,21 @@
     },
     {
       "player": "Aron Freyr",
-      "match_w": 10,
+      "match_w": 13,
       "match_l": 2,
-      "match_pct": 83,
-      "game_w": 21,
-      "game_l": 9,
-      "game_pct": 70
+      "match_pct": 87,
+      "game_w": 27,
+      "game_l": 11,
+      "game_pct": 71
     },
     {
       "player": "Örvar",
-      "match_w": 7,
-      "match_l": 2,
-      "match_pct": 78,
-      "game_w": 13,
-      "game_l": 7,
-      "game_pct": 65
-    },
-    {
-      "player": "Diddi",
-      "match_w": 7,
-      "match_l": 5,
-      "match_pct": 58,
+      "match_w": 9,
+      "match_l": 3,
+      "match_pct": 75,
       "game_w": 18,
-      "game_l": 11,
-      "game_pct": 62
+      "game_l": 10,
+      "game_pct": 64
     },
     {
       "player": "Aron Elvar",
@@ -74,13 +65,22 @@
       "game_pct": 57
     },
     {
+      "player": "Diddi",
+      "match_w": 8,
+      "match_l": 7,
+      "match_pct": 53,
+      "game_w": 20,
+      "game_l": 16,
+      "game_pct": 56
+    },
+    {
       "player": "Tommi",
-      "match_w": 5,
-      "match_l": 4,
-      "match_pct": 56,
-      "game_w": 11,
-      "game_l": 10,
-      "game_pct": 52
+      "match_w": 7,
+      "match_l": 5,
+      "match_pct": 58,
+      "game_w": 15,
+      "game_l": 13,
+      "game_pct": 54
     },
     {
       "player": "Ólafur",
@@ -89,6 +89,15 @@
       "match_pct": 44,
       "game_w": 10,
       "game_l": 10,
+      "game_pct": 50
+    },
+    {
+      "player": "Atli",
+      "match_w": 3,
+      "match_l": 3,
+      "match_pct": 50,
+      "game_w": 8,
+      "game_l": 8,
       "game_pct": 50
     },
     {
@@ -119,6 +128,15 @@
       "game_pct": 43
     },
     {
+      "player": "Einar",
+      "match_w": 1,
+      "match_l": 4,
+      "match_pct": 20,
+      "game_w": 5,
+      "game_l": 8,
+      "game_pct": 38
+    },
+    {
       "player": "Oddur",
       "match_w": 1,
       "match_l": 2,
@@ -126,24 +144,6 @@
       "game_w": 3,
       "game_l": 5,
       "game_pct": 38
-    },
-    {
-      "player": "Atli",
-      "match_w": 1,
-      "match_l": 2,
-      "match_pct": 33,
-      "game_w": 3,
-      "game_l": 5,
-      "game_pct": 38
-    },
-    {
-      "player": "Einar",
-      "match_w": 0,
-      "match_l": 2,
-      "match_pct": 0,
-      "game_w": 2,
-      "game_l": 4,
-      "game_pct": 33
     },
     {
       "player": "Binni",
@@ -174,6 +174,59 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-08-06",
+      "results": [
+        {
+          "player": "Aron Freyr",
+          "match_w": 3,
+          "match_l": 0,
+          "game_w": 6,
+          "game_l": 2,
+          "trophy": true
+        },
+        {
+          "player": "Örvar",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Atli",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 5,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Tommi",
+          "match_w": 2,
+          "match_l": 1,
+          "game_w": 4,
+          "game_l": 3,
+          "trophy": false
+        },
+        {
+          "player": "Diddi",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 2,
+          "game_l": 5,
+          "trophy": false
+        },
+        {
+          "player": "Einar",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        }
+      ]
+    },
     {
       "date": "2026-04-04",
       "results": [

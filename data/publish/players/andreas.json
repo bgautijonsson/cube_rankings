@@ -2,7 +2,7 @@
   "player": "Andreas",
   "slug": "andreas",
   "summary": {
-    "score_median": 1518,
+    "score_median": 1519,
     "rank": 11,
     "win_rate": 54.285714,
     "games": 35,
@@ -881,6 +881,25 @@
         "Medium": 0.089752,
         "Low": -0.146042,
         "Other": 0.099918
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1519,
+      "score_q25": 1495,
+      "score_q75": 1550,
+      "score_lower": 1462,
+      "score_upper": 1605,
+      "rank": 11,
+      "win_rate": 54.285714,
+      "games": 35,
+      "wins": 19,
+      "losses": 16,
+      "strength": {
+        "High": -0.047523,
+        "Medium": 0.092927,
+        "Low": -0.147707,
+        "Other": 0.100251
       }
     }
   ],

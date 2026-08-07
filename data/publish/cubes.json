@@ -123,11 +123,11 @@
     "cube": "Nerva's Cube",
     "slug": "nerva-s-cube",
     "tier": "High",
-    "n_events": 4,
-    "n_games": 116,
-    "n_players": 20,
+    "n_events": 5,
+    "n_games": 146,
+    "n_players": 22,
     "first_played": "2025-10-10",
-    "last_played": "2026-04-04"
+    "last_played": "2026-08-06"
   },
   {
     "cube": "Old Border Cube",

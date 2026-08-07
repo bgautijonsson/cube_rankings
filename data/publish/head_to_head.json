@@ -104,8 +104,8 @@
   {
     "player_a": "Diddi",
     "player_b": "Einar",
-    "a_wins": 4,
-    "b_wins": 7,
+    "a_wins": 6,
+    "b_wins": 8,
     "by_cube": [
       {
         "cube": "Meta Memories",
@@ -131,6 +131,11 @@
         "cube": "Standard Meta Cube",
         "a_wins": 0,
         "b_wins": 2
+      },
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 2,
+        "b_wins": 1
       }
     ]
   },
@@ -650,7 +655,7 @@
     "player_a": "Diddi",
     "player_b": "Tommi",
     "a_wins": 16,
-    "b_wins": 10,
+    "b_wins": 12,
     "by_cube": [
       {
         "cube": "Stone Soup Cube",
@@ -665,7 +670,7 @@
       {
         "cube": "Nerva's Cube",
         "a_wins": 3,
-        "b_wins": 2
+        "b_wins": 4
       },
       {
         "cube": "Meta Memories",
@@ -969,8 +974,8 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Örvar",
-    "a_wins": 13,
-    "b_wins": 9,
+    "a_wins": 15,
+    "b_wins": 10,
     "by_cube": [
       {
         "cube": "Vintage Aron",
@@ -979,8 +984,8 @@
       },
       {
         "cube": "Nerva's Cube",
-        "a_wins": 2,
-        "b_wins": 3
+        "a_wins": 4,
+        "b_wins": 4
       },
       {
         "cube": "Vintage Victor",
@@ -1127,7 +1132,7 @@
   {
     "player_a": "Örvar",
     "player_b": "Tommi",
-    "a_wins": 18,
+    "a_wins": 20,
     "b_wins": 10,
     "by_cube": [
       {
@@ -1172,7 +1177,7 @@
       },
       {
         "cube": "Nerva's Cube",
-        "a_wins": 0,
+        "a_wins": 2,
         "b_wins": 2
       },
       {
@@ -1277,7 +1282,7 @@
   {
     "player_a": "Aron Freyr",
     "player_b": "Einar",
-    "a_wins": 12,
+    "a_wins": 14,
     "b_wins": 5,
     "by_cube": [
       {
@@ -1312,6 +1317,11 @@
       },
       {
         "cube": "Standard Meta Cube",
+        "a_wins": 2,
+        "b_wins": 0
+      },
+      {
+        "cube": "Nerva's Cube",
         "a_wins": 2,
         "b_wins": 0
       }
@@ -2990,8 +3000,8 @@
   {
     "player_a": "Atli",
     "player_b": "Örvar",
-    "a_wins": 9,
-    "b_wins": 11,
+    "a_wins": 10,
+    "b_wins": 13,
     "by_cube": [
       {
         "cube": "Vintage Victor",
@@ -3027,6 +3037,11 @@
         "cube": "Genesis",
         "a_wins": 2,
         "b_wins": 1
+      },
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 1,
+        "b_wins": 2
       }
     ]
   },

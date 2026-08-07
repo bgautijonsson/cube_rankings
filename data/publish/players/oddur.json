@@ -2,7 +2,7 @@
   "player": "Oddur",
   "slug": "oddur",
   "summary": {
-    "score_median": 1487,
+    "score_median": 1488,
     "rank": 22,
     "win_rate": 42.073171,
     "games": 164,
@@ -900,6 +900,25 @@
         "Medium": 0.238526,
         "Low": 0.07452,
         "Other": -0.28055
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1488,
+      "score_q25": 1470,
+      "score_q75": 1508,
+      "score_lower": 1441,
+      "score_upper": 1550,
+      "rank": 22,
+      "win_rate": 42.073171,
+      "games": 164,
+      "wins": 69,
+      "losses": 95,
+      "strength": {
+        "High": -0.025305,
+        "Medium": 0.236769,
+        "Low": 0.071073,
+        "Other": -0.280523
       }
     }
   ],

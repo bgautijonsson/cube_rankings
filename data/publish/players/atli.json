@@ -2,10 +2,10 @@
   "player": "Atli",
   "slug": "atli",
   "summary": {
-    "score_median": 1538,
-    "rank": 7,
-    "win_rate": 52.356021,
-    "games": 191,
+    "score_median": 1542,
+    "rank": 3,
+    "win_rate": 52.763819,
+    "games": 199,
     "strongest_tier": "High"
   },
   "history": [
@@ -616,6 +616,25 @@
         "Low": 0.019938,
         "Other": 0.116311
       }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1542,
+      "score_q25": 1522,
+      "score_q75": 1564,
+      "score_lower": 1494,
+      "score_upper": 1601,
+      "rank": 3,
+      "win_rate": 52.763819,
+      "games": 199,
+      "wins": 105,
+      "losses": 94,
+      "strength": {
+        "High": 0.147455,
+        "Medium": -0.268114,
+        "Low": 0.011699,
+        "Other": 0.107433
+      }
     }
   ],
   "cubes": [
@@ -703,10 +722,10 @@
     {
       "cube": "Nerva's Cube",
       "tier": "High",
-      "wins": 3,
-      "losses": 5,
-      "games": 8,
-      "win_rate": 38,
+      "wins": 8,
+      "losses": 8,
+      "games": 16,
+      "win_rate": 50,
       "trophies": 0
     },
     {

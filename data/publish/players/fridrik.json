@@ -2,7 +2,7 @@
   "player": "Friðrik",
   "slug": "fridrik",
   "summary": {
-    "score_median": 1498,
+    "score_median": 1499,
     "rank": 19,
     "win_rate": 43.820225,
     "games": 89,
@@ -406,6 +406,25 @@
         "Medium": -0.254357,
         "Low": -0.102818,
         "Other": 0.263381
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1499,
+      "score_q25": 1478,
+      "score_q75": 1520,
+      "score_lower": 1441,
+      "score_upper": 1557,
+      "rank": 19,
+      "win_rate": 43.820225,
+      "games": 89,
+      "wins": 39,
+      "losses": 50,
+      "strength": {
+        "High": 0.105386,
+        "Medium": -0.258394,
+        "Low": -0.104408,
+        "Other": 0.258361
       }
     }
   ],

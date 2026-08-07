@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1604,
+    "score_median": 1607,
     "rank": 1,
-    "win_rate": 64.556962,
-    "games": 237,
+    "win_rate": 64.489796,
+    "games": 245,
     "strongest_tier": "Low"
   },
   "history": [
@@ -844,6 +844,25 @@
         "Low": 0.196409,
         "Other": -0.075196
       }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1607,
+      "score_q25": 1584,
+      "score_q75": 1633,
+      "score_lower": 1553,
+      "score_upper": 1676,
+      "rank": 1,
+      "win_rate": 64.489796,
+      "games": 245,
+      "wins": 158,
+      "losses": 87,
+      "strength": {
+        "High": 0.0594,
+        "Medium": -0.17378,
+        "Low": 0.19081,
+        "Other": -0.078588
+      }
     }
   ],
   "cubes": [
@@ -877,10 +896,10 @@
     {
       "cube": "Nerva's Cube",
       "tier": "High",
-      "wins": 13,
-      "losses": 7,
-      "games": 20,
-      "win_rate": 65,
+      "wins": 18,
+      "losses": 10,
+      "games": 28,
+      "win_rate": 64,
       "trophies": 2
     },
     {

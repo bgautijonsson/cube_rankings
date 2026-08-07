@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1575,
+    "score_median": 1582,
     "rank": 2,
-    "win_rate": 60,
-    "games": 285,
+    "win_rate": 60.409556,
+    "games": 293,
     "strongest_tier": "Other"
   },
   "history": [
@@ -901,6 +901,25 @@
         "Low": -0.239611,
         "Other": 0.220224
       }
+    },
+    {
+      "date": "2026-08-06",
+      "score_median": 1582,
+      "score_q25": 1560,
+      "score_q75": 1606,
+      "score_lower": 1532,
+      "score_upper": 1650,
+      "rank": 2,
+      "win_rate": 60.409556,
+      "games": 293,
+      "wins": 177,
+      "losses": 116,
+      "strength": {
+        "High": 0.054031,
+        "Medium": -0.013183,
+        "Low": -0.247485,
+        "Other": 0.20788
+      }
     }
   ],
   "cubes": [
@@ -925,11 +944,11 @@
     {
       "cube": "Nerva's Cube",
       "tier": "High",
-      "wins": 21,
-      "losses": 9,
-      "games": 30,
-      "win_rate": 70,
-      "trophies": 2
+      "wins": 27,
+      "losses": 11,
+      "games": 38,
+      "win_rate": 71,
+      "trophies": 3
     },
     {
       "cube": "Stone Soup Cube",
