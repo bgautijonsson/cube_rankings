@@ -3,7 +3,7 @@
   "slug": "styrmir",
   "summary": {
     "score_median": 1498,
-    "rank": 20,
+    "rank": 21,
     "win_rate": 43.902439,
     "games": 41,
     "strongest_tier": "Medium"
@@ -909,7 +909,7 @@
       "score_q75": 1522,
       "score_lower": 1440,
       "score_upper": 1571,
-      "rank": 20,
+      "rank": 21,
       "win_rate": 43.902439,
       "games": 41,
       "wins": 18,

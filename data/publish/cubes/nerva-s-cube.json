@@ -128,6 +128,15 @@
       "game_pct": 43
     },
     {
+      "player": "Guðjón",
+      "match_w": 1,
+      "match_l": 2,
+      "match_pct": 33,
+      "game_w": 3,
+      "game_l": 4,
+      "game_pct": 43
+    },
+    {
       "player": "Einar",
       "match_w": 1,
       "match_l": 4,
@@ -144,6 +153,15 @@
       "game_w": 3,
       "game_l": 5,
       "game_pct": 38
+    },
+    {
+      "player": "Guðni",
+      "match_w": 0,
+      "match_l": 3,
+      "match_pct": 0,
+      "game_w": 2,
+      "game_l": 6,
+      "game_pct": 25
     },
     {
       "player": "Binni",
@@ -223,6 +241,22 @@
           "match_l": 2,
           "game_w": 3,
           "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Guðjón",
+          "match_w": 1,
+          "match_l": 2,
+          "game_w": 3,
+          "game_l": 4,
+          "trophy": false
+        },
+        {
+          "player": "Guðni",
+          "match_w": 0,
+          "match_l": 3,
+          "game_w": 2,
+          "game_l": 6,
           "trophy": false
         }
       ]

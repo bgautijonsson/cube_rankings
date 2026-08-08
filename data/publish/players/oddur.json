@@ -3,7 +3,7 @@
   "slug": "oddur",
   "summary": {
     "score_median": 1488,
-    "rank": 22,
+    "rank": 23,
     "win_rate": 42.073171,
     "games": 164,
     "strongest_tier": "Medium"
@@ -909,7 +909,7 @@
       "score_q75": 1508,
       "score_lower": 1441,
       "score_upper": 1550,
-      "rank": 22,
+      "rank": 23,
       "win_rate": 42.073171,
       "games": 164,
       "wins": 69,

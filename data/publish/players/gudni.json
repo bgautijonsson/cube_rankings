@@ -1,0 +1,43 @@
+{
+  "player": "Guðni",
+  "slug": "gudni",
+  "summary": {
+    "score_median": 1483,
+    "rank": 24,
+    "win_rate": 25,
+    "games": 8,
+    "strongest_tier": "Medium"
+  },
+  "history": [
+    {
+      "date": "2026-08-06",
+      "score_median": 1483,
+      "score_q25": 1452,
+      "score_q75": 1509,
+      "score_lower": 1389,
+      "score_upper": 1554,
+      "rank": 24,
+      "win_rate": 25,
+      "games": 8,
+      "wins": 2,
+      "losses": 6,
+      "strength": {
+        "High": -0.082238,
+        "Medium": 0.029391,
+        "Low": 0.02778,
+        "Other": 0.026582
+      }
+    }
+  ],
+  "cubes": [
+    {
+      "cube": "Nerva's Cube",
+      "tier": "High",
+      "wins": 2,
+      "losses": 6,
+      "games": 8,
+      "win_rate": 25,
+      "trophies": 0
+    }
+  ]
+}

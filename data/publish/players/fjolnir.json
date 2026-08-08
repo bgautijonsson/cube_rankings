@@ -3,7 +3,7 @@
   "slug": "fjolnir",
   "summary": {
     "score_median": 1481,
-    "rank": 23,
+    "rank": 25,
     "win_rate": 36,
     "games": 25,
     "strongest_tier": "High"
@@ -529,7 +529,7 @@
       "score_q75": 1504,
       "score_lower": 1402,
       "score_upper": 1546,
-      "rank": 23,
+      "rank": 25,
       "win_rate": 36,
       "games": 25,
       "wins": 9,

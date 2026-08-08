@@ -3977,5 +3977,83 @@
         "b_wins": 1
       }
     ]
+  },
+  {
+    "player_a": "Diddi",
+    "player_b": "Guðjón",
+    "a_wins": 0,
+    "b_wins": 2,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 0,
+        "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Atli",
+    "player_b": "Guðni",
+    "a_wins": 2,
+    "b_wins": 1,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 2,
+        "b_wins": 1
+      }
+    ]
+  },
+  {
+    "player_a": "Aron Freyr",
+    "player_b": "Guðjón",
+    "a_wins": 2,
+    "b_wins": 1,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 2,
+        "b_wins": 1
+      }
+    ]
+  },
+  {
+    "player_a": "Guðni",
+    "player_b": "Tommi",
+    "a_wins": 1,
+    "b_wins": 2,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 1,
+        "b_wins": 2
+      }
+    ]
+  },
+  {
+    "player_a": "Einar",
+    "player_b": "Guðni",
+    "a_wins": 2,
+    "b_wins": 0,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 2,
+        "b_wins": 0
+      }
+    ]
+  },
+  {
+    "player_a": "Atli",
+    "player_b": "Guðjón",
+    "a_wins": 2,
+    "b_wins": 0,
+    "by_cube": [
+      {
+        "cube": "Nerva's Cube",
+        "a_wins": 2,
+        "b_wins": 0
+      }
+    ]
   }
 ]

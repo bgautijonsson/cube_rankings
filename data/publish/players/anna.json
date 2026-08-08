@@ -3,7 +3,7 @@
   "slug": "anna",
   "summary": {
     "score_median": 1495,
-    "rank": 21,
+    "rank": 22,
     "win_rate": 46.391753,
     "games": 97,
     "strongest_tier": "Medium"
@@ -890,7 +890,7 @@
       "score_q75": 1514,
       "score_lower": 1433,
       "score_upper": 1546,
-      "rank": 21,
+      "rank": 22,
       "win_rate": 46.391753,
       "games": 97,
       "wins": 45,

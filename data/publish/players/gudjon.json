@@ -1,0 +1,43 @@
+{
+  "player": "Guðjón",
+  "slug": "gudjon",
+  "summary": {
+    "score_median": 1499,
+    "rank": 20,
+    "win_rate": 42.857143,
+    "games": 7,
+    "strongest_tier": "High"
+  },
+  "history": [
+    {
+      "date": "2026-08-06",
+      "score_median": 1499,
+      "score_q25": 1474,
+      "score_q75": 1527,
+      "score_lower": 1424,
+      "score_upper": 1582,
+      "rank": 20,
+      "win_rate": 42.857143,
+      "games": 7,
+      "wins": 3,
+      "losses": 4,
+      "strength": {
+        "High": 0.017311,
+        "Medium": -0.00647,
+        "Low": -0.00233,
+        "Other": -0.002555
+      }
+    }
+  ],
+  "cubes": [
+    {
+      "cube": "Nerva's Cube",
+      "tier": "High",
+      "wins": 3,
+      "losses": 4,
+      "games": 7,
+      "win_rate": 43,
+      "trophies": 0
+    }
+  ]
+}
