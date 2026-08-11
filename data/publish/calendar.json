@@ -718,5 +718,37 @@
     "host": "Diddi",
     "players": 11,
     "link": "https://cubecobra.com/cube/list/563f11e1-1852-42db-9651-506ca3c67691"
+  },
+  {
+    "date": "2026-08-06",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 8,
+    "link": "https://cubecobra.com/cube/list/nerva"
+  },
+  {
+    "date": "2026-08-13",
+    "cube": "The Ab Wheel",
+    "cube_slug": "the-ab-wheel",
+    "host": "Tommi",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/FeelTheBurn"
+  },
+  {
+    "date": "2026-08-20",
+    "cube": "Modern Stories",
+    "cube_slug": "modern-stories",
+    "host": "Aron Elvar",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
+  },
+  {
+    "date": "2026-08-27",
+    "cube": "Synergy Cube",
+    "cube_slug": "synergy-cube",
+    "host": "Tommi",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
   }
 ]
