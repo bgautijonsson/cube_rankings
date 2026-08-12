@@ -448,21 +448,21 @@
     },
     {
       "date": "2026-01-29",
-      "score_median": 1508,
-      "score_q25": 1483,
-      "score_q75": 1534,
-      "score_lower": 1437,
-      "score_upper": 1575,
-      "rank": 16,
+      "score_median": 1493,
+      "score_q25": 1466,
+      "score_q75": 1519,
+      "score_lower": 1416,
+      "score_upper": 1558,
+      "rank": 18,
       "win_rate": 45.945946,
       "games": 74,
       "wins": 34,
       "losses": 40,
       "strength": {
-        "High": 0.094155,
-        "Medium": 0.01826,
-        "Low": -0.013504,
-        "Other": -0.09394
+        "High": 0.108419,
+        "Medium": 0.044814,
+        "Low": 0.012003,
+        "Other": -0.167597
       }
     },
     {
@@ -987,8 +987,8 @@
       "trophies": 0
     },
     {
-      "cube": "The Ab Wheel",
-      "tier": "Low",
+      "cube": "Core Memory",
+      "tier": "Other",
       "wins": 0,
       "losses": 4,
       "games": 4,

@@ -20,6 +20,16 @@
     "last_played": "2026-01-08"
   },
   {
+    "cube": "Core Memory",
+    "slug": "core-memory",
+    "tier": "Other",
+    "n_events": 1,
+    "n_games": 20,
+    "n_players": 7,
+    "first_played": "2026-01-29",
+    "last_played": "2026-01-29"
+  },
+  {
     "cube": "Diddi's Vintage Vanilla",
     "slug": "diddi-s-vintage-vanilla",
     "tier": "High",
@@ -218,16 +228,6 @@
     "n_players": 8,
     "first_played": "2026-02-26",
     "last_played": "2026-02-26"
-  },
-  {
-    "cube": "The Ab Wheel",
-    "slug": "the-ab-wheel",
-    "tier": "Low",
-    "n_events": 1,
-    "n_games": 20,
-    "n_players": 7,
-    "first_played": "2026-01-29",
-    "last_played": "2026-01-29"
   },
   {
     "cube": "Vintage Aron",

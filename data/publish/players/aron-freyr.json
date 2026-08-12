@@ -448,21 +448,21 @@
     },
     {
       "date": "2026-01-29",
-      "score_median": 1561,
-      "score_q25": 1537,
-      "score_q75": 1585,
-      "score_lower": 1500,
-      "score_upper": 1624,
-      "rank": 2,
+      "score_median": 1563,
+      "score_q25": 1540,
+      "score_q75": 1587,
+      "score_lower": 1504,
+      "score_upper": 1626,
+      "rank": 3,
       "win_rate": 60.740741,
       "games": 135,
       "wins": 82,
       "losses": 53,
       "strength": {
-        "High": 0.058912,
-        "Medium": 0.092227,
-        "Low": -0.121677,
-        "Other": -0.032217
+        "High": -0.002672,
+        "Medium": 0.088358,
+        "Low": -0.132028,
+        "Other": 0.045733
       }
     },
     {
