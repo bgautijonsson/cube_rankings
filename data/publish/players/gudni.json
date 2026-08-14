@@ -3,10 +3,10 @@
   "slug": "gudni",
   "summary": {
     "score_median": 1483,
-    "rank": 24,
+    "rank": 25,
     "win_rate": 25,
     "games": 8,
-    "strongest_tier": "Medium"
+    "strongest_tier": "Low"
   },
   "history": [
     {
@@ -26,6 +26,25 @@
         "Medium": 0.029391,
         "Low": 0.02778,
         "Other": 0.026582
+      }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1483,
+      "score_q25": 1453,
+      "score_q75": 1507,
+      "score_lower": 1393,
+      "score_upper": 1552,
+      "rank": 25,
+      "win_rate": 25,
+      "games": 8,
+      "wins": 2,
+      "losses": 6,
+      "strength": {
+        "High": -0.084406,
+        "Medium": 0.026855,
+        "Low": 0.032453,
+        "Other": 0.025342
       }
     }
   ],

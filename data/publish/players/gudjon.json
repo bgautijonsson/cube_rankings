@@ -3,7 +3,7 @@
   "slug": "gudjon",
   "summary": {
     "score_median": 1499,
-    "rank": 20,
+    "rank": 17,
     "win_rate": 42.857143,
     "games": 7,
     "strongest_tier": "High"
@@ -26,6 +26,25 @@
         "Medium": -0.00647,
         "Low": -0.00233,
         "Other": -0.002555
+      }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1499,
+      "score_q25": 1473,
+      "score_q75": 1526,
+      "score_lower": 1427,
+      "score_upper": 1584,
+      "rank": 17,
+      "win_rate": 42.857143,
+      "games": 7,
+      "wins": 3,
+      "losses": 4,
+      "strength": {
+        "High": 0.008415,
+        "Medium": -0.004846,
+        "Low": -0.006495,
+        "Other": -0.001551
       }
     }
   ],

@@ -2,10 +2,10 @@
   "player": "Aron Elvar",
   "slug": "aron-elvar",
   "summary": {
-    "score_median": 1541,
-    "rank": 4,
-    "win_rate": 52.023121,
-    "games": 173,
+    "score_median": 1543,
+    "rank": 3,
+    "win_rate": 52.222222,
+    "games": 180,
     "strongest_tier": "Low"
   },
   "history": [
@@ -920,6 +920,25 @@
         "Low": 0.067422,
         "Other": 0.007274
       }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1543,
+      "score_q25": 1521,
+      "score_q75": 1569,
+      "score_lower": 1492,
+      "score_upper": 1614,
+      "rank": 3,
+      "win_rate": 52.222222,
+      "games": 180,
+      "wins": 94,
+      "losses": 86,
+      "strength": {
+        "High": 0.043946,
+        "Medium": -0.142634,
+        "Low": 0.066873,
+        "Other": 0.034597
+      }
     }
   ],
   "cubes": [
@@ -1002,6 +1021,15 @@
       "losses": 4,
       "games": 7,
       "win_rate": 43,
+      "trophies": 0
+    },
+    {
+      "cube": "Core Memory",
+      "tier": "Other",
+      "wins": 4,
+      "losses": 3,
+      "games": 7,
+      "win_rate": 57,
       "trophies": 0
     },
     {

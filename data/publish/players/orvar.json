@@ -2,10 +2,10 @@
   "player": "Örvar",
   "slug": "orvar",
   "summary": {
-    "score_median": 1607,
+    "score_median": 1618,
     "rank": 1,
-    "win_rate": 64.489796,
-    "games": 245,
+    "win_rate": 65.338645,
+    "games": 251,
     "strongest_tier": "Low"
   },
   "history": [
@@ -863,6 +863,25 @@
         "Low": 0.19081,
         "Other": -0.078588
       }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1618,
+      "score_q25": 1593,
+      "score_q75": 1646,
+      "score_lower": 1561,
+      "score_upper": 1694,
+      "rank": 1,
+      "win_rate": 65.338645,
+      "games": 251,
+      "wins": 164,
+      "losses": 87,
+      "strength": {
+        "High": 0.030958,
+        "Medium": -0.199183,
+        "Low": 0.135983,
+        "Other": 0.032366
+      }
     }
   ],
   "cubes": [
@@ -977,11 +996,11 @@
     {
       "cube": "Core Memory",
       "tier": "Other",
-      "wins": 5,
+      "wins": 11,
       "losses": 1,
-      "games": 6,
-      "win_rate": 83,
-      "trophies": 0
+      "games": 12,
+      "win_rate": 92,
+      "trophies": 1
     },
     {
       "cube": "Horror Cube",

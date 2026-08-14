@@ -2,10 +2,10 @@
   "player": "Aron Freyr",
   "slug": "aron-freyr",
   "summary": {
-    "score_median": 1582,
+    "score_median": 1580,
     "rank": 2,
-    "win_rate": 60.409556,
-    "games": 293,
+    "win_rate": 60.13289,
+    "games": 301,
     "strongest_tier": "Other"
   },
   "history": [
@@ -920,6 +920,25 @@
         "Low": -0.247485,
         "Other": 0.20788
       }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1580,
+      "score_q25": 1558,
+      "score_q75": 1604,
+      "score_lower": 1529,
+      "score_upper": 1645,
+      "rank": 2,
+      "win_rate": 60.13289,
+      "games": 301,
+      "wins": 181,
+      "losses": 120,
+      "strength": {
+        "High": 0.058299,
+        "Medium": -0.00716,
+        "Low": -0.244055,
+        "Other": 0.191124
+      }
     }
   ],
   "cubes": [
@@ -1066,6 +1085,15 @@
       "games": 6,
       "win_rate": 100,
       "trophies": 1
+    },
+    {
+      "cube": "Core Memory",
+      "tier": "Other",
+      "wins": 4,
+      "losses": 4,
+      "games": 8,
+      "win_rate": 50,
+      "trophies": 0
     },
     {
       "cube": "Synergy Cube",

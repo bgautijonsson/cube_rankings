@@ -23,11 +23,11 @@
     "cube": "Core Memory",
     "slug": "core-memory",
     "tier": "Other",
-    "n_events": 1,
-    "n_games": 20,
-    "n_players": 7,
+    "n_events": 2,
+    "n_games": 42,
+    "n_players": 10,
     "first_played": "2026-01-29",
-    "last_played": "2026-01-29"
+    "last_played": "2026-08-13"
   },
   {
     "cube": "Diddi's Vintage Vanilla",

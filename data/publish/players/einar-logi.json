@@ -2,7 +2,7 @@
   "player": "Einar Logi",
   "slug": "einar-logi",
   "summary": {
-    "score_median": 1511,
+    "score_median": 1510,
     "rank": 13,
     "win_rate": 50,
     "games": 36,
@@ -843,6 +843,25 @@
         "Medium": 0.146636,
         "Low": -0.026436,
         "Other": -0.049617
+      }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1510,
+      "score_q25": 1488,
+      "score_q75": 1536,
+      "score_lower": 1449,
+      "score_upper": 1586,
+      "rank": 13,
+      "win_rate": 50,
+      "games": 36,
+      "wins": 18,
+      "losses": 18,
+      "strength": {
+        "High": -0.071703,
+        "Medium": 0.144522,
+        "Low": -0.020933,
+        "Other": -0.051925
       }
     }
   ],

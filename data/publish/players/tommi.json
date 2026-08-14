@@ -2,10 +2,10 @@
   "player": "Tommi",
   "slug": "tommi",
   "summary": {
-    "score_median": 1526,
+    "score_median": 1525,
     "rank": 8,
-    "win_rate": 52.411576,
-    "games": 311,
+    "win_rate": 52.037618,
+    "games": 319,
     "strongest_tier": "Medium"
   },
   "history": [
@@ -920,6 +920,25 @@
         "Low": 0.084809,
         "Other": -0.209757
       }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1525,
+      "score_q25": 1505,
+      "score_q75": 1544,
+      "score_lower": 1467,
+      "score_upper": 1572,
+      "rank": 8,
+      "win_rate": 52.037618,
+      "games": 319,
+      "wins": 166,
+      "losses": 153,
+      "strength": {
+        "High": -0.011087,
+        "Medium": 0.129512,
+        "Low": 0.094867,
+        "Other": -0.213385
+      }
     }
   ],
   "cubes": [
@@ -1097,10 +1116,10 @@
     {
       "cube": "Core Memory",
       "tier": "Other",
-      "wins": 2,
-      "losses": 3,
-      "games": 5,
-      "win_rate": 40,
+      "wins": 5,
+      "losses": 8,
+      "games": 13,
+      "win_rate": 38,
       "trophies": 0
     }
   ]

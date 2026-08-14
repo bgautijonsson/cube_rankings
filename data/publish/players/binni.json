@@ -2,8 +2,8 @@
   "player": "Binni",
   "slug": "binni",
   "summary": {
-    "score_median": 1540,
-    "rank": 5,
+    "score_median": 1538,
+    "rank": 4,
     "win_rate": 53.731343,
     "games": 201,
     "strongest_tier": "High"
@@ -919,6 +919,25 @@
         "Medium": -0.223946,
         "Low": 0.00159,
         "Other": 0.076392
+      }
+    },
+    {
+      "date": "2026-08-13",
+      "score_median": 1538,
+      "score_q25": 1517,
+      "score_q75": 1561,
+      "score_lower": 1486,
+      "score_upper": 1600,
+      "rank": 4,
+      "win_rate": 53.731343,
+      "games": 201,
+      "wins": 108,
+      "losses": 93,
+      "strength": {
+        "High": 0.152545,
+        "Medium": -0.223204,
+        "Low": -0.004245,
+        "Other": 0.073594
       }
     }
   ],
