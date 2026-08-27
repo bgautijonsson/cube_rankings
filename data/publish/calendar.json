@@ -732,7 +732,7 @@
     "cube": "Core Memory",
     "cube_slug": "core-memory",
     "host": "Tommi",
-    "players": null,
+    "players": 6,
     "link": "https://cubecobra.com/cube/list/FeelTheBurn"
   },
   {
@@ -740,7 +740,7 @@
     "cube": "Modern Stories",
     "cube_slug": "modern-stories",
     "host": "Aron Elvar",
-    "players": null,
+    "players": 9,
     "link": "https://cubecobra.com/cube/list/9740e72a-dae3-45b4-b879-10abf0c23b12"
   },
   {
