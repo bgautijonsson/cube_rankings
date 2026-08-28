@@ -748,7 +748,15 @@
     "cube": "Synergy Cube",
     "cube_slug": "synergy-cube",
     "host": "Tommi",
-    "players": null,
+    "players": 10,
     "link": "https://cubecobra.com/cube/list/SynergyNotSpeed"
+  },
+  {
+    "date": "2026-09-03",
+    "cube": "Diddi's Vintage Vanilla",
+    "cube_slug": "diddi-s-vintage-vanilla",
+    "host": "Diddi",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
   }
 ]
