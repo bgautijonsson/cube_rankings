@@ -758,5 +758,37 @@
     "host": "Diddi",
     "players": null,
     "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
+  },
+  {
+    "date": "2026-09-10",
+    "cube": "Old Border",
+    "cube_slug": "old-border",
+    "host": "Diddi",
+    "players": null,
+    "link": null
+  },
+  {
+    "date": "2026-09-17",
+    "cube": "Flashdance!",
+    "cube_slug": "flashdance",
+    "host": "Örvar",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/88234f4d-8fff-41ae-a8f8-bb82832969df"
+  },
+  {
+    "date": "2026-09-24",
+    "cube": "Undecided",
+    "cube_slug": "undecided",
+    "host": null,
+    "players": null,
+    "link": null
+  },
+  {
+    "date": "2026-10-01",
+    "cube": "Bolti",
+    "cube_slug": "bolti",
+    "host": "Hjalti",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
   }
 ]
