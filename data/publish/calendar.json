@@ -761,11 +761,11 @@
   },
   {
     "date": "2026-09-10",
-    "cube": "Old Border",
-    "cube_slug": "old-border",
+    "cube": "Old Border Cube",
+    "cube_slug": "old-border-cube",
     "host": "Diddi",
     "players": null,
-    "link": null
+    "link": "https://cubecobra.com/cube/list/3f75c0e8-fb85-408f-bc17-bb2fed74284a"
   },
   {
     "date": "2026-09-17",
