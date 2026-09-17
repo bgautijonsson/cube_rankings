@@ -756,7 +756,7 @@
     "cube": "Diddi's Vintage Vanilla",
     "cube_slug": "diddi-s-vintage-vanilla",
     "host": "Diddi",
-    "players": null,
+    "players": 10,
     "link": "https://cubecobra.com/cube/list/d0667cd7-de95-4414-88d9-f0bd09015c14"
   },
   {
@@ -764,7 +764,7 @@
     "cube": "Old Border Cube",
     "cube_slug": "old-border-cube",
     "host": "Diddi",
-    "players": null,
+    "players": 8,
     "link": "https://cubecobra.com/cube/list/3f75c0e8-fb85-408f-bc17-bb2fed74284a"
   },
   {
@@ -777,8 +777,8 @@
   },
   {
     "date": "2026-09-24",
-    "cube": "*New Cube*",
-    "cube_slug": "new-cube",
+    "cube": "Lucky Charms",
+    "cube_slug": "lucky-charms",
     "host": "Guðjón",
     "players": null,
     "link": null
