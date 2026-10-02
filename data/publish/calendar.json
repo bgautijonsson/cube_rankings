@@ -785,10 +785,10 @@
   },
   {
     "date": "2026-10-01",
-    "cube": "Bolti",
-    "cube_slug": "bolti",
-    "host": "Hjalti",
-    "players": null,
-    "link": "https://cubecobra.com/cube/list/bolti-mtgovintage"
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/nerva"
   }
 ]
