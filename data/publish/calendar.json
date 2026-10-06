@@ -776,7 +776,15 @@
     "link": "https://cubecobra.com/cube/list/88234f4d-8fff-41ae-a8f8-bb82832969df"
   },
   {
-    "date": "2026-09-24",
+    "date": "2026-10-01",
+    "cube": "Nerva's Cube",
+    "cube_slug": "nerva-s-cube",
+    "host": "Tommi",
+    "players": 7,
+    "link": "https://cubecobra.com/cube/list/nerva"
+  },
+  {
+    "date": "2026-10-15",
     "cube": "Lucky Charms",
     "cube_slug": "lucky-charms",
     "host": "Guðjón",
@@ -784,11 +792,27 @@
     "link": null
   },
   {
-    "date": "2026-10-01",
-    "cube": "Nerva's Cube",
-    "cube_slug": "nerva-s-cube",
-    "host": "Tommi",
-    "players": 7,
-    "link": "https://cubecobra.com/cube/list/nerva"
+    "date": "2026-10-22",
+    "cube": "That's Totally Uncommon",
+    "cube_slug": "that-s-totally-uncommon",
+    "host": "Diddi",
+    "players": null,
+    "link": "https://cubecobra.com/cube/list/0a448b20-c496-4b55-8611-ba42e0b905a1"
+  },
+  {
+    "date": "2026-10-29",
+    "cube": "*Undecided*",
+    "cube_slug": "undecided",
+    "host": null,
+    "players": null,
+    "link": null
+  },
+  {
+    "date": "2026-11-05",
+    "cube": "Vintage Cube",
+    "cube_slug": "vintage-cube",
+    "host": "****",
+    "players": null,
+    "link": null
   }
 ]
