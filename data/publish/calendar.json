@@ -801,17 +801,17 @@
   },
   {
     "date": "2026-10-29",
-    "cube": "*Undecided*",
-    "cube_slug": "undecided",
-    "host": null,
+    "cube": "Inventors' Fair",
+    "cube_slug": "inventors-fair",
+    "host": "Binni",
     "players": null,
-    "link": null
+    "link": "https://cubecobra.com/cube/list/01a2a63d-638d-4a23-b062-fd9a344809f8"
   },
   {
     "date": "2026-11-05",
     "cube": "Vintage Cube",
     "cube_slug": "vintage-cube",
-    "host": "****",
+    "host": "*",
     "players": null,
     "link": null
   }
