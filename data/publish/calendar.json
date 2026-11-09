@@ -801,9 +801,17 @@
   },
   {
     "date": "2026-11-05",
-    "cube": "Vintage Cube",
-    "cube_slug": "vintage-cube",
-    "host": "*",
+    "cube": "Vintage Aron",
+    "cube_slug": "vintage-aron",
+    "host": "Aron Ívars",
+    "players": 9,
+    "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
+  },
+  {
+    "date": "2026-11-12",
+    "cube": "Stone Soup Cube",
+    "cube_slug": "stone-soup-cube",
+    "host": null,
     "players": null,
     "link": null
   }
