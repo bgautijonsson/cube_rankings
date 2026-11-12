@@ -808,9 +808,17 @@
     "link": "https://cubecobra.com/cube/list/d2938070-f8e0-4a27-bcdb-b37c0f06632d"
   },
   {
-    "date": "2026-11-12",
-    "cube": "Stone Soup Cube",
-    "cube_slug": "stone-soup-cube",
+    "date": "2026-12-03",
+    "cube": "Vintage Cube",
+    "cube_slug": "vintage-cube",
+    "host": null,
+    "players": null,
+    "link": null
+  },
+  {
+    "date": "2027-01-07",
+    "cube": "Vintage Cube",
+    "cube_slug": "vintage-cube",
     "host": null,
     "players": null,
     "link": null
