@@ -39,6 +39,7 @@ Google Sheets → `download_cube_results()` → `prepare_cube_data()` → `fit_c
 - `results/<date>/` — per-date RDS model fits + `player_summary.csv`
 - `plots/` — PNG visualizations
 - `data/` — cached processed inputs (`processed_data.rds`, `players.rds`, `game_dates.rds`)
+- The nightly CI bot commits `results/` and `data/publish/` ("data: cube fit" commits): run `git pull --ff-only` before reading or editing them; the local checkout can be months behind.
 
 Large fitted artifacts and compiled Stan binaries are gitignored. Do not commit regenerated binaries.
 
